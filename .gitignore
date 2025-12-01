@@ -1,0 +1,21 @@
+# Datasets and large outputs (do NOT push)
+data/
+models/
+logs/
+inference_results/
+
+# External repos cloned inside this project
+rtdetr/
+mask2former/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Editor / OS junk
+*.swp
+*.swo
+.DS_Store
+
