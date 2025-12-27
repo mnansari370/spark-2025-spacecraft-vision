@@ -1,0 +1,17 @@
+FINAL DETECTION PATHS
+
+Weights:
+checkpoints/detection/detection_model/best.pth
+
+Inference outputs:
+inference_results/detection/detection_test_predictions.json
+inference_results/detection/detection.csv
+inference_results/detection/submission_detection.zip
+
+Jobs:
+jobs/detection/train_detection_model.sh
+jobs/detection/run_detection_inference.sh
+
+Config:
+models/detection/rtdetrv2/configs/rtdetrv2/rtdetrv2_r50vd_spark_40ep.yml
+models/detection/rtdetrv2/configs/dataset/coco_detection.yml

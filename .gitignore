@@ -1,23 +1,94 @@
-# Datasets and large outputs (do NOT push)
-data/
-logs/
-inference_results/
-
-# External repos cloned inside this project
-rtdetr/
-mask2former/
-
-# Python cache
+############################
+# Python / general
+############################
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
 *.pyd
+.ipynb_checkpoints/
+*.log
 
-# Editor / OS junk
-*.swp
-*.swo
+############################
+# Conda / virtual envs
+############################
+.env
+.env.*
+venv/
+.envs/
+.venv/
+miniconda*/
+anaconda*/
+conda-env*/
+
+############################
+# OS / editor
+############################
 .DS_Store
+Thumbs.db
+.vscode/
+.idea/
 
-# Ignore model weights
+############################
+# Weights & Biases
+############################
+wandb/
+logs/wandb/
+**/wandb/
+
+############################
+# SLURM / HPC logs
+############################
+logs/
+*.out
+*.err
+slurm-*.out
+
+############################
+# Checkpoints (VERY IMPORTANT)
+############################
+checkpoints/
 *.pth
-models/
+*.ckpt
+
+############################
+# Inference & results
+############################
+inference_results/
+*.zip
+
+############################
+# Datasets (DO NOT UPLOAD)
+############################
+data/
+*.csv
+*.json
+*.jpg
+*.png
+*.jpeg
+*.tif
+*.tiff
+*.npz
+*.npy
+
+############################
+# Torch / CUDA caches
+############################
+.cache/
+torch_extensions/
+.nv/
+cuda_cache/
+
+############################
+# Temporary / scratch
+############################
+tmp/
+temp/
+scratch/
+_TRASH_DO_NOT_DELETE_YET/
+
+############################
+# Large experiment artifacts
+############################
+events.out.tfevents*
+*.pb
+*.pt

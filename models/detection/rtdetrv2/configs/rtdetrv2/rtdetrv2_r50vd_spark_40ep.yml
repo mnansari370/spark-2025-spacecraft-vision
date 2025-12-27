@@ -1,0 +1,28 @@
+__include__: [
+  '../dataset/coco_detection.yml',
+  '../runtime.yml',
+  './include/dataloader_spark_40ep.yml',
+  './include/optimizer_spark_40ep.yml',
+  './include/rtdetrv2_r50vd.yml',
+]
+
+# separate output label (real output dir is passed in CLI)
+output_dir: ./output/rtdetrv2_spark_40ep
+
+HybridEncoder:
+  expansion: 0.5
+
+RTDETRTransformerv2:
+  eval_idx: 2
+
+# main change: 40 epochs
+epoches: 40
+
+# make sure train policy stop_epoch is 30 (already in dataloader include)
+train_dataloader:
+  dataset:
+    transforms:
+      policy:
+        epoch: 30
+  collate_fn:
+    stop_epoch: 30

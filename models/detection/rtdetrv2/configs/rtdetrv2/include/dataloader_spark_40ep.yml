@@ -1,0 +1,41 @@
+train_dataloader:
+  dataset:
+    transforms:
+      ops:
+        - {type: RandomPhotometricDistort, p: 0.5}
+        - {type: RandomZoomOut, fill: 0}
+        - {type: RandomIoUCrop, p: 0.8}
+        - {type: SanitizeBoundingBoxes, min_size: 1}
+        - {type: RandomHorizontalFlip}
+        - {type: Resize, size: [640, 640]}
+        - {type: SanitizeBoundingBoxes, min_size: 1}
+        - {type: ConvertPILImage, dtype: 'float32', scale: True}
+        - {type: ConvertBoxes, fmt: 'cxcywh', normalize: True}
+
+      policy:
+        name: stop_epoch
+        # keep heavy aug for 75% of training (40ep -> stop at 30)
+        epoch: 30
+        ops: ['RandomPhotometricDistort', 'RandomZoomOut', 'RandomIoUCrop']
+
+  collate_fn:
+    type: BatchImageCollateFuncion
+    scales: [480, 512, 544, 576, 608, 640]
+    # keep multiscale until epoch 30
+    stop_epoch: 30
+
+  shuffle: True
+  total_batch_size: 8
+  num_workers: 4
+
+
+val_dataloader:
+  dataset:
+    transforms:
+      ops:
+        - {type: Resize, size: [640, 640]}
+        - {type: ConvertPILImage, dtype: 'float32', scale: True}
+
+  shuffle: False
+  total_batch_size: 8
+  num_workers: 4

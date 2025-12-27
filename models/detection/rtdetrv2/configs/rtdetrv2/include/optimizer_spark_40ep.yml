@@ -1,0 +1,21 @@
+optimizer:
+  type: AdamW
+  params:
+    # small LR for backbone fine-tuning
+    - params: '^(?=.*backbone)(?!.*norm).*$'
+      lr: 0.00001
+
+    # no weight decay on encoder/decoder norms
+    - params: '^(?=.*(?:encoder|decoder))(?=.*(?:norm|bn)).*$'
+      weight_decay: 0.
+
+  lr: 0.0001
+  betas: [0.9, 0.999]
+  weight_decay: 0.0001
+
+
+lr_scheduler:
+  # simple refinement schedule for longer training
+  type: MultiStepLR
+  milestones: [28, 36]
+  gamma: 0.1
