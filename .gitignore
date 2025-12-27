@@ -1,39 +1,93 @@
-# env / python
+# ================================
+# Python / Conda
+# ================================
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.so
 .ipynb_checkpoints/
-.venv/
-venv/
 .env
-.env.*
+.venv
+env/
+venv/
+conda-meta/
 
-# system
+# ================================
+# OS / Editor
+# ================================
 .DS_Store
 Thumbs.db
-
-# outputs
-checkpoints/
-inference_results/
-logs/
-wandb/
-submissions/
-output/
-outputs/
-runs/
-
-# trash / temp
-_TRASH_DO_NOT_DELETE_YET/
-logs/_archive/
-
-# large archives
-*.zip
-*.tar
-*.tar.gz
-*.tgz
-*.7z
-
-# editor
 .vscode/
 .idea/
+*.swp
+*.swo
+
+# ================================
+# Logs
+# ================================
+logs/
+*.log
+logs/**/slurm/*.out
+logs/**/slurm/*.err
+
+# ================================
+# Weights & Biases
+# ================================
+wandb/run-*
+wandb/latest-run
+wandb/debug.log
+wandb/debug-internal.log
+
+# ================================
+# Model checkpoints (too large for GitHub)
+# ================================
+checkpoints/
+models/**/best.pth
+models/**/last.pth
+models/**/latest.pth
+models/**/checkpoints/
+*.pth
+
+# ================================
+# Large datasets (do NOT commit)
+# ================================
+data/spark-2024-detection-test/
+data/spark-2024-segmentation-test/
+data/spark-2024-train-val/
+data/**/images/
+data/**/mask/
+
+# ================================
+# Temporary / intermediate inference files
+# ================================
+inference_results/**/npz_tmp/
+inference_results/**/predicted_masks/
+
+# ================================
+# Cache / temp
+# ================================
+.cache/
+tmp/
+temp/
+
+# ================================
+# Archives (optional – keep submissions only if required)
+# ================================
+# inference_results/**/submission_*.zip
+
+# ================================
+# Ignore compiled C/CUDA artifacts (safe)
+# ================================
+*.o
+*.a
+*.cuo
+
+# ================================
+# Do NOT ignore these (explicit allow)
+# ================================
+!inference_results/detection/submission_detection.zip
+!inference_results/segmentation/submission_segmentation.zip
+!PROJECT_TREE_L3.txt
+!DETECTION_FINAL_PATHS.txt
+!SEGMENTATION_FINAL_PATHS.txt
