@@ -1,0 +1,75 @@
+.
+├── checkpoints
+│   ├── detection
+│   │   └── detection_model
+│   └── segmentation
+│       └── segmentation_model
+├── data
+│   ├── annotations
+│   │   ├── spark_train.json
+│   │   └── spark_val.json
+│   ├── spark-2024-detection-test
+│   │   └── images
+│   ├── spark-2024-segmentation-test
+│   │   └── stream-1-test
+│   └── spark-2024-train-val
+│       ├── images
+│       ├── mask
+│       ├── train.csv
+│       └── val.csv
+├── DETECTION_FINAL_PATHS.txt
+├── .gitignore
+├── inference_results
+│   ├── detection
+│   │   ├── detection.csv
+│   │   ├── detection_test_predictions.json
+│   │   ├── submission_detection.zip
+│   │   └── visuals_per_class
+│   └── segmentation
+│       ├── README.txt
+│       ├── submission_segmentation.zip
+│       └── visuals_per_class
+├── jobs
+│   ├── detection
+│   │   ├── run_detection_inference.sh
+│   │   └── train_detection_model.sh
+│   └── segmentation
+│       └── run_segmentation_inference.sh
+├── logs
+│   ├── detection
+│   │   └── slurm
+│   └── segmentation
+│       └── slurm
+├── models
+│   ├── detection
+│   │   └── rtdetrv2
+│   └── segmentation
+│       └── deeplabv3plus_baseline
+├── PROJECT_TREE_L3.txt
+├── scripts
+│   ├── detection
+│   │   ├── convert_predictions_to_submission.py
+│   │   ├── convert_spark_to_coco.py
+│   │   ├── detection_dataset_loader.py
+│   │   └── visualize_detection_results.py
+│   └── segmentation
+│       ├── convert_png_to_npz_submission.py
+│       ├── run_segmentation_inference.py
+│       └── visualize_segmentation_results.py
+├── SEGMENTATION_FINAL_PATHS.txt
+└── wandb
+    ├── detection
+    │   ├── debug-internal.log -> run-20251224_115344-dm84hqbw/logs/debug-internal.log
+    │   ├── debug.log -> run-20251224_115344-dm84hqbw/logs/debug.log
+    │   ├── latest-run -> run-20251224_115344-dm84hqbw
+    │   ├── run-20251224_020737-oavdqxx6
+    │   ├── run-20251224_021837-6t8ghwcm
+    │   └── run-20251224_115344-dm84hqbw
+    └── segmentation
+        ├── debug-internal.log -> run-20251225_185159-i2stcqk3/logs/debug-internal.log
+        ├── debug.log -> run-20251225_185159-i2stcqk3/logs/debug.log
+        ├── latest-run -> run-20251225_185159-i2stcqk3
+        ├── run-20251223_225444-gi2b6sgb
+        └── run-20251225_185159-i2stcqk3
+
+45 directories, 27 files

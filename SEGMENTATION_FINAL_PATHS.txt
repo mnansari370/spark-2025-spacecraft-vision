@@ -1,0 +1,14 @@
+FINAL SEGMENTATION (Codabench = 0.88)
+
+Weights (copied for clean structure):
+checkpoints/segmentation/segmentation_model/best.pth
+
+Final submission:
+inference_results/segmentation/final/submission_segmentation.zip
+
+Key scripts:
+scripts/segmentation/run_segmentation_inference.py
+scripts/segmentation/convert_png_to_npz_submission.py
+
+Key job:
+jobs/segmentation/run_segmentation_inference.sh
