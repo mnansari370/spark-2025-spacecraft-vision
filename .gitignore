@@ -28,8 +28,6 @@ Thumbs.db
 # ================================
 logs/
 *.log
-logs/**/slurm/*.out
-logs/**/slurm/*.err
 
 # ================================
 # Weights & Biases
@@ -73,6 +71,7 @@ temp/
 
 # ================================
 # Archives (optional – keep submissions only if required)
+# (keep commented unless you want to ignore final zips too)
 # ================================
 # inference_results/**/submission_*.zip
 
