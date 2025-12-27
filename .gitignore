@@ -1,94 +1,39 @@
-############################
-# Python / general
-############################
+# env / python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 .ipynb_checkpoints/
-*.log
-
-############################
-# Conda / virtual envs
-############################
+.venv/
+venv/
 .env
 .env.*
-venv/
-.envs/
-.venv/
-miniconda*/
-anaconda*/
-conda-env*/
 
-############################
-# OS / editor
-############################
+# system
 .DS_Store
 Thumbs.db
+
+# outputs
+checkpoints/
+inference_results/
+logs/
+wandb/
+submissions/
+output/
+outputs/
+runs/
+
+# trash / temp
+_TRASH_DO_NOT_DELETE_YET/
+logs/_archive/
+
+# large archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# editor
 .vscode/
 .idea/
-
-############################
-# Weights & Biases
-############################
-wandb/
-logs/wandb/
-**/wandb/
-
-############################
-# SLURM / HPC logs
-############################
-logs/
-*.out
-*.err
-slurm-*.out
-
-############################
-# Checkpoints (VERY IMPORTANT)
-############################
-checkpoints/
-*.pth
-*.ckpt
-
-############################
-# Inference & results
-############################
-inference_results/
-*.zip
-
-############################
-# Datasets (DO NOT UPLOAD)
-############################
-data/
-*.csv
-*.json
-*.jpg
-*.png
-*.jpeg
-*.tif
-*.tiff
-*.npz
-*.npy
-
-############################
-# Torch / CUDA caches
-############################
-.cache/
-torch_extensions/
-.nv/
-cuda_cache/
-
-############################
-# Temporary / scratch
-############################
-tmp/
-temp/
-scratch/
-_TRASH_DO_NOT_DELETE_YET/
-
-############################
-# Large experiment artifacts
-############################
-events.out.tfevents*
-*.pb
-*.pt

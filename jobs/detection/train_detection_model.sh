@@ -21,7 +21,7 @@ REPO_ROOT="${SLURM_SUBMIT_DIR:-$PWD}"
 echo "REPO_ROOT=$REPO_ROOT"
 
 # W&B (keep your settings)
-export WANDB_DIR="$REPO_ROOT/logs/wandb/detection"
+export WANDB_DIR="$REPO_ROOT/wandb/detection"
 mkdir -p "$WANDB_DIR"
 export WANDB_PROJECT="CV_Detection"
 export WANDB_ENTITY="nafees-workspace"
