@@ -1,6 +1,6 @@
 # SPARK 2025 – Spacecraft Detection & Segmentation (CVIA Course Project)
 
-This repository contains my end-to-end pipeline for **spacecraft detection** and **spacecraft part segmentation**, developed for the **CVIA (Computer Vision for Intelligent Autonomous Systems)** course / **SPARK challenge** at the University of Luxembourg.
+This repository contains my end-to-end pipeline for **spacecraft detection** and **spacecraft part segmentation**, developed for the **CVIA (Computer Vision and Image Analysis)** course / **SPARK challenge** at the University of Luxembourg.
 
 The project is designed to run on **ULHPC with SLURM**, and to produce **Codabench-ready submissions** for:
 - **Detection** (multi-class bounding boxes)
