@@ -2,7 +2,7 @@ Final Segmentation Submission (Codabench)
 Segmentation = 0.88
 
 Winning zip:
-  submission_seg_tta_fresh_DATA.zip
+  submission_segmentation.zip
 
 NPZ format:
   key: data

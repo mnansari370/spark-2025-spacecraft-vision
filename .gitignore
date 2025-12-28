@@ -2,9 +2,6 @@
 # CRITICAL: DO NOT TRACK
 ############################
 
-# Local scratch / experiments (must NEVER be pushed)
-_TRASH_DO_NOT_DELETE_YET/
-
 # Datasets (large, not shareable)
 data/
 
@@ -66,8 +63,11 @@ env/
 
 slurm-*.out
 slurm-*.err
-*.out
 *.err
+
+# Allow SLURM logs even though *.out is ignored globally
+!logs/**/slurm/*.out
+!logs/**/slurm/*.err
 
 ############################
 # EDITORS / OS
