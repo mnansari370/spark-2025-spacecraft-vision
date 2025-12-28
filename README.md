@@ -56,6 +56,34 @@ Main folders:
 - Utilities: `scripts/detection/`
 - Outputs: `inference_results/detection/`
 
+### Detection examples (RT-DETRv2)
+
+**Proba-2 spacecraft**
+![Detection – Proba-2](assets/detection_proba2.png)
+
+**Smart-1 spacecraft**
+![Detection – Smart-1](assets/detection_smart1.png)
+
+**Venus Express spacecraft**
+![Detection – Venus Express](assets/detection_venusexpress.png)
+
+---
+
+### Segmentation examples (DeepLabV3+)
+
+**Spacecraft body (red) and solar panels (blue)**
+![Segmentation example 1](assets/segmentation_example_1.png)
+
+![Segmentation example 2](assets/segmentation_example_2.png)
+
+### Segmentation examples (DeepLabV3+)
+
+**Spacecraft body (red) and solar panels (blue)**
+![Segmentation example 1](assets/segmentation_example_1.png)
+
+![Segmentation example 2](assets/segmentation_example_2.png)
+
+
 ### Segmentation
 - Model: **DeepLabV3+ baseline**
 - Location: `models/segmentation/deeplabv3plus_baseline/`
@@ -85,3 +113,24 @@ data/
 │   └── images/
 └── spark-2024-segmentation-test/
     └── stream-1-test/
+
+
+### Detection examples (RT-DETRv2)
+
+**Proba-2 spacecraft**
+![Detection – Proba-2](assets/detection_proba2.png)
+
+**Smart-1 spacecraft**
+![Detection – Smart-1](assets/detection_smart1.png)
+
+**Venus Express spacecraft**
+![Detection – Venus Express](assets/detection_venusexpress.png)
+
+---
+
+### Segmentation examples (DeepLabV3+)
+
+**Spacecraft body (red) and solar panels (blue)**
+![Segmentation example 1](assets/segmentation_example_1.png)
+
+![Segmentation example 2](assets/segmentation_example_2.png)
