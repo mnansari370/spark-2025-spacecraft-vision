@@ -13,13 +13,17 @@ checkpoints/
 *.pt
 *.ckpt
 
-# Logs & experiment tracking
 # ===== Logs (track only SLURM outputs) =====
-logs/*
+# Ignore everything under logs by default:
+logs/**
+
+# But keep the folder structure:
+!logs/
 !logs/**/
 !logs/**/slurm/
 !logs/**/slurm/*.out
 !logs/**/slurm/*.err
+
 
 wandb/
 
