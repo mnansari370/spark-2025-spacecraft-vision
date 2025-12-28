@@ -6,4 +6,4 @@ Weights:
 - best.pth (not tracked in git)
 - last.pth (not tracked in git)
 
-To reproduce inference, place your trained weights here with the same filenames.
+To reproduce inference, place my trained weights here with the same filenames.
