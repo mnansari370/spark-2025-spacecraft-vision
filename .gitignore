@@ -10,12 +10,17 @@ data/
 
 # Training outputs
 checkpoints/
-*.pth
 *.pt
 *.ckpt
 
 # Logs & experiment tracking
-logs/
+# ===== Logs (track only SLURM outputs) =====
+logs/*
+!logs/**/
+!logs/**/slurm/
+!logs/**/slurm/*.out
+!logs/**/slurm/*.err
+
 wandb/
 
 ############################
