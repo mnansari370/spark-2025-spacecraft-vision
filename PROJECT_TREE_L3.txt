@@ -68,8 +68,9 @@
 │       ├── debug-internal.log -> run-20251225_185159-i2stcqk3/logs/debug-internal.log
 │       └── debug.log -> run-20251225_185159-i2stcqk3/logs/debug.log
 ├── DETECTION_FINAL_PATHS.txt
+├── .gitattributes
 ├── .gitignore
 ├── PROJECT_TREE_L3.txt
 └── SEGMENTATION_FINAL_PATHS.txt
 
-45 directories, 27 files
+45 directories, 28 files
