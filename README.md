@@ -1,25 +1,32 @@
-# SPARK 2025 – Spacecraft Detection & Segmentation (CVIA Project)
+# SPARK 2025 – Spacecraft Detection & Segmentation (CVIA Course Project)
 
-This repository contains my end-to-end pipeline for **spacecraft detection** and **spacecraft part segmentation** developed for the **CVIA course project / SPARK challenge** at the University of Luxembourg.
+This repository contains my end-to-end pipeline for **spacecraft detection** and **spacecraft part segmentation**, developed for the **CVIA (Computer Vision for Intelligent Autonomous Systems)** course / **SPARK challenge** at the University of Luxembourg.
 
-It is structured to be **HPC-friendly (SLURM/ULHPC)** and to produce **Codabench-ready submissions** for:
+The project is designed to run on **ULHPC with SLURM**, and to produce **Codabench-ready submissions** for:
 - **Detection** (multi-class bounding boxes)
 - **Segmentation** (spacecraft body + solar panels)
 
 ---
 
+## Results (Codabench)
+
+These are the best scores I obtained on the official Codabench evaluation:
+- **Detection (RT-DETRv2): 0.9865**
+- **Segmentation (DeepLabV3+): 0.88**
+
+---
+
 ## Repository Structure
 
-The full repository structure (Level-3) is documented in:
-
+A Level-3 tree of the repository is provided here:
 - `PROJECT_TREE_L3.txt`
 
-Key folders:
-- `scripts/` – preprocessing, conversion, inference utilities
-- `models/` – model code and weights (segmentation weights tracked via Git LFS)
-- `jobs/` – SLURM job scripts (ULHPC)
-- `logs/` – SLURM outputs (cleaned)
-- `inference_results/` – outputs + Codabench submissions
+Main folders:
+- `scripts/` – conversion, inference, visualization utilities  
+- `models/` – model code and weights (segmentation weights tracked with Git LFS)  
+- `jobs/` – SLURM job scripts for ULHPC  
+- `logs/` – cleaned SLURM outputs (`logs/**/slurm/*.out`)  
+- `inference_results/` – predictions, visualizations, and Codabench submissions  
 
 ---
 
@@ -27,7 +34,7 @@ Key folders:
 
 ### Tracked in GitHub
 - Code (`scripts/`, `models/`, `jobs/`)
-- Submission artifacts (`inference_results/**/submission_*.zip`, prediction CSV/JSON)
+- Submission artifacts under `inference_results/` (e.g., `submission_*.zip`, prediction CSV/JSON)
 - Segmentation weights (Git LFS):
   - `models/segmentation/deeplabv3plus_baseline/best.pth`
   - `models/segmentation/deeplabv3plus_baseline/last.pth`
@@ -37,7 +44,7 @@ Key folders:
 - `data/` (datasets)
 - training checkpoints under `checkpoints/` (optional local output)
 - `wandb/` experiment runs (optional local tracking)
-- `_TRASH_DO_NOT_DELETE_YET/` (temporary local folder)
+- `_TRASH_DO_NOT_DELETE_YET/` (temporary local folder; not committed)
 
 ---
 
@@ -62,7 +69,7 @@ Key folders:
 
 ## Dataset Layout (local)
 
-Expected local layout (not pushed to GitHub):
+Datasets are **not pushed to GitHub**. The expected local layout is:
 
 ```text
 data/
@@ -74,5 +81,7 @@ data/
 │   ├── mask/
 │   ├── train.csv
 │   └── val.csv
-├── spark-2024-detection-test/images/
-└── spark-2024-segmentation-test/stream-1-test/
+├── spark-2024-detection-test/
+│   └── images/
+└── spark-2024-segmentation-test/
+    └── stream-1-test/
