@@ -1,92 +1,82 @@
-# ================================
-# Python / Conda
-# ================================
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.so
-.ipynb_checkpoints/
-.env
-.venv
-env/
-venv/
-conda-meta/
+############################
+# CRITICAL: DO NOT TRACK
+############################
 
-# ================================
-# OS / Editor
-# ================================
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-*.swp
-*.swo
+# Local scratch / experiments (must NEVER be pushed)
+_TRASH_DO_NOT_DELETE_YET/
 
-# ================================
-# Logs
-# ================================
-logs/
-*.log
+# Datasets (large, not shareable)
+data/
 
-# ================================
-# Weights & Biases
-# ================================
-wandb/run-*
-wandb/latest-run
-wandb/debug.log
-wandb/debug-internal.log
-
-# ================================
-# Model checkpoints (too large for GitHub)
-# ================================
+# Training outputs
 checkpoints/
-models/**/best.pth
-models/**/last.pth
-models/**/latest.pth
-models/**/checkpoints/
 *.pth
+*.pt
+*.ckpt
 
-# ================================
-# Large datasets (do NOT commit)
-# ================================
-data/spark-2024-detection-test/
-data/spark-2024-segmentation-test/
-data/spark-2024-train-val/
-data/**/images/
-data/**/mask/
+# Logs & experiment tracking
+logs/
+wandb/
 
-# ================================
-# Temporary / intermediate inference files
-# ================================
-inference_results/**/npz_tmp/
-inference_results/**/predicted_masks/
+############################
+# SUBMISSIONS & ARTIFACTS
+############################
 
-# ================================
-# Cache / temp
-# ================================
+# Generated submission files
+*.zip
+*.npz
+
+# Inference caches / visuals (optional safety)
+inference_results/**/visuals_per_class/
+
+############################
+# PYTHON
+############################
+
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+venv/
+.env/
+.venv/
+conda-env/
+env/
+
+############################
+# JUPYTER
+############################
+
+.ipynb_checkpoints/
+*.ipynb~
+
+############################
+# HPC / SLURM
+############################
+
+slurm-*.out
+slurm-*.err
+*.out
+*.err
+
+############################
+# EDITORS / OS
+############################
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+############################
+# TEMP / CACHE
+############################
+
+*.log
+*.tmp
 .cache/
-tmp/
-temp/
-
-# ================================
-# Archives (optional – keep submissions only if required)
-# (keep commented unless you want to ignore final zips too)
-# ================================
-# inference_results/**/submission_*.zip
-
-# ================================
-# Ignore compiled C/CUDA artifacts (safe)
-# ================================
-*.o
-*.a
-*.cuo
-
-# ================================
-# Do NOT ignore these (explicit allow)
-# ================================
-!inference_results/detection/submission_detection.zip
-!inference_results/segmentation/submission_segmentation.zip
-!PROJECT_TREE_L3.txt
-!DETECTION_FINAL_PATHS.txt
-!SEGMENTATION_FINAL_PATHS.txt
