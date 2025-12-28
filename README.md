@@ -58,39 +58,13 @@ Main folders:
 
 ### Detection examples (RT-DETRv2)
 
-### Detection examples (RT-DETRv2)
 
 | Proba-2 | Smart-1 | Venus Express |
 |--------|---------|---------------|
 | ![](assets/detection_proba2.png) | ![](assets/detection_smart1.png) | ![](assets/detection_venusexpress.png) |
 
----
-
-### Segmentation examples (DeepLabV3+)
-
-| Example 1 | Example 2 |
-|----------|-----------|
-| ![](assets/segmentation_example_1.png) | ![](assets/segmentation_example_2.png) |
-
-**Red:** spacecraft body &nbsp;&nbsp; **Blue:** solar panels
-
 
 ---
-
-### Segmentation examples (DeepLabV3+)
-
-**Spacecraft body (red) and solar panels (blue)**
-![Segmentation example 1](assets/segmentation_example_1.png)
-
-![Segmentation example 2](assets/segmentation_example_2.png)
-
-### Segmentation examples (DeepLabV3+)
-
-**Spacecraft body (red) and solar panels (blue)**
-![Segmentation example 1](assets/segmentation_example_1.png)
-
-![Segmentation example 2](assets/segmentation_example_2.png)
-
 
 ### Segmentation
 - Model: **DeepLabV3+ baseline**
@@ -100,6 +74,14 @@ Main folders:
   - `last.pth` (Git LFS)
 - Utilities: `scripts/segmentation/`
 - Outputs: `inference_results/segmentation/`
+
+### Segmentation examples (DeepLabV3+)
+
+| Example 1 | Example 2 |
+|----------|-----------|
+| ![](assets/segmentation_example_1.png) | ![](assets/segmentation_example_2.png) |
+
+**Red:** spacecraft body &nbsp;&nbsp; **Blue:** solar panels
 
 ---
 
