@@ -58,14 +58,22 @@ Main folders:
 
 ### Detection examples (RT-DETRv2)
 
-**Proba-2 spacecraft**
-![Detection – Proba-2](assets/detection_proba2.png)
+### Detection examples (RT-DETRv2)
 
-**Smart-1 spacecraft**
-![Detection – Smart-1](assets/detection_smart1.png)
+| Proba-2 | Smart-1 | Venus Express |
+|--------|---------|---------------|
+| ![](assets/detection_proba2.png) | ![](assets/detection_smart1.png) | ![](assets/detection_venusexpress.png) |
 
-**Venus Express spacecraft**
-![Detection – Venus Express](assets/detection_venusexpress.png)
+---
+
+### Segmentation examples (DeepLabV3+)
+
+| Example 1 | Example 2 |
+|----------|-----------|
+| ![](assets/segmentation_example_1.png) | ![](assets/segmentation_example_2.png) |
+
+**Red:** spacecraft body &nbsp;&nbsp; **Blue:** solar panels
+
 
 ---
 
