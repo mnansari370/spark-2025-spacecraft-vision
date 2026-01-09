@@ -17,7 +17,8 @@ import segmentation_models_pytorch as smp
 #   inference_results/segmentation/predicted_masks/test_XXXXX_layer.png
 # ---------------------------------------------------------
 
-PROJECT_ROOT = Path("/home/users/nmo/spark_project")
+
+PROJECT_ROOT = find_repo_root(Path(__file__).resolve())
 
 TEST_DIR = PROJECT_ROOT / "data" / "spark-2024-segmentation-test" / "stream-1-test"
 OUT_PNG_DIR = PROJECT_ROOT / "inference_results" / "segmentation" / "predicted_masks"

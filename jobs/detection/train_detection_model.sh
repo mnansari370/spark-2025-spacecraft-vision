@@ -6,8 +6,10 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=24G
 #SBATCH --time=2-00:00:00
-#SBATCH --output=/mnt/aiongpfs/users/nmo/spark_project/logs/detection/slurm/detection_train_%j.out
-#SBATCH --error=/mnt/aiongpfs/users/nmo/spark_project/logs/detection/slurm/detection_train_%j.err
+
+#SBATCH --output=%x_%j.out
+#SBATCH --error=%x_%j.err
+
 
 echo "Host: $(hostname)"
 echo "Start: $(date)"
@@ -19,6 +21,13 @@ export PYTHONUNBUFFERED=1
 # Repo root based on this script location (works in sbatch)
 REPO_ROOT="${SLURM_SUBMIT_DIR:-$PWD}"
 echo "REPO_ROOT=$REPO_ROOT"
+
+mkdir -p "$REPO_ROOT/logs/detection/slurm"
+
+# Redirect stdout and stderr to log files
+exec > >(tee -a "$REPO_ROOT/logs/detection/slurm/${SLURM_JOB_NAME}_${SLURM_JOB_ID}.out") \
+     2> >(tee -a "$REPO_ROOT/logs/detection/slurm/${SLURM_JOB_NAME}_${SLURM_JOB_ID}.err" >&2)
+
 
 # W&B (keep your settings)
 export WANDB_DIR="$REPO_ROOT/wandb/detection"

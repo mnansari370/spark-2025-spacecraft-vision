@@ -112,10 +112,10 @@ def convert_split(root, csv_name, split, out_json):
 
 
 def main():
-    project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
     root = os.path.join(project_root, "data", "spark-2024-train-val")
-
     out_dir = os.path.join(project_root, "data", "annotations")
+
     os.makedirs(out_dir, exist_ok=True)
 
     convert_split(
