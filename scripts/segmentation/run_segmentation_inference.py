@@ -1,23 +1,19 @@
-import argparse
+from __future__ import annotations
+
+import sys
 from pathlib import Path
 
+# Ensure repo root is importable so `import models...` always works
+REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT))
+
+import argparse
 import numpy as np
 from PIL import Image
 from tqdm import tqdm
-
 import torch
 
 from models.segmentation.model_factory import build_model, load_state_dict
-
-
-def find_repo_root(start: Path) -> Path:
-    for d in [start] + list(start.parents):
-        if (d / "README.md").exists() and (d / "models").exists() and (d / "scripts").exists():
-            return d
-    for d in [start] + list(start.parents):
-        if d.name == "spark_project":
-            return d
-    raise RuntimeError(f"Could not find repo root from {start}")
 
 
 @torch.no_grad()
@@ -28,25 +24,27 @@ def main():
     ap.add_argument("--device", default="", help="cuda or cpu (default: auto)")
     args = ap.parse_args()
 
-    this_file = Path(__file__).resolve()
-    repo_root = find_repo_root(this_file.parent)
-
-    test_dir = repo_root / "data" / "spark-2024-segmentation-test" / "stream-1-test"
-    out_png_dir = repo_root / "inference_results" / "segmentation" / "predicted_masks"
+    test_dir = REPO_ROOT / "data" / "spark-2024-segmentation-test" / "stream-1-test"
+    out_png_dir = REPO_ROOT / "inference_results" / "segmentation" / "predicted_masks"
     out_png_dir.mkdir(parents=True, exist_ok=True)
 
-    ckpt_path = repo_root / "checkpoints" / "segmentation" / "segmentation_model" / "best.pth"
+    ckpt_path = REPO_ROOT / "checkpoints" / "segmentation" / "segmentation_model" / "best.pth"
 
     if args.device:
         device = torch.device(args.device)
     else:
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    print("REPO_ROOT:", repo_root)
+    print("REPO_ROOT:", REPO_ROOT)
     print("Device:", device)
     print("CKPT:", ckpt_path)
     print("TEST_DIR:", test_dir)
     print("OUT:", out_png_dir)
+
+    if not test_dir.exists():
+        raise FileNotFoundError(f"Test dir not found: {test_dir}")
+    if not ckpt_path.exists():
+        raise FileNotFoundError(f"Checkpoint not found: {ckpt_path}")
 
     model = build_model(device)
     state = load_state_dict(ckpt_path)
