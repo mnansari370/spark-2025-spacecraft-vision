@@ -89,3 +89,22 @@ slurm-*.err
 *.log
 *.tmp
 .cache/
+
+# --- generated / large artifacts ---
+wandb/
+logs/
+checkpoints/
+inference_results/
+data/              # uncomment if you don't want dataset tracked
+
+# python cache
+__pycache__/
+*.pyc
+
+# model weights
+*.pth
+*.pt
+*.ckpt
+
+# archives
+*.zip
