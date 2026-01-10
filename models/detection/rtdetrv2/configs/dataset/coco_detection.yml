@@ -30,8 +30,8 @@ val_dataloader:
   type: DataLoader
   dataset:
     type: CocoDetection
-    img_folder: /mnt/aiongpfs/users/nmo/spark_project/data/spark-2024-train-val/images
-    ann_file: /mnt/aiongpfs/users/nmo/spark_project/data/annotations/spark_val.json
+    img_folder: data/spark-2024-train-val/images
+    ann_file: data/annotations/spark_val.json
     return_masks: False
     transforms:
       type: Compose
