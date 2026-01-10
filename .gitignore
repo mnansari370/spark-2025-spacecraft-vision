@@ -116,3 +116,24 @@ data/
 logs/
 inference_results/
 docs/ALL_CODE_DUMP.txt
+
+# ---- big local-only ----
+data/
+checkpoints/
+wandb/
+__pycache__/
+*.pyc
+
+# ---- inference outputs (keep only final zips/csv/json you explicitly add) ----
+inference_results/**/*
+!inference_results/**/submission*.zip
+!inference_results/**/detection.csv
+!inference_results/**/detection_test_predictions.json
+
+# ---- logs (keep only a few examples if you want) ----
+logs/**/*
+!logs/**/slurm/*.out
+
+# ---- local scratch ----
+*_tmp*/
+tmp*/
