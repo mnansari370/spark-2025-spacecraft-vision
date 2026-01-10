@@ -1,0 +1,8 @@
+iou_thr=0.5
+best_thr=0.9400
+best_f1=0.116954
+precision_at_best=0.303202
+recall_at_best=0.072450
+pred_json=inference_results/detection/val_predictions.json
+coco_gt=data/annotations/spark_val.json
+bbox_norm=1

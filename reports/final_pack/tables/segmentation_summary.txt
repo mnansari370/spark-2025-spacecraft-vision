@@ -1,0 +1,5 @@
+Masks used: 2000 / 2000
+Total pixels: 2097152000
+bg pixels: 1996241801
+body pixels: 75896939 (ratio=0.036190)
+panels pixels: 25013260 (ratio=0.011927)
