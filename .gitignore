@@ -152,3 +152,15 @@ inference_results/
 checkpoints/
 wandb/
 logs/
+
+# ===== Generated / local =====
+data/
+checkpoints/
+inference_results/
+logs/
+wandb/
+
+# report outputs (generated)
+reports/figures/
+reports/tables/
+reports/outputs/

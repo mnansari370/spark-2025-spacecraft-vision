@@ -1,7 +1,7 @@
 import os
 import json
 import ast
-
+from pathlib import Path
 import pandas as pd
 from PIL import Image
 
@@ -112,24 +112,23 @@ def convert_split(root, csv_name, split, out_json):
 
 
 def main():
-    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
-    root = os.path.join(project_root, "data", "spark-2024-train-val")
-    out_dir = os.path.join(project_root, "data", "annotations")
-
-    os.makedirs(out_dir, exist_ok=True)
+    repo_root = Path(__file__).resolve().parents[2]
+    root = repo_root / "data" / "spark-2024-train-val"
+    out_dir = repo_root / "data" / "annotations"
+    out_dir.mkdir(parents=True, exist_ok=True)
 
     convert_split(
-        root=root,
+        root=str(root),
         csv_name="train.csv",
         split="train",
-        out_json=os.path.join(out_dir, "spark_train.json"),
+        out_json=str(out_dir / "spark_train.json"),
     )
 
     convert_split(
-        root=root,
+        root=str(root),
         csv_name="val.csv",
         split="val",
-        out_json=os.path.join(out_dir, "spark_val.json"),
+        out_json=str(out_dir / "spark_val.json"),
     )
 
 

@@ -1,7 +1,0 @@
-Segmentation extras summary
-Masks processed: 4000
-Bad masks skipped: 0
-Body ratio mean: 0.036327
-Body ratio median: 0.029233
-Panels ratio mean: 0.011859
-Panels ratio median: 0.005759

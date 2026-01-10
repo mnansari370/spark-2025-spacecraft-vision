@@ -1,4 +1,0 @@
-images: 5000
-mean_dets_per_image: 1.000
-median_dets_per_image: 1.000
-total_detections: 5002

@@ -1,11 +1,27 @@
-# run/
+# Run Scripts
 
-Entry-point scripts (thin wrappers) for the project.
+This folder contains entry-point scripts used to execute the project pipeline.
 
-- detection_infer.py: run inference on detection test set and write JSON predictions
-- detection_infer_val.py: run inference on validation set (for metrics/plots)
+These scripts define *what* is run (test / validation / submission),
+while the implementation logic lives in `scripts/` and `models/`.
 
-- segmentation_infer.py: run segmentation inference (calls scripts/segmentation/run_segmentation_inference.py)
-- segmentation_infer_val.py: run segmentation on val split (for metrics/plots)
+## Detection
+- `detection_infer.py`  
+  Runs detection inference on the test set.
 
-- segmentation_make_submission.py: converts predicted PNG masks into Codabench-ready NPZ zip
+- `detection_infer_val.py`  
+  Runs detection inference on the validation set using COCO annotations.
+
+## Segmentation
+- `segmentation_infer.py`  
+  Runs segmentation inference on the test set.
+
+- `segmentation_infer_val.py`  
+  Runs segmentation inference on the validation set.
+
+- `segmentation_make_submission.py`  
+  Converts predicted masks into the final submission format.
+
+All scripts are designed to be executed from the repository root:
+```bash
+python run/<script_name>.py

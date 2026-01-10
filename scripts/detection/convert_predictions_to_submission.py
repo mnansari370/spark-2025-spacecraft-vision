@@ -1,11 +1,10 @@
-import os
 import json
 import csv
 import math
-from PIL import Image
 from pathlib import Path
+from PIL import Image
 
-# Resolve repo root (two levels up from scripts/detection/)
+# repo root: scripts/detection/ -> scripts/ -> repo
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
 JSON_PATH = REPO_ROOT / "inference_results" / "detection" / "detection_test_predictions.json"
@@ -21,7 +20,6 @@ DUMMY_CLASS = "Cheops"
 
 
 def pick_best_detection(detections):
-    
     if not detections:
         return None
 
@@ -63,7 +61,6 @@ def pick_best_detection(detections):
 
 
 def shrink_box(cx, cy, w, h):
-    
     if SHRINK >= 0.9999:
         return cx, cy, w, h
     w = max(w * SHRINK, 1e-4)
@@ -72,7 +69,6 @@ def shrink_box(cx, cy, w, h):
 
 
 def cxcywh_to_xyxy(cx, cy, w, h, W, H):
-    
     xmin = int((cx - w / 2) * W)
     ymin = int((cy - h / 2) * H)
     xmax = int((cx + w / 2) * W)
@@ -92,7 +88,6 @@ def cxcywh_to_xyxy(cx, cy, w, h, W, H):
 
 
 def centered_dummy_box(W, H):
-    
     bw = max(2, int(W * 0.05))
     bh = max(2, int(H * 0.05))
     cx = W * 0.5
@@ -117,8 +112,7 @@ def centered_dummy_box(W, H):
 
 
 def main():
-    with open(JSON_PATH, "r") as f:
-        data = json.load(f)
+    data = json.loads(JSON_PATH.read_text())
 
     pred_map = {}
     for item in data:
@@ -126,14 +120,15 @@ def main():
         if fname is not None:
             pred_map[fname] = item.get("detections", [])
 
-    test_files = sorted([f for f in os.listdir(TEST_DIR) if f.endswith(".jpg")])
+    # supports flat or nested folders
+    test_files = sorted([p.relative_to(TEST_DIR).as_posix() for p in TEST_DIR.rglob("*.jpg")])
     print(f"[INFO] Found {len(test_files)} test images.")
 
     rows = []
     dummy_count = 0
 
     for fname in test_files:
-        img_path = os.path.join(TEST_DIR, fname)
+        img_path = TEST_DIR / fname
         with Image.open(img_path) as im:
             W, H = im.size
 
@@ -153,22 +148,20 @@ def main():
         bbox_str = f"({xmin}, {ymin}, {xmax}, {ymax})"
         rows.append([fname, cls, bbox_str])
 
-    os.makedirs(os.path.dirname(OUT_CSV), exist_ok=True)
-    with open(OUT_CSV, "w", newline="") as f:
+    OUT_CSV.parent.mkdir(parents=True, exist_ok=True)
+    with OUT_CSV.open("w", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(["filename", "class", "bbox"])
         writer.writerows(rows)
 
-    total_rows = len(rows) + 1
-    print(f"[INFO] Wrote {len(rows)} predictions + 1 header = {total_rows}")
+    print(f"[INFO] Wrote {len(rows)} predictions + 1 header = {len(rows) + 1}")
     print(f"[INFO] Dummy boxes used: {dummy_count}")
 
-    if len(test_files) == 20000 and total_rows != 20001:
+    if len(test_files) == 20000 and (len(rows) + 1) != 20001:
         raise RuntimeError("Row count is NOT 20001!")
     if len(rows) != len(test_files):
-        raise RuntimeError("More than one bbox per image detected!")
+        raise RuntimeError("Mismatch between images and rows!")
 
 
 if __name__ == "__main__":
     main()
-
