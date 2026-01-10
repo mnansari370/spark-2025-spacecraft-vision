@@ -22,9 +22,9 @@ echo "Start: $(date) on $(hostname)"
 python -c "import torch; print('torch:', torch.__version__, 'cuda:', torch.cuda.is_available())"
 nvidia-smi || true
 
-test -f scripts/segmentation/run_segmentation_inference.py
+test -f scripts/segmentation/infer_segmentation.py
 test -f checkpoints/segmentation/segmentation_model/best.pth
 
-python -u scripts/segmentation/run_segmentation_inference.py --device cuda --limit 0
+python -u scripts/segmentation/infer_segmentation.py --device cuda --limit 0
 
 echo "End: $(date)"
