@@ -10,8 +10,7 @@ from PIL import Image
 # repo root: scripts/segmentation/ -> scripts/ -> repo
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-# background = black, body = red, panels = blue
-BG  = (0, 0, 0)
+# colors: body=red, panels=blue
 RED = (255, 0, 0)
 BLU = (0, 0, 255)
 
@@ -19,24 +18,24 @@ BLU = (0, 0, 255)
 def load_mask_from_npz(npz_path: Path) -> np.ndarray:
     """
     Supports two formats:
-      1) keys: ['layer'] -> uint8 label image (H,W) with values 0/1/2
-      2) keys: ['data']  -> bool array (H,W,3) where:
+      1) keys: ['layer'] -> uint8 label image (H,W) values {0,1,2}
+      2) keys: ['data']  -> bool array (H,W,3):
             data[...,0] = body
             data[...,2] = panels
-    Returns label mask (H,W) uint8.
+    Returns: (H,W) uint8 label mask.
     """
     z = np.load(npz_path)
 
     if "layer" in z:
         lab = z["layer"].astype(np.uint8)
         if lab.ndim != 2:
-            raise ValueError(f"Unexpected 'layer' shape: {lab.shape}")
+            raise ValueError(f"Unexpected 'layer' shape in {npz_path.name}: {lab.shape}")
         return lab
 
     if "data" in z:
         data = z["data"].astype(bool)
         if data.ndim != 3 or data.shape[2] < 3:
-            raise ValueError(f"Unexpected 'data' shape: {data.shape}")
+            raise ValueError(f"Unexpected 'data' shape in {npz_path.name}: {data.shape}")
 
         body = data[..., 0]
         panels = data[..., 2]
@@ -50,10 +49,7 @@ def load_mask_from_npz(npz_path: Path) -> np.ndarray:
 
 
 def label_to_color_image(lab: np.ndarray) -> np.ndarray:
-    """
-    Convert label mask (0/1/2) -> RGB image.
-    Panels overwrite body if overlap occurs.
-    """
+    """Convert label mask (0/1/2) -> RGB visualization."""
     h, w = lab.shape
     out = np.zeros((h, w, 3), dtype=np.uint8)
 
@@ -69,19 +65,19 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--npz_dir",
-        default=str(REPO_ROOT / "inference_results" / "segmentation" / "npz_tmp"),
+        default="inference_results/segmentation/npz_tmp",
         help="Folder containing test_XXXXX_layer.npz files",
     )
     ap.add_argument(
         "--out_dir",
-        default=str(REPO_ROOT / "inference_results" / "segmentation" / "visuals"),
+        default="inference_results/segmentation/visuals",
         help="Where to write visualization PNGs",
     )
     ap.add_argument("--n", type=int, default=40, help="Export top-N masks by foreground pixels")
     args = ap.parse_args()
 
-    npz_dir = Path(args.npz_dir).expanduser().resolve()
-    out_dir = Path(args.out_dir).expanduser().resolve()
+    npz_dir = (REPO_ROOT / args.npz_dir).expanduser().resolve()
+    out_dir = (REPO_ROOT / args.out_dir).expanduser().resolve()
     out_dir.mkdir(parents=True, exist_ok=True)
 
     if not npz_dir.exists():
@@ -91,10 +87,10 @@ def main():
     print(f"NPZ files found: {len(npz_files)} in {npz_dir}")
 
     if not npz_files:
-        print("Nothing to visualize. (npz_dir is empty)")
+        print("Nothing to visualize (npz_dir is empty).")
         return
 
-    # Score by foreground pixels
+    # score by foreground pixels (body + panels)
     scored = []
     for f in npz_files:
         try:
@@ -116,14 +112,13 @@ def main():
             rgb = label_to_color_image(lab)
             img = Image.fromarray(rgb, mode="RGB")
 
-            out_name = f"{f.stem.replace('_layer','')}_seg.png"  # test_00000_seg.png
+            out_name = f"{f.stem.replace('_layer', '')}_seg.png"  # test_00000_seg.png
             img.save(out_dir / out_name)
             saved += 1
         except Exception as e:
             print(f"[WARN] failed {f.name}: {e}")
 
-    print(f"[OK] Saved {saved}/{len(chosen)} visuals.")
-    print(f"Done. Results in: {out_dir}")
+    print(f"[OK] Saved {saved}/{len(chosen)} visuals -> {out_dir}")
 
 
 if __name__ == "__main__":
