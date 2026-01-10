@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=seg_sub
+#SBATCH --job-name=seg_submit
 #SBATCH --qos=low
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=32G
@@ -9,22 +9,22 @@
 
 set -euo pipefail
 
-echo "Start: $(date) on $(hostname)"
-
-REPO_ROOT="${SLURM_SUBMIT_DIR:-$PWD}"
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$REPO_ROOT"
 
-mkdir -p logs/segmentation/slurm inference_results/segmentation/npz_tmp
+mkdir -p logs/segmentation/slurm inference_results/segmentation
 
 source "$HOME/miniconda3/etc/profile.d/conda.sh"
 conda activate spark_seg
 
-test -f scripts/segmentation/convert_png_to_npz_submission.py
-test -d inference_results/segmentation/predicted_masks
+echo "Start: $(date) on $(hostname)"
 
-python -u scripts/segmentation/convert_png_to_npz_submission.py \
-  --input_dir inference_results/segmentation/predicted_masks \
-  --output_dir inference_results/segmentation/npz_tmp \
-  --zip_path inference_results/segmentation/submission_segmentation.zip
+# Sanity checks
+python -u reports/make_segmentation_submission_bool_npz.py \
+  --pred_dir inference_results/segmentation/predicted_masks \
+  --out_npz inference_results/segmentation/segmentation_submission_BOOL.npz \
+  --limit 0
+
+# python -u run/segmentation_make_submission.py
 
 echo "End: $(date)"

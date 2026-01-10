@@ -11,35 +11,28 @@
 
 set -euo pipefail
 
-echo "Start: $(date) on $(hostname)"
-
-REPO_ROOT="${SLURM_SUBMIT_DIR:-$PWD}"
+# Repo root = two levels above this file: jobs/detection/ -> repo
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$REPO_ROOT"
 
-mkdir -p logs/detection/slurm checkpoints/detection/detection_model
+mkdir -p logs/detection/slurm
 
+# Conda (robust in non-interactive Slurm)
 source "$HOME/miniconda3/etc/profile.d/conda.sh"
 conda activate spark_rtdetr
 
+export PYTHONUNBUFFERED=1
+export PYTHONPATH="$REPO_ROOT/models/detection/rtdetrv2:$PYTHONPATH"
+
+echo "Start: $(date) on $(hostname)"
+python -c "import sys; print('python:', sys.executable)"
 python -c "import torch; print('torch:', torch.__version__, 'cuda:', torch.cuda.is_available())"
 nvidia-smi || true
-
-# W&B (keep; change to offline if needed)
-export WANDB_DIR="$REPO_ROOT/wandb/detection"
-mkdir -p "$WANDB_DIR"
-export WANDB_PROJECT="CV_Detection"
-export WANDB_ENTITY="nafees-workspace"
-export WANDB_MODE="online"
-export WANDB_NAME="rtdetr40_${SLURM_JOB_ID}"
-export WANDB_SILENT=true
-export WANDB_CONSOLE=wrap
-
-export PYTHONPATH="$REPO_ROOT/models/detection/rtdetrv2:$PYTHONPATH"
 
 python -u models/detection/rtdetrv2/tools/train.py \
   -c models/detection/rtdetrv2/configs/rtdetrv2/rtdetrv2_r50vd_spark_40ep.yml \
   --device cuda \
   --use-amp \
-  --output-dir "$REPO_ROOT/checkpoints/detection/detection_model"
+  --output-dir checkpoints/detection/detection_model
 
 echo "End: $(date)"

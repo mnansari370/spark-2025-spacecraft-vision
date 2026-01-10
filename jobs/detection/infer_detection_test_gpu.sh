@@ -11,20 +11,15 @@
 
 set -euo pipefail
 
-echo "Start: $(date) on $(hostname)"
-echo "SLURM_JOB_ID: ${SLURM_JOB_ID:-}"
-echo "SLURM_SUBMIT_DIR: ${SLURM_SUBMIT_DIR:-}"
-
-REPO_ROOT="${SLURM_SUBMIT_DIR:-$PWD}"
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$REPO_ROOT"
 
 mkdir -p logs/detection/slurm inference_results/detection
 
-# Robust conda init (avoid ~/.bashrc issues)
 source "$HOME/miniconda3/etc/profile.d/conda.sh"
 conda activate spark_rtdetr
 
-python -c "import sys; print('python:', sys.executable)"
+echo "Start: $(date) on $(hostname)"
 python -c "import torch; print('torch:', torch.__version__, 'cuda:', torch.cuda.is_available())"
 nvidia-smi || true
 
@@ -33,10 +28,13 @@ test -f run/detection_infer.py
 test -f checkpoints/detection/detection_model/best.pth
 test -d data/spark-2024-detection-test/images
 
-# Run full test set: LIMIT=0 means all found images
-LIMIT=0
+# Full test = 20000 (use LIMIT=0 for "no limit")
+LIMIT=20000
 SCORE_THR=0.30
 
-python -u run/detection_infer.py --limit "$LIMIT" --score_thr "$SCORE_THR"
+python -u run/detection_infer.py --limit "$LIMIT" --score_thr "$SCORE_THR" --device cuda
+
+# Optional: build submission CSV (if your project requires it)
+# python -u scripts/detection/convert_predictions_to_submission.py
 
 echo "End: $(date)"

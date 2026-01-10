@@ -11,23 +11,22 @@
 
 set -euo pipefail
 
-echo "Start: $(date) on $(hostname)"
-
-REPO_ROOT="${SLURM_SUBMIT_DIR:-$PWD}"
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$REPO_ROOT"
 
-mkdir -p logs/segmentation/slurm inference_results/segmentation/predicted_masks
+mkdir -p logs/segmentation/slurm inference_results/segmentation
 
 source "$HOME/miniconda3/etc/profile.d/conda.sh"
 conda activate spark_seg
 
+echo "Start: $(date) on $(hostname)"
 python -c "import torch; print('torch:', torch.__version__, 'cuda:', torch.cuda.is_available())"
 nvidia-smi || true
 
 test -f scripts/segmentation/run_segmentation_inference.py
 test -f checkpoints/segmentation/segmentation_model/best.pth
-test -d data/spark-2024-segmentation-test/stream-1-test
 
+# Produces PNGs for submission
 python -u scripts/segmentation/run_segmentation_inference.py --device cuda --limit 0
 
 echo "End: $(date)"

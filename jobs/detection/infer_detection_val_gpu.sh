@@ -11,9 +11,7 @@
 
 set -euo pipefail
 
-echo "Start: $(date) on $(hostname)"
-
-REPO_ROOT="${SLURM_SUBMIT_DIR:-$PWD}"
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$REPO_ROOT"
 
 mkdir -p logs/detection/slurm inference_results/detection
@@ -21,6 +19,7 @@ mkdir -p logs/detection/slurm inference_results/detection
 source "$HOME/miniconda3/etc/profile.d/conda.sh"
 conda activate spark_rtdetr
 
+echo "Start: $(date) on $(hostname)"
 python -c "import torch; print('torch:', torch.__version__, 'cuda:', torch.cuda.is_available())"
 nvidia-smi || true
 
@@ -30,9 +29,6 @@ test -f data/annotations/spark_val.json
 LIMIT=0
 SCORE_THR=0.0
 
-python -u run/detection_infer_val.py \
-  --limit "$LIMIT" \
-  --score_thr "$SCORE_THR" \
-  --device cuda
+python -u run/detection_infer_val.py --limit "$LIMIT" --score_thr "$SCORE_THR" --device cuda
 
 echo "End: $(date)"
