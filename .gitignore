@@ -1,4 +1,4 @@
-############################
+=############################
 # SPARK PROJECT (.gitignore)
 ############################
 
@@ -18,18 +18,27 @@ logs/
 # ============================================================
 # Reports
 #   - ignore everything under reports/ by default
-#   - but ALWAYS track reports/latest/**
+#   - but track:
+#       * reports/latest/**     (latest figures + tables + outputs)
+#       * reports/jobs/**       (slurm/job scripts)
+#       * reports/scripts/**    (python report scripts)
+#       * reports/README.md
 # ============================================================
 reports/**
 
+# Unignore parent so nested unignores work
 !reports/
+
+# Track latest
 !reports/latest/
 !reports/latest/**
 
-# (optional) if you want to keep only these specific report dirs ignored:
-# reports/outputs/
-# reports/figures/
-# reports/tables/
+# Track helper code
+!reports/jobs/
+!reports/jobs/**
+!reports/scripts/
+!reports/scripts/**
+!reports/README.md
 
 # ============================================================
 # Python / cache
