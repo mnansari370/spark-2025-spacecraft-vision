@@ -13,7 +13,6 @@ set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$REPO_ROOT"
-
 mkdir -p logs/segmentation/slurm inference_results/segmentation
 
 source "$HOME/miniconda3/etc/profile.d/conda.sh"
@@ -26,7 +25,6 @@ nvidia-smi || true
 test -f scripts/segmentation/run_segmentation_inference.py
 test -f checkpoints/segmentation/segmentation_model/best.pth
 
-# Produces PNGs for submission
 python -u scripts/segmentation/run_segmentation_inference.py --device cuda --limit 0
 
 echo "End: $(date)"

@@ -11,13 +11,10 @@
 
 set -euo pipefail
 
-# Repo root = two levels above this file: jobs/detection/ -> repo
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$REPO_ROOT"
-
 mkdir -p logs/detection/slurm
 
-# Conda (robust in non-interactive Slurm)
 source "$HOME/miniconda3/etc/profile.d/conda.sh"
 conda activate spark_rtdetr
 
@@ -25,7 +22,6 @@ export PYTHONUNBUFFERED=1
 export PYTHONPATH="$REPO_ROOT/models/detection/rtdetrv2:$PYTHONPATH"
 
 echo "Start: $(date) on $(hostname)"
-python -c "import sys; print('python:', sys.executable)"
 python -c "import torch; print('torch:', torch.__version__, 'cuda:', torch.cuda.is_available())"
 nvidia-smi || true
 

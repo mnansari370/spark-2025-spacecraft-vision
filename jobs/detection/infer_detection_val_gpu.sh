@@ -13,7 +13,6 @@ set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$REPO_ROOT"
-
 mkdir -p logs/detection/slurm inference_results/detection
 
 source "$HOME/miniconda3/etc/profile.d/conda.sh"
@@ -26,9 +25,6 @@ nvidia-smi || true
 test -f run/detection_infer_val.py
 test -f data/annotations/spark_val.json
 
-LIMIT=0
-SCORE_THR=0.0
-
-python -u run/detection_infer_val.py --limit "$LIMIT" --score_thr "$SCORE_THR" --device cuda
+python -u run/detection_infer_val.py --limit 0 --score_thr 0.0 --device cuda
 
 echo "End: $(date)"

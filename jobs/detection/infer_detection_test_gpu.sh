@@ -13,7 +13,6 @@ set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$REPO_ROOT"
-
 mkdir -p logs/detection/slurm inference_results/detection
 
 source "$HOME/miniconda3/etc/profile.d/conda.sh"
@@ -23,18 +22,16 @@ echo "Start: $(date) on $(hostname)"
 python -c "import torch; print('torch:', torch.__version__, 'cuda:', torch.cuda.is_available())"
 nvidia-smi || true
 
-# Sanity checks
 test -f run/detection_infer.py
 test -f checkpoints/detection/detection_model/best.pth
 test -d data/spark-2024-detection-test/images
 
-# Full test = 20000 (use LIMIT=0 for "no limit")
 LIMIT=20000
 SCORE_THR=0.30
 
 python -u run/detection_infer.py --limit "$LIMIT" --score_thr "$SCORE_THR" --device cuda
 
-# Optional: build submission CSV (if your project requires it)
+# Optional (if submission needs CSV):
 # python -u scripts/detection/convert_predictions_to_submission.py
 
 echo "End: $(date)"
