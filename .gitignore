@@ -137,3 +137,11 @@ logs/**/*
 # ---- local scratch ----
 *_tmp*/
 tmp*/
+
+# Local large artifacts (do not commit)
+data/
+inference_results/
+checkpoints/
+wandb/
+logs/
+logs/
