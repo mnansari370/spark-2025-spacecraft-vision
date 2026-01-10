@@ -6,30 +6,25 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=24G
 #SBATCH --time=2-00:00:00
+#SBATCH --output=logs/detection/slurm/%x_%j.out
+#SBATCH --error=logs/detection/slurm/%x_%j.err
 
-#SBATCH --output=%x_%j.out
-#SBATCH --error=%x_%j.err
+set -euo pipefail
 
+echo "Start: $(date) on $(hostname)"
 
-echo "Host: $(hostname)"
-echo "Start: $(date)"
-
-source ~/.bashrc
-conda activate spark_rtdetr
-export PYTHONUNBUFFERED=1
-
-# Repo root based on this script location (works in sbatch)
 REPO_ROOT="${SLURM_SUBMIT_DIR:-$PWD}"
-echo "REPO_ROOT=$REPO_ROOT"
+cd "$REPO_ROOT"
 
-mkdir -p "$REPO_ROOT/logs/detection/slurm"
+mkdir -p logs/detection/slurm checkpoints/detection/detection_model
 
-# Redirect stdout and stderr to log files
-exec > >(tee -a "$REPO_ROOT/logs/detection/slurm/${SLURM_JOB_NAME}_${SLURM_JOB_ID}.out") \
-     2> >(tee -a "$REPO_ROOT/logs/detection/slurm/${SLURM_JOB_NAME}_${SLURM_JOB_ID}.err" >&2)
+source "$HOME/miniconda3/etc/profile.d/conda.sh"
+conda activate spark_rtdetr
 
+python -c "import torch; print('torch:', torch.__version__, 'cuda:', torch.cuda.is_available())"
+nvidia-smi || true
 
-# W&B (keep your settings)
+# W&B (keep; change to offline if needed)
 export WANDB_DIR="$REPO_ROOT/wandb/detection"
 mkdir -p "$WANDB_DIR"
 export WANDB_PROJECT="CV_Detection"
@@ -39,10 +34,6 @@ export WANDB_NAME="rtdetr40_${SLURM_JOB_ID}"
 export WANDB_SILENT=true
 export WANDB_CONSOLE=wrap
 
-# Run from repo root so YAML paths like data/... resolve correctly
-cd "$REPO_ROOT"
-
-# Make RT-DETR code importable
 export PYTHONPATH="$REPO_ROOT/models/detection/rtdetrv2:$PYTHONPATH"
 
 python -u models/detection/rtdetrv2/tools/train.py \

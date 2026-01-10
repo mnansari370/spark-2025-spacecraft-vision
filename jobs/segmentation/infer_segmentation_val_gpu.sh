@@ -6,29 +6,26 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=24G
 #SBATCH --time=0-08:00:00
-#SBATCH --output=/mnt/aiongpfs/users/nmo/spark_project/logs/segmentation/slurm/seg_val_%j.out
-#SBATCH --error=/mnt/aiongpfs/users/nmo/spark_project/logs/segmentation/slurm/seg_val_%j.err
+#SBATCH --output=logs/segmentation/slurm/%x_%j.out
+#SBATCH --error=logs/segmentation/slurm/%x_%j.err
 
-set -e  # stop on error
-# NOTE: do NOT "set -u" here; it breaks /etc/bashrc on this cluster.
+set -euo pipefail
 
 echo "Start: $(date) on $(hostname)"
-echo "PWD before cd: $(pwd)"
 
-cd /mnt/aiongpfs/users/nmo/spark_project
+REPO_ROOT="${SLURM_SUBMIT_DIR:-$PWD}"
+cd "$REPO_ROOT"
 
-# ---- Conda without sourcing ~/.bashrc (avoids /etc/bashrc BASHRCSOURCED issue) ----
-source /home/users/nmo/miniconda3/etc/profile.d/conda.sh
+mkdir -p logs/segmentation/slurm inference_results/segmentation/val_predicted_masks
+
+source "$HOME/miniconda3/etc/profile.d/conda.sh"
 conda activate spark_seg
-# -------------------------------------------------------------------------------
 
-python - <<'PY'
-import torch
-print("torch:", torch.__version__)
-print("cuda available:", torch.cuda.is_available())
-PY
-
+python -c "import torch; print('torch:', torch.__version__, 'cuda:', torch.cuda.is_available())"
 nvidia-smi || true
+
+test -f run/segmentation_infer_val.py
+test -d data/spark-2024-train-val/images
 
 python -u run/segmentation_infer_val.py --device cuda --limit 0 --no_tta
 
