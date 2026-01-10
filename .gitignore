@@ -145,3 +145,10 @@ checkpoints/
 wandb/
 logs/
 logs/
+
+# Local heavy artifacts (never commit)
+data/
+inference_results/
+checkpoints/
+wandb/
+logs/
