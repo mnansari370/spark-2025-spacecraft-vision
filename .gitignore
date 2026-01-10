@@ -108,3 +108,11 @@ __pycache__/
 
 # archives
 *.zip
+
+# Large artifacts
+wandb/
+checkpoints/
+data/
+logs/
+inference_results/
+docs/ALL_CODE_DUMP.txt
