@@ -1,0 +1,5001 @@
+image_id,top_category,top_score
+test_00148_img.jpg,Proba2,0.993004
+test_03893_img.jpg,Proba2,0.992292
+test_01165_img.jpg,ObservationSat1,0.992007
+test_04901_img.jpg,Proba2,0.992000
+test_01341_img.jpg,XMM Newton,0.991824
+test_02653_img.jpg,Proba2,0.991482
+test_04579_img.jpg,Proba2,0.991209
+test_01320_img.jpg,Proba2,0.991192
+test_01700_img.jpg,XMM Newton,0.990634
+test_02661_img.jpg,Proba2,0.990586
+test_01514_img.jpg,Proba2,0.990578
+test_00038_img.jpg,Proba2,0.990433
+test_02252_img.jpg,Proba2,0.990414
+test_01088_img.jpg,ObservationSat1,0.990271
+test_03278_img.jpg,Proba2,0.990269
+test_04337_img.jpg,XMM Newton,0.990016
+test_00059_img.jpg,Proba2,0.989989
+test_03724_img.jpg,Proba2,0.989958
+test_01787_img.jpg,Proba2,0.989849
+test_04531_img.jpg,Proba2,0.989800
+test_00046_img.jpg,Cheops,0.989786
+test_03101_img.jpg,XMM Newton,0.989686
+test_04825_img.jpg,Proba2,0.989562
+test_04382_img.jpg,ObservationSat1,0.989466
+test_02245_img.jpg,ObservationSat1,0.989442
+test_02540_img.jpg,LisaPathfinder,0.989378
+test_03496_img.jpg,Cheops,0.989347
+test_03239_img.jpg,ObservationSat1,0.989337
+test_01092_img.jpg,ObservationSat1,0.989273
+test_02578_img.jpg,XMM Newton,0.989126
+test_00855_img.jpg,Proba2,0.989036
+test_04218_img.jpg,Proba3,0.989031
+test_01435_img.jpg,Proba2,0.988897
+test_03954_img.jpg,Proba2,0.988791
+test_03785_img.jpg,XMM Newton,0.988537
+test_04951_img.jpg,LisaPathfinder,0.988531
+test_00451_img.jpg,Cheops,0.988525
+test_02106_img.jpg,XMM Newton,0.988471
+test_03066_img.jpg,XMM Newton,0.988371
+test_00283_img.jpg,Proba3,0.988238
+test_04511_img.jpg,ObservationSat1,0.988176
+test_04783_img.jpg,XMM Newton,0.988171
+test_04776_img.jpg,Proba2,0.988158
+test_00645_img.jpg,Proba2,0.988145
+test_04626_img.jpg,XMM Newton,0.988114
+test_03408_img.jpg,XMM Newton,0.988059
+test_00887_img.jpg,Proba2,0.988050
+test_00675_img.jpg,XMM Newton,0.987932
+test_00332_img.jpg,Proba3ocs,0.987854
+test_03915_img.jpg,XMM Newton,0.987838
+test_03200_img.jpg,Cheops,0.987831
+test_02697_img.jpg,ObservationSat1,0.987813
+test_02117_img.jpg,Proba2,0.987750
+test_03918_img.jpg,Proba3,0.987748
+test_04988_img.jpg,Proba2,0.987605
+test_04718_img.jpg,XMM Newton,0.987453
+test_03582_img.jpg,Proba2,0.987393
+test_04681_img.jpg,Proba2,0.987312
+test_04108_img.jpg,Proba3ocs,0.987262
+test_04322_img.jpg,LisaPathfinder,0.987243
+test_03859_img.jpg,LisaPathfinder,0.987235
+test_04088_img.jpg,ObservationSat1,0.987196
+test_02602_img.jpg,Proba3,0.987183
+test_04053_img.jpg,Cheops,0.987159
+test_03373_img.jpg,XMM Newton,0.987130
+test_01538_img.jpg,Proba2,0.987113
+test_01647_img.jpg,Proba2,0.987087
+test_04582_img.jpg,Cheops,0.986983
+test_01544_img.jpg,Proba2,0.986956
+test_02877_img.jpg,Proba3,0.986933
+test_04000_img.jpg,ObservationSat1,0.986853
+test_02882_img.jpg,Cheops,0.986821
+test_01500_img.jpg,LisaPathfinder,0.986764
+test_02148_img.jpg,Proba2,0.986763
+test_02342_img.jpg,Cheops,0.986632
+test_02064_img.jpg,VenusExpress,0.986615
+test_02224_img.jpg,XMM Newton,0.986612
+test_01102_img.jpg,Proba2,0.986580
+test_03554_img.jpg,LisaPathfinder,0.986550
+test_04420_img.jpg,XMM Newton,0.986515
+test_00262_img.jpg,XMM Newton,0.986499
+test_03765_img.jpg,ObservationSat1,0.986497
+test_01220_img.jpg,Proba2,0.986481
+test_04093_img.jpg,Proba2,0.986477
+test_00674_img.jpg,Proba2,0.986412
+test_00725_img.jpg,Proba3,0.986360
+test_04526_img.jpg,Proba3ocs,0.986347
+test_01219_img.jpg,XMM Newton,0.986326
+test_02620_img.jpg,ObservationSat1,0.986301
+test_00597_img.jpg,ObservationSat1,0.986261
+test_02371_img.jpg,ObservationSat1,0.986221
+test_03471_img.jpg,Proba2,0.986184
+test_02904_img.jpg,XMM Newton,0.986170
+test_01449_img.jpg,Proba2,0.986158
+test_01057_img.jpg,XMM Newton,0.986131
+test_00222_img.jpg,LisaPathfinder,0.986119
+test_04762_img.jpg,Proba2,0.986102
+test_03776_img.jpg,ObservationSat1,0.986061
+test_03389_img.jpg,XMM Newton,0.986050
+test_00201_img.jpg,Cheops,0.986002
+test_03981_img.jpg,Cheops,0.985992
+test_03590_img.jpg,XMM Newton,0.985986
+test_03811_img.jpg,XMM Newton,0.985976
+test_02741_img.jpg,ObservationSat1,0.985968
+test_03985_img.jpg,ObservationSat1,0.985961
+test_00305_img.jpg,XMM Newton,0.985959
+test_04926_img.jpg,XMM Newton,0.985944
+test_00657_img.jpg,Proba2,0.985935
+test_00685_img.jpg,XMM Newton,0.985931
+test_03214_img.jpg,XMM Newton,0.985904
+test_02658_img.jpg,XMM Newton,0.985848
+test_01212_img.jpg,ObservationSat1,0.985832
+test_02775_img.jpg,Proba2,0.985812
+test_04953_img.jpg,XMM Newton,0.985789
+test_04180_img.jpg,Proba2,0.985786
+test_01573_img.jpg,XMM Newton,0.985777
+test_02058_img.jpg,Proba2,0.985775
+test_04254_img.jpg,XMM Newton,0.985758
+test_04713_img.jpg,Proba2,0.985758
+test_01798_img.jpg,Proba2,0.985737
+test_02015_img.jpg,XMM Newton,0.985733
+test_04429_img.jpg,Cheops,0.985622
+test_01433_img.jpg,ObservationSat1,0.985595
+test_03580_img.jpg,Cheops,0.985463
+test_00897_img.jpg,Proba2,0.985461
+test_00959_img.jpg,Cheops,0.985446
+test_02413_img.jpg,Proba3,0.985438
+test_02247_img.jpg,Proba3,0.985379
+test_03002_img.jpg,LisaPathfinder,0.985371
+test_00917_img.jpg,ObservationSat1,0.985358
+test_04849_img.jpg,XMM Newton,0.985328
+test_00438_img.jpg,Proba2,0.985327
+test_00196_img.jpg,Proba2,0.985318
+test_00355_img.jpg,Smart1,0.985314
+test_04434_img.jpg,Cheops,0.985299
+test_01675_img.jpg,ObservationSat1,0.985243
+test_00500_img.jpg,XMM Newton,0.985233
+test_01358_img.jpg,Smart1,0.985196
+test_01831_img.jpg,ObservationSat1,0.985169
+test_02887_img.jpg,ObservationSat1,0.985158
+test_00395_img.jpg,Proba2,0.985140
+test_02843_img.jpg,XMM Newton,0.985128
+test_00411_img.jpg,Cheops,0.985100
+test_04090_img.jpg,ObservationSat1,0.985082
+test_03337_img.jpg,LisaPathfinder,0.985082
+test_01508_img.jpg,XMM Newton,0.985081
+test_02399_img.jpg,ObservationSat1,0.985080
+test_02262_img.jpg,Proba2,0.985015
+test_00698_img.jpg,ObservationSat1,0.985000
+test_01833_img.jpg,Cheops,0.984995
+test_03652_img.jpg,ObservationSat1,0.984995
+test_04207_img.jpg,Smart1,0.984990
+test_00051_img.jpg,ObservationSat1,0.984944
+test_04709_img.jpg,XMM Newton,0.984942
+test_01665_img.jpg,Smart1,0.984940
+test_01583_img.jpg,Proba2,0.984936
+test_02898_img.jpg,Proba2,0.984916
+test_00251_img.jpg,Smart1,0.984897
+test_02749_img.jpg,Smart1,0.984877
+test_02218_img.jpg,ObservationSat1,0.984832
+test_00027_img.jpg,Proba2,0.984824
+test_04128_img.jpg,ObservationSat1,0.984780
+test_01956_img.jpg,Proba2,0.984766
+test_00514_img.jpg,LisaPathfinder,0.984763
+test_02113_img.jpg,LisaPathfinder,0.984734
+test_03909_img.jpg,XMM Newton,0.984732
+test_02911_img.jpg,LisaPathfinder,0.984729
+test_02517_img.jpg,ObservationSat1,0.984715
+test_04628_img.jpg,XMM Newton,0.984681
+test_01016_img.jpg,ObservationSat1,0.984666
+test_02274_img.jpg,XMM Newton,0.984663
+test_04243_img.jpg,XMM Newton,0.984637
+test_00443_img.jpg,LisaPathfinder,0.984599
+test_02927_img.jpg,Proba2,0.984597
+test_02691_img.jpg,Proba2,0.984576
+test_01470_img.jpg,ObservationSat1,0.984569
+test_04563_img.jpg,Proba2,0.984568
+test_00084_img.jpg,XMM Newton,0.984560
+test_02179_img.jpg,Proba2,0.984541
+test_00107_img.jpg,XMM Newton,0.984540
+test_03414_img.jpg,XMM Newton,0.984479
+test_02628_img.jpg,XMM Newton,0.984473
+test_00067_img.jpg,XMM Newton,0.984464
+test_03138_img.jpg,ObservationSat1,0.984457
+test_01020_img.jpg,ObservationSat1,0.984423
+test_04520_img.jpg,Proba2,0.984415
+test_03053_img.jpg,Cheops,0.984396
+test_00576_img.jpg,Cheops,0.984380
+test_01640_img.jpg,ObservationSat1,0.984377
+test_01742_img.jpg,Cheops,0.984369
+test_03603_img.jpg,ObservationSat1,0.984350
+test_02246_img.jpg,Proba2,0.984342
+test_00292_img.jpg,Smart1,0.984338
+test_02703_img.jpg,Proba2,0.984293
+test_03936_img.jpg,Proba2,0.984278
+test_04703_img.jpg,XMM Newton,0.984253
+test_01139_img.jpg,XMM Newton,0.984225
+test_00287_img.jpg,LisaPathfinder,0.984191
+test_03474_img.jpg,Proba2,0.984189
+test_02422_img.jpg,Proba3,0.984188
+test_02235_img.jpg,Proba2,0.984182
+test_03993_img.jpg,XMM Newton,0.984168
+test_02698_img.jpg,XMM Newton,0.984162
+test_02876_img.jpg,Proba2,0.984161
+test_02680_img.jpg,XMM Newton,0.984148
+test_04643_img.jpg,Proba2,0.984136
+test_03236_img.jpg,Smart1,0.984105
+test_03262_img.jpg,Cheops,0.984097
+test_04172_img.jpg,Proba2,0.984094
+test_00916_img.jpg,Proba3ocs,0.984093
+test_03528_img.jpg,Proba3ocs,0.984076
+test_01542_img.jpg,LisaPathfinder,0.984065
+test_00624_img.jpg,XMM Newton,0.984048
+test_02343_img.jpg,Proba3,0.984042
+test_01329_img.jpg,Proba2,0.984014
+test_00990_img.jpg,Cheops,0.983992
+test_03861_img.jpg,ObservationSat1,0.983986
+test_00028_img.jpg,XMM Newton,0.983982
+test_00190_img.jpg,LisaPathfinder,0.983961
+test_03440_img.jpg,Proba3,0.983927
+test_02005_img.jpg,XMM Newton,0.983926
+test_03215_img.jpg,Proba2,0.983919
+test_01005_img.jpg,Proba2,0.983906
+test_04486_img.jpg,ObservationSat1,0.983889
+test_04217_img.jpg,LisaPathfinder,0.983859
+test_04012_img.jpg,XMM Newton,0.983854
+test_01942_img.jpg,XMM Newton,0.983789
+test_02339_img.jpg,ObservationSat1,0.983785
+test_01205_img.jpg,Proba3ocs,0.983782
+test_02145_img.jpg,Cheops,0.983782
+test_01113_img.jpg,LisaPathfinder,0.983774
+test_03730_img.jpg,Cheops,0.983771
+test_03372_img.jpg,Cheops,0.983757
+test_01954_img.jpg,XMM Newton,0.983689
+test_02480_img.jpg,Proba2,0.983687
+test_03229_img.jpg,XMM Newton,0.983679
+test_03279_img.jpg,XMM Newton,0.983662
+test_02666_img.jpg,Cheops,0.983661
+test_00460_img.jpg,ObservationSat1,0.983641
+test_00998_img.jpg,ObservationSat1,0.983640
+test_01558_img.jpg,ObservationSat1,0.983621
+test_01849_img.jpg,Proba3,0.983597
+test_02167_img.jpg,Proba2,0.983575
+test_04902_img.jpg,Proba2,0.983575
+test_01479_img.jpg,XMM Newton,0.983538
+test_01453_img.jpg,XMM Newton,0.983523
+test_03038_img.jpg,Proba3,0.983515
+test_03153_img.jpg,XMM Newton,0.983487
+test_04432_img.jpg,ObservationSat1,0.983482
+test_04778_img.jpg,LisaPathfinder,0.983479
+test_04725_img.jpg,Cheops,0.983443
+test_03961_img.jpg,Proba3,0.983438
+test_03756_img.jpg,XMM Newton,0.983429
+test_00343_img.jpg,LisaPathfinder,0.983415
+test_02164_img.jpg,XMM Newton,0.983409
+test_02667_img.jpg,Cheops,0.983401
+test_04924_img.jpg,ObservationSat1,0.983330
+test_02632_img.jpg,Cheops,0.983314
+test_01826_img.jpg,Cheops,0.983313
+test_01976_img.jpg,Proba3,0.983310
+test_02404_img.jpg,XMM Newton,0.983296
+test_00965_img.jpg,Proba3ocs,0.983295
+test_01867_img.jpg,LisaPathfinder,0.983253
+test_01857_img.jpg,ObservationSat1,0.983230
+test_02069_img.jpg,Proba2,0.983225
+test_00968_img.jpg,XMM Newton,0.983221
+test_04263_img.jpg,Cheops,0.983219
+test_02907_img.jpg,ObservationSat1,0.983213
+test_03276_img.jpg,Proba3,0.983207
+test_02756_img.jpg,ObservationSat1,0.983201
+test_01467_img.jpg,Soho,0.983199
+test_02985_img.jpg,Proba3,0.983191
+test_01800_img.jpg,Proba3ocs,0.983169
+test_03764_img.jpg,LisaPathfinder,0.983155
+test_01486_img.jpg,Proba3,0.983122
+test_00457_img.jpg,Proba3,0.983103
+test_03794_img.jpg,XMM Newton,0.983072
+test_04920_img.jpg,XMM Newton,0.983069
+test_01148_img.jpg,ObservationSat1,0.983045
+test_03244_img.jpg,XMM Newton,0.983034
+test_00072_img.jpg,ObservationSat1,0.983031
+test_00961_img.jpg,Cheops,0.982997
+test_03396_img.jpg,Proba2,0.982994
+test_03721_img.jpg,Smart1,0.982992
+test_03535_img.jpg,ObservationSat1,0.982991
+test_02551_img.jpg,Proba3,0.982989
+test_01959_img.jpg,ObservationSat1,0.982974
+test_00513_img.jpg,XMM Newton,0.982968
+test_00070_img.jpg,LisaPathfinder,0.982950
+test_03378_img.jpg,Proba3,0.982924
+test_01902_img.jpg,ObservationSat1,0.982919
+test_04157_img.jpg,Proba3,0.982909
+test_02925_img.jpg,Cheops,0.982886
+test_02764_img.jpg,XMM Newton,0.982879
+test_00798_img.jpg,ObservationSat1,0.982862
+test_00316_img.jpg,ObservationSat1,0.982851
+test_00001_img.jpg,Proba3,0.982848
+test_03660_img.jpg,Proba2,0.982844
+test_02206_img.jpg,XMM Newton,0.982827
+test_03601_img.jpg,Cheops,0.982819
+test_01602_img.jpg,XMM Newton,0.982806
+test_02387_img.jpg,Cheops,0.982793
+test_03830_img.jpg,ObservationSat1,0.982788
+test_01515_img.jpg,Proba2,0.982780
+test_02840_img.jpg,VenusExpress,0.982770
+test_04123_img.jpg,ObservationSat1,0.982759
+test_04997_img.jpg,Proba3,0.982748
+test_04492_img.jpg,Cheops,0.982723
+test_00792_img.jpg,Proba2,0.982720
+test_03763_img.jpg,ObservationSat1,0.982716
+test_02693_img.jpg,XMM Newton,0.982715
+test_01200_img.jpg,Cheops,0.982705
+test_01560_img.jpg,LisaPathfinder,0.982695
+test_01992_img.jpg,XMM Newton,0.982695
+test_04602_img.jpg,Cheops,0.982683
+test_04193_img.jpg,XMM Newton,0.982668
+test_03265_img.jpg,LisaPathfinder,0.982666
+test_04986_img.jpg,Proba2,0.982663
+test_01450_img.jpg,ObservationSat1,0.982653
+test_04461_img.jpg,ObservationSat1,0.982650
+test_00835_img.jpg,Proba3ocs,0.982639
+test_02892_img.jpg,Proba3,0.982614
+test_00677_img.jpg,Proba3,0.982606
+test_00996_img.jpg,LisaPathfinder,0.982573
+test_00366_img.jpg,Proba3,0.982569
+test_01557_img.jpg,Cheops,0.982560
+test_01494_img.jpg,Proba2,0.982556
+test_01208_img.jpg,Proba3,0.982523
+test_02473_img.jpg,XMM Newton,0.982522
+test_02183_img.jpg,Proba2,0.982514
+test_02490_img.jpg,XMM Newton,0.982484
+test_01372_img.jpg,XMM Newton,0.982484
+test_01076_img.jpg,XMM Newton,0.982483
+test_03787_img.jpg,LisaPathfinder,0.982483
+test_03779_img.jpg,XMM Newton,0.982475
+test_02238_img.jpg,Proba2,0.982446
+test_02905_img.jpg,Proba2,0.982445
+test_01983_img.jpg,ObservationSat1,0.982436
+test_01279_img.jpg,Cheops,0.982426
+test_02626_img.jpg,Proba2,0.982386
+test_04159_img.jpg,Proba2,0.982378
+test_02156_img.jpg,LisaPathfinder,0.982369
+test_01709_img.jpg,Proba3ocs,0.982353
+test_00238_img.jpg,Proba3ocs,0.982352
+test_00208_img.jpg,LisaPathfinder,0.982344
+test_03507_img.jpg,LisaPathfinder,0.982321
+test_01482_img.jpg,XMM Newton,0.982291
+test_03638_img.jpg,Proba2,0.982263
+test_04440_img.jpg,XMM Newton,0.982252
+test_04179_img.jpg,LisaPathfinder,0.982248
+test_02668_img.jpg,ObservationSat1,0.982241
+test_01140_img.jpg,ObservationSat1,0.982216
+test_04952_img.jpg,XMM Newton,0.982205
+test_02043_img.jpg,Proba2,0.982205
+test_04547_img.jpg,Smart1,0.982168
+test_02417_img.jpg,Proba2,0.982167
+test_02362_img.jpg,Smart1,0.982138
+test_00742_img.jpg,Proba2,0.982133
+test_01594_img.jpg,Smart1,0.982126
+test_03033_img.jpg,Soho,0.982098
+test_00565_img.jpg,LisaPathfinder,0.982090
+test_03520_img.jpg,ObservationSat1,0.982065
+test_03955_img.jpg,LisaPathfinder,0.982030
+test_01904_img.jpg,XMM Newton,0.982027
+test_04589_img.jpg,Proba2,0.982027
+test_02253_img.jpg,XMM Newton,0.982020
+test_03809_img.jpg,Smart1,0.982001
+test_01399_img.jpg,LisaPathfinder,0.981994
+test_01290_img.jpg,VenusExpress,0.981993
+test_04285_img.jpg,Proba3ocs,0.981989
+test_02611_img.jpg,Smart1,0.981938
+test_02874_img.jpg,ObservationSat1,0.981932
+test_04106_img.jpg,Cheops,0.981926
+test_03854_img.jpg,Proba2,0.981917
+test_03464_img.jpg,LisaPathfinder,0.981907
+test_04742_img.jpg,Proba3ocs,0.981896
+test_04617_img.jpg,ObservationSat1,0.981879
+test_01838_img.jpg,Soho,0.981873
+test_02729_img.jpg,Proba2,0.981866
+test_02889_img.jpg,XMM Newton,0.981862
+test_04459_img.jpg,XMM Newton,0.981843
+test_02515_img.jpg,LisaPathfinder,0.981833
+test_02690_img.jpg,Cheops,0.981830
+test_04166_img.jpg,LisaPathfinder,0.981816
+test_02396_img.jpg,VenusExpress,0.981807
+test_02191_img.jpg,LisaPathfinder,0.981798
+test_04846_img.jpg,Proba2,0.981797
+test_00227_img.jpg,XMM Newton,0.981790
+test_04475_img.jpg,Proba2,0.981787
+test_02398_img.jpg,Proba3ocs,0.981772
+test_02405_img.jpg,Soho,0.981771
+test_04857_img.jpg,ObservationSat1,0.981762
+test_02740_img.jpg,ObservationSat1,0.981760
+test_02319_img.jpg,Proba3ocs,0.981756
+test_01299_img.jpg,Cheops,0.981745
+test_03766_img.jpg,ObservationSat1,0.981745
+test_02134_img.jpg,Proba3,0.981734
+test_00489_img.jpg,Proba2,0.981727
+test_01673_img.jpg,XMM Newton,0.981724
+test_03584_img.jpg,Cheops,0.981714
+test_03476_img.jpg,XMM Newton,0.981700
+test_03823_img.jpg,ObservationSat1,0.981684
+test_01429_img.jpg,Proba2,0.981666
+test_01795_img.jpg,XMM Newton,0.981665
+test_00571_img.jpg,Proba3ocs,0.981665
+test_04261_img.jpg,Cheops,0.981663
+test_00014_img.jpg,ObservationSat1,0.981662
+test_00578_img.jpg,XMM Newton,0.981653
+test_04789_img.jpg,ObservationSat1,0.981645
+test_01828_img.jpg,XMM Newton,0.981638
+test_01578_img.jpg,Cheops,0.981626
+test_02799_img.jpg,VenusExpress,0.981618
+test_03661_img.jpg,ObservationSat1,0.981611
+test_02359_img.jpg,ObservationSat1,0.981610
+test_00599_img.jpg,XMM Newton,0.981604
+test_03563_img.jpg,XMM Newton,0.981603
+test_03495_img.jpg,Proba2,0.981602
+test_04509_img.jpg,LisaPathfinder,0.981601
+test_00794_img.jpg,Proba2,0.981601
+test_01572_img.jpg,Proba2,0.981598
+test_02330_img.jpg,Proba2,0.981573
+test_03067_img.jpg,Cheops,0.981561
+test_00479_img.jpg,Proba2,0.981561
+test_03842_img.jpg,LisaPathfinder,0.981526
+test_01712_img.jpg,ObservationSat1,0.981511
+test_02116_img.jpg,ObservationSat1,0.981471
+test_00480_img.jpg,Smart1,0.981470
+test_00991_img.jpg,XMM Newton,0.981460
+test_01548_img.jpg,Soho,0.981456
+test_03957_img.jpg,LisaPathfinder,0.981434
+test_00306_img.jpg,LisaPathfinder,0.981428
+test_01128_img.jpg,ObservationSat1,0.981428
+test_04700_img.jpg,LisaPathfinder,0.981414
+test_04837_img.jpg,LisaPathfinder,0.981406
+test_04447_img.jpg,Cheops,0.981391
+test_03326_img.jpg,Proba3ocs,0.981390
+test_03616_img.jpg,XMM Newton,0.981384
+test_00827_img.jpg,Smart1,0.981369
+test_00250_img.jpg,Proba3,0.981365
+test_04343_img.jpg,LisaPathfinder,0.981364
+test_00952_img.jpg,XMM Newton,0.981355
+test_04083_img.jpg,LisaPathfinder,0.981348
+test_01013_img.jpg,VenusExpress,0.981343
+test_04601_img.jpg,Cheops,0.981329
+test_01536_img.jpg,XMM Newton,0.981325
+test_00407_img.jpg,Proba3,0.981321
+test_03439_img.jpg,Cheops,0.981305
+test_04610_img.jpg,Cheops,0.981304
+test_01757_img.jpg,XMM Newton,0.981262
+test_03937_img.jpg,XMM Newton,0.981262
+test_04941_img.jpg,VenusExpress,0.981253
+test_00926_img.jpg,LisaPathfinder,0.981248
+test_03803_img.jpg,LisaPathfinder,0.981243
+test_03790_img.jpg,XMM Newton,0.981238
+test_01055_img.jpg,XMM Newton,0.981233
+test_04448_img.jpg,LisaPathfinder,0.981222
+test_00075_img.jpg,Proba3ocs,0.981217
+test_01106_img.jpg,Proba2,0.981206
+test_01695_img.jpg,Proba2,0.981205
+test_01323_img.jpg,Cheops,0.981167
+test_04269_img.jpg,Proba3,0.981162
+test_02445_img.jpg,Proba2,0.981149
+test_00275_img.jpg,ObservationSat1,0.981143
+test_00573_img.jpg,ObservationSat1,0.981136
+test_04869_img.jpg,Cheops,0.981136
+test_02086_img.jpg,ObservationSat1,0.981134
+test_03088_img.jpg,LisaPathfinder,0.981131
+test_01586_img.jpg,Proba2,0.981124
+test_00646_img.jpg,VenusExpress,0.981122
+test_04984_img.jpg,Smart1,0.981118
+test_01819_img.jpg,Proba3,0.981105
+test_02126_img.jpg,ObservationSat1,0.981095
+test_00390_img.jpg,Cheops,0.981092
+test_01097_img.jpg,Soho,0.981090
+test_02605_img.jpg,Proba2,0.981086
+test_01661_img.jpg,Proba2,0.981065
+test_00718_img.jpg,ObservationSat1,0.981056
+test_01685_img.jpg,ObservationSat1,0.981054
+test_01974_img.jpg,Proba2,0.981043
+test_01840_img.jpg,ObservationSat1,0.981024
+test_02104_img.jpg,LisaPathfinder,0.981019
+test_04173_img.jpg,Proba2,0.981014
+test_00439_img.jpg,LisaPathfinder,0.981012
+test_03970_img.jpg,Cheops,0.981008
+test_02121_img.jpg,Proba3ocs,0.981005
+test_04341_img.jpg,Proba2,0.980988
+test_03596_img.jpg,VenusExpress,0.980987
+test_03720_img.jpg,Soho,0.980981
+test_01587_img.jpg,Smart1,0.980975
+test_04727_img.jpg,Cheops,0.980963
+test_02757_img.jpg,Proba3,0.980958
+test_01814_img.jpg,LisaPathfinder,0.980931
+test_03534_img.jpg,ObservationSat1,0.980928
+test_04808_img.jpg,ObservationSat1,0.980927
+test_01023_img.jpg,ObservationSat1,0.980922
+test_03093_img.jpg,Cheops,0.980911
+test_01533_img.jpg,ObservationSat1,0.980879
+test_04759_img.jpg,LisaPathfinder,0.980842
+test_03691_img.jpg,Proba3,0.980841
+test_04995_img.jpg,XMM Newton,0.980827
+test_01324_img.jpg,ObservationSat1,0.980824
+test_02738_img.jpg,LisaPathfinder,0.980821
+test_04774_img.jpg,Cheops,0.980814
+test_02615_img.jpg,ObservationSat1,0.980805
+test_00484_img.jpg,ObservationSat1,0.980801
+test_00566_img.jpg,Cheops,0.980801
+test_04723_img.jpg,Proba2,0.980788
+test_02941_img.jpg,VenusExpress,0.980786
+test_04357_img.jpg,Proba3ocs,0.980784
+test_02804_img.jpg,ObservationSat1,0.980779
+test_03345_img.jpg,ObservationSat1,0.980774
+test_03718_img.jpg,ObservationSat1,0.980766
+test_00550_img.jpg,Smart1,0.980766
+test_02296_img.jpg,XMM Newton,0.980739
+test_02807_img.jpg,Smart1,0.980738
+test_04209_img.jpg,ObservationSat1,0.980716
+test_01932_img.jpg,VenusExpress,0.980716
+test_01228_img.jpg,Cheops,0.980701
+test_02833_img.jpg,LisaPathfinder,0.980699
+test_02492_img.jpg,Smart1,0.980698
+test_01765_img.jpg,Proba3ocs,0.980680
+test_00678_img.jpg,Proba2,0.980679
+test_04981_img.jpg,XMM Newton,0.980666
+test_03361_img.jpg,VenusExpress,0.980662
+test_03963_img.jpg,Proba2,0.980638
+test_02739_img.jpg,Soho,0.980636
+test_03220_img.jpg,LisaPathfinder,0.980631
+test_01634_img.jpg,LisaPathfinder,0.980606
+test_03512_img.jpg,Cheops,0.980603
+test_04611_img.jpg,VenusExpress,0.980599
+test_03758_img.jpg,ObservationSat1,0.980592
+test_04559_img.jpg,XMM Newton,0.980591
+test_00416_img.jpg,VenusExpress,0.980575
+test_01518_img.jpg,Smart1,0.980563
+test_02088_img.jpg,LisaPathfinder,0.980562
+test_00223_img.jpg,ObservationSat1,0.980561
+test_02269_img.jpg,Cheops,0.980558
+test_04658_img.jpg,ObservationSat1,0.980557
+test_04381_img.jpg,Cheops,0.980543
+test_04044_img.jpg,Proba2,0.980541
+test_04457_img.jpg,VenusExpress,0.980536
+test_04181_img.jpg,Cheops,0.980535
+test_02998_img.jpg,ObservationSat1,0.980527
+test_03371_img.jpg,Proba3ocs,0.980527
+test_00637_img.jpg,Proba3,0.980524
+test_02321_img.jpg,XMM Newton,0.980519
+test_02019_img.jpg,Smart1,0.980498
+test_03430_img.jpg,LisaPathfinder,0.980488
+test_00928_img.jpg,Proba3,0.980482
+test_00768_img.jpg,ObservationSat1,0.980476
+test_04649_img.jpg,ObservationSat1,0.980475
+test_02323_img.jpg,XMM Newton,0.980471
+test_02834_img.jpg,ObservationSat1,0.980463
+test_03680_img.jpg,XMM Newton,0.980446
+test_00464_img.jpg,Proba3ocs,0.980446
+test_03570_img.jpg,XMM Newton,0.980438
+test_03048_img.jpg,Cheops,0.980436
+test_04201_img.jpg,Proba2,0.980416
+test_00938_img.jpg,LisaPathfinder,0.980413
+test_02885_img.jpg,Smart1,0.980401
+test_01971_img.jpg,Proba2,0.980388
+test_00398_img.jpg,Proba3,0.980383
+test_04302_img.jpg,ObservationSat1,0.980355
+test_03958_img.jpg,Proba3ocs,0.980355
+test_00123_img.jpg,Proba2,0.980346
+test_00682_img.jpg,LisaPathfinder,0.980333
+test_04246_img.jpg,Proba3ocs,0.980321
+test_03907_img.jpg,XMM Newton,0.980320
+test_04127_img.jpg,ObservationSat1,0.980317
+test_01116_img.jpg,Proba3,0.980312
+test_04770_img.jpg,XMM Newton,0.980304
+test_01769_img.jpg,Proba3,0.980301
+test_03994_img.jpg,LisaPathfinder,0.980297
+test_01804_img.jpg,Proba3,0.980290
+test_02768_img.jpg,XMM Newton,0.980285
+test_04030_img.jpg,Smart1,0.980219
+test_03480_img.jpg,ObservationSat1,0.980207
+test_01192_img.jpg,Proba3,0.980201
+test_04615_img.jpg,ObservationSat1,0.980199
+test_03748_img.jpg,Proba2,0.980196
+test_03753_img.jpg,Cheops,0.980189
+test_03227_img.jpg,ObservationSat1,0.980179
+test_04844_img.jpg,VenusExpress,0.980178
+test_02924_img.jpg,Proba2,0.980161
+test_03867_img.jpg,Proba3ocs,0.980161
+test_01553_img.jpg,Cheops,0.980158
+test_04333_img.jpg,XMM Newton,0.980157
+test_01624_img.jpg,LisaPathfinder,0.980157
+test_00456_img.jpg,Cheops,0.980157
+test_01216_img.jpg,ObservationSat1,0.980155
+test_04525_img.jpg,Proba3ocs,0.980153
+test_01791_img.jpg,Proba3,0.980141
+test_01256_img.jpg,Proba2,0.980139
+test_03628_img.jpg,Proba3ocs,0.980131
+test_04518_img.jpg,Proba2,0.980126
+test_04351_img.jpg,Cheops,0.980125
+test_00854_img.jpg,Proba2,0.980119
+test_03084_img.jpg,Cheops,0.980113
+test_01188_img.jpg,XMM Newton,0.980111
+test_00182_img.jpg,Proba3ocs,0.980104
+test_03390_img.jpg,Proba3,0.980098
+test_00891_img.jpg,Proba3,0.980093
+test_00362_img.jpg,ObservationSat1,0.980092
+test_01204_img.jpg,Proba3,0.980084
+test_03102_img.jpg,VenusExpress,0.980074
+test_01014_img.jpg,Proba2,0.980065
+test_01117_img.jpg,Proba3ocs,0.980064
+test_03246_img.jpg,Cheops,0.980056
+test_00364_img.jpg,Cheops,0.980054
+test_04026_img.jpg,VenusExpress,0.980050
+test_00054_img.jpg,XMM Newton,0.980048
+test_01713_img.jpg,Proba3,0.980042
+test_01968_img.jpg,Proba3,0.980024
+test_04890_img.jpg,Proba2,0.980020
+test_04260_img.jpg,ObservationSat1,0.980011
+test_01266_img.jpg,Proba3,0.980007
+test_02133_img.jpg,LisaPathfinder,0.980006
+test_03351_img.jpg,Proba3ocs,0.980005
+test_02610_img.jpg,Proba2,0.980004
+test_00946_img.jpg,Proba2,0.979956
+test_00006_img.jpg,Proba3,0.979941
+test_00483_img.jpg,Proba2,0.979938
+test_02341_img.jpg,ObservationSat1,0.979935
+test_03450_img.jpg,Proba2,0.979934
+test_02561_img.jpg,Soho,0.979932
+test_00842_img.jpg,LisaPathfinder,0.979931
+test_00187_img.jpg,LisaPathfinder,0.979930
+test_02182_img.jpg,Proba2,0.979912
+test_04980_img.jpg,Soho,0.979899
+test_00372_img.jpg,ObservationSat1,0.979896
+test_02652_img.jpg,LisaPathfinder,0.979881
+test_00943_img.jpg,Proba3,0.979879
+test_02513_img.jpg,ObservationSat1,0.979869
+test_02646_img.jpg,ObservationSat1,0.979858
+test_00622_img.jpg,LisaPathfinder,0.979854
+test_04987_img.jpg,ObservationSat1,0.979846
+test_01717_img.jpg,Proba3,0.979838
+test_00816_img.jpg,Proba3,0.979831
+test_02280_img.jpg,LisaPathfinder,0.979826
+test_03968_img.jpg,Proba3ocs,0.979825
+test_04363_img.jpg,ObservationSat1,0.979824
+test_03546_img.jpg,Cheops,0.979814
+test_02993_img.jpg,XMM Newton,0.979812
+test_02458_img.jpg,Cheops,0.979804
+test_04283_img.jpg,Proba2,0.979778
+test_03832_img.jpg,XMM Newton,0.979775
+test_01093_img.jpg,VenusExpress,0.979763
+test_03664_img.jpg,Proba3ocs,0.979763
+test_00822_img.jpg,Proba2,0.979761
+test_00925_img.jpg,LisaPathfinder,0.979751
+test_01110_img.jpg,ObservationSat1,0.979751
+test_04772_img.jpg,ObservationSat1,0.979739
+test_00896_img.jpg,LisaPathfinder,0.979730
+test_00856_img.jpg,ObservationSat1,0.979720
+test_03921_img.jpg,VenusExpress,0.979720
+test_02139_img.jpg,XMM Newton,0.979702
+test_01510_img.jpg,Cheops,0.979699
+test_02292_img.jpg,VenusExpress,0.979697
+test_03960_img.jpg,VenusExpress,0.979695
+test_02212_img.jpg,Proba3,0.979695
+test_00474_img.jpg,XMM Newton,0.979683
+test_01929_img.jpg,Proba2,0.979670
+test_01704_img.jpg,Proba2,0.979662
+test_03217_img.jpg,XMM Newton,0.979660
+test_02468_img.jpg,Cheops,0.979648
+test_02591_img.jpg,ObservationSat1,0.979638
+test_01858_img.jpg,Proba2,0.979631
+test_00590_img.jpg,Proba3,0.979618
+test_04145_img.jpg,Smart1,0.979615
+test_04162_img.jpg,LisaPathfinder,0.979610
+test_03064_img.jpg,ObservationSat1,0.979609
+test_01752_img.jpg,VenusExpress,0.979605
+test_04284_img.jpg,LisaPathfinder,0.979596
+test_02384_img.jpg,Proba2,0.979576
+test_03851_img.jpg,LisaPathfinder,0.979556
+test_02595_img.jpg,Cheops,0.979553
+test_04032_img.jpg,ObservationSat1,0.979539
+test_02497_img.jpg,LisaPathfinder,0.979536
+test_01534_img.jpg,LisaPathfinder,0.979535
+test_00683_img.jpg,ObservationSat1,0.979528
+test_00828_img.jpg,XMM Newton,0.979522
+test_00068_img.jpg,Proba2,0.979518
+test_01367_img.jpg,XMM Newton,0.979513
+test_01225_img.jpg,Cheops,0.979508
+test_03642_img.jpg,XMM Newton,0.979493
+test_01350_img.jpg,ObservationSat1,0.979492
+test_00425_img.jpg,Proba2,0.979473
+test_03513_img.jpg,LisaPathfinder,0.979461
+test_00958_img.jpg,Proba3,0.979441
+test_02762_img.jpg,Proba2,0.979438
+test_02209_img.jpg,Smart1,0.979438
+test_02131_img.jpg,Proba3,0.979431
+test_03684_img.jpg,Proba2,0.979419
+test_04353_img.jpg,Cheops,0.979415
+test_00761_img.jpg,Cheops,0.979403
+test_01941_img.jpg,XMM Newton,0.979396
+test_00869_img.jpg,Cheops,0.979396
+test_00765_img.jpg,ObservationSat1,0.979393
+test_02017_img.jpg,Proba3,0.979389
+test_02383_img.jpg,Soho,0.979373
+test_04573_img.jpg,ObservationSat1,0.979363
+test_03013_img.jpg,Cheops,0.979360
+test_04118_img.jpg,Proba2,0.979344
+test_02115_img.jpg,Proba3,0.979343
+test_00158_img.jpg,Smart1,0.979326
+test_03342_img.jpg,Proba3,0.979321
+test_00975_img.jpg,LisaPathfinder,0.979320
+test_02677_img.jpg,Proba3,0.979319
+test_01194_img.jpg,XMM Newton,0.979305
+test_00004_img.jpg,Cheops,0.979301
+test_04507_img.jpg,Proba2,0.979299
+test_03340_img.jpg,Cheops,0.979297
+test_01978_img.jpg,Cheops,0.979296
+test_01363_img.jpg,Smart1,0.979287
+test_03458_img.jpg,Smart1,0.979286
+test_00825_img.jpg,LisaPathfinder,0.979275
+test_04698_img.jpg,ObservationSat1,0.979267
+test_01960_img.jpg,XMM Newton,0.979249
+test_02582_img.jpg,Proba3,0.979243
+test_03831_img.jpg,Proba3,0.979236
+test_01751_img.jpg,Proba3ocs,0.979236
+test_00860_img.jpg,Proba2,0.979229
+test_00037_img.jpg,ObservationSat1,0.979226
+test_00821_img.jpg,XMM Newton,0.979213
+test_00524_img.jpg,LisaPathfinder,0.979204
+test_01869_img.jpg,LisaPathfinder,0.979198
+test_04503_img.jpg,ObservationSat1,0.979193
+test_03882_img.jpg,ObservationSat1,0.979176
+test_02651_img.jpg,Proba3,0.979171
+test_04910_img.jpg,XMM Newton,0.979155
+test_03615_img.jpg,Proba3,0.979154
+test_04756_img.jpg,XMM Newton,0.979153
+test_04657_img.jpg,ObservationSat1,0.979147
+test_03327_img.jpg,Smart1,0.979138
+test_03112_img.jpg,Proba3ocs,0.979134
+test_04766_img.jpg,Proba2,0.979133
+test_04368_img.jpg,LisaPathfinder,0.979131
+test_03964_img.jpg,ObservationSat1,0.979121
+test_00774_img.jpg,Proba2,0.979116
+test_01563_img.jpg,Soho,0.979100
+test_00865_img.jpg,Smart1,0.979097
+test_02575_img.jpg,XMM Newton,0.979086
+test_03610_img.jpg,Proba2,0.979083
+test_02971_img.jpg,Proba2,0.979056
+test_04328_img.jpg,Proba3ocs,0.979043
+test_02409_img.jpg,Proba2,0.979041
+test_01823_img.jpg,VenusExpress,0.979027
+test_02314_img.jpg,Proba2,0.979018
+test_04914_img.jpg,Proba2,0.979011
+test_02894_img.jpg,XMM Newton,0.979010
+test_01152_img.jpg,LisaPathfinder,0.979008
+test_04853_img.jpg,LisaPathfinder,0.979005
+test_04803_img.jpg,ObservationSat1,0.979002
+test_01678_img.jpg,Soho,0.978980
+test_04529_img.jpg,ObservationSat1,0.978980
+test_02234_img.jpg,ObservationSat1,0.978969
+test_03656_img.jpg,XMM Newton,0.978965
+test_02937_img.jpg,Smart1,0.978958
+test_02520_img.jpg,Cheops,0.978949
+test_04366_img.jpg,VenusExpress,0.978945
+test_04300_img.jpg,Proba2,0.978945
+test_04624_img.jpg,Soho,0.978938
+test_00392_img.jpg,Cheops,0.978929
+test_01415_img.jpg,Cheops,0.978924
+test_03998_img.jpg,ObservationSat1,0.978913
+test_01496_img.jpg,Soho,0.978891
+test_03559_img.jpg,LisaPathfinder,0.978891
+test_03018_img.jpg,Proba3,0.978890
+test_00746_img.jpg,Smart1,0.978874
+test_03036_img.jpg,LisaPathfinder,0.978868
+test_01380_img.jpg,LisaPathfinder,0.978853
+test_01339_img.jpg,Cheops,0.978852
+test_04826_img.jpg,Proba2,0.978831
+test_04872_img.jpg,Smart1,0.978824
+test_02864_img.jpg,Proba3ocs,0.978821
+test_00260_img.jpg,Soho,0.978818
+test_04055_img.jpg,ObservationSat1,0.978798
+test_01038_img.jpg,LisaPathfinder,0.978794
+test_03840_img.jpg,Proba3ocs,0.978793
+test_01473_img.jpg,VenusExpress,0.978781
+test_01726_img.jpg,ObservationSat1,0.978778
+test_02806_img.jpg,Smart1,0.978766
+test_03268_img.jpg,ObservationSat1,0.978760
+test_02845_img.jpg,Proba2,0.978759
+test_01314_img.jpg,Proba2,0.978748
+test_01982_img.jpg,Cheops,0.978747
+test_04677_img.jpg,ObservationSat1,0.978747
+test_01325_img.jpg,XMM Newton,0.978747
+test_00455_img.jpg,XMM Newton,0.978735
+test_02718_img.jpg,ObservationSat1,0.978726
+test_04793_img.jpg,Cheops,0.978717
+test_02564_img.jpg,Cheops,0.978715
+test_01421_img.jpg,Proba2,0.978702
+test_01089_img.jpg,Cheops,0.978700
+test_00118_img.jpg,Cheops,0.978691
+test_04760_img.jpg,Cheops,0.978688
+test_03335_img.jpg,Proba2,0.978675
+test_00964_img.jpg,XMM Newton,0.978674
+test_02664_img.jpg,XMM Newton,0.978672
+test_04843_img.jpg,VenusExpress,0.978651
+test_03543_img.jpg,LisaPathfinder,0.978624
+test_04802_img.jpg,Smart1,0.978613
+test_02221_img.jpg,Proba3,0.978611
+test_03544_img.jpg,Proba2,0.978610
+test_02442_img.jpg,Cheops,0.978608
+test_03171_img.jpg,LisaPathfinder,0.978605
+test_03740_img.jpg,XMM Newton,0.978601
+test_03826_img.jpg,Proba2,0.978599
+test_01027_img.jpg,Proba3,0.978596
+test_00184_img.jpg,LisaPathfinder,0.978591
+test_04631_img.jpg,Proba2,0.978590
+test_03571_img.jpg,XMM Newton,0.978589
+test_01272_img.jpg,Cheops,0.978582
+test_04152_img.jpg,Proba2,0.978579
+test_00541_img.jpg,Proba2,0.978572
+test_02353_img.jpg,Soho,0.978569
+test_01836_img.jpg,ObservationSat1,0.978561
+test_04421_img.jpg,ObservationSat1,0.978557
+test_04523_img.jpg,Proba2,0.978554
+test_04546_img.jpg,ObservationSat1,0.978549
+test_03060_img.jpg,Smart1,0.978537
+test_02286_img.jpg,XMM Newton,0.978525
+test_01138_img.jpg,Smart1,0.978515
+test_01526_img.jpg,XMM Newton,0.978510
+test_04190_img.jpg,VenusExpress,0.978505
+test_02679_img.jpg,Cheops,0.978500
+test_03551_img.jpg,Proba3,0.978488
+test_01682_img.jpg,Proba3,0.978473
+test_02583_img.jpg,Cheops,0.978473
+test_00648_img.jpg,Proba2,0.978463
+test_00247_img.jpg,Proba3,0.978457
+test_01408_img.jpg,Proba3,0.978425
+test_04345_img.jpg,Proba3,0.978419
+test_01646_img.jpg,XMM Newton,0.978416
+test_03213_img.jpg,Smart1,0.978412
+test_02519_img.jpg,Proba3ocs,0.978412
+test_01054_img.jpg,LisaPathfinder,0.978412
+test_04119_img.jpg,ObservationSat1,0.978412
+test_03735_img.jpg,Cheops,0.978408
+test_03647_img.jpg,ObservationSat1,0.978396
+test_00671_img.jpg,Cheops,0.978393
+test_02392_img.jpg,Cheops,0.978388
+test_02601_img.jpg,XMM Newton,0.978383
+test_00143_img.jpg,ObservationSat1,0.978371
+test_04194_img.jpg,ObservationSat1,0.978366
+test_00445_img.jpg,LisaPathfinder,0.978365
+test_01012_img.jpg,Cheops,0.978363
+test_01304_img.jpg,VenusExpress,0.978362
+test_02386_img.jpg,Proba2,0.978346
+test_01862_img.jpg,Cheops,0.978337
+test_00713_img.jpg,Proba2,0.978328
+test_02267_img.jpg,ObservationSat1,0.978325
+test_04059_img.jpg,Proba3ocs,0.978321
+test_02485_img.jpg,Proba2,0.978320
+test_03285_img.jpg,Proba3,0.978320
+test_01398_img.jpg,Proba3,0.978317
+test_02102_img.jpg,VenusExpress,0.978316
+test_01236_img.jpg,Proba2,0.978311
+test_04265_img.jpg,ObservationSat1,0.978308
+test_00787_img.jpg,Proba3,0.978307
+test_02624_img.jpg,Soho,0.978306
+test_01411_img.jpg,Proba2,0.978303
+test_04961_img.jpg,LisaPathfinder,0.978289
+test_03594_img.jpg,ObservationSat1,0.978283
+test_03133_img.jpg,Cheops,0.978280
+test_00122_img.jpg,XMM Newton,0.978266
+test_00191_img.jpg,ObservationSat1,0.978264
+test_03288_img.jpg,XMM Newton,0.978260
+test_04379_img.jpg,XMM Newton,0.978256
+test_01784_img.jpg,Proba2,0.978254
+test_00880_img.jpg,ObservationSat1,0.978245
+test_03149_img.jpg,Smart1,0.978240
+test_04224_img.jpg,XMM Newton,0.978233
+test_00985_img.jpg,Proba3ocs,0.978231
+test_04103_img.jpg,VenusExpress,0.978228
+test_03309_img.jpg,Proba2,0.978227
+test_02979_img.jpg,VenusExpress,0.978222
+test_02024_img.jpg,Smart1,0.978212
+test_04404_img.jpg,Proba3,0.978202
+test_02637_img.jpg,Proba2,0.978200
+test_00824_img.jpg,LisaPathfinder,0.978192
+test_00280_img.jpg,ObservationSat1,0.978190
+test_02572_img.jpg,Proba3ocs,0.978184
+test_01589_img.jpg,LisaPathfinder,0.978183
+test_03394_img.jpg,ObservationSat1,0.978182
+test_01525_img.jpg,Proba3,0.978174
+test_02866_img.jpg,Proba3ocs,0.978166
+test_03558_img.jpg,Proba3ocs,0.978160
+test_02588_img.jpg,XMM Newton,0.978159
+test_04512_img.jpg,ObservationSat1,0.978154
+test_03821_img.jpg,Smart1,0.978147
+test_02523_img.jpg,Cheops,0.978147
+test_00536_img.jpg,LisaPathfinder,0.978139
+test_00609_img.jpg,Proba2,0.978116
+test_01233_img.jpg,Proba3,0.978115
+test_01160_img.jpg,Soho,0.978114
+test_00577_img.jpg,ObservationSat1,0.978103
+test_04281_img.jpg,LisaPathfinder,0.978101
+test_04767_img.jpg,ObservationSat1,0.978092
+test_00848_img.jpg,Proba3,0.978091
+test_02543_img.jpg,ObservationSat1,0.978087
+test_02863_img.jpg,XMM Newton,0.978082
+test_00294_img.jpg,XMM Newton,0.978079
+test_04838_img.jpg,Proba2,0.978077
+test_01747_img.jpg,Proba2,0.978072
+test_00708_img.jpg,Proba3,0.978065
+test_02537_img.jpg,XMM Newton,0.978046
+test_01215_img.jpg,XMM Newton,0.978043
+test_00579_img.jpg,XMM Newton,0.978032
+test_02772_img.jpg,Proba3ocs,0.978029
+test_01361_img.jpg,XMM Newton,0.978022
+test_03812_img.jpg,ObservationSat1,0.978015
+test_01860_img.jpg,Cheops,0.978013
+test_04476_img.jpg,LisaPathfinder,0.978005
+test_00149_img.jpg,Proba3,0.978004
+test_03786_img.jpg,XMM Newton,0.978001
+test_04100_img.jpg,Smart1,0.978001
+test_02798_img.jpg,Proba3,0.977988
+test_03956_img.jpg,XMM Newton,0.977975
+test_03284_img.jpg,Soho,0.977969
+test_00853_img.jpg,ObservationSat1,0.977940
+test_03194_img.jpg,LisaPathfinder,0.977926
+test_01101_img.jpg,Cheops,0.977914
+test_04748_img.jpg,Soho,0.977908
+test_01754_img.jpg,Cheops,0.977900
+test_02256_img.jpg,XMM Newton,0.977898
+test_01334_img.jpg,ObservationSat1,0.977895
+test_00279_img.jpg,LisaPathfinder,0.977889
+test_04148_img.jpg,XMM Newton,0.977888
+test_04590_img.jpg,ObservationSat1,0.977885
+test_00303_img.jpg,Proba3,0.977865
+test_00160_img.jpg,ObservationSat1,0.977837
+test_04537_img.jpg,LisaPathfinder,0.977818
+test_03592_img.jpg,ObservationSat1,0.977809
+test_03139_img.jpg,Smart1,0.977801
+test_04438_img.jpg,Cheops,0.977800
+test_00295_img.jpg,ObservationSat1,0.977797
+test_03364_img.jpg,Cheops,0.977794
+test_01732_img.jpg,Cheops,0.977784
+test_03356_img.jpg,ObservationSat1,0.977781
+test_04484_img.jpg,LisaPathfinder,0.977775
+test_00026_img.jpg,ObservationSat1,0.977773
+test_00914_img.jpg,LisaPathfinder,0.977763
+test_04898_img.jpg,VenusExpress,0.977762
+test_03034_img.jpg,Proba3,0.977761
+test_04636_img.jpg,XMM Newton,0.977758
+test_04221_img.jpg,ObservationSat1,0.977755
+test_04726_img.jpg,Proba2,0.977754
+test_04956_img.jpg,ObservationSat1,0.977753
+test_01041_img.jpg,Proba3,0.977749
+test_04450_img.jpg,ObservationSat1,0.977747
+test_01053_img.jpg,ObservationSat1,0.977741
+test_01570_img.jpg,Proba2,0.977732
+test_04390_img.jpg,Soho,0.977724
+test_01820_img.jpg,Cheops,0.977724
+test_00040_img.jpg,Soho,0.977699
+test_00583_img.jpg,LisaPathfinder,0.977694
+test_02782_img.jpg,ObservationSat1,0.977694
+test_04015_img.jpg,VenusExpress,0.977679
+test_02087_img.jpg,Soho,0.977670
+test_04817_img.jpg,XMM Newton,0.977649
+test_04056_img.jpg,LisaPathfinder,0.977648
+test_03852_img.jpg,Proba2,0.977647
+test_02340_img.jpg,Proba2,0.977636
+test_00428_img.jpg,Proba3,0.977633
+test_04350_img.jpg,VenusExpress,0.977626
+test_00773_img.jpg,Cheops,0.977626
+test_01569_img.jpg,LisaPathfinder,0.977616
+test_00930_img.jpg,ObservationSat1,0.977613
+test_04169_img.jpg,ObservationSat1,0.977604
+test_00228_img.jpg,Proba2,0.977592
+test_02940_img.jpg,Cheops,0.977590
+test_00527_img.jpg,VenusExpress,0.977587
+test_01241_img.jpg,ObservationSat1,0.977583
+test_03698_img.jpg,Cheops,0.977582
+test_00526_img.jpg,Cheops,0.977581
+test_02713_img.jpg,Proba2,0.977579
+test_00539_img.jpg,Proba2,0.977571
+test_00029_img.jpg,LisaPathfinder,0.977555
+test_03708_img.jpg,Smart1,0.977553
+test_04609_img.jpg,VenusExpress,0.977543
+test_01692_img.jpg,ObservationSat1,0.977526
+test_04775_img.jpg,Cheops,0.977525
+test_02083_img.jpg,Proba2,0.977517
+test_04369_img.jpg,Cheops,0.977502
+test_03021_img.jpg,ObservationSat1,0.977501
+test_00908_img.jpg,Proba3ocs,0.977500
+test_02826_img.jpg,Proba3ocs,0.977499
+test_01285_img.jpg,XMM Newton,0.977489
+test_04801_img.jpg,Cheops,0.977487
+test_04555_img.jpg,Proba2,0.977455
+test_04183_img.jpg,Proba3,0.977450
+test_04942_img.jpg,Proba3ocs,0.977441
+test_00224_img.jpg,LisaPathfinder,0.977440
+test_00025_img.jpg,Soho,0.977433
+test_03379_img.jpg,ObservationSat1,0.977428
+test_00114_img.jpg,Smart1,0.977425
+test_00945_img.jpg,Cheops,0.977409
+test_04135_img.jpg,VenusExpress,0.977408
+test_03497_img.jpg,Proba2,0.977404
+test_01619_img.jpg,Proba2,0.977395
+test_01472_img.jpg,Proba2,0.977392
+test_00373_img.jpg,XMM Newton,0.977389
+test_02162_img.jpg,Proba2,0.977383
+test_02046_img.jpg,Proba2,0.977381
+test_01492_img.jpg,Soho,0.977362
+test_00894_img.jpg,XMM Newton,0.977355
+test_02447_img.jpg,ObservationSat1,0.977350
+test_04253_img.jpg,ObservationSat1,0.977344
+test_02012_img.jpg,Cheops,0.977327
+test_04147_img.jpg,VenusExpress,0.977325
+test_04916_img.jpg,Proba2,0.977320
+test_01724_img.jpg,ObservationSat1,0.977313
+test_01276_img.jpg,ObservationSat1,0.977288
+test_02961_img.jpg,XMM Newton,0.977276
+test_01477_img.jpg,Proba3,0.977273
+test_02773_img.jpg,Soho,0.977267
+test_01282_img.jpg,XMM Newton,0.977266
+test_00619_img.jpg,Proba3,0.977261
+test_04346_img.jpg,Proba2,0.977259
+test_03917_img.jpg,ObservationSat1,0.977257
+test_01549_img.jpg,XMM Newton,0.977243
+test_04671_img.jpg,VenusExpress,0.977239
+test_01775_img.jpg,ObservationSat1,0.977237
+test_04340_img.jpg,VenusExpress,0.977236
+test_00322_img.jpg,Smart1,0.977233
+test_02896_img.jpg,Soho,0.977228
+test_02310_img.jpg,XMM Newton,0.977220
+test_03759_img.jpg,ObservationSat1,0.977220
+test_03283_img.jpg,ObservationSat1,0.977212
+test_02684_img.jpg,LisaPathfinder,0.977201
+test_00701_img.jpg,XMM Newton,0.977193
+test_03906_img.jpg,ObservationSat1,0.977185
+test_02042_img.jpg,Proba3,0.977185
+test_02858_img.jpg,Proba2,0.977176
+test_02783_img.jpg,XMM Newton,0.977174
+test_02803_img.jpg,VenusExpress,0.977166
+test_02507_img.jpg,ObservationSat1,0.977166
+test_02172_img.jpg,XMM Newton,0.977152
+test_04656_img.jpg,Proba2,0.977150
+test_01863_img.jpg,ObservationSat1,0.977150
+test_02448_img.jpg,Proba3,0.977146
+test_03574_img.jpg,Cheops,0.977135
+test_04155_img.jpg,Proba3ocs,0.977129
+test_00733_img.jpg,XMM Newton,0.977124
+test_02871_img.jpg,LisaPathfinder,0.977112
+test_03598_img.jpg,ObservationSat1,0.977112
+test_00811_img.jpg,XMM Newton,0.977111
+test_00091_img.jpg,Proba3ocs,0.977107
+test_04637_img.jpg,ObservationSat1,0.977102
+test_01168_img.jpg,Cheops,0.977100
+test_02049_img.jpg,Proba3ocs,0.977098
+test_04430_img.jpg,ObservationSat1,0.977089
+test_00047_img.jpg,Soho,0.977082
+test_03637_img.jpg,Proba2,0.977081
+test_00679_img.jpg,Smart1,0.977078
+test_04539_img.jpg,ObservationSat1,0.977075
+test_02821_img.jpg,ObservationSat1,0.977068
+test_01886_img.jpg,VenusExpress,0.977053
+test_04874_img.jpg,ObservationSat1,0.977040
+test_00315_img.jpg,Proba3,0.977039
+test_04280_img.jpg,LisaPathfinder,0.977037
+test_02594_img.jpg,Cheops,0.977016
+test_00073_img.jpg,Proba3ocs,0.977012
+test_04097_img.jpg,Proba3,0.977012
+test_04291_img.jpg,Proba3ocs,0.977012
+test_03714_img.jpg,Cheops,0.977005
+test_00719_img.jpg,Proba2,0.977002
+test_03124_img.jpg,Proba3ocs,0.976998
+test_02071_img.jpg,XMM Newton,0.976995
+test_02109_img.jpg,Proba3,0.976988
+test_03488_img.jpg,ObservationSat1,0.976981
+test_03871_img.jpg,XMM Newton,0.976976
+test_04191_img.jpg,Proba3ocs,0.976974
+test_03997_img.jpg,ObservationSat1,0.976968
+test_03966_img.jpg,VenusExpress,0.976965
+test_04788_img.jpg,ObservationSat1,0.976962
+test_00615_img.jpg,ObservationSat1,0.976960
+test_01564_img.jpg,ObservationSat1,0.976958
+test_03891_img.jpg,ObservationSat1,0.976947
+test_03567_img.jpg,Proba3,0.976937
+test_03086_img.jpg,VenusExpress,0.976935
+test_00153_img.jpg,Proba3ocs,0.976916
+test_04273_img.jpg,VenusExpress,0.976912
+test_02295_img.jpg,Proba2,0.976909
+test_02644_img.jpg,XMM Newton,0.976908
+test_03484_img.jpg,VenusExpress,0.976887
+test_03873_img.jpg,Proba2,0.976885
+test_00694_img.jpg,Smart1,0.976880
+test_02641_img.jpg,ObservationSat1,0.976880
+test_03109_img.jpg,Proba2,0.976874
+test_00164_img.jpg,XMM Newton,0.976873
+test_01642_img.jpg,Cheops,0.976870
+test_04533_img.jpg,Proba3,0.976867
+test_03775_img.jpg,Smart1,0.976863
+test_02072_img.jpg,Proba2,0.976860
+test_04398_img.jpg,Soho,0.976855
+test_02767_img.jpg,Proba2,0.976842
+test_02847_img.jpg,Proba2,0.976842
+test_04761_img.jpg,Proba3ocs,0.976839
+test_00969_img.jpg,XMM Newton,0.976829
+test_03103_img.jpg,Soho,0.976828
+test_02508_img.jpg,ObservationSat1,0.976826
+test_01004_img.jpg,Proba3ocs,0.976816
+test_00233_img.jpg,Smart1,0.976815
+test_02771_img.jpg,Proba3,0.976806
+test_00042_img.jpg,Proba3,0.976804
+test_02720_img.jpg,XMM Newton,0.976802
+test_04092_img.jpg,Cheops,0.976801
+test_02968_img.jpg,Proba2,0.976798
+test_02696_img.jpg,Proba3ocs,0.976791
+test_00168_img.jpg,ObservationSat1,0.976789
+test_04870_img.jpg,ObservationSat1,0.976779
+test_03529_img.jpg,Soho,0.976779
+test_03591_img.jpg,Smart1,0.976778
+test_00113_img.jpg,Proba2,0.976763
+test_02619_img.jpg,XMM Newton,0.976755
+test_00097_img.jpg,ObservationSat1,0.976752
+test_01917_img.jpg,XMM Newton,0.976750
+test_03432_img.jpg,ObservationSat1,0.976736
+test_02735_img.jpg,Smart1,0.976729
+test_01916_img.jpg,Proba3ocs,0.976725
+test_02897_img.jpg,Proba2,0.976721
+test_03391_img.jpg,Proba3,0.976719
+test_01782_img.jpg,VenusExpress,0.976708
+test_01660_img.jpg,XMM Newton,0.976708
+test_00796_img.jpg,Cheops,0.976704
+test_02524_img.jpg,Proba3ocs,0.976701
+test_01171_img.jpg,Smart1,0.976692
+test_02065_img.jpg,VenusExpress,0.976690
+test_00711_img.jpg,Proba2,0.976686
+test_04332_img.jpg,Proba3ocs,0.976680
+test_02649_img.jpg,XMM Newton,0.976669
+test_01588_img.jpg,Proba2,0.976662
+test_01474_img.jpg,LisaPathfinder,0.976658
+test_01498_img.jpg,Proba3ocs,0.976658
+test_02939_img.jpg,ObservationSat1,0.976655
+test_03805_img.jpg,LisaPathfinder,0.976653
+test_00132_img.jpg,Cheops,0.976652
+test_03677_img.jpg,LisaPathfinder,0.976641
+test_03926_img.jpg,Proba3,0.976637
+test_00452_img.jpg,Proba2,0.976625
+test_03850_img.jpg,Proba3,0.976620
+test_02933_img.jpg,Cheops,0.976612
+test_00385_img.jpg,Cheops,0.976608
+test_04158_img.jpg,Proba2,0.976599
+test_03692_img.jpg,Proba2,0.976597
+test_03815_img.jpg,Proba3,0.976592
+test_02853_img.jpg,Proba3,0.976592
+test_04855_img.jpg,ObservationSat1,0.976587
+test_00023_img.jpg,XMM Newton,0.976577
+test_01420_img.jpg,Proba3,0.976574
+test_03494_img.jpg,LisaPathfinder,0.976570
+test_04094_img.jpg,Cheops,0.976566
+test_04370_img.jpg,VenusExpress,0.976565
+test_03191_img.jpg,Proba2,0.976554
+test_03657_img.jpg,Proba3,0.976540
+test_00423_img.jpg,XMM Newton,0.976539
+test_02779_img.jpg,ObservationSat1,0.976537
+test_02935_img.jpg,Proba2,0.976528
+test_03679_img.jpg,LisaPathfinder,0.976499
+test_04406_img.jpg,XMM Newton,0.976496
+test_03325_img.jpg,Proba2,0.976495
+test_04897_img.jpg,LisaPathfinder,0.976495
+test_04485_img.jpg,Proba2,0.976494
+test_00467_img.jpg,ObservationSat1,0.976485
+test_04309_img.jpg,Soho,0.976479
+test_03710_img.jpg,Proba3ocs,0.976449
+test_02553_img.jpg,ObservationSat1,0.976447
+test_04739_img.jpg,Proba3,0.976438
+test_01044_img.jpg,Cheops,0.976431
+test_01381_img.jpg,Cheops,0.976429
+test_02297_img.jpg,Proba2,0.976424
+test_02027_img.jpg,ObservationSat1,0.976423
+test_03498_img.jpg,Proba3,0.976423
+test_02467_img.jpg,XMM Newton,0.976421
+test_01207_img.jpg,ObservationSat1,0.976418
+test_03077_img.jpg,ObservationSat1,0.976415
+test_00673_img.jpg,ObservationSat1,0.976409
+test_01581_img.jpg,ObservationSat1,0.976406
+test_01859_img.jpg,XMM Newton,0.976403
+test_01155_img.jpg,LisaPathfinder,0.976399
+test_03470_img.jpg,ObservationSat1,0.976391
+test_02204_img.jpg,VenusExpress,0.976374
+test_00545_img.jpg,ObservationSat1,0.976366
+test_00230_img.jpg,Proba3,0.976358
+test_01998_img.jpg,Cheops,0.976355
+test_04444_img.jpg,Cheops,0.976354
+test_04250_img.jpg,VenusExpress,0.976346
+test_04887_img.jpg,Smart1,0.976334
+test_00030_img.jpg,Smart1,0.976326
+test_03291_img.jpg,Proba3,0.976325
+test_00174_img.jpg,Proba3ocs,0.976321
+test_04957_img.jpg,LisaPathfinder,0.976316
+test_04745_img.jpg,VenusExpress,0.976311
+test_02038_img.jpg,Proba3,0.976309
+test_03059_img.jpg,Cheops,0.976298
+test_03427_img.jpg,VenusExpress,0.976296
+test_04851_img.jpg,Proba3,0.976296
+test_02831_img.jpg,Smart1,0.976291
+test_03658_img.jpg,ObservationSat1,0.976275
+test_03784_img.jpg,Proba3,0.976274
+test_02850_img.jpg,Cheops,0.976273
+test_01535_img.jpg,Proba3,0.976232
+test_00200_img.jpg,Cheops,0.976223
+test_04139_img.jpg,LisaPathfinder,0.976218
+test_04600_img.jpg,XMM Newton,0.976217
+test_02919_img.jpg,XMM Newton,0.976216
+test_04807_img.jpg,LisaPathfinder,0.976203
+test_03336_img.jpg,Cheops,0.976199
+test_03169_img.jpg,XMM Newton,0.976182
+test_03096_img.jpg,XMM Newton,0.976178
+test_00504_img.jpg,VenusExpress,0.976173
+test_00889_img.jpg,Proba3,0.976162
+test_03828_img.jpg,ObservationSat1,0.976158
+test_04841_img.jpg,Cheops,0.976152
+test_03818_img.jpg,XMM Newton,0.976149
+test_04134_img.jpg,VenusExpress,0.976131
+test_03083_img.jpg,ObservationSat1,0.976116
+test_00326_img.jpg,ObservationSat1,0.976112
+test_04668_img.jpg,LisaPathfinder,0.976108
+test_01432_img.jpg,ObservationSat1,0.976101
+test_04014_img.jpg,Proba3,0.976077
+test_02136_img.jpg,XMM Newton,0.976075
+test_00139_img.jpg,Smart1,0.976071
+test_04060_img.jpg,ObservationSat1,0.976067
+test_01146_img.jpg,VenusExpress,0.976060
+test_02026_img.jpg,Proba3ocs,0.976055
+test_04640_img.jpg,XMM Newton,0.976049
+test_02177_img.jpg,Smart1,0.976038
+test_02178_img.jpg,XMM Newton,0.976034
+test_03517_img.jpg,Smart1,0.976025
+test_01521_img.jpg,Proba3ocs,0.976024
+test_03388_img.jpg,Smart1,0.976024
+test_04365_img.jpg,Cheops,0.976011
+test_02414_img.jpg,Cheops,0.976006
+test_02571_img.jpg,Smart1,0.976005
+test_04264_img.jpg,VenusExpress,0.975996
+test_04319_img.jpg,ObservationSat1,0.975985
+test_04085_img.jpg,Proba3ocs,0.975982
+test_02522_img.jpg,Soho,0.975981
+test_00088_img.jpg,Smart1,0.975980
+test_03254_img.jpg,ObservationSat1,0.975978
+test_03235_img.jpg,Proba3ocs,0.975977
+test_04187_img.jpg,VenusExpress,0.975974
+test_00876_img.jpg,Proba2,0.975972
+test_00173_img.jpg,Proba3,0.975971
+test_02554_img.jpg,Cheops,0.975968
+test_01667_img.jpg,XMM Newton,0.975948
+test_04763_img.jpg,ObservationSat1,0.975943
+test_03119_img.jpg,Proba3,0.975940
+test_04584_img.jpg,ObservationSat1,0.975939
+test_02259_img.jpg,ObservationSat1,0.975937
+test_01096_img.jpg,LisaPathfinder,0.975937
+test_04811_img.jpg,ObservationSat1,0.975929
+test_00427_img.jpg,XMM Newton,0.975911
+test_04881_img.jpg,Cheops,0.975908
+test_03249_img.jpg,VenusExpress,0.975907
+test_04548_img.jpg,Proba3,0.975902
+test_02078_img.jpg,Proba2,0.975899
+test_00884_img.jpg,Soho,0.975892
+test_01189_img.jpg,VenusExpress,0.975877
+test_04037_img.jpg,Cheops,0.975870
+test_04116_img.jpg,ObservationSat1,0.975869
+test_00999_img.jpg,LisaPathfinder,0.975861
+test_03426_img.jpg,ObservationSat1,0.975860
+test_01965_img.jpg,ObservationSat1,0.975846
+test_01734_img.jpg,Proba3,0.975833
+test_04080_img.jpg,LisaPathfinder,0.975832
+test_03174_img.jpg,Proba2,0.975829
+test_00096_img.jpg,ObservationSat1,0.975818
+test_01947_img.jpg,XMM Newton,0.975815
+test_03635_img.jpg,VenusExpress,0.975809
+test_00274_img.jpg,Cheops,0.975800
+test_00563_img.jpg,Proba3,0.975800
+test_04642_img.jpg,LisaPathfinder,0.975799
+test_03607_img.jpg,Proba3ocs,0.975794
+test_00705_img.jpg,ObservationSat1,0.975790
+test_01740_img.jpg,Cheops,0.975790
+test_02844_img.jpg,VenusExpress,0.975789
+test_04586_img.jpg,Smart1,0.975785
+test_02124_img.jpg,ObservationSat1,0.975784
+test_02682_img.jpg,Proba2,0.975778
+test_01830_img.jpg,Proba2,0.975770
+test_02335_img.jpg,Proba3ocs,0.975770
+test_02361_img.jpg,Cheops,0.975766
+test_00035_img.jpg,Soho,0.975766
+test_02440_img.jpg,XMM Newton,0.975762
+test_00128_img.jpg,Soho,0.975755
+test_01950_img.jpg,LisaPathfinder,0.975730
+test_00618_img.jpg,Cheops,0.975724
+test_04606_img.jpg,Soho,0.975721
+test_03561_img.jpg,XMM Newton,0.975702
+test_04424_img.jpg,Proba2,0.975698
+test_01111_img.jpg,Proba3,0.975696
+test_02769_img.jpg,LisaPathfinder,0.975694
+test_03576_img.jpg,Proba3ocs,0.975689
+test_00654_img.jpg,ObservationSat1,0.975687
+test_03230_img.jpg,Proba3,0.975683
+test_01318_img.jpg,Proba2,0.975669
+test_03808_img.jpg,XMM Newton,0.975653
+test_02829_img.jpg,Proba2,0.975643
+test_01084_img.jpg,Proba2,0.975637
+test_03319_img.jpg,Proba3ocs,0.975637
+test_01401_img.jpg,Proba2,0.975633
+test_00634_img.jpg,LisaPathfinder,0.975630
+test_00293_img.jpg,Proba3,0.975612
+test_03108_img.jpg,XMM Newton,0.975605
+test_00304_img.jpg,Proba3ocs,0.975602
+test_03448_img.jpg,Proba3,0.975601
+test_01853_img.jpg,Proba3,0.975599
+test_00417_img.jpg,ObservationSat1,0.975590
+test_04948_img.jpg,Proba2,0.975587
+test_02577_img.jpg,Proba3,0.975584
+test_03031_img.jpg,XMM Newton,0.975580
+test_00724_img.jpg,Proba2,0.975580
+test_01263_img.jpg,Proba2,0.975574
+test_04708_img.jpg,Proba2,0.975571
+test_03768_img.jpg,ObservationSat1,0.975570
+test_03885_img.jpg,Proba3ocs,0.975570
+test_00358_img.jpg,ObservationSat1,0.975561
+test_00900_img.jpg,Proba2,0.975558
+test_04629_img.jpg,Proba3ocs,0.975552
+test_03688_img.jpg,Proba2,0.975547
+test_01407_img.jpg,Proba3,0.975541
+test_03005_img.jpg,Proba3,0.975533
+test_02266_img.jpg,Proba3ocs,0.975531
+test_00386_img.jpg,Cheops,0.975530
+test_03017_img.jpg,ObservationSat1,0.975529
+test_04411_img.jpg,XMM Newton,0.975525
+test_01807_img.jpg,Proba3,0.975521
+test_00502_img.jpg,Smart1,0.975515
+test_03992_img.jpg,ObservationSat1,0.975508
+test_03996_img.jpg,XMM Newton,0.975505
+test_02382_img.jpg,VenusExpress,0.975499
+test_03734_img.jpg,LisaPathfinder,0.975480
+test_01364_img.jpg,LisaPathfinder,0.975476
+test_04003_img.jpg,Proba3ocs,0.975473
+test_01483_img.jpg,LisaPathfinder,0.975471
+test_01945_img.jpg,Proba3ocs,0.975470
+test_04773_img.jpg,VenusExpress,0.975470
+test_03350_img.jpg,ObservationSat1,0.975469
+test_02669_img.jpg,Proba3ocs,0.975462
+test_01627_img.jpg,Proba3ocs,0.975459
+test_02865_img.jpg,Proba2,0.975457
+test_00652_img.jpg,VenusExpress,0.975450
+test_02830_img.jpg,Proba3,0.975444
+test_04630_img.jpg,Cheops,0.975441
+test_01818_img.jpg,VenusExpress,0.975432
+test_01720_img.jpg,Cheops,0.975432
+test_02725_img.jpg,XMM Newton,0.975416
+test_01933_img.jpg,Proba3,0.975414
+test_03703_img.jpg,Proba2,0.975412
+test_02955_img.jpg,Proba3,0.975403
+test_04552_img.jpg,ObservationSat1,0.975400
+test_03533_img.jpg,Proba3ocs,0.975394
+test_01511_img.jpg,Proba3,0.975393
+test_00505_img.jpg,Soho,0.975386
+test_03617_img.jpg,Proba3,0.975384
+test_01951_img.jpg,LisaPathfinder,0.975381
+test_01223_img.jpg,ObservationSat1,0.975374
+test_02004_img.jpg,Proba3ocs,0.975372
+test_01202_img.jpg,Smart1,0.975370
+test_03697_img.jpg,LisaPathfinder,0.975370
+test_02789_img.jpg,Proba3,0.975365
+test_04928_img.jpg,Cheops,0.975363
+test_00432_img.jpg,Soho,0.975357
+test_01455_img.jpg,Cheops,0.975349
+test_03562_img.jpg,ObservationSat1,0.975346
+test_04205_img.jpg,ObservationSat1,0.975339
+test_03481_img.jpg,Proba3,0.975317
+test_01283_img.jpg,ObservationSat1,0.975317
+test_00625_img.jpg,XMM Newton,0.975315
+test_04460_img.jpg,Proba2,0.975315
+test_02770_img.jpg,XMM Newton,0.975313
+test_01425_img.jpg,LisaPathfinder,0.975312
+test_01077_img.jpg,Proba3,0.975307
+test_04028_img.jpg,Cheops,0.975305
+test_01221_img.jpg,Proba3,0.975300
+test_00812_img.jpg,LisaPathfinder,0.975297
+test_02715_img.jpg,XMM Newton,0.975291
+test_02552_img.jpg,Proba3,0.975289
+test_01643_img.jpg,Proba3,0.975273
+test_00363_img.jpg,Proba2,0.975271
+test_03577_img.jpg,LisaPathfinder,0.975268
+test_01691_img.jpg,Proba3ocs,0.975263
+test_00921_img.jpg,Cheops,0.975261
+test_03045_img.jpg,Proba3,0.975255
+test_03399_img.jpg,Proba3,0.975245
+test_01000_img.jpg,Proba3,0.975242
+test_02848_img.jpg,Proba3,0.975235
+test_00584_img.jpg,Proba3,0.975228
+test_02220_img.jpg,LisaPathfinder,0.975227
+test_01130_img.jpg,Proba3,0.975224
+test_01651_img.jpg,XMM Newton,0.975222
+test_04066_img.jpg,Proba3ocs,0.975217
+test_02226_img.jpg,XMM Newton,0.975209
+test_03726_img.jpg,ObservationSat1,0.975204
+test_00415_img.jpg,Proba2,0.975199
+test_02872_img.jpg,Proba3,0.975196
+test_04757_img.jpg,Proba3,0.975181
+test_04651_img.jpg,Cheops,0.975175
+test_03880_img.jpg,Soho,0.975167
+test_03180_img.jpg,Soho,0.975164
+test_02491_img.jpg,LisaPathfinder,0.975160
+test_03140_img.jpg,ObservationSat1,0.975153
+test_00740_img.jpg,Soho,0.975151
+test_02249_img.jpg,Cheops,0.975150
+test_00692_img.jpg,Proba3ocs,0.975147
+test_01426_img.jpg,ObservationSat1,0.975136
+test_03878_img.jpg,XMM Newton,0.975132
+test_01547_img.jpg,Cheops,0.975131
+test_01187_img.jpg,ObservationSat1,0.975117
+test_03459_img.jpg,Proba3,0.975116
+test_01948_img.jpg,XMM Newton,0.975105
+test_00549_img.jpg,VenusExpress,0.975101
+test_01606_img.jpg,LisaPathfinder,0.975094
+test_04621_img.jpg,Proba3,0.975087
+test_04203_img.jpg,ObservationSat1,0.975081
+test_03800_img.jpg,Proba3,0.975067
+test_02195_img.jpg,ObservationSat1,0.975067
+test_01062_img.jpg,Proba3ocs,0.975066
+test_03804_img.jpg,ObservationSat1,0.975065
+test_01528_img.jpg,Proba3ocs,0.975064
+test_00229_img.jpg,Proba2,0.975047
+test_03752_img.jpg,VenusExpress,0.975046
+test_04675_img.jpg,Cheops,0.975046
+test_01614_img.jpg,XMM Newton,0.975044
+test_02385_img.jpg,LisaPathfinder,0.975043
+test_00312_img.jpg,Cheops,0.975038
+test_00490_img.jpg,Proba2,0.975037
+test_02801_img.jpg,Proba2,0.975023
+test_01733_img.jpg,Proba2,0.975022
+test_04184_img.jpg,Smart1,0.975017
+test_01645_img.jpg,Proba2,0.975003
+test_03824_img.jpg,Proba2,0.974999
+test_03115_img.jpg,VenusExpress,0.974994
+test_00611_img.jpg,Proba3ocs,0.974978
+test_04572_img.jpg,Proba3ocs,0.974977
+test_00760_img.jpg,Smart1,0.974976
+test_01887_img.jpg,Soho,0.974973
+test_04445_img.jpg,LisaPathfinder,0.974964
+test_04441_img.jpg,Cheops,0.974949
+test_02028_img.jpg,Smart1,0.974941
+test_01047_img.jpg,Proba2,0.974940
+test_03770_img.jpg,Proba3,0.974937
+test_03632_img.jpg,LisaPathfinder,0.974936
+test_04873_img.jpg,Proba3ocs,0.974926
+test_03353_img.jpg,ObservationSat1,0.974922
+test_00944_img.jpg,Proba3,0.974919
+test_00454_img.jpg,LisaPathfinder,0.974916
+test_02099_img.jpg,ObservationSat1,0.974913
+test_02165_img.jpg,VenusExpress,0.974910
+test_02054_img.jpg,XMM Newton,0.974909
+test_03187_img.jpg,XMM Newton,0.974908
+test_04717_img.jpg,XMM Newton,0.974908
+test_04248_img.jpg,ObservationSat1,0.974904
+test_03209_img.jpg,Smart1,0.974904
+test_02727_img.jpg,Smart1,0.974899
+test_00231_img.jpg,Proba3ocs,0.974896
+test_00116_img.jpg,XMM Newton,0.974895
+test_00234_img.jpg,Proba3,0.974892
+test_04031_img.jpg,Cheops,0.974885
+test_04848_img.jpg,ObservationSat1,0.974880
+test_01873_img.jpg,ObservationSat1,0.974874
+test_03403_img.jpg,Soho,0.974871
+test_01172_img.jpg,Proba3,0.974856
+test_00325_img.jpg,Proba3,0.974844
+test_03120_img.jpg,ObservationSat1,0.974836
+test_04234_img.jpg,Proba2,0.974829
+test_01143_img.jpg,ObservationSat1,0.974820
+test_04505_img.jpg,XMM Newton,0.974810
+test_03293_img.jpg,VenusExpress,0.974804
+test_04809_img.jpg,Proba3ocs,0.974795
+test_04001_img.jpg,Cheops,0.974790
+test_01737_img.jpg,ObservationSat1,0.974786
+test_01674_img.jpg,ObservationSat1,0.974781
+test_04188_img.jpg,LisaPathfinder,0.974780
+test_03872_img.jpg,ObservationSat1,0.974777
+test_01394_img.jpg,ObservationSat1,0.974769
+test_00861_img.jpg,ObservationSat1,0.974768
+test_04456_img.jpg,Proba3ocs,0.974753
+test_01269_img.jpg,Cheops,0.974751
+test_01445_img.jpg,Smart1,0.974743
+test_04821_img.jpg,Proba2,0.974737
+test_01332_img.jpg,ObservationSat1,0.974724
+test_03801_img.jpg,Smart1,0.974719
+test_03266_img.jpg,XMM Newton,0.974715
+test_03069_img.jpg,Soho,0.974707
+test_04850_img.jpg,ObservationSat1,0.974693
+test_03078_img.jpg,Proba3ocs,0.974692
+test_02539_img.jpg,Cheops,0.974662
+test_00846_img.jpg,Smart1,0.974661
+test_04683_img.jpg,XMM Newton,0.974655
+test_00775_img.jpg,Proba2,0.974652
+test_02790_img.jpg,Smart1,0.974650
+test_01362_img.jpg,Proba2,0.974645
+test_00709_img.jpg,Proba3ocs,0.974645
+test_00089_img.jpg,Proba3ocs,0.974642
+test_00936_img.jpg,ObservationSat1,0.974633
+test_03368_img.jpg,Proba2,0.974625
+test_03030_img.jpg,ObservationSat1,0.974618
+test_04929_img.jpg,XMM Newton,0.974616
+test_02598_img.jpg,XMM Newton,0.974600
+test_04971_img.jpg,Proba3ocs,0.974590
+test_00499_img.jpg,XMM Newton,0.974589
+test_01409_img.jpg,LisaPathfinder,0.974588
+test_02080_img.jpg,ObservationSat1,0.974580
+test_03553_img.jpg,XMM Newton,0.974576
+test_01714_img.jpg,ObservationSat1,0.974570
+test_04720_img.jpg,Smart1,0.974550
+test_01776_img.jpg,Proba3ocs,0.974548
+test_03242_img.jpg,XMM Newton,0.974541
+test_00766_img.jpg,Cheops,0.974541
+test_01697_img.jpg,Proba2,0.974534
+test_02366_img.jpg,Proba3,0.974533
+test_04239_img.jpg,LisaPathfinder,0.974521
+test_00977_img.jpg,Soho,0.974514
+test_00517_img.jpg,Cheops,0.974513
+test_04592_img.jpg,Proba3,0.974507
+test_04707_img.jpg,Smart1,0.974497
+test_02208_img.jpg,XMM Newton,0.974494
+test_01267_img.jpg,ObservationSat1,0.974473
+test_04876_img.jpg,Proba2,0.974471
+test_01964_img.jpg,LisaPathfinder,0.974468
+test_00751_img.jpg,Proba3,0.974465
+test_04747_img.jpg,Proba2,0.974462
+test_04566_img.jpg,ObservationSat1,0.974454
+test_01386_img.jpg,Soho,0.974447
+test_00700_img.jpg,Proba3ocs,0.974442
+test_03900_img.jpg,XMM Newton,0.974436
+test_03747_img.jpg,Proba2,0.974431
+test_03405_img.jpg,Proba3,0.974428
+test_01179_img.jpg,XMM Newton,0.974422
+test_04165_img.jpg,Soho,0.974407
+test_03519_img.jpg,Proba2,0.974397
+test_00264_img.jpg,Cheops,0.974395
+test_01856_img.jpg,Cheops,0.974388
+test_01436_img.jpg,Proba2,0.974381
+test_00809_img.jpg,Cheops,0.974360
+test_01226_img.jpg,VenusExpress,0.974350
+test_01928_img.jpg,Proba2,0.974348
+test_03446_img.jpg,Proba3,0.974347
+test_00058_img.jpg,LisaPathfinder,0.974342
+test_04498_img.jpg,ObservationSat1,0.974321
+test_03092_img.jpg,ObservationSat1,0.974309
+test_01883_img.jpg,VenusExpress,0.974307
+test_03233_img.jpg,Proba3,0.974304
+test_01211_img.jpg,XMM Newton,0.974302
+test_00665_img.jpg,ObservationSat1,0.974298
+test_02960_img.jpg,XMM Newton,0.974295
+test_01595_img.jpg,Proba2,0.974285
+test_03569_img.jpg,Proba3,0.974280
+test_04972_img.jpg,XMM Newton,0.974276
+test_01694_img.jpg,XMM Newton,0.974263
+test_01227_img.jpg,ObservationSat1,0.974260
+test_03761_img.jpg,Cheops,0.974255
+test_00758_img.jpg,Proba2,0.974251
+test_03540_img.jpg,Smart1,0.974240
+test_00535_img.jpg,XMM Newton,0.974230
+test_00204_img.jpg,Cheops,0.974228
+test_00970_img.jpg,LisaPathfinder,0.974226
+test_02051_img.jpg,LisaPathfinder,0.974226
+test_01506_img.jpg,Proba3ocs,0.974225
+test_03125_img.jpg,Soho,0.974222
+test_01759_img.jpg,Smart1,0.974205
+test_01478_img.jpg,Proba3,0.974205
+test_03020_img.jpg,Proba3ocs,0.974202
+test_04860_img.jpg,LisaPathfinder,0.974199
+test_02055_img.jpg,LisaPathfinder,0.974197
+test_00653_img.jpg,Smart1,0.974193
+test_00220_img.jpg,LisaPathfinder,0.974187
+test_03538_img.jpg,ObservationSat1,0.974181
+test_03581_img.jpg,Soho,0.974165
+test_00302_img.jpg,VenusExpress,0.974164
+test_04122_img.jpg,Soho,0.974160
+test_03157_img.jpg,ObservationSat1,0.974151
+test_00715_img.jpg,ObservationSat1,0.974149
+test_01507_img.jpg,LisaPathfinder,0.974148
+test_03263_img.jpg,LisaPathfinder,0.974130
+test_02535_img.jpg,Proba3,0.974119
+test_04011_img.jpg,XMM Newton,0.974114
+test_02397_img.jpg,ObservationSat1,0.974113
+test_00436_img.jpg,Proba2,0.974113
+test_04836_img.jpg,ObservationSat1,0.974112
+test_03676_img.jpg,Soho,0.974108
+test_03081_img.jpg,LisaPathfinder,0.974108
+test_03487_img.jpg,Cheops,0.974104
+test_04510_img.jpg,Proba2,0.974104
+test_01628_img.jpg,Proba3,0.974101
+test_03932_img.jpg,VenusExpress,0.974100
+test_02411_img.jpg,Proba3ocs,0.974096
+test_04471_img.jpg,XMM Newton,0.974076
+test_01617_img.jpg,Proba3,0.974073
+test_02250_img.jpg,Proba2,0.974071
+test_02934_img.jpg,Cheops,0.974065
+test_04075_img.jpg,Proba2,0.974057
+test_04947_img.jpg,Cheops,0.974044
+test_00412_img.jpg,Proba3,0.974033
+test_03127_img.jpg,Cheops,0.974018
+test_00556_img.jpg,VenusExpress,0.974016
+test_00656_img.jpg,LisaPathfinder,0.974014
+test_01288_img.jpg,Smart1,0.974007
+test_01218_img.jpg,Cheops,0.974006
+test_00872_img.jpg,Cheops,0.973995
+test_02265_img.jpg,Proba2,0.973993
+test_04918_img.jpg,Proba3ocs,0.973992
+test_02614_img.jpg,Proba3,0.973987
+test_03257_img.jpg,Cheops,0.973984
+test_03025_img.jpg,LisaPathfinder,0.973982
+test_00633_img.jpg,LisaPathfinder,0.973970
+test_02503_img.jpg,ObservationSat1,0.973967
+test_02475_img.jpg,ObservationSat1,0.973961
+test_03745_img.jpg,Smart1,0.973958
+test_00347_img.jpg,Cheops,0.973938
+test_00410_img.jpg,ObservationSat1,0.973931
+test_03552_img.jpg,VenusExpress,0.973929
+test_04614_img.jpg,Proba3ocs,0.973920
+test_01953_img.jpg,XMM Newton,0.973918
+test_00647_img.jpg,LisaPathfinder,0.973918
+test_01107_img.jpg,Proba2,0.973916
+test_02025_img.jpg,Proba3,0.973913
+test_00409_img.jpg,Cheops,0.973907
+test_04633_img.jpg,Proba3ocs,0.973906
+test_02957_img.jpg,Soho,0.973903
+test_03672_img.jpg,Proba3,0.973901
+test_02841_img.jpg,Cheops,0.973901
+test_00272_img.jpg,LisaPathfinder,0.973889
+test_02612_img.jpg,LisaPathfinder,0.973880
+test_00477_img.jpg,Soho,0.973867
+test_02418_img.jpg,XMM Newton,0.973865
+test_03061_img.jpg,Proba3,0.973857
+test_01196_img.jpg,LisaPathfinder,0.973849
+test_04828_img.jpg,Soho,0.973845
+test_01949_img.jpg,ObservationSat1,0.973841
+test_01015_img.jpg,Proba2,0.973830
+test_02053_img.jpg,XMM Newton,0.973828
+test_00595_img.jpg,VenusExpress,0.973826
+test_00580_img.jpg,Proba3ocs,0.973822
+test_03595_img.jpg,LisaPathfinder,0.973813
+test_01874_img.jpg,ObservationSat1,0.973812
+test_02449_img.jpg,Smart1,0.973805
+test_00628_img.jpg,Proba2,0.973804
+test_03980_img.jpg,Cheops,0.973804
+test_04994_img.jpg,ObservationSat1,0.973797
+test_00808_img.jpg,Soho,0.973792
+test_01034_img.jpg,Proba3,0.973792
+test_00933_img.jpg,XMM Newton,0.973777
+test_03728_img.jpg,Proba3,0.973772
+test_00403_img.jpg,Proba3ocs,0.973772
+test_00651_img.jpg,ObservationSat1,0.973770
+test_01541_img.jpg,Proba2,0.973768
+test_04711_img.jpg,ObservationSat1,0.973761
+test_01906_img.jpg,Cheops,0.973750
+test_03870_img.jpg,Proba3ocs,0.973750
+test_02421_img.jpg,Proba3,0.973749
+test_01670_img.jpg,Soho,0.973748
+test_04889_img.jpg,VenusExpress,0.973741
+test_01344_img.jpg,XMM Newton,0.973734
+test_02379_img.jpg,Proba2,0.973733
+test_00402_img.jpg,Cheops,0.973731
+test_00663_img.jpg,Proba3,0.973729
+test_00013_img.jpg,Proba3,0.973727
+test_01260_img.jpg,VenusExpress,0.973726
+test_00703_img.jpg,Cheops,0.973721
+test_03903_img.jpg,Smart1,0.973715
+test_02461_img.jpg,VenusExpress,0.973707
+test_01242_img.jpg,Proba3,0.973702
+test_03836_img.jpg,Proba2,0.973687
+test_02484_img.jpg,Proba2,0.973686
+test_03234_img.jpg,LisaPathfinder,0.973684
+test_04722_img.jpg,ObservationSat1,0.973684
+test_02181_img.jpg,XMM Newton,0.973681
+test_04326_img.jpg,Cheops,0.973676
+test_02731_img.jpg,Cheops,0.973672
+test_03706_img.jpg,Proba3ocs,0.973661
+test_03019_img.jpg,Proba2,0.973658
+test_02808_img.jpg,Proba3,0.973651
+test_02171_img.jpg,XMM Newton,0.973642
+test_04400_img.jpg,Proba3,0.973638
+test_03397_img.jpg,Cheops,0.973636
+test_01243_img.jpg,Cheops,0.973635
+test_00311_img.jpg,Cheops,0.973628
+test_04799_img.jpg,Proba3,0.973622
+test_04806_img.jpg,Proba2,0.973610
+test_04543_img.jpg,ObservationSat1,0.973609
+test_04998_img.jpg,Proba3,0.973603
+test_04048_img.jpg,Soho,0.973603
+test_03310_img.jpg,ObservationSat1,0.973575
+test_00212_img.jpg,Proba2,0.973574
+test_02264_img.jpg,Cheops,0.973572
+test_02634_img.jpg,LisaPathfinder,0.973562
+test_04768_img.jpg,Smart1,0.973551
+test_03116_img.jpg,ObservationSat1,0.973547
+test_04964_img.jpg,VenusExpress,0.973547
+test_00911_img.jpg,VenusExpress,0.973541
+test_03622_img.jpg,ObservationSat1,0.973532
+test_02309_img.jpg,ObservationSat1,0.973528
+test_03381_img.jpg,ObservationSat1,0.973522
+test_00327_img.jpg,ObservationSat1,0.973513
+test_03686_img.jpg,LisaPathfinder,0.973505
+test_02402_img.jpg,ObservationSat1,0.973505
+test_03237_img.jpg,XMM Newton,0.973502
+test_00090_img.jpg,Soho,0.973493
+test_01561_img.jpg,LisaPathfinder,0.973489
+test_04347_img.jpg,VenusExpress,0.973487
+test_00973_img.jpg,XMM Newton,0.973485
+test_03667_img.jpg,Proba3ocs,0.973483
+test_03087_img.jpg,ObservationSat1,0.973477
+test_00899_img.jpg,Proba3ocs,0.973475
+test_03796_img.jpg,Proba2,0.973458
+test_01789_img.jpg,Cheops,0.973455
+test_00048_img.jpg,ObservationSat1,0.973449
+test_02816_img.jpg,Proba3,0.973447
+test_04171_img.jpg,Proba3,0.973445
+test_00270_img.jpg,Proba3,0.973445
+test_02708_img.jpg,ObservationSat1,0.973439
+test_01307_img.jpg,Soho,0.973429
+test_01503_img.jpg,Cheops,0.973425
+test_00534_img.jpg,Smart1,0.973419
+test_02714_img.jpg,Soho,0.973410
+test_04627_img.jpg,Smart1,0.973405
+test_04215_img.jpg,XMM Newton,0.973399
+test_03578_img.jpg,Proba2,0.973394
+test_00382_img.jpg,Smart1,0.973393
+test_03636_img.jpg,Proba3ocs,0.973375
+test_03407_img.jpg,Proba3,0.973365
+test_00057_img.jpg,Proba2,0.973364
+test_01847_img.jpg,ObservationSat1,0.973363
+test_02856_img.jpg,Proba2,0.973357
+test_03420_img.jpg,Cheops,0.973357
+test_00453_img.jpg,Cheops,0.973354
+test_01180_img.jpg,Proba2,0.973351
+test_00779_img.jpg,Smart1,0.973349
+test_00598_img.jpg,XMM Newton,0.973348
+test_02928_img.jpg,Proba3,0.973343
+test_01003_img.jpg,ObservationSat1,0.973342
+test_03888_img.jpg,ObservationSat1,0.973338
+test_04104_img.jpg,Proba2,0.973335
+test_02662_img.jpg,Proba3ocs,0.973334
+test_03589_img.jpg,Cheops,0.973333
+test_03331_img.jpg,Proba3,0.973326
+test_01356_img.jpg,Proba3ocs,0.973323
+test_02273_img.jpg,Proba2,0.973319
+test_00081_img.jpg,Smart1,0.973316
+test_02326_img.jpg,XMM Newton,0.973315
+test_01648_img.jpg,Proba3ocs,0.973313
+test_04496_img.jpg,Proba3,0.973312
+test_00507_img.jpg,ObservationSat1,0.973311
+test_00898_img.jpg,Proba3ocs,0.973311
+test_02219_img.jpg,LisaPathfinder,0.973310
+test_02332_img.jpg,XMM Newton,0.973302
+test_02311_img.jpg,Smart1,0.973296
+test_03509_img.jpg,Smart1,0.973286
+test_02336_img.jpg,ObservationSat1,0.973258
+test_04704_img.jpg,XMM Newton,0.973256
+test_02189_img.jpg,Proba3,0.973254
+test_02391_img.jpg,Proba3ocs,0.973254
+test_00591_img.jpg,Smart1,0.973247
+test_04483_img.jpg,Cheops,0.973246
+test_04252_img.jpg,XMM Newton,0.973224
+test_03098_img.jpg,VenusExpress,0.973219
+test_03289_img.jpg,Soho,0.973212
+test_01485_img.jpg,XMM Newton,0.973203
+test_00960_img.jpg,Soho,0.973194
+test_00874_img.jpg,ObservationSat1,0.973192
+test_01878_img.jpg,LisaPathfinder,0.973172
+test_04077_img.jpg,ObservationSat1,0.973172
+test_04323_img.jpg,Proba3ocs,0.973163
+test_02169_img.jpg,ObservationSat1,0.973160
+test_03976_img.jpg,ObservationSat1,0.973152
+test_00491_img.jpg,Proba3,0.973147
+test_04240_img.jpg,XMM Newton,0.973140
+test_01186_img.jpg,VenusExpress,0.973132
+test_04852_img.jpg,LisaPathfinder,0.973121
+test_03613_img.jpg,Cheops,0.973121
+test_00033_img.jpg,Proba3,0.973118
+test_00971_img.jpg,LisaPathfinder,0.973106
+test_00638_img.jpg,XMM Newton,0.973100
+test_02141_img.jpg,XMM Newton,0.973098
+test_02994_img.jpg,ObservationSat1,0.973090
+test_04076_img.jpg,ObservationSat1,0.973089
+test_03899_img.jpg,Proba3ocs,0.973088
+test_04932_img.jpg,Cheops,0.973088
+test_03417_img.jpg,LisaPathfinder,0.973080
+test_00268_img.jpg,Proba3,0.973058
+test_00785_img.jpg,Proba3,0.973044
+test_02082_img.jpg,Proba3ocs,0.973043
+test_01913_img.jpg,Proba2,0.973040
+test_01909_img.jpg,Soho,0.973040
+test_00803_img.jpg,Proba2,0.973039
+test_04331_img.jpg,Proba3,0.973035
+test_02953_img.jpg,XMM Newton,0.973030
+test_04798_img.jpg,LisaPathfinder,0.973018
+test_03868_img.jpg,LisaPathfinder,0.973001
+test_00572_img.jpg,XMM Newton,0.973000
+test_04682_img.jpg,LisaPathfinder,0.972998
+test_00105_img.jpg,Proba3ocs,0.972998
+test_03922_img.jpg,Cheops,0.972996
+test_02063_img.jpg,Cheops,0.972996
+test_04038_img.jpg,XMM Newton,0.972994
+test_01067_img.jpg,ObservationSat1,0.972988
+test_04227_img.jpg,Proba3ocs,0.972963
+test_03028_img.jpg,VenusExpress,0.972954
+test_02860_img.jpg,LisaPathfinder,0.972951
+test_03040_img.jpg,Proba3,0.972951
+test_02995_img.jpg,Smart1,0.972937
+test_04035_img.jpg,Cheops,0.972935
+test_02753_img.jpg,LisaPathfinder,0.972929
+test_02149_img.jpg,LisaPathfinder,0.972923
+test_04378_img.jpg,Cheops,0.972916
+test_00976_img.jpg,Proba3ocs,0.972915
+test_03959_img.jpg,XMM Newton,0.972914
+test_04556_img.jpg,LisaPathfinder,0.972910
+test_04949_img.jpg,VenusExpress,0.972905
+test_01803_img.jpg,XMM Newton,0.972905
+test_00159_img.jpg,Proba2,0.972898
+test_03076_img.jpg,Cheops,0.972897
+test_01008_img.jpg,Proba2,0.972896
+test_03429_img.jpg,LisaPathfinder,0.972883
+test_01762_img.jpg,XMM Newton,0.972876
+test_02233_img.jpg,VenusExpress,0.972876
+test_04743_img.jpg,Proba3ocs,0.972873
+test_04419_img.jpg,VenusExpress,0.972861
+test_02105_img.jpg,Smart1,0.972858
+test_02608_img.jpg,ObservationSat1,0.972857
+test_00481_img.jpg,Proba3,0.972852
+test_03370_img.jpg,Proba3,0.972848
+test_02166_img.jpg,Proba2,0.972848
+test_03719_img.jpg,Proba2,0.972846
+test_02903_img.jpg,Proba3,0.972846
+test_00986_img.jpg,XMM Newton,0.972843
+test_04905_img.jpg,Proba2,0.972840
+test_04058_img.jpg,LisaPathfinder,0.972834
+test_01638_img.jpg,Proba2,0.972834
+test_03226_img.jpg,Proba3,0.972822
+test_03510_img.jpg,Proba2,0.972801
+test_01281_img.jpg,Cheops,0.972792
+test_03387_img.jpg,Smart1,0.972787
+test_03462_img.jpg,Cheops,0.972756
+test_00702_img.jpg,Smart1,0.972749
+test_04678_img.jpg,VenusExpress,0.972743
+test_03352_img.jpg,Proba3,0.972740
+test_03977_img.jpg,Cheops,0.972739
+test_04976_img.jpg,LisaPathfinder,0.972732
+test_02744_img.jpg,Proba3,0.972731
+test_03702_img.jpg,Cheops,0.972727
+test_04895_img.jpg,LisaPathfinder,0.972720
+test_03486_img.jpg,Proba3,0.972715
+test_02502_img.jpg,VenusExpress,0.972711
+test_02501_img.jpg,LisaPathfinder,0.972709
+test_04944_img.jpg,VenusExpress,0.972709
+test_03161_img.jpg,ObservationSat1,0.972706
+test_03111_img.jpg,Cheops,0.972706
+test_02988_img.jpg,Proba3ocs,0.972700
+test_01719_img.jpg,Proba2,0.972670
+test_00830_img.jpg,Proba3,0.972656
+test_04409_img.jpg,Cheops,0.972644
+test_03532_img.jpg,Proba3,0.972635
+test_00797_img.jpg,Proba3ocs,0.972633
+test_01880_img.jpg,Proba3,0.972631
+test_04922_img.jpg,Proba2,0.972630
+test_02521_img.jpg,VenusExpress,0.972629
+test_02327_img.jpg,XMM Newton,0.972625
+test_01169_img.jpg,ObservationSat1,0.972622
+test_02360_img.jpg,XMM Newton,0.972607
+test_00320_img.jpg,Proba3,0.972606
+test_01349_img.jpg,XMM Newton,0.972600
+test_02315_img.jpg,Soho,0.972593
+test_03445_img.jpg,Proba3ocs,0.972574
+test_00662_img.jpg,Proba3,0.972562
+test_01635_img.jpg,XMM Newton,0.972556
+test_02893_img.jpg,Smart1,0.972542
+test_00617_img.jpg,LisaPathfinder,0.972528
+test_02888_img.jpg,Proba3,0.972519
+test_01539_img.jpg,XMM Newton,0.972511
+test_02207_img.jpg,LisaPathfinder,0.972506
+test_00308_img.jpg,VenusExpress,0.972506
+test_00743_img.jpg,Proba3,0.972505
+test_00323_img.jpg,LisaPathfinder,0.972503
+test_02983_img.jpg,Proba3ocs,0.972489
+test_02076_img.jpg,Soho,0.972488
+test_04966_img.jpg,XMM Newton,0.972483
+test_03941_img.jpg,VenusExpress,0.972478
+test_03216_img.jpg,Cheops,0.972478
+test_02777_img.jpg,ObservationSat1,0.972468
+test_04046_img.jpg,Proba3ocs,0.972464
+test_03475_img.jpg,Proba3,0.972455
+test_01893_img.jpg,Cheops,0.972449
+test_00399_img.jpg,Cheops,0.972425
+test_00939_img.jpg,Proba2,0.972425
+test_03827_img.jpg,ObservationSat1,0.972424
+test_03292_img.jpg,XMM Newton,0.972420
+test_00722_img.jpg,Proba3,0.972408
+test_02032_img.jpg,Proba3,0.972405
+test_00667_img.jpg,ObservationSat1,0.972402
+test_04005_img.jpg,Soho,0.972402
+test_04620_img.jpg,Proba3ocs,0.972402
+test_01987_img.jpg,Proba2,0.972401
+test_00278_img.jpg,Smart1,0.972396
+test_04009_img.jpg,XMM Newton,0.972394
+test_02670_img.jpg,ObservationSat1,0.972392
+test_01460_img.jpg,Cheops,0.972391
+test_04593_img.jpg,VenusExpress,0.972387
+test_01562_img.jpg,LisaPathfinder,0.972378
+test_03421_img.jpg,Soho,0.972375
+test_00640_img.jpg,Proba3,0.972371
+test_02324_img.jpg,LisaPathfinder,0.972359
+test_00687_img.jpg,Smart1,0.972354
+test_02130_img.jpg,Proba3ocs,0.972353
+test_00728_img.jpg,Soho,0.972353
+test_03348_img.jpg,VenusExpress,0.972351
+test_00585_img.jpg,Proba2,0.972345
+test_00613_img.jpg,ObservationSat1,0.972332
+test_04452_img.jpg,Proba2,0.972329
+test_04894_img.jpg,Proba2,0.972328
+test_00237_img.jpg,Proba3ocs,0.972319
+test_02518_img.jpg,Soho,0.972311
+test_00594_img.jpg,Cheops,0.972299
+test_00309_img.jpg,ObservationSat1,0.972293
+test_04613_img.jpg,Proba3,0.972292
+test_01625_img.jpg,Smart1,0.972289
+test_03881_img.jpg,ObservationSat1,0.972281
+test_02980_img.jpg,Cheops,0.972277
+test_04468_img.jpg,Proba3,0.972275
+test_00298_img.jpg,XMM Newton,0.972270
+test_02631_img.jpg,LisaPathfinder,0.972251
+test_01669_img.jpg,Proba2,0.972245
+test_03363_img.jpg,XMM Newton,0.972240
+test_04192_img.jpg,XMM Newton,0.972234
+test_00515_img.jpg,Smart1,0.972228
+test_02923_img.jpg,Smart1,0.972225
+test_02645_img.jpg,Proba3,0.972224
+test_03666_img.jpg,Smart1,0.972214
+test_02455_img.jpg,Soho,0.972207
+test_04255_img.jpg,Smart1,0.972201
+test_03874_img.jpg,XMM Newton,0.972189
+test_04449_img.jpg,Proba2,0.972183
+test_00291_img.jpg,LisaPathfinder,0.972180
+test_02828_img.jpg,Proba2,0.972180
+test_04565_img.jpg,Proba2,0.972179
+test_02636_img.jpg,Proba2,0.972167
+test_03687_img.jpg,Proba2,0.972167
+test_03788_img.jpg,Proba3ocs,0.972158
+test_04292_img.jpg,Proba3,0.972153
+test_03565_img.jpg,Cheops,0.972141
+test_03504_img.jpg,Proba2,0.972139
+test_01447_img.jpg,XMM Newton,0.972138
+test_01224_img.jpg,Smart1,0.972131
+test_04288_img.jpg,XMM Newton,0.972131
+test_03261_img.jpg,Cheops,0.972119
+test_00011_img.jpg,Proba3,0.972115
+test_00005_img.jpg,ObservationSat1,0.972108
+test_02873_img.jpg,Proba3,0.972107
+test_02198_img.jpg,XMM Newton,0.972104
+test_03054_img.jpg,XMM Newton,0.972095
+test_03014_img.jpg,Proba2,0.972094
+test_02114_img.jpg,VenusExpress,0.972089
+test_00600_img.jpg,Smart1,0.972088
+test_00608_img.jpg,Proba2,0.972085
+test_04958_img.jpg,Proba3,0.972076
+test_01484_img.jpg,Proba2,0.972075
+test_02408_img.jpg,Soho,0.972057
+test_01994_img.jpg,Proba3,0.972055
+test_04318_img.jpg,Proba2,0.972051
+test_01753_img.jpg,LisaPathfinder,0.972047
+test_04654_img.jpg,Proba3ocs,0.972043
+test_02711_img.jpg,Cheops,0.972040
+test_04892_img.jpg,Proba3,0.972035
+test_03605_img.jpg,ObservationSat1,0.972034
+test_01074_img.jpg,Proba3,0.972026
+test_03908_img.jpg,Proba2,0.972023
+test_02724_img.jpg,Proba3,0.972014
+test_01919_img.jpg,Soho,0.972013
+test_02959_img.jpg,LisaPathfinder,0.972011
+test_03204_img.jpg,XMM Newton,0.971998
+test_00659_img.jpg,VenusExpress,0.971996
+test_01988_img.jpg,LisaPathfinder,0.971993
+test_04919_img.jpg,VenusExpress,0.971993
+test_00256_img.jpg,ObservationSat1,0.971991
+test_00655_img.jpg,XMM Newton,0.971971
+test_01900_img.jpg,ObservationSat1,0.971970
+test_02243_img.jpg,Proba3,0.971969
+test_04371_img.jpg,Cheops,0.971965
+test_02774_img.jpg,Proba3,0.971956
+test_04863_img.jpg,Proba3,0.971941
+test_03232_img.jpg,Proba3,0.971932
+test_00078_img.jpg,Cheops,0.971929
+test_00213_img.jpg,Proba3ocs,0.971920
+test_01912_img.jpg,Proba3ocs,0.971918
+test_01601_img.jpg,ObservationSat1,0.971914
+test_04647_img.jpg,Proba2,0.971913
+test_04868_img.jpg,VenusExpress,0.971902
+test_01531_img.jpg,LisaPathfinder,0.971898
+test_04393_img.jpg,ObservationSat1,0.971896
+test_03304_img.jpg,VenusExpress,0.971894
+test_03722_img.jpg,Proba2,0.971894
+test_04054_img.jpg,Cheops,0.971872
+test_00581_img.jpg,LisaPathfinder,0.971862
+test_01816_img.jpg,Cheops,0.971859
+test_01051_img.jpg,Proba3,0.971857
+test_01240_img.jpg,ObservationSat1,0.971857
+test_03939_img.jpg,Soho,0.971854
+test_02751_img.jpg,Soho,0.971853
+test_04442_img.jpg,Cheops,0.971846
+test_00956_img.jpg,ObservationSat1,0.971838
+test_04295_img.jpg,Soho,0.971831
+test_02187_img.jpg,Cheops,0.971808
+test_00421_img.jpg,Proba3ocs,0.971806
+test_00621_img.jpg,ObservationSat1,0.971789
+test_00329_img.jpg,Smart1,0.971778
+test_01844_img.jpg,ObservationSat1,0.971775
+test_02531_img.jpg,Proba3,0.971770
+test_00833_img.jpg,Proba3,0.971769
+test_01716_img.jpg,VenusExpress,0.971762
+test_00693_img.jpg,Proba3ocs,0.971759
+test_04082_img.jpg,XMM Newton,0.971759
+test_01337_img.jpg,ObservationSat1,0.971758
+test_01149_img.jpg,XMM Newton,0.971749
+test_02657_img.jpg,Proba3,0.971746
+test_04540_img.jpg,Soho,0.971745
+test_00616_img.jpg,VenusExpress,0.971745
+test_04464_img.jpg,XMM Newton,0.971744
+test_01100_img.jpg,Smart1,0.971743
+test_04735_img.jpg,XMM Newton,0.971743
+test_03846_img.jpg,XMM Newton,0.971735
+test_02857_img.jpg,Proba2,0.971729
+test_04249_img.jpg,Soho,0.971724
+test_04669_img.jpg,XMM Newton,0.971721
+test_01404_img.jpg,Cheops,0.971719
+test_02160_img.jpg,LisaPathfinder,0.971709
+test_01036_img.jpg,Soho,0.971708
+test_03695_img.jpg,Proba2,0.971697
+test_03944_img.jpg,XMM Newton,0.971694
+test_02545_img.jpg,LisaPathfinder,0.971680
+test_02573_img.jpg,Proba2,0.971674
+test_02802_img.jpg,Proba3,0.971654
+test_00217_img.jpg,VenusExpress,0.971652
+test_00993_img.jpg,Cheops,0.971648
+test_02603_img.jpg,Proba3ocs,0.971642
+test_03029_img.jpg,Proba2,0.971637
+test_01335_img.jpg,Proba2,0.971636
+test_02838_img.jpg,XMM Newton,0.971626
+test_04079_img.jpg,Proba3,0.971625
+test_00319_img.jpg,Cheops,0.971624
+test_04138_img.jpg,LisaPathfinder,0.971613
+test_03137_img.jpg,ObservationSat1,0.971605
+test_00668_img.jpg,LisaPathfinder,0.971604
+test_00246_img.jpg,XMM Newton,0.971603
+test_02576_img.jpg,Soho,0.971601
+test_01199_img.jpg,Proba2,0.971590
+test_00099_img.jpg,Proba3ocs,0.971586
+test_02111_img.jpg,Proba2,0.971575
+test_01422_img.jpg,Smart1,0.971561
+test_04858_img.jpg,Proba3,0.971556
+test_03524_img.jpg,Cheops,0.971536
+test_04983_img.jpg,XMM Newton,0.971532
+test_02125_img.jpg,ObservationSat1,0.971529
+test_04306_img.jpg,Smart1,0.971516
+test_02688_img.jpg,VenusExpress,0.971514
+test_01972_img.jpg,VenusExpress,0.971513
+test_01181_img.jpg,Cheops,0.971509
+test_04416_img.jpg,XMM Newton,0.971507
+test_03343_img.jpg,Proba2,0.971502
+test_01177_img.jpg,Cheops,0.971494
+test_03425_img.jpg,Proba3,0.971490
+test_03696_img.jpg,Cheops,0.971471
+test_04013_img.jpg,Smart1,0.971469
+test_01779_img.jpg,Cheops,0.971456
+test_02868_img.jpg,Soho,0.971456
+test_03219_img.jpg,LisaPathfinder,0.971453
+test_03781_img.jpg,LisaPathfinder,0.971443
+test_04247_img.jpg,Proba2,0.971440
+test_00203_img.jpg,VenusExpress,0.971437
+test_00901_img.jpg,Proba3,0.971435
+test_01410_img.jpg,XMM Newton,0.971429
+test_04904_img.jpg,Proba3,0.971425
+test_02427_img.jpg,Proba3,0.971420
+test_02975_img.jpg,Proba3ocs,0.971417
+test_02465_img.jpg,Soho,0.971417
+test_03436_img.jpg,Proba2,0.971411
+test_02416_img.jpg,Cheops,0.971411
+test_04271_img.jpg,Proba3,0.971411
+test_02733_img.jpg,Cheops,0.971409
+test_00829_img.jpg,Proba2,0.971409
+test_01664_img.jpg,Soho,0.971406
+test_00145_img.jpg,Proba2,0.971403
+test_02787_img.jpg,Cheops,0.971403
+test_00082_img.jpg,ObservationSat1,0.971400
+test_04422_img.jpg,Proba3,0.971391
+test_00290_img.jpg,LisaPathfinder,0.971371
+test_03694_img.jpg,LisaPathfinder,0.971371
+test_04105_img.jpg,Proba3,0.971370
+test_00205_img.jpg,LisaPathfinder,0.971359
+test_01190_img.jpg,LisaPathfinder,0.971359
+test_01164_img.jpg,Smart1,0.971346
+test_00589_img.jpg,Cheops,0.971344
+test_03630_img.jpg,Proba3,0.971340
+test_02470_img.jpg,XMM Newton,0.971338
+test_00878_img.jpg,Proba2,0.971336
+test_03644_img.jpg,ObservationSat1,0.971335
+test_03303_img.jpg,XMM Newton,0.971334
+test_04027_img.jpg,Proba3,0.971329
+test_00193_img.jpg,Proba3ocs,0.971319
+test_04575_img.jpg,ObservationSat1,0.971315
+test_03483_img.jpg,ObservationSat1,0.971313
+test_02780_img.jpg,LisaPathfinder,0.971311
+test_00635_img.jpg,ObservationSat1,0.971305
+test_02912_img.jpg,VenusExpress,0.971302
+test_04373_img.jpg,Proba3,0.971295
+test_02006_img.jpg,ObservationSat1,0.971279
+test_02587_img.jpg,Soho,0.971278
+test_02978_img.jpg,Soho,0.971277
+test_01559_img.jpg,VenusExpress,0.971277
+test_00570_img.jpg,Proba3ocs,0.971277
+test_00117_img.jpg,XMM Newton,0.971275
+test_00434_img.jpg,ObservationSat1,0.971262
+test_00079_img.jpg,ObservationSat1,0.971261
+test_02369_img.jpg,Proba3ocs,0.971259
+test_03333_img.jpg,VenusExpress,0.971249
+test_03418_img.jpg,Proba2,0.971242
+test_03614_img.jpg,ObservationSat1,0.971215
+test_03704_img.jpg,Cheops,0.971207
+test_03104_img.jpg,Proba3,0.971197
+test_02275_img.jpg,Proba2,0.971180
+test_04018_img.jpg,XMM Newton,0.971174
+test_01741_img.jpg,VenusExpress,0.971172
+test_03055_img.jpg,ObservationSat1,0.971169
+test_03167_img.jpg,LisaPathfinder,0.971168
+test_03521_img.jpg,Proba3,0.971159
+test_04867_img.jpg,VenusExpress,0.971154
+test_02618_img.jpg,Proba2,0.971153
+test_01354_img.jpg,Cheops,0.971152
+test_01537_img.jpg,Proba2,0.971140
+test_00289_img.jpg,Proba3,0.971137
+test_00475_img.jpg,Soho,0.971137
+test_04043_img.jpg,Cheops,0.971136
+test_04954_img.jpg,Proba2,0.971128
+test_04970_img.jpg,LisaPathfinder,0.971127
+test_04765_img.jpg,XMM Newton,0.971119
+test_03732_img.jpg,Proba3ocs,0.971111
+test_04911_img.jpg,VenusExpress,0.971108
+test_00108_img.jpg,ObservationSat1,0.971106
+test_00832_img.jpg,ObservationSat1,0.971102
+test_03585_img.jpg,Proba3,0.971098
+test_01446_img.jpg,XMM Newton,0.971087
+test_00749_img.jpg,Cheops,0.971083
+test_04286_img.jpg,LisaPathfinder,0.971083
+test_03515_img.jpg,LisaPathfinder,0.971081
+test_04696_img.jpg,Proba3ocs,0.971079
+test_01764_img.jpg,Smart1,0.971050
+test_04820_img.jpg,Proba3,0.971049
+test_03117_img.jpg,VenusExpress,0.971042
+test_00903_img.jpg,Cheops,0.971039
+test_02352_img.jpg,Proba3,0.971032
+test_01280_img.jpg,Proba3,0.971027
+test_00552_img.jpg,Proba3,0.971025
+test_04072_img.jpg,Proba3,0.971025
+test_03877_img.jpg,LisaPathfinder,0.971016
+test_00844_img.jpg,Proba3,0.971006
+test_04474_img.jpg,Proba2,0.971000
+test_02128_img.jpg,Proba2,0.970995
+test_01213_img.jpg,VenusExpress,0.970985
+test_02929_img.jpg,Proba3,0.970985
+test_04124_img.jpg,VenusExpress,0.970984
+test_03683_img.jpg,Cheops,0.970984
+test_01910_img.jpg,Proba3,0.970972
+test_00155_img.jpg,Cheops,0.970970
+test_01845_img.jpg,Proba3,0.970960
+test_01170_img.jpg,LisaPathfinder,0.970957
+test_02193_img.jpg,Proba2,0.970953
+test_01679_img.jpg,Soho,0.970953
+test_01970_img.jpg,VenusExpress,0.970951
+test_02700_img.jpg,VenusExpress,0.970946
+test_00009_img.jpg,Proba3ocs,0.970921
+test_03655_img.jpg,XMM Newton,0.970919
+test_04023_img.jpg,LisaPathfinder,0.970911
+test_00301_img.jpg,VenusExpress,0.970907
+test_01961_img.jpg,VenusExpress,0.970907
+test_00697_img.jpg,Soho,0.970900
+test_00772_img.jpg,Soho,0.970897
+test_01452_img.jpg,VenusExpress,0.970894
+test_01428_img.jpg,Soho,0.970893
+test_03536_img.jpg,Cheops,0.970879
+test_03969_img.jpg,ObservationSat1,0.970878
+test_03938_img.jpg,VenusExpress,0.970856
+test_00152_img.jpg,ObservationSat1,0.970853
+test_04665_img.jpg,XMM Newton,0.970847
+test_03141_img.jpg,Proba3,0.970841
+test_04040_img.jpg,Proba3ocs,0.970841
+test_04233_img.jpg,LisaPathfinder,0.970832
+test_01427_img.jpg,Proba3,0.970830
+test_03729_img.jpg,XMM Newton,0.970816
+test_00024_img.jpg,XMM Newton,0.970809
+test_03539_img.jpg,Smart1,0.970806
+test_03962_img.jpg,LisaPathfinder,0.970796
+test_04426_img.jpg,LisaPathfinder,0.970785
+test_04140_img.jpg,Cheops,0.970784
+test_03597_img.jpg,Cheops,0.970769
+test_04113_img.jpg,Cheops,0.970760
+test_01792_img.jpg,Proba3ocs,0.970757
+test_03212_img.jpg,Smart1,0.970746
+test_01273_img.jpg,LisaPathfinder,0.970734
+test_01348_img.jpg,Soho,0.970731
+test_00258_img.jpg,Soho,0.970728
+test_00346_img.jpg,Proba3,0.970714
+test_01397_img.jpg,Proba2,0.970712
+test_04591_img.jpg,Soho,0.970710
+test_02900_img.jpg,ObservationSat1,0.970706
+test_04864_img.jpg,Smart1,0.970704
+test_02723_img.jpg,Proba3ocs,0.970686
+test_01321_img.jpg,Proba3ocs,0.970684
+test_00066_img.jpg,ObservationSat1,0.970676
+test_01705_img.jpg,Proba3ocs,0.970673
+test_03662_img.jpg,XMM Newton,0.970672
+test_04685_img.jpg,ObservationSat1,0.970670
+test_01777_img.jpg,Cheops,0.970668
+test_03320_img.jpg,Proba3,0.970665
+test_01918_img.jpg,ObservationSat1,0.970641
+test_00365_img.jpg,LisaPathfinder,0.970631
+test_02705_img.jpg,Soho,0.970619
+test_01147_img.jpg,VenusExpress,0.970617
+test_02137_img.jpg,Proba2,0.970603
+test_00328_img.jpg,ObservationSat1,0.970600
+test_04886_img.jpg,ObservationSat1,0.970596
+test_03286_img.jpg,Cheops,0.970595
+test_01378_img.jpg,XMM Newton,0.970588
+test_03202_img.jpg,ObservationSat1,0.970583
+test_00020_img.jpg,Proba3,0.970579
+test_04734_img.jpg,Soho,0.970578
+test_03912_img.jpg,Proba3,0.970578
+test_04167_img.jpg,Proba2,0.970561
+test_00979_img.jpg,Proba3ocs,0.970558
+test_03085_img.jpg,XMM Newton,0.970547
+test_03114_img.jpg,Cheops,0.970547
+test_01417_img.jpg,Proba3ocs,0.970545
+test_01247_img.jpg,Smart1,0.970544
+test_04883_img.jpg,Proba3,0.970537
+test_04022_img.jpg,LisaPathfinder,0.970534
+test_04360_img.jpg,Soho,0.970531
+test_03282_img.jpg,VenusExpress,0.970530
+test_02486_img.jpg,Proba3ocs,0.970522
+test_02859_img.jpg,Proba2,0.970521
+test_00333_img.jpg,Proba3ocs,0.970520
+test_02463_img.jpg,Cheops,0.970518
+test_02730_img.jpg,Proba3ocs,0.970513
+test_04356_img.jpg,LisaPathfinder,0.970503
+test_03895_img.jpg,XMM Newton,0.970501
+test_04561_img.jpg,Proba3,0.970498
+test_04436_img.jpg,LisaPathfinder,0.970496
+test_04670_img.jpg,Proba2,0.970489
+test_03640_img.jpg,Proba2,0.970486
+test_02110_img.jpg,Proba3ocs,0.970482
+test_00817_img.jpg,ObservationSat1,0.970479
+test_00695_img.jpg,ObservationSat1,0.970476
+test_01079_img.jpg,LisaPathfinder,0.970474
+test_02560_img.jpg,ObservationSat1,0.970473
+test_03744_img.jpg,Proba3,0.970468
+test_00795_img.jpg,LisaPathfinder,0.970466
+test_01481_img.jpg,Smart1,0.970462
+test_00406_img.jpg,Soho,0.970458
+test_03277_img.jpg,XMM Newton,0.970456
+test_01721_img.jpg,Proba3ocs,0.970454
+test_03934_img.jpg,LisaPathfinder,0.970448
+test_03307_img.jpg,LisaPathfinder,0.970446
+test_01703_img.jpg,LisaPathfinder,0.970442
+test_00495_img.jpg,Cheops,0.970436
+test_03583_img.jpg,Proba3ocs,0.970421
+test_02880_img.jpg,Soho,0.970411
+test_00062_img.jpg,Soho,0.970408
+test_01938_img.jpg,Smart1,0.970403
+test_00375_img.jpg,Proba2,0.970402
+test_04977_img.jpg,XMM Newton,0.970395
+test_04176_img.jpg,Cheops,0.970377
+test_04797_img.jpg,VenusExpress,0.970377
+test_04301_img.jpg,Proba3,0.970376
+test_04930_img.jpg,Smart1,0.970365
+test_02200_img.jpg,Proba2,0.970361
+test_04672_img.jpg,LisaPathfinder,0.970352
+test_01723_img.jpg,Proba3ocs,0.970348
+test_03468_img.jpg,Cheops,0.970343
+test_03072_img.jpg,XMM Newton,0.970337
+test_00941_img.jpg,LisaPathfinder,0.970336
+test_04716_img.jpg,ObservationSat1,0.970332
+test_01264_img.jpg,Proba3,0.970331
+test_03502_img.jpg,ObservationSat1,0.970328
+test_00125_img.jpg,Proba3ocs,0.970327
+test_02849_img.jpg,ObservationSat1,0.970323
+test_02665_img.jpg,VenusExpress,0.970320
+test_02002_img.jpg,ObservationSat1,0.970313
+test_04979_img.jpg,Soho,0.970309
+test_03860_img.jpg,Proba2,0.970308
+test_01237_img.jpg,Proba2,0.970308
+test_03678_img.jpg,LisaPathfinder,0.970284
+test_00789_img.jpg,Proba3ocs,0.970277
+test_03177_img.jpg,ObservationSat1,0.970277
+test_03252_img.jpg,Soho,0.970270
+test_01710_img.jpg,LisaPathfinder,0.970266
+test_04131_img.jpg,Soho,0.970264
+test_01725_img.jpg,ObservationSat1,0.970261
+test_01824_img.jpg,Proba2,0.970261
+test_00494_img.jpg,Cheops,0.970254
+test_02163_img.jpg,Smart1,0.970254
+test_03995_img.jpg,LisaPathfinder,0.970244
+test_03690_img.jpg,Proba2,0.970243
+test_01115_img.jpg,LisaPathfinder,0.970240
+test_01991_img.jpg,LisaPathfinder,0.970232
+test_04524_img.jpg,Proba2,0.970224
+test_02557_img.jpg,Proba3,0.970218
+test_02851_img.jpg,Proba3,0.970216
+test_02565_img.jpg,VenusExpress,0.970200
+test_02589_img.jpg,Cheops,0.970190
+test_01967_img.jpg,XMM Newton,0.970190
+test_04965_img.jpg,Proba2,0.970187
+test_00949_img.jpg,Smart1,0.970186
+test_01028_img.jpg,Proba3ocs,0.970168
+test_01879_img.jpg,Proba3ocs,0.970158
+test_00112_img.jpg,VenusExpress,0.970158
+test_01075_img.jpg,Proba2,0.970155
+test_04784_img.jpg,Cheops,0.970150
+test_04222_img.jpg,Soho,0.970145
+test_02331_img.jpg,Cheops,0.970133
+test_00284_img.jpg,ObservationSat1,0.970131
+test_02932_img.jpg,ObservationSat1,0.970122
+test_03501_img.jpg,Smart1,0.970108
+test_01780_img.jpg,XMM Newton,0.970105
+test_03856_img.jpg,VenusExpress,0.970099
+test_03404_img.jpg,LisaPathfinder,0.970098
+test_00476_img.jpg,Soho,0.970096
+test_00276_img.jpg,Smart1,0.970091
+test_02482_img.jpg,VenusExpress,0.970082
+test_04316_img.jpg,Proba3,0.970080
+test_02354_img.jpg,Cheops,0.970076
+test_01504_img.jpg,Proba2,0.970059
+test_02381_img.jpg,ObservationSat1,0.970052
+test_01837_img.jpg,XMM Newton,0.970051
+test_02302_img.jpg,LisaPathfinder,0.970039
+test_03472_img.jpg,Cheops,0.970038
+test_01977_img.jpg,Cheops,0.970031
+test_02791_img.jpg,Proba2,0.970031
+test_02479_img.jpg,Proba2,0.970019
+test_03231_img.jpg,Proba3,0.969992
+test_03643_img.jpg,Proba3,0.969981
+test_04339_img.jpg,Proba3,0.969977
+test_04950_img.jpg,Proba3,0.969973
+test_04604_img.jpg,XMM Newton,0.969965
+test_04235_img.jpg,VenusExpress,0.969959
+test_03967_img.jpg,Proba3,0.969958
+test_04174_img.jpg,Smart1,0.969948
+test_00296_img.jpg,ObservationSat1,0.969945
+test_02242_img.jpg,LisaPathfinder,0.969929
+test_02758_img.jpg,Proba3,0.969927
+test_01390_img.jpg,Cheops,0.969905
+test_04781_img.jpg,VenusExpress,0.969902
+test_01217_img.jpg,Smart1,0.969901
+test_02035_img.jpg,Soho,0.969881
+test_03184_img.jpg,LisaPathfinder,0.969869
+test_04041_img.jpg,Cheops,0.969863
+test_01990_img.jpg,ObservationSat1,0.969858
+test_01157_img.jpg,Proba3,0.969848
+test_01690_img.jpg,Soho,0.969837
+test_00095_img.jpg,Cheops,0.969835
+test_03466_img.jpg,XMM Newton,0.969833
+test_01676_img.jpg,VenusExpress,0.969830
+test_04616_img.jpg,VenusExpress,0.969830
+test_02879_img.jpg,Proba3,0.969818
+test_03296_img.jpg,Proba3,0.969818
+test_02300_img.jpg,Proba3,0.969805
+test_02948_img.jpg,Proba3,0.969792
+test_03074_img.jpg,Cheops,0.969791
+test_01735_img.jpg,ObservationSat1,0.969790
+test_01749_img.jpg,Proba2,0.969770
+test_03773_img.jpg,Proba2,0.969768
+test_03123_img.jpg,XMM Newton,0.969766
+test_01389_img.jpg,LisaPathfinder,0.969762
+test_01153_img.jpg,ObservationSat1,0.969754
+test_02011_img.jpg,ObservationSat1,0.969751
+test_04330_img.jpg,LisaPathfinder,0.969741
+test_01480_img.jpg,Proba3,0.969741
+test_04141_img.jpg,ObservationSat1,0.969739
+test_03685_img.jpg,VenusExpress,0.969737
+test_03916_img.jpg,XMM Newton,0.969733
+test_00519_img.jpg,Cheops,0.969731
+test_00345_img.jpg,ObservationSat1,0.969712
+test_00729_img.jpg,Cheops,0.969710
+test_00110_img.jpg,Cheops,0.969706
+test_03705_img.jpg,Proba3,0.969704
+test_02030_img.jpg,LisaPathfinder,0.969702
+test_03424_img.jpg,Smart1,0.969696
+test_03604_img.jpg,Cheops,0.969695
+test_03198_img.jpg,XMM Newton,0.969671
+test_01306_img.jpg,XMM Newton,0.969664
+test_04101_img.jpg,XMM Newton,0.969658
+test_00034_img.jpg,Proba2,0.969656
+test_02977_img.jpg,Cheops,0.969653
+test_00569_img.jpg,LisaPathfinder,0.969643
+test_01852_img.jpg,Proba3,0.969636
+test_00352_img.jpg,ObservationSat1,0.969614
+test_02395_img.jpg,Cheops,0.969604
+test_01050_img.jpg,Smart1,0.969603
+test_03889_img.jpg,Proba3,0.969602
+test_02952_img.jpg,Smart1,0.969598
+test_04595_img.jpg,Proba3,0.969591
+test_04388_img.jpg,Soho,0.969583
+test_03742_img.jpg,ObservationSat1,0.969580
+test_00837_img.jpg,LisaPathfinder,0.969577
+test_00367_img.jpg,VenusExpress,0.969545
+test_04479_img.jpg,Soho,0.969543
+test_03082_img.jpg,Cheops,0.969530
+test_00488_img.jpg,Proba3ocs,0.969529
+test_03190_img.jpg,Proba2,0.969528
+test_01456_img.jpg,VenusExpress,0.969520
+test_01145_img.jpg,Proba3,0.969515
+test_04597_img.jpg,LisaPathfinder,0.969510
+test_01259_img.jpg,Cheops,0.969505
+test_00744_img.jpg,XMM Newton,0.969504
+test_02972_img.jpg,ObservationSat1,0.969498
+test_01832_img.jpg,Proba2,0.969496
+test_00843_img.jpg,Proba2,0.969489
+test_00435_img.jpg,VenusExpress,0.969488
+test_03834_img.jpg,XMM Newton,0.969477
+test_03743_img.jpg,Smart1,0.969475
+test_00540_img.jpg,Smart1,0.969471
+test_03195_img.jpg,Cheops,0.969470
+test_00564_img.jpg,LisaPathfinder,0.969463
+test_03162_img.jpg,XMM Newton,0.969459
+test_04553_img.jpg,Proba3ocs,0.969458
+test_03142_img.jpg,Proba2,0.969457
+test_03905_img.jpg,Proba2,0.969449
+test_03913_img.jpg,Proba3ocs,0.969449
+test_03243_img.jpg,Proba2,0.969448
+test_01159_img.jpg,Smart1,0.969443
+test_00793_img.jpg,Cheops,0.969436
+test_03280_img.jpg,Cheops,0.969433
+test_00307_img.jpg,Soho,0.969415
+test_00664_img.jpg,Proba3,0.969410
+test_04662_img.jpg,Proba3,0.969409
+test_04699_img.jpg,ObservationSat1,0.969408
+test_00242_img.jpg,Cheops,0.969407
+test_02685_img.jpg,LisaPathfinder,0.969406
+test_01920_img.jpg,ObservationSat1,0.969399
+test_04410_img.jpg,Soho,0.969399
+test_00447_img.jpg,Proba2,0.969398
+test_04006_img.jpg,Soho,0.969390
+test_00245_img.jpg,Cheops,0.969387
+test_03041_img.jpg,Proba3,0.969382
+test_03902_img.jpg,ObservationSat1,0.969373
+test_03197_img.jpg,ObservationSat1,0.969372
+test_01195_img.jpg,VenusExpress,0.969354
+test_02090_img.jpg,Cheops,0.969338
+test_01414_img.jpg,Proba2,0.969335
+test_00010_img.jpg,Proba3,0.969332
+test_03332_img.jpg,XMM Newton,0.969329
+test_01839_img.jpg,Cheops,0.969319
+test_00849_img.jpg,LisaPathfinder,0.969316
+test_01639_img.jpg,Proba2,0.969299
+test_04570_img.jpg,Proba3,0.969297
+test_00922_img.jpg,Proba2,0.969278
+test_03377_img.jpg,Cheops,0.969278
+test_03767_img.jpg,Proba3,0.969275
+test_00486_img.jpg,Proba2,0.969241
+test_01114_img.jpg,LisaPathfinder,0.969239
+test_00762_img.jpg,Cheops,0.969235
+test_00000_img.jpg,VenusExpress,0.969227
+test_01418_img.jpg,XMM Newton,0.969185
+test_04909_img.jpg,Cheops,0.969181
+test_00951_img.jpg,LisaPathfinder,0.969180
+test_01516_img.jpg,XMM Newton,0.969178
+test_02855_img.jpg,Cheops,0.969177
+test_01701_img.jpg,ObservationSat1,0.969167
+test_01555_img.jpg,LisaPathfinder,0.969166
+test_00537_img.jpg,Smart1,0.969162
+test_01603_img.jpg,XMM Newton,0.969160
+test_02921_img.jpg,Proba3ocs,0.969157
+test_01597_img.jpg,VenusExpress,0.969150
+test_04859_img.jpg,XMM Newton,0.969147
+test_02213_img.jpg,VenusExpress,0.969147
+test_00962_img.jpg,Proba3,0.969137
+test_02481_img.jpg,XMM Newton,0.969137
+test_02272_img.jpg,Cheops,0.969136
+test_02512_img.jpg,ObservationSat1,0.969131
+test_04521_img.jpg,ObservationSat1,0.969115
+test_04567_img.jpg,Proba2,0.969115
+test_03503_img.jpg,Soho,0.969113
+test_02073_img.jpg,Proba3,0.969110
+test_00056_img.jpg,Proba3,0.969095
+test_02450_img.jpg,Proba3ocs,0.969090
+test_03155_img.jpg,Proba2,0.969089
+test_02946_img.jpg,VenusExpress,0.969087
+test_04389_img.jpg,Proba2,0.969082
+test_03527_img.jpg,ObservationSat1,0.969082
+test_00243_img.jpg,XMM Newton,0.969082
+test_03945_img.jpg,XMM Newton,0.969081
+test_00831_img.jpg,Proba3,0.969078
+test_03275_img.jpg,Proba3,0.969075
+test_02986_img.jpg,Proba3ocs,0.969057
+test_04112_img.jpg,XMM Newton,0.969055
+test_04724_img.jpg,XMM Newton,0.969052
+test_00498_img.jpg,Smart1,0.969052
+test_03260_img.jpg,Proba2,0.969050
+test_03011_img.jpg,XMM Newton,0.969049
+test_00819_img.jpg,Smart1,0.969043
+test_04693_img.jpg,Smart1,0.969042
+test_01727_img.jpg,ObservationSat1,0.969031
+test_00012_img.jpg,VenusExpress,0.969022
+test_01352_img.jpg,Proba3,0.969018
+test_00681_img.jpg,Proba3,0.969014
+test_01150_img.jpg,XMM Newton,0.969008
+test_03931_img.jpg,ObservationSat1,0.969005
+test_01405_img.jpg,Proba2,0.968998
+test_02625_img.jpg,Soho,0.968995
+test_04237_img.jpg,LisaPathfinder,0.968992
+test_04198_img.jpg,LisaPathfinder,0.968986
+test_00131_img.jpg,Soho,0.968982
+test_04095_img.jpg,Proba3ocs,0.968978
+test_02734_img.jpg,Proba2,0.968977
+test_04010_img.jpg,Cheops,0.968976
+test_02951_img.jpg,Proba3,0.968970
+test_00895_img.jpg,Proba3ocs,0.968969
+test_03400_img.jpg,Proba3ocs,0.968967
+test_02010_img.jpg,Proba3,0.968964
+test_04528_img.jpg,Proba3ocs,0.968963
+test_01731_img.jpg,VenusExpress,0.968963
+test_00446_img.jpg,Proba3,0.968960
+test_00209_img.jpg,Proba3,0.968936
+test_01024_img.jpg,ObservationSat1,0.968935
+test_01253_img.jpg,ObservationSat1,0.968918
+test_04741_img.jpg,Smart1,0.968915
+test_00376_img.jpg,VenusExpress,0.968909
+test_01908_img.jpg,Proba2,0.968905
+test_01841_img.jpg,Proba3ocs,0.968904
+test_00318_img.jpg,Smart1,0.968890
+test_02401_img.jpg,XMM Newton,0.968886
+test_00140_img.jpg,Proba3,0.968871
+test_02271_img.jpg,Cheops,0.968862
+test_01308_img.jpg,XMM Newton,0.968861
+test_03989_img.jpg,Cheops,0.968852
+test_00163_img.jpg,ObservationSat1,0.968850
+test_00064_img.jpg,LisaPathfinder,0.968846
+test_00241_img.jpg,Proba2,0.968835
+test_01091_img.jpg,Cheops,0.968835
+test_03097_img.jpg,Proba3,0.968825
+test_01761_img.jpg,XMM Newton,0.968822
+test_01355_img.jpg,LisaPathfinder,0.968807
+test_02516_img.jpg,Proba3ocs,0.968803
+test_03897_img.jpg,LisaPathfinder,0.968794
+test_04625_img.jpg,XMM Newton,0.968787
+test_00641_img.jpg,LisaPathfinder,0.968787
+test_01031_img.jpg,XMM Newton,0.968783
+test_04648_img.jpg,Cheops,0.968765
+test_01881_img.jpg,Proba3,0.968759
+test_02785_img.jpg,Proba3,0.968757
+test_03210_img.jpg,XMM Newton,0.968747
+test_04477_img.jpg,XMM Newton,0.968739
+test_00559_img.jpg,Cheops,0.968738
+test_03751_img.jpg,LisaPathfinder,0.968726
+test_04705_img.jpg,XMM Newton,0.968717
+test_04314_img.jpg,LisaPathfinder,0.968711
+test_04738_img.jpg,Cheops,0.968710
+test_03274_img.jpg,Proba2,0.968709
+test_01652_img.jpg,XMM Newton,0.968705
+test_00804_img.jpg,XMM Newton,0.968704
+test_01523_img.jpg,Proba2,0.968694
+test_03606_img.jpg,Proba3,0.968691
+test_04607_img.jpg,XMM Newton,0.968683
+test_02430_img.jpg,Cheops,0.968666
+test_02673_img.jpg,Proba3,0.968666
+test_02420_img.jpg,Proba3,0.968665
+test_01069_img.jpg,Proba2,0.968648
+test_01621_img.jpg,Proba3,0.968648
+test_00080_img.jpg,LisaPathfinder,0.968644
+test_03347_img.jpg,LisaPathfinder,0.968638
+test_01729_img.jpg,Proba3,0.968628
+test_04126_img.jpg,Proba3ocs,0.968618
+test_02174_img.jpg,ObservationSat1,0.968617
+test_01812_img.jpg,ObservationSat1,0.968616
+test_00165_img.jpg,VenusExpress,0.968612
+test_04493_img.jpg,Proba2,0.968602
+test_04554_img.jpg,Proba3ocs,0.968583
+test_02135_img.jpg,LisaPathfinder,0.968581
+test_00086_img.jpg,Cheops,0.968576
+test_04796_img.jpg,ObservationSat1,0.968563
+test_01191_img.jpg,ObservationSat1,0.968554
+test_04664_img.jpg,Soho,0.968542
+test_00442_img.jpg,VenusExpress,0.968542
+test_04036_img.jpg,Proba3,0.968541
+test_03651_img.jpg,XMM Newton,0.968536
+test_00177_img.jpg,Proba3ocs,0.968534
+test_04714_img.jpg,LisaPathfinder,0.968532
+test_01265_img.jpg,LisaPathfinder,0.968525
+test_01056_img.jpg,XMM Newton,0.968524
+test_01499_img.jpg,ObservationSat1,0.968508
+test_02913_img.jpg,XMM Newton,0.968508
+test_02047_img.jpg,XMM Newton,0.968508
+test_04336_img.jpg,Proba2,0.968503
+test_04940_img.jpg,Proba3,0.968501
+test_03150_img.jpg,VenusExpress,0.968500
+test_02969_img.jpg,Proba3ocs,0.968499
+test_02483_img.jpg,Proba3,0.968495
+test_02278_img.jpg,Proba3,0.968483
+test_02045_img.jpg,Proba3ocs,0.968475
+test_04074_img.jpg,ObservationSat1,0.968458
+test_04551_img.jpg,Proba3,0.968451
+test_00094_img.jpg,Proba2,0.968443
+test_03419_img.jpg,Cheops,0.968441
+test_00492_img.jpg,Smart1,0.968439
+test_02227_img.jpg,Cheops,0.968439
+test_04736_img.jpg,Proba2,0.968436
+test_03500_img.jpg,ObservationSat1,0.968431
+test_00731_img.jpg,VenusExpress,0.968423
+test_03159_img.jpg,Proba2,0.968412
+test_03814_img.jpg,VenusExpress,0.968412
+test_02752_img.jpg,Proba3,0.968405
+test_03168_img.jpg,ObservationSat1,0.968394
+test_01244_img.jpg,Soho,0.968383
+test_00883_img.jpg,Cheops,0.968375
+test_02350_img.jpg,Proba3,0.968368
+test_03178_img.jpg,LisaPathfinder,0.968365
+test_01326_img.jpg,ObservationSat1,0.968362
+test_03422_img.jpg,Smart1,0.968347
+test_02794_img.jpg,XMM Newton,0.968346
+test_00180_img.jpg,XMM Newton,0.968340
+test_03477_img.jpg,Smart1,0.968338
+test_01815_img.jpg,Proba3ocs,0.968335
+test_00032_img.jpg,Proba2,0.968321
+test_04596_img.jpg,Proba3,0.968319
+test_00732_img.jpg,Cheops,0.968304
+test_03441_img.jpg,Cheops,0.968292
+test_04827_img.jpg,Smart1,0.968289
+test_02809_img.jpg,Proba3,0.968276
+test_01375_img.jpg,Proba3,0.968268
+test_03461_img.jpg,ObservationSat1,0.968264
+test_01811_img.jpg,LisaPathfinder,0.968257
+test_01623_img.jpg,Proba3,0.968257
+test_01592_img.jpg,Soho,0.968256
+test_03541_img.jpg,ObservationSat1,0.968254
+test_04348_img.jpg,VenusExpress,0.968253
+test_02443_img.jpg,Proba3,0.968253
+test_01944_img.jpg,Proba3ocs,0.968253
+test_04125_img.jpg,XMM Newton,0.968244
+test_02322_img.jpg,Cheops,0.968240
+test_04034_img.jpg,VenusExpress,0.968238
+test_01616_img.jpg,ObservationSat1,0.968236
+test_03988_img.jpg,Cheops,0.968232
+test_01683_img.jpg,VenusExpress,0.968217
+test_03566_img.jpg,Cheops,0.968206
+test_00197_img.jpg,VenusExpress,0.968205
+test_02372_img.jpg,Proba3,0.968203
+test_00610_img.jpg,Proba3,0.968202
+test_01855_img.jpg,LisaPathfinder,0.968198
+test_02301_img.jpg,XMM Newton,0.968196
+test_04344_img.jpg,Cheops,0.968193
+test_03176_img.jpg,Smart1,0.968182
+test_00623_img.jpg,XMM Newton,0.968182
+test_02805_img.jpg,Cheops,0.968180
+test_02313_img.jpg,LisaPathfinder,0.968178
+test_01347_img.jpg,XMM Newton,0.968176
+test_04800_img.jpg,Proba3ocs,0.968165
+test_00620_img.jpg,ObservationSat1,0.968151
+test_01739_img.jpg,Smart1,0.968148
+test_02081_img.jpg,LisaPathfinder,0.968136
+test_00575_img.jpg,LisaPathfinder,0.968129
+test_03848_img.jpg,LisaPathfinder,0.968127
+test_01797_img.jpg,Smart1,0.968104
+test_03355_img.jpg,Soho,0.968103
+test_00953_img.jpg,LisaPathfinder,0.968095
+test_02660_img.jpg,ObservationSat1,0.968086
+test_03883_img.jpg,Proba3ocs,0.968079
+test_04544_img.jpg,XMM Newton,0.968072
+test_00138_img.jpg,Smart1,0.968051
+test_04149_img.jpg,VenusExpress,0.968050
+test_02438_img.jpg,ObservationSat1,0.968046
+test_02441_img.jpg,LisaPathfinder,0.968046
+test_01907_img.jpg,Cheops,0.968045
+test_02827_img.jpg,ObservationSat1,0.968039
+test_03707_img.jpg,Proba3ocs,0.968034
+test_00261_img.jpg,XMM Newton,0.968030
+test_03654_img.jpg,Cheops,0.968012
+test_03621_img.jpg,Proba3ocs,0.968005
+test_04204_img.jpg,Soho,0.967984
+test_00845_img.jpg,Proba2,0.967963
+test_04156_img.jpg,VenusExpress,0.967961
+test_04069_img.jpg,Proba3ocs,0.967957
+test_02044_img.jpg,Proba2,0.967946
+test_04206_img.jpg,Cheops,0.967946
+test_01333_img.jpg,Smart1,0.967944
+test_04906_img.jpg,Proba3,0.967936
+test_02393_img.jpg,LisaPathfinder,0.967934
+test_03608_img.jpg,Smart1,0.967932
+test_03978_img.jpg,Smart1,0.967922
+test_01090_img.jpg,Proba3ocs,0.967913
+test_01827_img.jpg,Smart1,0.967912
+test_02748_img.jpg,ObservationSat1,0.967899
+test_02312_img.jpg,Cheops,0.967879
+test_01958_img.jpg,LisaPathfinder,0.967872
+test_01698_img.jpg,Proba3ocs,0.967869
+test_02123_img.jpg,Soho,0.967867
+test_03330_img.jpg,Cheops,0.967864
+test_00384_img.jpg,ObservationSat1,0.967854
+test_03755_img.jpg,VenusExpress,0.967851
+test_01298_img.jpg,LisaPathfinder,0.967850
+test_00162_img.jpg,Proba3,0.967849
+test_00588_img.jpg,Proba2,0.967849
+test_00008_img.jpg,LisaPathfinder,0.967831
+test_01009_img.jpg,VenusExpress,0.967814
+test_02433_img.jpg,Proba2,0.967803
+test_04878_img.jpg,VenusExpress,0.967801
+test_01760_img.jpg,Proba3,0.967798
+test_00348_img.jpg,Soho,0.967792
+test_03316_img.jpg,Proba3,0.967792
+test_03341_img.jpg,ObservationSat1,0.967791
+test_04751_img.jpg,VenusExpress,0.967791
+test_03221_img.jpg,Proba2,0.967778
+test_02529_img.jpg,Proba3ocs,0.967776
+test_01462_img.jpg,Proba2,0.967774
+test_00259_img.jpg,Soho,0.967773
+test_03090_img.jpg,XMM Newton,0.967755
+test_00879_img.jpg,Smart1,0.967742
+test_02701_img.jpg,LisaPathfinder,0.967731
+test_03927_img.jpg,Proba3ocs,0.967716
+test_04666_img.jpg,Proba2,0.967712
+test_00839_img.jpg,XMM Newton,0.967712
+test_04007_img.jpg,LisaPathfinder,0.967705
+test_03866_img.jpg,XMM Newton,0.967704
+test_02096_img.jpg,ObservationSat1,0.967703
+test_04634_img.jpg,Soho,0.967691
+test_02813_img.jpg,LisaPathfinder,0.967688
+test_01872_img.jpg,LisaPathfinder,0.967681
+test_02786_img.jpg,Cheops,0.967678
+test_04913_img.jpg,VenusExpress,0.967672
+test_00458_img.jpg,Proba3,0.967664
+test_00769_img.jpg,Smart1,0.967663
+test_03455_img.jpg,LisaPathfinder,0.967646
+test_01026_img.jpg,Proba2,0.967635
+test_04495_img.jpg,Smart1,0.967629
+test_02281_img.jpg,VenusExpress,0.967628
+test_00918_img.jpg,LisaPathfinder,0.967627
+test_02356_img.jpg,Soho,0.967625
+test_00297_img.jpg,Cheops,0.967613
+test_03974_img.jpg,Proba3,0.967609
+test_03564_img.jpg,Proba2,0.967608
+test_02138_img.jpg,ObservationSat1,0.967602
+test_00660_img.jpg,Proba2,0.967593
+test_03499_img.jpg,Proba3,0.967590
+test_02716_img.jpg,Proba3ocs,0.967588
+test_02797_img.jpg,Proba3,0.967581
+test_00972_img.jpg,XMM Newton,0.967581
+test_01748_img.jpg,XMM Newton,0.967576
+test_03631_img.jpg,Proba3ocs,0.967572
+test_02270_img.jpg,Cheops,0.967570
+test_01591_img.jpg,Cheops,0.967559
+test_01730_img.jpg,Cheops,0.967549
+test_03733_img.jpg,Proba2,0.967546
+test_04771_img.jpg,Proba3,0.967545
+test_03354_img.jpg,Proba3,0.967537
+test_02306_img.jpg,VenusExpress,0.967536
+test_02365_img.jpg,Proba3,0.967529
+test_04329_img.jpg,Proba3ocs,0.967526
+test_01136_img.jpg,Proba3ocs,0.967517
+test_02456_img.jpg,Proba3ocs,0.967512
+test_03264_img.jpg,XMM Newton,0.967505
+test_03626_img.jpg,Proba3,0.967501
+test_01099_img.jpg,Proba3ocs,0.967496
+test_01875_img.jpg,ObservationSat1,0.967495
+test_04279_img.jpg,Soho,0.967488
+test_02205_img.jpg,Cheops,0.967484
+test_04282_img.jpg,Smart1,0.967484
+test_00369_img.jpg,Proba3ocs,0.967478
+test_02579_img.jpg,LisaPathfinder,0.967472
+test_00851_img.jpg,Proba3ocs,0.967471
+test_00521_img.jpg,LisaPathfinder,0.967462
+test_03358_img.jpg,VenusExpress,0.967450
+test_00554_img.jpg,ObservationSat1,0.967438
+test_00049_img.jpg,Proba2,0.967422
+test_02052_img.jpg,Proba3ocs,0.967409
+test_02257_img.jpg,VenusExpress,0.967409
+test_04310_img.jpg,VenusExpress,0.967402
+test_00142_img.jpg,XMM Newton,0.967392
+test_03134_img.jpg,XMM Newton,0.967389
+test_01287_img.jpg,Soho,0.967381
+test_00720_img.jpg,Cheops,0.967374
+test_04907_img.jpg,Proba3ocs,0.967372
+test_02541_img.jpg,ObservationSat1,0.967372
+test_01300_img.jpg,ObservationSat1,0.967367
+test_04943_img.jpg,XMM Newton,0.967364
+test_01981_img.jpg,Proba3ocs,0.967361
+test_02230_img.jpg,XMM Newton,0.967358
+test_02158_img.jpg,Proba3ocs,0.967356
+test_04598_img.jpg,Proba2,0.967343
+test_03625_img.jpg,Proba3,0.967342
+test_04086_img.jpg,Cheops,0.967338
+test_00418_img.jpg,Proba2,0.967327
+test_01686_img.jpg,Proba2,0.967324
+test_00710_img.jpg,VenusExpress,0.967324
+test_04482_img.jpg,LisaPathfinder,0.967304
+test_02585_img.jpg,Proba3ocs,0.967292
+test_01610_img.jpg,Proba2,0.967287
+test_01927_img.jpg,Proba2,0.967286
+test_00877_img.jpg,XMM Newton,0.967281
+test_00374_img.jpg,Proba3ocs,0.967281
+test_04535_img.jpg,LisaPathfinder,0.967276
+test_03362_img.jpg,Proba3ocs,0.967274
+test_00906_img.jpg,LisaPathfinder,0.967271
+test_03550_img.jpg,XMM Newton,0.967270
+test_02022_img.jpg,Proba3,0.967268
+test_01400_img.jpg,Proba3,0.967265
+test_01174_img.jpg,VenusExpress,0.967261
+test_01277_img.jpg,LisaPathfinder,0.967253
+test_02380_img.jpg,Cheops,0.967250
+test_03375_img.jpg,Proba3ocs,0.967249
+test_00016_img.jpg,XMM Newton,0.967243
+test_02439_img.jpg,Soho,0.967229
+test_03349_img.jpg,ObservationSat1,0.967225
+test_03671_img.jpg,Proba2,0.967220
+test_00022_img.jpg,Proba2,0.967207
+test_01262_img.jpg,ObservationSat1,0.967198
+test_00019_img.jpg,Proba3ocs,0.967185
+test_03044_img.jpg,Smart1,0.967182
+test_02558_img.jpg,LisaPathfinder,0.967181
+test_03006_img.jpg,Proba3ocs,0.967176
+test_03222_img.jpg,VenusExpress,0.967170
+test_00098_img.jpg,ObservationSat1,0.967164
+test_02704_img.jpg,Proba3ocs,0.967155
+test_02122_img.jpg,ObservationSat1,0.967148
+test_00699_img.jpg,Cheops,0.967143
+test_00115_img.jpg,LisaPathfinder,0.967141
+test_00018_img.jpg,Proba3,0.967132
+test_00151_img.jpg,ObservationSat1,0.967124
+test_04223_img.jpg,LisaPathfinder,0.967123
+test_01384_img.jpg,Proba3,0.967121
+test_04655_img.jpg,Proba2,0.967119
+test_02175_img.jpg,Cheops,0.967095
+test_04132_img.jpg,Proba3,0.967092
+test_04938_img.jpg,Soho,0.967091
+test_01805_img.jpg,Proba3ocs,0.967088
+test_01123_img.jpg,VenusExpress,0.967086
+test_00396_img.jpg,Cheops,0.967078
+test_01743_img.jpg,XMM Newton,0.967077
+test_02410_img.jpg,Proba3,0.967072
+test_02544_img.jpg,LisaPathfinder,0.967069
+test_01313_img.jpg,Proba3,0.967061
+test_00186_img.jpg,LisaPathfinder,0.967059
+test_01513_img.jpg,XMM Newton,0.967053
+test_00649_img.jpg,Soho,0.967051
+test_04689_img.jpg,Proba3,0.967040
+test_02823_img.jpg,Cheops,0.967032
+test_03845_img.jpg,Proba3ocs,0.967031
+test_03731_img.jpg,ObservationSat1,0.967031
+test_04558_img.jpg,Smart1,0.967021
+test_01403_img.jpg,Proba3,0.967018
+test_04278_img.jpg,Proba3,0.967015
+test_01626_img.jpg,VenusExpress,0.967012
+test_04407_img.jpg,Proba3,0.967012
+test_00995_img.jpg,Proba3ocs,0.967011
+test_04061_img.jpg,XMM Newton,0.966998
+test_02364_img.jpg,Smart1,0.966994
+test_04946_img.jpg,VenusExpress,0.966993
+test_04989_img.jpg,VenusExpress,0.966971
+test_01924_img.jpg,Proba3ocs,0.966966
+test_04865_img.jpg,Soho,0.966958
+test_04327_img.jpg,VenusExpress,0.966957
+test_01659_img.jpg,Proba3,0.966950
+test_00192_img.jpg,Proba3,0.966949
+test_02675_img.jpg,Smart1,0.966941
+test_02407_img.jpg,Cheops,0.966924
+test_00593_img.jpg,VenusExpress,0.966923
+test_03739_img.jpg,Proba2,0.966919
+test_00736_img.jpg,Soho,0.966913
+test_03428_img.jpg,VenusExpress,0.966913
+test_02721_img.jpg,Cheops,0.966908
+test_04706_img.jpg,LisaPathfinder,0.966897
+test_00810_img.jpg,XMM Newton,0.966895
+test_03269_img.jpg,Proba2,0.966891
+test_01684_img.jpg,Proba3ocs,0.966885
+test_01317_img.jpg,Proba3,0.966883
+test_04968_img.jpg,ObservationSat1,0.966869
+test_00172_img.jpg,Proba3,0.966868
+test_03148_img.jpg,XMM Newton,0.966866
+test_03879_img.jpg,Cheops,0.966865
+test_01388_img.jpg,VenusExpress,0.966857
+test_01346_img.jpg,Cheops,0.966850
+test_03008_img.jpg,Proba3,0.966849
+test_01476_img.jpg,Proba3,0.966848
+test_00704_img.jpg,Smart1,0.966846
+test_02118_img.jpg,Cheops,0.966827
+test_04663_img.jpg,XMM Newton,0.966823
+test_03946_img.jpg,Proba3ocs,0.966822
+test_00780_img.jpg,Proba3,0.966818
+test_03130_img.jpg,Proba3,0.966805
+test_01046_img.jpg,Proba3,0.966798
+test_01442_img.jpg,Proba2,0.966794
+test_04120_img.jpg,Proba2,0.966774
+test_04200_img.jpg,Proba3,0.966767
+test_03258_img.jpg,Proba3ocs,0.966763
+test_01512_img.jpg,Cheops,0.966754
+test_00555_img.jpg,Soho,0.966750
+test_04045_img.jpg,LisaPathfinder,0.966749
+test_00852_img.jpg,Cheops,0.966744
+test_02085_img.jpg,Proba2,0.966741
+test_04225_img.jpg,LisaPathfinder,0.966731
+test_01829_img.jpg,LisaPathfinder,0.966729
+test_00341_img.jpg,Smart1,0.966724
+test_03588_img.jpg,LisaPathfinder,0.966721
+test_03948_img.jpg,Proba2,0.966709
+test_02574_img.jpg,XMM Newton,0.966708
+test_00690_img.jpg,Proba3ocs,0.966700
+test_01073_img.jpg,ObservationSat1,0.966699
+test_02358_img.jpg,Proba3ocs,0.966688
+test_02987_img.jpg,Cheops,0.966682
+test_01017_img.jpg,Cheops,0.966679
+test_04787_img.jpg,Proba3ocs,0.966676
+test_02706_img.jpg,Proba2,0.966672
+test_02033_img.jpg,VenusExpress,0.966664
+test_00739_img.jpg,Proba3,0.966664
+test_00371_img.jpg,XMM Newton,0.966658
+test_04912_img.jpg,Smart1,0.966657
+test_00473_img.jpg,LisaPathfinder,0.966655
+test_04955_img.jpg,Cheops,0.966655
+test_00907_img.jpg,VenusExpress,0.966652
+test_00948_img.jpg,Proba3ocs,0.966644
+test_00782_img.jpg,Proba2,0.966643
+test_04213_img.jpg,LisaPathfinder,0.966640
+test_01571_img.jpg,ObservationSat1,0.966614
+test_04427_img.jpg,LisaPathfinder,0.966613
+test_00050_img.jpg,XMM Newton,0.966582
+test_02672_img.jpg,Soho,0.966578
+test_01891_img.jpg,VenusExpress,0.966570
+test_04160_img.jpg,ObservationSat1,0.966569
+test_01901_img.jpg,Soho,0.966567
+test_01458_img.jpg,Proba3ocs,0.966562
+test_04272_img.jpg,Smart1,0.966549
+test_04622_img.jpg,LisaPathfinder,0.966544
+test_04549_img.jpg,LisaPathfinder,0.966542
+test_03452_img.jpg,XMM Newton,0.966520
+test_01134_img.jpg,Cheops,0.966519
+test_04576_img.jpg,Proba3ocs,0.966511
+test_03599_img.jpg,LisaPathfinder,0.966505
+test_04470_img.jpg,Proba3ocs,0.966496
+test_03668_img.jpg,VenusExpress,0.966489
+test_00361_img.jpg,LisaPathfinder,0.966488
+test_01612_img.jpg,Cheops,0.966488
+test_04195_img.jpg,VenusExpress,0.966483
+test_01176_img.jpg,Proba3ocs,0.966447
+test_02338_img.jpg,ObservationSat1,0.966444
+test_03338_img.jpg,Proba3,0.966444
+test_04107_img.jpg,Proba3ocs,0.966440
+test_03110_img.jpg,VenusExpress,0.966417
+test_03772_img.jpg,LisaPathfinder,0.966417
+test_02251_img.jpg,Soho,0.966416
+test_01567_img.jpg,VenusExpress,0.966407
+test_00314_img.jpg,Cheops,0.966396
+test_02225_img.jpg,ObservationSat1,0.966394
+test_02954_img.jpg,VenusExpress,0.966376
+test_04687_img.jpg,Cheops,0.966375
+test_04313_img.jpg,Soho,0.966375
+test_01391_img.jpg,Proba2,0.966359
+test_00935_img.jpg,Proba3,0.966355
+test_00071_img.jpg,Cheops,0.966345
+test_03433_img.jpg,Smart1,0.966344
+test_00850_img.jpg,Proba2,0.966337
+test_00882_img.jpg,Soho,0.966336
+test_01035_img.jpg,LisaPathfinder,0.966321
+test_04719_img.jpg,Proba3ocs,0.966316
+test_02546_img.jpg,Soho,0.966315
+test_03409_img.jpg,Proba3,0.966298
+test_03549_img.jpg,Proba3ocs,0.966283
+test_04945_img.jpg,Proba2,0.966276
+test_01688_img.jpg,ObservationSat1,0.966275
+test_01338_img.jpg,Smart1,0.966273
+test_00493_img.jpg,XMM Newton,0.966264
+test_02374_img.jpg,Soho,0.966259
+test_00870_img.jpg,Proba2,0.966253
+test_04608_img.jpg,VenusExpress,0.966253
+test_04650_img.jpg,Soho,0.966244
+test_02754_img.jpg,Smart1,0.966234
+test_02846_img.jpg,LisaPathfinder,0.966232
+test_03864_img.jpg,Cheops,0.966219
+test_03887_img.jpg,Proba2,0.966218
+test_01302_img.jpg,Proba3ocs,0.966214
+test_00130_img.jpg,ObservationSat1,0.966198
+test_00582_img.jpg,LisaPathfinder,0.966198
+test_04342_img.jpg,Proba2,0.966196
+test_04294_img.jpg,Smart1,0.966192
+test_00171_img.jpg,VenusExpress,0.966185
+test_02101_img.jpg,Proba3ocs,0.966184
+test_00863_img.jpg,Proba2,0.966181
+test_04519_img.jpg,Proba2,0.966165
+test_02303_img.jpg,ObservationSat1,0.966161
+test_02325_img.jpg,Proba3,0.966160
+test_01930_img.jpg,LisaPathfinder,0.966156
+test_03000_img.jpg,Proba3,0.966144
+test_04899_img.jpg,Soho,0.966135
+test_02818_img.jpg,Proba3ocs,0.966134
+test_00496_img.jpg,ObservationSat1,0.966130
+test_03490_img.jpg,Cheops,0.966115
+test_04299_img.jpg,Proba3,0.966109
+test_02214_img.jpg,Smart1,0.966108
+test_02796_img.jpg,Proba3ocs,0.966107
+test_01934_img.jpg,XMM Newton,0.966097
+test_01487_img.jpg,VenusExpress,0.966089
+test_01094_img.jpg,Smart1,0.966088
+test_01438_img.jpg,Soho,0.966085
+test_02746_img.jpg,ObservationSat1,0.966084
+test_02538_img.jpg,Proba2,0.966080
+test_01501_img.jpg,ObservationSat1,0.966080
+test_04033_img.jpg,Proba2,0.966075
+test_03444_img.jpg,Cheops,0.966065
+test_04861_img.jpg,Proba3,0.966061
+test_00147_img.jpg,Proba3ocs,0.966057
+test_00255_img.jpg,LisaPathfinder,0.966056
+test_02146_img.jpg,Soho,0.966053
+test_03950_img.jpg,LisaPathfinder,0.966047
+test_01042_img.jpg,Proba3ocs,0.966046
+test_03762_img.jpg,Proba3,0.966041
+test_04491_img.jpg,Cheops,0.966040
+test_01771_img.jpg,Soho,0.966028
+test_04974_img.jpg,VenusExpress,0.966027
+test_01293_img.jpg,ObservationSat1,0.966014
+test_02305_img.jpg,Proba3ocs,0.966001
+test_02197_img.jpg,Smart1,0.965988
+test_01699_img.jpg,Proba2,0.965977
+test_02633_img.jpg,LisaPathfinder,0.965973
+test_00232_img.jpg,Proba3,0.965954
+test_04764_img.jpg,Proba2,0.965940
+test_01517_img.jpg,Smart1,0.965938
+test_01923_img.jpg,Proba2,0.965937
+test_01395_img.jpg,Cheops,0.965932
+test_02820_img.jpg,ObservationSat1,0.965932
+test_00885_img.jpg,ObservationSat1,0.965924
+test_03300_img.jpg,XMM Newton,0.965921
+test_02132_img.jpg,VenusExpress,0.965919
+test_03619_img.jpg,ObservationSat1,0.965916
+test_02800_img.jpg,Cheops,0.965912
+test_01911_img.jpg,Proba3,0.965910
+test_03321_img.jpg,Proba3,0.965900
+test_02710_img.jpg,Smart1,0.965887
+test_02617_img.jpg,VenusExpress,0.965886
+test_03738_img.jpg,LisaPathfinder,0.965872
+test_02947_img.jpg,Soho,0.965867
+test_04002_img.jpg,VenusExpress,0.965867
+test_02066_img.jpg,Soho,0.965862
+test_00557_img.jpg,Proba3ocs,0.965860
+test_00815_img.jpg,Proba3,0.965852
+test_04242_img.jpg,VenusExpress,0.965852
+test_04830_img.jpg,Cheops,0.965838
+test_01622_img.jpg,Cheops,0.965816
+test_02593_img.jpg,Proba2,0.965811
+test_04694_img.jpg,Proba2,0.965803
+test_02239_img.jpg,Proba2,0.965793
+test_04405_img.jpg,VenusExpress,0.965789
+test_01604_img.jpg,ObservationSat1,0.965788
+test_01129_img.jpg,Smart1,0.965788
+test_01620_img.jpg,LisaPathfinder,0.965783
+test_03049_img.jpg,Smart1,0.965777
+test_01502_img.jpg,XMM Newton,0.965772
+test_03314_img.jpg,Proba3ocs,0.965771
+test_00788_img.jpg,Proba3,0.965760
+test_04111_img.jpg,Proba2,0.965754
+test_02878_img.jpg,Proba3ocs,0.965750
+test_04571_img.jpg,Cheops,0.965748
+test_00670_img.jpg,Proba3ocs,0.965748
+test_00368_img.jpg,VenusExpress,0.965747
+test_00441_img.jpg,XMM Newton,0.965744
+test_04908_img.jpg,Soho,0.965743
+test_03281_img.jpg,LisaPathfinder,0.965740
+test_00195_img.jpg,XMM Newton,0.965729
+test_03508_img.jpg,XMM Newton,0.965713
+test_02681_img.jpg,ObservationSat1,0.965713
+test_04581_img.jpg,Soho,0.965691
+test_00286_img.jpg,LisaPathfinder,0.965683
+test_01962_img.jpg,Cheops,0.965683
+test_04211_img.jpg,Proba3ocs,0.965682
+test_00391_img.jpg,ObservationSat1,0.965679
+test_03012_img.jpg,Proba3,0.965679
+test_00781_img.jpg,XMM Newton,0.965668
+test_03575_img.jpg,LisaPathfinder,0.965668
+test_04025_img.jpg,VenusExpress,0.965651
+test_00786_img.jpg,Cheops,0.965651
+test_03737_img.jpg,Cheops,0.965644
+test_00448_img.jpg,ObservationSat1,0.965643
+test_02534_img.jpg,VenusExpress,0.965639
+test_00639_img.jpg,Proba3,0.965636
+test_02237_img.jpg,Proba3ocs,0.965636
+test_04386_img.jpg,Proba3ocs,0.965617
+test_02471_img.jpg,Proba3,0.965608
+test_03152_img.jpg,ObservationSat1,0.965601
+test_00482_img.jpg,Soho,0.965597
+test_00723_img.jpg,Cheops,0.965594
+test_04354_img.jpg,VenusExpress,0.965587
+test_03015_img.jpg,Proba3ocs,0.965571
+test_04443_img.jpg,XMM Newton,0.965571
+test_03904_img.jpg,Proba3ocs,0.965550
+test_03146_img.jpg,Proba3,0.965526
+test_01888_img.jpg,Proba3,0.965523
+test_02532_img.jpg,Cheops,0.965521
+test_02997_img.jpg,Smart1,0.965514
+test_04877_img.jpg,XMM Newton,0.965514
+test_04497_img.jpg,ObservationSat1,0.965513
+test_01963_img.jpg,Cheops,0.965506
+test_04750_img.jpg,ObservationSat1,0.965502
+test_02648_img.jpg,LisaPathfinder,0.965479
+test_02493_img.jpg,Proba3,0.965473
+test_02180_img.jpg,Cheops,0.965472
+test_04489_img.jpg,ObservationSat1,0.965468
+test_00802_img.jpg,Proba3ocs,0.965465
+test_00337_img.jpg,ObservationSat1,0.965463
+test_01995_img.jpg,Proba3ocs,0.965456
+test_03593_img.jpg,VenusExpress,0.965444
+test_04755_img.jpg,LisaPathfinder,0.965436
+test_03746_img.jpg,VenusExpress,0.965434
+test_00501_img.jpg,XMM Newton,0.965430
+test_01680_img.jpg,Proba3ocs,0.965421
+test_01261_img.jpg,VenusExpress,0.965415
+test_01448_img.jpg,Soho,0.965399
+test_00686_img.jpg,XMM Newton,0.965393
+test_04020_img.jpg,Proba3ocs,0.965390
+test_04697_img.jpg,Cheops,0.965389
+test_03416_img.jpg,ObservationSat1,0.965388
+test_01864_img.jpg,Proba3,0.965382
+test_03208_img.jpg,LisaPathfinder,0.965379
+test_00127_img.jpg,VenusExpress,0.965378
+test_03689_img.jpg,Soho,0.965375
+test_03757_img.jpg,VenusExpress,0.965366
+test_03386_img.jpg,Proba3ocs,0.965355
+test_03674_img.jpg,Cheops,0.965355
+test_01373_img.jpg,Proba3,0.965348
+test_03438_img.jpg,XMM Newton,0.965337
+test_02203_img.jpg,LisaPathfinder,0.965321
+test_02056_img.jpg,XMM Newton,0.965317
+test_02884_img.jpg,Soho,0.965312
+test_02496_img.jpg,Cheops,0.965310
+test_03057_img.jpg,Cheops,0.965307
+test_00387_img.jpg,Proba3,0.965305
+test_02525_img.jpg,Proba3ocs,0.965305
+test_03819_img.jpg,Soho,0.965299
+test_00542_img.jpg,VenusExpress,0.965295
+test_00003_img.jpg,Proba2,0.965289
+test_04089_img.jpg,Proba2,0.965270
+test_02590_img.jpg,ObservationSat1,0.965268
+test_04275_img.jpg,Cheops,0.965245
+test_01156_img.jpg,Proba2,0.965243
+test_04073_img.jpg,ObservationSat1,0.965243
+test_01772_img.jpg,ObservationSat1,0.965234
+test_03299_img.jpg,ObservationSat1,0.965231
+test_04569_img.jpg,XMM Newton,0.965226
+test_02533_img.jpg,VenusExpress,0.965223
+test_04428_img.jpg,Proba3,0.965218
+test_04177_img.jpg,LisaPathfinder,0.965214
+test_02613_img.jpg,Proba3,0.965211
+test_00614_img.jpg,Proba3ocs,0.965210
+test_00730_img.jpg,ObservationSat1,0.965210
+test_00642_img.jpg,Proba3,0.965205
+test_04832_img.jpg,Cheops,0.965198
+test_00771_img.jpg,Proba2,0.965190
+test_04550_img.jpg,Proba2,0.965182
+test_00313_img.jpg,Proba3,0.965170
+test_04933_img.jpg,VenusExpress,0.965170
+test_04466_img.jpg,Proba3ocs,0.965162
+test_04494_img.jpg,LisaPathfinder,0.965155
+test_03186_img.jpg,XMM Newton,0.965155
+test_02426_img.jpg,Proba2,0.965152
+test_02886_img.jpg,LisaPathfinder,0.965151
+test_01296_img.jpg,Proba3ocs,0.965145
+test_02469_img.jpg,Proba3,0.965138
+test_03188_img.jpg,LisaPathfinder,0.965134
+test_04349_img.jpg,Proba3ocs,0.965130
+test_04599_img.jpg,ObservationSat1,0.965125
+test_02294_img.jpg,Proba2,0.965121
+test_04792_img.jpg,Proba2,0.965095
+test_02743_img.jpg,ObservationSat1,0.965095
+test_02041_img.jpg,ObservationSat1,0.965095
+test_02084_img.jpg,XMM Newton,0.965092
+test_03410_img.jpg,Smart1,0.965091
+test_00063_img.jpg,XMM Newton,0.965090
+test_01582_img.jpg,Smart1,0.965068
+test_04728_img.jpg,Soho,0.965063
+test_03797_img.jpg,ObservationSat1,0.965049
+test_02500_img.jpg,VenusExpress,0.965037
+test_04842_img.jpg,Soho,0.965036
+test_02910_img.jpg,XMM Newton,0.965033
+test_01030_img.jpg,Cheops,0.965032
+test_03799_img.jpg,Proba3ocs,0.965017
+test_03844_img.jpg,Proba3ocs,0.964999
+test_01957_img.jpg,Proba3,0.964997
+test_02472_img.jpg,Proba3ocs,0.964995
+test_00602_img.jpg,Cheops,0.964991
+test_00747_img.jpg,VenusExpress,0.964986
+test_01666_img.jpg,LisaPathfinder,0.964982
+test_04277_img.jpg,Soho,0.964978
+test_01002_img.jpg,Proba3ocs,0.964975
+test_04266_img.jpg,LisaPathfinder,0.964973
+test_02622_img.jpg,Proba3ocs,0.964971
+test_04992_img.jpg,ObservationSat1,0.964961
+test_01396_img.jpg,ObservationSat1,0.964959
+test_01182_img.jpg,Proba2,0.964953
+test_03287_img.jpg,Cheops,0.964948
+test_00338_img.jpg,Proba3ocs,0.964947
+test_04029_img.jpg,Proba3,0.964943
+test_01402_img.jpg,Proba2,0.964928
+test_04305_img.jpg,Smart1,0.964913
+test_04186_img.jpg,Proba2,0.964902
+test_04361_img.jpg,LisaPathfinder,0.964902
+test_01469_img.jpg,Cheops,0.964893
+test_01984_img.jpg,VenusExpress,0.964889
+test_02377_img.jpg,Cheops,0.964887
+test_00349_img.jpg,Soho,0.964882
+test_02419_img.jpg,VenusExpress,0.964868
+test_02861_img.jpg,Soho,0.964861
+test_04143_img.jpg,Smart1,0.964861
+test_01166_img.jpg,Smart1,0.964857
+test_00712_img.jpg,Soho,0.964855
+test_02510_img.jpg,VenusExpress,0.964850
+test_04667_img.jpg,Proba3,0.964841
+test_01342_img.jpg,Soho,0.964836
+test_03406_img.jpg,Proba3ocs,0.964801
+test_04733_img.jpg,Cheops,0.964793
+test_01167_img.jpg,Cheops,0.964792
+test_03701_img.jpg,Proba3,0.964780
+test_00199_img.jpg,Soho,0.964770
+test_04744_img.jpg,Proba3ocs,0.964761
+test_01311_img.jpg,Smart1,0.964757
+test_02908_img.jpg,Proba3,0.964746
+test_00543_img.jpg,Soho,0.964745
+test_01520_img.jpg,Proba3,0.964739
+test_04686_img.jpg,Smart1,0.964728
+test_02432_img.jpg,Proba3,0.964712
+test_00134_img.jpg,ObservationSat1,0.964711
+test_04231_img.jpg,Proba3ocs,0.964707
+test_00183_img.jpg,VenusExpress,0.964702
+test_02333_img.jpg,Proba2,0.964701
+test_02694_img.jpg,Smart1,0.964690
+test_04352_img.jpg,Proba3,0.964679
+test_03829_img.jpg,LisaPathfinder,0.964670
+test_03820_img.jpg,ObservationSat1,0.964668
+test_03835_img.jpg,Proba3ocs,0.964651
+test_04536_img.jpg,XMM Newton,0.964644
+test_00937_img.jpg,Proba2,0.964628
+test_04114_img.jpg,Proba3,0.964621
+test_04810_img.jpg,LisaPathfinder,0.964613
+test_03620_img.jpg,Cheops,0.964599
+test_01274_img.jpg,VenusExpress,0.964572
+test_01681_img.jpg,VenusExpress,0.964552
+test_04882_img.jpg,Proba3,0.964550
+test_01889_img.jpg,Proba2,0.964544
+test_02092_img.jpg,XMM Newton,0.964539
+test_02965_img.jpg,Cheops,0.964534
+test_03056_img.jpg,VenusExpress,0.964531
+test_00834_img.jpg,Proba3ocs,0.964530
+test_04311_img.jpg,LisaPathfinder,0.964527
+test_03987_img.jpg,VenusExpress,0.964521
+test_02950_img.jpg,Proba2,0.964510
+test_00875_img.jpg,LisaPathfinder,0.964507
+test_04021_img.jpg,Proba3ocs,0.964497
+test_01284_img.jpg,Cheops,0.964496
+test_01158_img.jpg,Smart1,0.964492
+test_02511_img.jpg,Cheops,0.964490
+test_01175_img.jpg,Proba2,0.964485
+test_03170_img.jpg,LisaPathfinder,0.964482
+test_01940_img.jpg,Cheops,0.964468
+test_04296_img.jpg,ObservationSat1,0.964465
+test_02346_img.jpg,LisaPathfinder,0.964462
+test_01048_img.jpg,Proba3,0.964462
+test_04758_img.jpg,Proba3ocs,0.964459
+test_02656_img.jpg,ObservationSat1,0.964454
+test_01750_img.jpg,Smart1,0.964447
+test_01058_img.jpg,Soho,0.964435
+test_04834_img.jpg,VenusExpress,0.964418
+test_01131_img.jpg,VenusExpress,0.964415
+test_01997_img.jpg,Cheops,0.964410
+test_00194_img.jpg,LisaPathfinder,0.964406
+test_02050_img.jpg,Proba3,0.964384
+test_01870_img.jpg,XMM Newton,0.964381
+test_00957_img.jpg,LisaPathfinder,0.964379
+test_02596_img.jpg,VenusExpress,0.964374
+test_03453_img.jpg,Proba3ocs,0.964371
+test_03328_img.jpg,Soho,0.964355
+test_00240_img.jpg,ObservationSat1,0.964346
+test_00141_img.jpg,Proba3ocs,0.964342
+test_04568_img.jpg,Soho,0.964339
+test_01369_img.jpg,ObservationSat1,0.964337
+test_02722_img.jpg,Cheops,0.964337
+test_00508_img.jpg,XMM Newton,0.964318
+test_03896_img.jpg,Proba3,0.964315
+test_02228_img.jpg,VenusExpress,0.964313
+test_04202_img.jpg,Proba2,0.964310
+test_01105_img.jpg,Proba3,0.964305
+test_01071_img.jpg,Proba3,0.964303
+test_01070_img.jpg,Smart1,0.964302
+test_03523_img.jpg,VenusExpress,0.964299
+test_04396_img.jpg,LisaPathfinder,0.964296
+test_00800_img.jpg,Soho,0.964287
+test_03311_img.jpg,VenusExpress,0.964286
+test_00684_img.jpg,Proba3ocs,0.964280
+test_01066_img.jpg,Proba3ocs,0.964273
+test_01611_img.jpg,Cheops,0.964268
+test_01245_img.jpg,VenusExpress,0.964266
+test_00838_img.jpg,Soho,0.964256
+test_03437_img.jpg,Proba3,0.964255
+test_04749_img.jpg,LisaPathfinder,0.964250
+test_01488_img.jpg,VenusExpress,0.964233
+test_01248_img.jpg,Smart1,0.964229
+test_01343_img.jpg,VenusExpress,0.964202
+test_00530_img.jpg,Soho,0.964191
+test_02915_img.jpg,Cheops,0.964183
+test_03650_img.jpg,Smart1,0.964180
+test_04752_img.jpg,LisaPathfinder,0.964171
+test_00813_img.jpg,Proba3ocs,0.964167
+test_02261_img.jpg,Proba2,0.964162
+test_03930_img.jpg,VenusExpress,0.964146
+test_00735_img.jpg,LisaPathfinder,0.964114
+test_00805_img.jpg,Proba3,0.964107
+test_04439_img.jpg,Soho,0.964106
+test_03813_img.jpg,Soho,0.964090
+test_02536_img.jpg,Soho,0.964076
+test_04109_img.jpg,XMM Newton,0.964070
+test_02040_img.jpg,Proba3ocs,0.964057
+test_02630_img.jpg,VenusExpress,0.964030
+test_01568_img.jpg,Soho,0.964029
+test_03741_img.jpg,ObservationSat1,0.964011
+test_01609_img.jpg,Proba3,0.964004
+test_02075_img.jpg,VenusExpress,0.963999
+test_01599_img.jpg,Smart1,0.963992
+test_02194_img.jpg,XMM Newton,0.963986
+test_01600_img.jpg,Smart1,0.963985
+test_02186_img.jpg,Proba3ocs,0.963980
+test_03247_img.jpg,Cheops,0.963971
+test_02639_img.jpg,Proba3,0.963969
+test_00331_img.jpg,Cheops,0.963965
+test_01866_img.jpg,VenusExpress,0.963940
+test_03360_img.jpg,Proba3ocs,0.963927
+test_01124_img.jpg,Proba3ocs,0.963923
+test_03185_img.jpg,XMM Newton,0.963900
+test_04795_img.jpg,Proba3,0.963892
+test_00940_img.jpg,ObservationSat1,0.963855
+test_03240_img.jpg,LisaPathfinder,0.963854
+test_03135_img.jpg,Proba3,0.963854
+test_04230_img.jpg,Proba3ocs,0.963845
+test_01098_img.jpg,Proba2,0.963844
+test_04307_img.jpg,Soho,0.963834
+test_04372_img.jpg,Soho,0.963829
+test_01706_img.jpg,Proba3ocs,0.963824
+test_03318_img.jpg,Proba3ocs,0.963822
+test_01010_img.jpg,Smart1,0.963806
+test_02147_img.jpg,Proba3ocs,0.963789
+test_04854_img.jpg,VenusExpress,0.963783
+test_00558_img.jpg,Cheops,0.963776
+test_01419_img.jpg,Proba2,0.963775
+test_01121_img.jpg,VenusExpress,0.963774
+test_03911_img.jpg,ObservationSat1,0.963772
+test_00919_img.jpg,Proba3ocs,0.963771
+test_00077_img.jpg,Proba3ocs,0.963771
+test_04251_img.jpg,Proba3,0.963758
+test_04522_img.jpg,Soho,0.963753
+test_02150_img.jpg,Proba3ocs,0.963739
+test_02318_img.jpg,Proba3ocs,0.963738
+test_01813_img.jpg,VenusExpress,0.963726
+test_02466_img.jpg,LisaPathfinder,0.963721
+test_04502_img.jpg,LisaPathfinder,0.963719
+test_00478_img.jpg,Soho,0.963718
+test_02548_img.jpg,LisaPathfinder,0.963716
+test_03771_img.jpg,VenusExpress,0.963714
+test_03241_img.jpg,XMM Newton,0.963708
+test_00154_img.jpg,LisaPathfinder,0.963689
+test_01382_img.jpg,Proba2,0.963672
+test_01677_img.jpg,LisaPathfinder,0.963657
+test_02599_img.jpg,ObservationSat1,0.963654
+test_02956_img.jpg,Proba3ocs,0.963645
+test_01943_img.jpg,Proba3ocs,0.963626
+test_04364_img.jpg,Cheops,0.963623
+test_03175_img.jpg,LisaPathfinder,0.963611
+test_01848_img.jpg,Soho,0.963608
+test_01210_img.jpg,XMM Newton,0.963596
+test_01457_img.jpg,Proba3ocs,0.963594
+test_02607_img.jpg,Proba3,0.963581
+test_03344_img.jpg,Proba3ocs,0.963581
+test_03224_img.jpg,Proba3,0.963581
+test_00544_img.jpg,Proba3ocs,0.963573
+test_03007_img.jpg,XMM Newton,0.963572
+test_03163_img.jpg,Proba3,0.963571
+test_03193_img.jpg,VenusExpress,0.963571
+test_04893_img.jpg,LisaPathfinder,0.963567
+test_02689_img.jpg,LisaPathfinder,0.963563
+test_01336_img.jpg,VenusExpress,0.963561
+test_02143_img.jpg,Proba2,0.963547
+test_03530_img.jpg,Proba3,0.963546
+test_04064_img.jpg,Proba3ocs,0.963546
+test_02776_img.jpg,Soho,0.963545
+test_01926_img.jpg,Proba3,0.963544
+test_03376_img.jpg,Proba3,0.963540
+test_04268_img.jpg,Proba3,0.963533
+test_04052_img.jpg,Smart1,0.963527
+test_03449_img.jpg,ObservationSat1,0.963522
+test_03271_img.jpg,Cheops,0.963521
+test_02453_img.jpg,Proba3,0.963520
+test_01214_img.jpg,Proba2,0.963516
+test_00466_img.jpg,VenusExpress,0.963510
+test_02970_img.jpg,ObservationSat1,0.963498
+test_03380_img.jpg,VenusExpress,0.963498
+test_00764_img.jpg,ObservationSat1,0.963493
+test_01357_img.jpg,LisaPathfinder,0.963470
+test_03711_img.jpg,VenusExpress,0.963443
+test_02659_img.jpg,Soho,0.963439
+test_02581_img.jpg,Proba2,0.963437
+test_02906_img.jpg,Proba3ocs,0.963434
+test_04577_img.jpg,Cheops,0.963431
+test_01808_img.jpg,Soho,0.963422
+test_02580_img.jpg,Proba3ocs,0.963418
+test_01330_img.jpg,Proba3ocs,0.963407
+test_03267_img.jpg,VenusExpress,0.963401
+test_00380_img.jpg,Cheops,0.963401
+test_00989_img.jpg,Smart1,0.963400
+test_04435_img.jpg,Smart1,0.963397
+test_03290_img.jpg,Cheops,0.963382
+test_01656_img.jpg,XMM Newton,0.963381
+test_01806_img.jpg,Smart1,0.963380
+test_02415_img.jpg,Proba2,0.963365
+test_02057_img.jpg,Cheops,0.963363
+test_01915_img.jpg,XMM Newton,0.963356
+test_04267_img.jpg,Soho,0.963355
+test_01039_img.jpg,Proba3ocs,0.963344
+test_02567_img.jpg,Soho,0.963334
+test_02938_img.jpg,Proba3,0.963330
+test_01082_img.jpg,VenusExpress,0.963329
+test_02373_img.jpg,LisaPathfinder,0.963327
+test_03255_img.jpg,Proba2,0.963323
+test_01331_img.jpg,XMM Newton,0.963310
+test_04603_img.jpg,Proba3ocs,0.963310
+test_04071_img.jpg,LisaPathfinder,0.963305
+test_04676_img.jpg,ObservationSat1,0.963304
+test_04790_img.jpg,Proba3,0.963296
+test_02388_img.jpg,ObservationSat1,0.963294
+test_01654_img.jpg,VenusExpress,0.963292
+test_01497_img.jpg,Proba2,0.963291
+test_03663_img.jpg,ObservationSat1,0.963289
+test_00288_img.jpg,Proba3,0.963288
+test_00689_img.jpg,ObservationSat1,0.963274
+test_03460_img.jpg,XMM Newton,0.963272
+test_02474_img.jpg,ObservationSat1,0.963271
+test_01801_img.jpg,Proba3ocs,0.963270
+test_02290_img.jpg,Proba3,0.963262
+test_00669_img.jpg,Cheops,0.963257
+test_04229_img.jpg,LisaPathfinder,0.963253
+test_02663_img.jpg,Cheops,0.963240
+test_03225_img.jpg,Proba2,0.963239
+test_00890_img.jpg,Soho,0.963238
+test_04414_img.jpg,Proba3ocs,0.963233
+test_02152_img.jpg,Proba3ocs,0.963221
+test_04560_img.jpg,Soho,0.963215
+test_01758_img.jpg,Proba3,0.963211
+test_04835_img.jpg,VenusExpress,0.963202
+test_02964_img.jpg,VenusExpress,0.963201
+test_01275_img.jpg,LisaPathfinder,0.963199
+test_01120_img.jpg,Proba2,0.963192
+test_01986_img.jpg,Cheops,0.963184
+test_03172_img.jpg,Cheops,0.963182
+test_01846_img.jpg,Proba3,0.963175
+test_02424_img.jpg,Proba3,0.963162
+test_00807_img.jpg,Soho,0.963161
+test_02825_img.jpg,Smart1,0.963161
+test_03144_img.jpg,Proba3ocs,0.963157
+test_04453_img.jpg,XMM Newton,0.963148
+test_00356_img.jpg,VenusExpress,0.963147
+test_03128_img.jpg,Proba2,0.963146
+test_04639_img.jpg,Proba3ocs,0.963141
+test_00532_img.jpg,Proba3ocs,0.963139
+test_02039_img.jpg,Proba3,0.963136
+test_01294_img.jpg,Proba3ocs,0.963119
+test_02185_img.jpg,Proba2,0.963100
+test_02003_img.jpg,Cheops,0.963092
+test_02077_img.jpg,XMM Newton,0.963088
+test_02930_img.jpg,Proba2,0.963083
+test_04701_img.jpg,Proba3ocs,0.963071
+test_02958_img.jpg,Cheops,0.963071
+test_00790_img.jpg,ObservationSat1,0.963055
+test_00967_img.jpg,Proba3,0.963051
+test_01899_img.jpg,Proba3ocs,0.963044
+test_02328_img.jpg,VenusExpress,0.963034
+test_01783_img.jpg,Cheops,0.963033
+test_02966_img.jpg,Proba3,0.963029
+test_00983_img.jpg,Smart1,0.963015
+test_01975_img.jpg,Soho,0.963008
+test_03999_img.jpg,ObservationSat1,0.963005
+test_01222_img.jpg,Cheops,0.963004
+test_03003_img.jpg,Smart1,0.963003
+test_04270_img.jpg,Soho,0.962993
+test_04530_img.jpg,LisaPathfinder,0.962990
+test_04862_img.jpg,ObservationSat1,0.962990
+test_03602_img.jpg,ObservationSat1,0.962983
+test_04462_img.jpg,Proba3ocs,0.962970
+test_01657_img.jpg,Proba2,0.962965
+test_03579_img.jpg,XMM Newton,0.962964
+test_03052_img.jpg,LisaPathfinder,0.962958
+test_03075_img.jpg,VenusExpress,0.962956
+test_00357_img.jpg,VenusExpress,0.962948
+test_04008_img.jpg,Proba3ocs,0.962941
+test_00867_img.jpg,Soho,0.962933
+test_02394_img.jpg,Proba3,0.962927
+test_02317_img.jpg,Proba3ocs,0.962919
+test_02499_img.jpg,Proba2,0.962919
+test_00379_img.jpg,Proba3ocs,0.962917
+test_00567_img.jpg,VenusExpress,0.962916
+test_01490_img.jpg,Proba2,0.962910
+test_01060_img.jpg,Proba3ocs,0.962904
+test_01252_img.jpg,Cheops,0.962883
+test_01309_img.jpg,Proba3ocs,0.962877
+test_01297_img.jpg,XMM Newton,0.962869
+test_02192_img.jpg,Proba3,0.962864
+test_01935_img.jpg,XMM Newton,0.962859
+test_00497_img.jpg,Proba3,0.962839
+test_01552_img.jpg,LisaPathfinder,0.962830
+test_03251_img.jpg,Proba2,0.962819
+test_03196_img.jpg,Proba3ocs,0.962819
+test_02268_img.jpg,Smart1,0.962807
+test_04110_img.jpg,Proba3ocs,0.962801
+test_03412_img.jpg,XMM Newton,0.962791
+test_03780_img.jpg,VenusExpress,0.962788
+test_03624_img.jpg,Proba3,0.962780
+test_01574_img.jpg,XMM Newton,0.962779
+test_00606_img.jpg,VenusExpress,0.962773
+test_01475_img.jpg,Soho,0.962769
+test_01868_img.jpg,Proba2,0.962769
+test_03769_img.jpg,VenusExpress,0.962766
+test_02742_img.jpg,ObservationSat1,0.962760
+test_02400_img.jpg,Proba2,0.962754
+test_00841_img.jpg,Proba3ocs,0.962744
+test_04815_img.jpg,LisaPathfinder,0.962740
+test_03925_img.jpg,LisaPathfinder,0.962737
+test_03189_img.jpg,ObservationSat1,0.962729
+test_00814_img.jpg,Proba3ocs,0.962728
+test_01278_img.jpg,Proba3ocs,0.962727
+test_01996_img.jpg,XMM Newton,0.962712
+test_02781_img.jpg,Proba3ocs,0.962711
+test_02316_img.jpg,Proba3ocs,0.962708
+test_01387_img.jpg,XMM Newton,0.962703
+test_01884_img.jpg,Proba3ocs,0.962701
+test_00181_img.jpg,LisaPathfinder,0.962698
+test_00437_img.jpg,XMM Newton,0.962695
+test_00074_img.jpg,Proba2,0.962674
+test_00469_img.jpg,Proba2,0.962673
+test_01353_img.jpg,Proba3ocs,0.962666
+test_04999_img.jpg,Proba3,0.962665
+test_04312_img.jpg,Proba3,0.962645
+test_02151_img.jpg,Smart1,0.962643
+test_02291_img.jpg,ObservationSat1,0.962634
+test_02707_img.jpg,Proba2,0.962622
+test_01579_img.jpg,Proba2,0.962621
+test_02476_img.jpg,Smart1,0.962621
+test_02347_img.jpg,Cheops,0.962614
+test_00770_img.jpg,Smart1,0.962604
+test_01773_img.jpg,Proba2,0.962590
+test_04197_img.jpg,Proba3ocs,0.962587
+test_03973_img.jpg,VenusExpress,0.962585
+test_00394_img.jpg,Soho,0.962565
+test_04051_img.jpg,Cheops,0.962551
+test_02918_img.jpg,VenusExpress,0.962532
+test_02494_img.jpg,VenusExpress,0.962519
+test_03374_img.jpg,VenusExpress,0.962504
+test_03346_img.jpg,Soho,0.962496
+test_00966_img.jpg,Proba3ocs,0.962482
+test_04367_img.jpg,Proba2,0.962466
+test_00974_img.jpg,Proba3ocs,0.962465
+test_02464_img.jpg,Cheops,0.962464
+test_04208_img.jpg,Proba3ocs,0.962437
+test_04715_img.jpg,Cheops,0.962436
+test_02127_img.jpg,Soho,0.962435
+test_03026_img.jpg,Proba3ocs,0.962434
+test_00531_img.jpg,XMM Newton,0.962429
+test_01087_img.jpg,ObservationSat1,0.962429
+test_02021_img.jpg,LisaPathfinder,0.962429
+test_04115_img.jpg,Proba3ocs,0.962427
+test_01636_img.jpg,Smart1,0.962400
+test_04473_img.jpg,Proba3,0.962399
+test_04927_img.jpg,Cheops,0.962396
+test_02506_img.jpg,Proba2,0.962394
+test_02351_img.jpg,Proba2,0.962393
+test_01763_img.jpg,Cheops,0.962388
+test_04256_img.jpg,LisaPathfinder,0.962377
+test_02989_img.jpg,XMM Newton,0.962360
+test_04580_img.jpg,Proba2,0.962346
+test_02107_img.jpg,Smart1,0.962331
+test_04413_img.jpg,Proba3,0.962330
+test_01464_img.jpg,Proba2,0.962324
+test_03675_img.jpg,VenusExpress,0.962322
+test_02842_img.jpg,Proba3,0.962315
+test_04985_img.jpg,LisaPathfinder,0.962313
+test_00753_img.jpg,VenusExpress,0.962302
+test_04791_img.jpg,Proba2,0.962264
+test_04488_img.jpg,Proba3,0.962255
+test_01424_img.jpg,ObservationSat1,0.962255
+test_04057_img.jpg,VenusExpress,0.962237
+test_01291_img.jpg,Soho,0.962234
+test_00840_img.jpg,Proba2,0.962231
+test_00632_img.jpg,LisaPathfinder,0.962215
+test_02655_img.jpg,LisaPathfinder,0.962211
+test_00285_img.jpg,Proba3ocs,0.962209
+test_04480_img.jpg,Cheops,0.962203
+test_02766_img.jpg,ObservationSat1,0.962191
+test_03760_img.jpg,Proba3,0.962185
+test_00994_img.jpg,LisaPathfinder,0.962183
+test_03181_img.jpg,LisaPathfinder,0.962182
+test_04274_img.jpg,VenusExpress,0.962177
+test_00920_img.jpg,Soho,0.962175
+test_00102_img.jpg,Proba3ocs,0.962172
+test_01163_img.jpg,Smart1,0.962164
+test_03774_img.jpg,Cheops,0.962164
+test_03295_img.jpg,Proba3ocs,0.962155
+test_02276_img.jpg,Proba3ocs,0.962146
+test_00650_img.jpg,Proba2,0.962144
+test_02062_img.jpg,Cheops,0.962136
+test_04334_img.jpg,LisaPathfinder,0.962124
+test_02760_img.jpg,Proba3ocs,0.962122
+test_00133_img.jpg,VenusExpress,0.962116
+test_03857_img.jpg,Soho,0.962116
+test_01794_img.jpg,Soho,0.962111
+test_04813_img.jpg,Smart1,0.962110
+test_04276_img.jpg,XMM Newton,0.962110
+test_02215_img.jpg,VenusExpress,0.962100
+test_03493_img.jpg,VenusExpress,0.962099
+test_01085_img.jpg,Proba3,0.962098
+test_00092_img.jpg,Proba2,0.962097
+test_01468_img.jpg,Soho,0.962080
+test_00806_img.jpg,LisaPathfinder,0.962068
+test_04879_img.jpg,Smart1,0.962065
+test_01530_img.jpg,Cheops,0.962053
+test_03039_img.jpg,VenusExpress,0.962053
+test_03924_img.jpg,Proba2,0.962045
+test_01471_img.jpg,Cheops,0.962037
+test_00745_img.jpg,Soho,0.962029
+test_00931_img.jpg,Smart1,0.962028
+test_01788_img.jpg,VenusExpress,0.962027
+test_02643_img.jpg,Proba2,0.962026
+test_01197_img.jpg,Soho,0.962016
+test_04163_img.jpg,Proba3,0.961982
+test_00317_img.jpg,ObservationSat1,0.961965
+test_02568_img.jpg,Proba3ocs,0.961954
+test_02609_img.jpg,Cheops,0.961947
+test_00282_img.jpg,VenusExpress,0.961947
+test_00607_img.jpg,Cheops,0.961943
+test_02428_img.jpg,LisaPathfinder,0.961940
+test_01365_img.jpg,Proba3ocs,0.961935
+test_04099_img.jpg,Proba2,0.961912
+test_01112_img.jpg,Soho,0.961910
+test_04401_img.jpg,VenusExpress,0.961903
+test_02403_img.jpg,Proba3,0.961899
+test_01545_img.jpg,Soho,0.961882
+test_04130_img.jpg,Smart1,0.961871
+test_00119_img.jpg,VenusExpress,0.961871
+test_02810_img.jpg,Soho,0.961869
+test_03160_img.jpg,Soho,0.961846
+test_04819_img.jpg,Cheops,0.961843
+test_01270_img.jpg,Proba3ocs,0.961839
+test_02009_img.jpg,VenusExpress,0.961817
+test_03451_img.jpg,Proba2,0.961817
+test_01865_img.jpg,Cheops,0.961792
+test_04935_img.jpg,Proba3ocs,0.961791
+test_02254_img.jpg,Proba2,0.961791
+test_04891_img.jpg,ObservationSat1,0.961789
+test_01877_img.jpg,Proba3,0.961783
+test_01254_img.jpg,ObservationSat1,0.961779
+test_03442_img.jpg,VenusExpress,0.961776
+test_02736_img.jpg,Proba2,0.961774
+test_02155_img.jpg,Soho,0.961759
+test_01251_img.jpg,Soho,0.961748
+test_03928_img.jpg,Soho,0.961744
+test_00626_img.jpg,Soho,0.961744
+test_02070_img.jpg,Smart1,0.961735
+test_03522_img.jpg,Soho,0.961734
+test_03627_img.jpg,VenusExpress,0.961723
+test_01607_img.jpg,Proba2,0.961691
+test_02222_img.jpg,Soho,0.961687
+test_01903_img.jpg,Proba2,0.961685
+test_04794_img.jpg,ObservationSat1,0.961678
+test_03016_img.jpg,LisaPathfinder,0.961677
+test_04937_img.jpg,Proba3,0.961672
+test_02936_img.jpg,LisaPathfinder,0.961653
+test_03100_img.jpg,XMM Newton,0.961653
+test_04688_img.jpg,LisaPathfinder,0.961638
+test_04638_img.jpg,VenusExpress,0.961618
+test_03415_img.jpg,Proba2,0.961599
+test_04377_img.jpg,XMM Newton,0.961597
+test_03324_img.jpg,Proba3ocs,0.961589
+test_01914_img.jpg,Proba3ocs,0.961577
+test_01434_img.jpg,Soho,0.961566
+test_01206_img.jpg,VenusExpress,0.961557
+test_00791_img.jpg,Proba3ocs,0.961548
+test_03723_img.jpg,LisaPathfinder,0.961547
+test_03920_img.jpg,ObservationSat1,0.961535
+test_00518_img.jpg,VenusExpress,0.961533
+test_02883_img.jpg,LisaPathfinder,0.961525
+test_04451_img.jpg,Proba3ocs,0.961512
+test_01133_img.jpg,Proba2,0.961489
+test_02285_img.jpg,Smart1,0.961481
+test_02223_img.jpg,XMM Newton,0.961478
+test_03862_img.jpg,XMM Newton,0.961469
+test_02202_img.jpg,Proba3ocs,0.961462
+test_02344_img.jpg,XMM Newton,0.961460
+test_01132_img.jpg,LisaPathfinder,0.961458
+test_03042_img.jpg,Proba2,0.961440
+test_03822_img.jpg,VenusExpress,0.961438
+test_02717_img.jpg,Cheops,0.961437
+test_04967_img.jpg,Proba3,0.961429
+test_03792_img.jpg,Proba3,0.961425
+test_03126_img.jpg,LisaPathfinder,0.961421
+test_01671_img.jpg,Soho,0.961408
+test_03046_img.jpg,Proba2,0.961384
+test_04070_img.jpg,Smart1,0.961370
+test_03876_img.jpg,Cheops,0.961368
+test_04062_img.jpg,VenusExpress,0.961361
+test_04824_img.jpg,Proba3ocs,0.961345
+test_03147_img.jpg,Smart1,0.961329
+test_01799_img.jpg,Soho,0.961328
+test_01439_img.jpg,Proba2,0.961327
+test_01529_img.jpg,Proba3ocs,0.961325
+test_00414_img.jpg,Proba3,0.961315
+test_04412_img.jpg,LisaPathfinder,0.961297
+test_03479_img.jpg,Cheops,0.961296
+test_02973_img.jpg,Soho,0.961293
+test_02435_img.jpg,LisaPathfinder,0.961278
+test_02153_img.jpg,Smart1,0.961276
+test_00561_img.jpg,Proba3ocs,0.961275
+test_01203_img.jpg,Cheops,0.961269
+test_03910_img.jpg,VenusExpress,0.961260
+test_00103_img.jpg,Soho,0.961256
+test_04996_img.jpg,Smart1,0.961254
+test_00252_img.jpg,Proba3ocs,0.961247
+test_03035_img.jpg,Cheops,0.961244
+test_00741_img.jpg,ObservationSat1,0.961244
+test_03392_img.jpg,Proba3ocs,0.961240
+test_00137_img.jpg,Proba3,0.961240
+test_00370_img.jpg,Proba3ocs,0.961235
+test_01437_img.jpg,Cheops,0.961217
+test_01708_img.jpg,Cheops,0.961206
+test_04050_img.jpg,ObservationSat1,0.961194
+test_02154_img.jpg,VenusExpress,0.961190
+test_00630_img.jpg,Proba3,0.961184
+test_01993_img.jpg,LisaPathfinder,0.961175
+test_04831_img.jpg,Soho,0.961164
+test_03514_img.jpg,Smart1,0.961152
+test_02819_img.jpg,VenusExpress,0.961144
+test_04680_img.jpg,VenusExpress,0.961142
+test_04866_img.jpg,Cheops,0.961137
+test_04175_img.jpg,Proba2,0.961121
+test_00215_img.jpg,Proba3ocs,0.961115
+test_01178_img.jpg,Proba3ocs,0.961111
+test_01554_img.jpg,Smart1,0.961108
+test_00748_img.jpg,Proba3ocs,0.961104
+test_00100_img.jpg,Proba3ocs,0.961076
+test_00253_img.jpg,Proba3ocs,0.961071
+test_04039_img.jpg,Smart1,0.961068
+test_04199_img.jpg,Cheops,0.961054
+test_00378_img.jpg,Proba3,0.961049
+test_03863_img.jpg,Cheops,0.961048
+test_04397_img.jpg,LisaPathfinder,0.961041
+test_03132_img.jpg,Smart1,0.961033
+test_03435_img.jpg,LisaPathfinder,0.961029
+test_00388_img.jpg,LisaPathfinder,0.961024
+test_02240_img.jpg,VenusExpress,0.961007
+test_03223_img.jpg,Soho,0.961006
+test_02509_img.jpg,Smart1,0.960989
+test_00124_img.jpg,Proba3ocs,0.960970
+test_04740_img.jpg,Smart1,0.960960
+test_02375_img.jpg,LisaPathfinder,0.960960
+test_04513_img.jpg,Soho,0.960955
+test_04871_img.jpg,Proba3ocs,0.960950
+test_01613_img.jpg,XMM Newton,0.960947
+test_02559_img.jpg,Proba3ocs,0.960947
+test_00036_img.jpg,Cheops,0.960943
+test_00397_img.jpg,Smart1,0.960942
+test_00146_img.jpg,VenusExpress,0.960942
+test_01235_img.jpg,Smart1,0.960936
+test_00076_img.jpg,XMM Newton,0.960917
+test_00444_img.jpg,Smart1,0.960917
+test_04078_img.jpg,Proba2,0.960915
+test_01566_img.jpg,Cheops,0.960903
+test_02606_img.jpg,Smart1,0.960877
+test_01392_img.jpg,VenusExpress,0.960862
+test_04973_img.jpg,XMM Newton,0.960842
+test_02016_img.jpg,LisaPathfinder,0.960841
+test_00756_img.jpg,Soho,0.960835
+test_04472_img.jpg,Cheops,0.960817
+test_03065_img.jpg,Soho,0.960815
+test_01897_img.jpg,Soho,0.960810
+test_00826_img.jpg,ObservationSat1,0.960809
+test_00161_img.jpg,Soho,0.960807
+test_02289_img.jpg,VenusExpress,0.960805
+test_02277_img.jpg,Proba3ocs,0.960805
+test_04102_img.jpg,Proba3ocs,0.960802
+test_03298_img.jpg,Smart1,0.960801
+test_00538_img.jpg,VenusExpress,0.960796
+test_00340_img.jpg,LisaPathfinder,0.960788
+test_01524_img.jpg,Proba3,0.960778
+test_01080_img.jpg,VenusExpress,0.960771
+test_01316_img.jpg,ObservationSat1,0.960763
+test_03795_img.jpg,Proba3,0.960752
+test_00342_img.jpg,LisaPathfinder,0.960750
+test_04978_img.jpg,Proba2,0.960744
+test_03297_img.jpg,XMM Newton,0.960735
+test_00336_img.jpg,Soho,0.960735
+test_04317_img.jpg,Proba3ocs,0.960723
+test_02881_img.jpg,LisaPathfinder,0.960704
+test_00818_img.jpg,VenusExpress,0.960703
+test_02231_img.jpg,LisaPathfinder,0.960703
+test_03329_img.jpg,VenusExpress,0.960702
+test_03256_img.jpg,LisaPathfinder,0.960698
+test_01360_img.jpg,XMM Newton,0.960691
+test_02498_img.jpg,VenusExpress,0.960658
+test_02370_img.jpg,Soho,0.960655
+test_03385_img.jpg,LisaPathfinder,0.960653
+test_03600_img.jpg,LisaPathfinder,0.960652
+test_04674_img.jpg,LisaPathfinder,0.960618
+test_01007_img.jpg,Proba3ocs,0.960617
+test_04380_img.jpg,ObservationSat1,0.960604
+test_00533_img.jpg,XMM Newton,0.960601
+test_02945_img.jpg,Cheops,0.960600
+test_01596_img.jpg,ObservationSat1,0.960576
+test_03855_img.jpg,Proba3ocs,0.960572
+test_00211_img.jpg,Proba3,0.960555
+test_04016_img.jpg,Proba3ocs,0.960554
+test_04660_img.jpg,Proba3,0.960534
+test_00257_img.jpg,ObservationSat1,0.960520
+test_04469_img.jpg,Soho,0.960496
+test_01454_img.jpg,Proba2,0.960494
+test_03839_img.jpg,Soho,0.960480
+test_04063_img.jpg,Proba2,0.960475
+test_00487_img.jpg,Proba3ocs,0.960474
+test_02922_img.jpg,Soho,0.960466
+test_02569_img.jpg,LisaPathfinder,0.960465
+test_02216_img.jpg,LisaPathfinder,0.960456
+test_02981_img.jpg,Cheops,0.960455
+test_01702_img.jpg,LisaPathfinder,0.960452
+test_03001_img.jpg,Smart1,0.960430
+test_00750_img.jpg,Cheops,0.960376
+test_03357_img.jpg,Soho,0.960356
+test_03810_img.jpg,LisaPathfinder,0.960303
+test_03402_img.jpg,Cheops,0.960302
+test_01565_img.jpg,Proba3ocs,0.960294
+test_00150_img.jpg,Cheops,0.960285
+test_02709_img.jpg,Proba3ocs,0.960256
+test_00104_img.jpg,Proba2,0.960255
+test_00400_img.jpg,Proba3,0.960239
+test_01052_img.jpg,XMM Newton,0.960205
+test_00214_img.jpg,Proba3ocs,0.960204
+test_04433_img.jpg,Soho,0.960193
+test_00691_img.jpg,Proba3,0.960187
+test_03942_img.jpg,Cheops,0.960165
+test_04321_img.jpg,Smart1,0.960158
+test_01063_img.jpg,ObservationSat1,0.960153
+test_01374_img.jpg,XMM Newton,0.960142
+test_00219_img.jpg,LisaPathfinder,0.960141
+test_03308_img.jpg,XMM Newton,0.960128
+test_02329_img.jpg,Proba3ocs,0.960128
+test_02963_img.jpg,Cheops,0.960120
+test_01461_img.jpg,Proba3ocs,0.960119
+test_04068_img.jpg,Proba2,0.960109
+test_02812_img.jpg,Proba3ocs,0.960107
+test_00041_img.jpg,Proba3ocs,0.960081
+test_04934_img.jpg,LisaPathfinder,0.960068
+test_01641_img.jpg,Proba3ocs,0.960048
+test_02236_img.jpg,ObservationSat1,0.960046
+test_01443_img.jpg,Cheops,0.960037
+test_01707_img.jpg,Soho,0.960030
+test_01135_img.jpg,Smart1,0.960028
+test_03778_img.jpg,Smart1,0.960016
+test_04467_img.jpg,Cheops,0.960009
+test_00923_img.jpg,Smart1,0.960003
+test_03073_img.jpg,Proba3ocs,0.960003
+test_03489_img.jpg,Proba3ocs,0.959991
+test_04517_img.jpg,VenusExpress,0.959975
+test_01575_img.jpg,Proba3ocs,0.959972
+test_03431_img.jpg,Proba2,0.959971
+test_00031_img.jpg,Proba3ocs,0.959966
+test_02528_img.jpg,LisaPathfinder,0.959952
+test_03323_img.jpg,ObservationSat1,0.959951
+test_00249_img.jpg,Proba3ocs,0.959945
+test_02248_img.jpg,VenusExpress,0.959925
+test_03131_img.jpg,Proba2,0.959923
+test_00426_img.jpg,Smart1,0.959915
+test_01922_img.jpg,LisaPathfinder,0.959912
+test_01662_img.jpg,Soho,0.959909
+test_01931_img.jpg,VenusExpress,0.959909
+test_02570_img.jpg,LisaPathfinder,0.959906
+test_02555_img.jpg,ObservationSat1,0.959904
+test_01231_img.jpg,Smart1,0.959902
+test_01018_img.jpg,VenusExpress,0.959895
+test_00430_img.jpg,VenusExpress,0.959892
+test_03199_img.jpg,Smart1,0.959875
+test_02244_img.jpg,VenusExpress,0.959856
+test_00069_img.jpg,Smart1,0.959844
+test_00932_img.jpg,LisaPathfinder,0.959829
+test_03516_img.jpg,XMM Newton,0.959824
+test_01406_img.jpg,VenusExpress,0.959819
+test_02530_img.jpg,XMM Newton,0.959812
+test_04189_img.jpg,VenusExpress,0.959805
+test_02650_img.jpg,Proba3ocs,0.959799
+test_03294_img.jpg,Proba2,0.959778
+test_04991_img.jpg,Proba3ocs,0.959763
+test_04508_img.jpg,Soho,0.959760
+test_00269_img.jpg,Proba3ocs,0.959732
+test_00512_img.jpg,Soho,0.959711
+test_00281_img.jpg,XMM Newton,0.959711
+test_01289_img.jpg,Proba3ocs,0.959692
+test_01871_img.jpg,XMM Newton,0.959666
+test_02287_img.jpg,Soho,0.959655
+test_03183_img.jpg,VenusExpress,0.959635
+test_03983_img.jpg,Cheops,0.959629
+test_00310_img.jpg,Smart1,0.959596
+test_00053_img.jpg,Smart1,0.959592
+test_01249_img.jpg,LisaPathfinder,0.959575
+test_03531_img.jpg,Soho,0.959538
+test_00592_img.jpg,Soho,0.959532
+test_02037_img.jpg,XMM Newton,0.959526
+test_03947_img.jpg,Smart1,0.959524
+test_02282_img.jpg,LisaPathfinder,0.959489
+test_02334_img.jpg,Proba3ocs,0.959487
+test_02891_img.jpg,LisaPathfinder,0.959487
+test_01766_img.jpg,Smart1,0.959439
+test_01351_img.jpg,VenusExpress,0.959424
+test_01109_img.jpg,Proba2,0.959393
+test_01416_img.jpg,Soho,0.959382
+test_02726_img.jpg,Proba3ocs,0.959382
+test_00207_img.jpg,Cheops,0.959376
+test_00706_img.jpg,VenusExpress,0.959373
+test_03901_img.jpg,LisaPathfinder,0.959371
+test_03259_img.jpg,Proba3ocs,0.959361
+test_03491_img.jpg,VenusExpress,0.959350
+test_03754_img.jpg,VenusExpress,0.959343
+test_03305_img.jpg,Soho,0.959341
+test_00784_img.jpg,Proba3ocs,0.959319
+test_00188_img.jpg,Soho,0.959302
+test_01985_img.jpg,ObservationSat1,0.959271
+test_01608_img.jpg,XMM Newton,0.959267
+test_01144_img.jpg,Cheops,0.959255
+test_04245_img.jpg,Soho,0.959248
+test_01509_img.jpg,Proba3ocs,0.959241
+test_00529_img.jpg,Cheops,0.959239
+test_02067_img.jpg,Proba3,0.959224
+test_00859_img.jpg,Proba3ocs,0.959223
+test_02279_img.jpg,VenusExpress,0.959207
+test_03317_img.jpg,LisaPathfinder,0.959202
+test_03952_img.jpg,Smart1,0.959195
+test_00726_img.jpg,XMM Newton,0.959195
+test_02348_img.jpg,Soho,0.959189
+test_04259_img.jpg,LisaPathfinder,0.959173
+test_04358_img.jpg,Proba3ocs,0.959170
+test_03894_img.jpg,Proba3ocs,0.959149
+test_03817_img.jpg,Proba3ocs,0.959138
+test_02188_img.jpg,VenusExpress,0.959138
+test_02199_img.jpg,ObservationSat1,0.959133
+test_03383_img.jpg,Proba3ocs,0.959133
+test_03965_img.jpg,Cheops,0.959126
+test_00520_img.jpg,Proba3,0.959121
+test_02000_img.jpg,Proba2,0.959116
+test_00716_img.jpg,Proba3ocs,0.959111
+test_03473_img.jpg,Proba3ocs,0.959105
+test_04816_img.jpg,Proba3ocs,0.959102
+test_00612_img.jpg,Soho,0.959095
+test_00156_img.jpg,Proba3ocs,0.959090
+test_04632_img.jpg,VenusExpress,0.959088
+test_04395_img.jpg,Soho,0.959067
+test_00135_img.jpg,Proba3,0.959062
+test_03270_img.jpg,VenusExpress,0.959056
+test_00553_img.jpg,Soho,0.959056
+test_01755_img.jpg,Proba3ocs,0.959050
+test_03238_img.jpg,ObservationSat1,0.959046
+test_00393_img.jpg,VenusExpress,0.959023
+test_03312_img.jpg,Proba2,0.959018
+test_03833_img.jpg,XMM Newton,0.959014
+test_00525_img.jpg,ObservationSat1,0.959009
+test_01271_img.jpg,VenusExpress,0.958999
+test_02732_img.jpg,Proba3ocs,0.958989
+test_04969_img.jpg,VenusExpress,0.958974
+test_02437_img.jpg,VenusExpress,0.958964
+test_02190_img.jpg,Proba3ocs,0.958959
+test_02094_img.jpg,Soho,0.958957
+test_04481_img.jpg,XMM Newton,0.958955
+test_00596_img.jpg,Soho,0.958934
+test_03612_img.jpg,VenusExpress,0.958931
+test_02627_img.jpg,Soho,0.958925
+test_00465_img.jpg,LisaPathfinder,0.958922
+test_03173_img.jpg,Soho,0.958911
+test_03228_img.jpg,Soho,0.958909
+test_02229_img.jpg,Smart1,0.958901
+test_01184_img.jpg,Cheops,0.958890
+test_01774_img.jpg,Proba3,0.958888
+test_00419_img.jpg,ObservationSat1,0.958876
+test_02962_img.jpg,VenusExpress,0.958873
+test_03506_img.jpg,Proba3ocs,0.958868
+test_02495_img.jpg,Smart1,0.958862
+test_02763_img.jpg,Soho,0.958851
+test_00696_img.jpg,LisaPathfinder,0.958834
+test_00954_img.jpg,Proba3ocs,0.958812
+test_01825_img.jpg,Cheops,0.958793
+test_02308_img.jpg,VenusExpress,0.958776
+test_01980_img.jpg,LisaPathfinder,0.958747
+test_02100_img.jpg,Proba3ocs,0.958731
+test_02600_img.jpg,ObservationSat1,0.958729
+test_00988_img.jpg,VenusExpress,0.958717
+test_04293_img.jpg,VenusExpress,0.958713
+test_03975_img.jpg,XMM Newton,0.958688
+test_03182_img.jpg,XMM Newton,0.958671
+test_04216_img.jpg,Proba3,0.958670
+test_02584_img.jpg,Proba3,0.958653
+test_03548_img.jpg,LisaPathfinder,0.958653
+test_04374_img.jpg,Proba3ocs,0.958646
+test_04975_img.jpg,XMM Newton,0.958645
+test_02299_img.jpg,Soho,0.958638
+test_03313_img.jpg,Proba3,0.958618
+test_00978_img.jpg,Proba3ocs,0.958615
+test_01037_img.jpg,LisaPathfinder,0.958592
+test_01593_img.jpg,VenusExpress,0.958587
+test_04880_img.jpg,VenusExpress,0.958570
+test_00551_img.jpg,XMM Newton,0.958559
+test_03505_img.jpg,Soho,0.958558
+test_01543_img.jpg,VenusExpress,0.958556
+test_04729_img.jpg,Proba2,0.958545
+test_03095_img.jpg,Proba3ocs,0.958541
+test_00927_img.jpg,Proba3ocs,0.958538
+test_03537_img.jpg,Cheops,0.958532
+test_04506_img.jpg,LisaPathfinder,0.958524
+test_04214_img.jpg,LisaPathfinder,0.958512
+test_01268_img.jpg,Soho,0.958481
+test_04936_img.jpg,Soho,0.958468
+test_02862_img.jpg,Soho,0.958462
+test_03457_img.jpg,Soho,0.958450
+test_01193_img.jpg,Proba2,0.958444
+test_02647_img.jpg,Smart1,0.958428
+test_01768_img.jpg,Smart1,0.958423
+test_03556_img.jpg,Proba3ocs,0.958408
+test_02429_img.jpg,ObservationSat1,0.958382
+test_03670_img.jpg,XMM Newton,0.958372
+test_01937_img.jpg,VenusExpress,0.958371
+test_02031_img.jpg,VenusExpress,0.958367
+test_02451_img.jpg,VenusExpress,0.958365
+test_00043_img.jpg,VenusExpress,0.958346
+test_03151_img.jpg,Proba3,0.958342
+test_01770_img.jpg,XMM Newton,0.958335
+test_04875_img.jpg,Proba3,0.958323
+test_04325_img.jpg,VenusExpress,0.958320
+test_02745_img.jpg,Proba3ocs,0.958309
+test_03586_img.jpg,XMM Newton,0.958275
+test_03192_img.jpg,Proba3,0.958274
+test_02642_img.jpg,VenusExpress,0.958267
+test_02108_img.jpg,Cheops,0.958249
+test_03443_img.jpg,Soho,0.958249
+test_04635_img.jpg,VenusExpress,0.958246
+test_03802_img.jpg,Smart1,0.958233
+test_00801_img.jpg,Soho,0.958218
+test_03884_img.jpg,LisaPathfinder,0.958198
+test_03618_img.jpg,Soho,0.958190
+test_01663_img.jpg,Proba2,0.958186
+test_03716_img.jpg,Proba3ocs,0.958179
+test_01890_img.jpg,Proba2,0.958160
+test_00721_img.jpg,LisaPathfinder,0.958153
+test_02832_img.jpg,Cheops,0.958148
+test_01746_img.jpg,XMM Newton,0.958097
+test_04514_img.jpg,Smart1,0.958089
+test_00661_img.jpg,Proba3ocs,0.958075
+test_03492_img.jpg,Proba3ocs,0.958056
+test_04730_img.jpg,VenusExpress,0.958052
+test_04385_img.jpg,LisaPathfinder,0.958030
+test_02996_img.jpg,Proba3ocs,0.958027
+test_02258_img.jpg,LisaPathfinder,0.958022
+test_04168_img.jpg,LisaPathfinder,0.958006
+test_02059_img.jpg,Proba3ocs,0.957984
+test_01810_img.jpg,Proba3,0.957938
+test_00052_img.jpg,Proba3ocs,0.957927
+test_03107_img.jpg,LisaPathfinder,0.957923
+test_01550_img.jpg,Proba2,0.957886
+test_02390_img.jpg,VenusExpress,0.957881
+test_02942_img.jpg,LisaPathfinder,0.957878
+test_00321_img.jpg,Proba3ocs,0.957856
+test_02992_img.jpg,Proba2,0.957830
+test_00963_img.jpg,Proba3,0.957823
+test_04324_img.jpg,Proba3ocs,0.957797
+test_04212_img.jpg,LisaPathfinder,0.957795
+test_03793_img.jpg,Soho,0.957794
+test_01925_img.jpg,Proba3ocs,0.957776
+test_00587_img.jpg,Soho,0.957771
+test_04144_img.jpg,Proba3ocs,0.957759
+test_00167_img.jpg,XMM Newton,0.957754
+test_00273_img.jpg,LisaPathfinder,0.957750
+test_04226_img.jpg,XMM Newton,0.957731
+test_02674_img.jpg,LisaPathfinder,0.957724
+test_00216_img.jpg,Proba2,0.957720
+test_01315_img.jpg,Smart1,0.957705
+test_03047_img.jpg,VenusExpress,0.957679
+test_04652_img.jpg,VenusExpress,0.957667
+test_04732_img.jpg,Soho,0.957647
+test_00871_img.jpg,LisaPathfinder,0.957642
+test_02815_img.jpg,Proba3ocs,0.957630
+test_01366_img.jpg,Proba3ocs,0.957607
+test_00485_img.jpg,Soho,0.957599
+test_02176_img.jpg,Soho,0.957592
+test_00644_img.jpg,Soho,0.957592
+test_02263_img.jpg,Proba3ocs,0.957570
+test_00351_img.jpg,LisaPathfinder,0.957554
+test_01546_img.jpg,VenusExpress,0.957544
+test_00873_img.jpg,Proba3ocs,0.957525
+test_01936_img.jpg,Soho,0.957523
+test_03892_img.jpg,Proba3ocs,0.957516
+test_03301_img.jpg,LisaPathfinder,0.957499
+test_03207_img.jpg,VenusExpress,0.957490
+test_00820_img.jpg,LisaPathfinder,0.957471
+test_00017_img.jpg,ObservationSat1,0.957469
+test_01618_img.jpg,Soho,0.957465
+test_01989_img.jpg,VenusExpress,0.957464
+test_00129_img.jpg,Proba2,0.957451
+test_01103_img.jpg,LisaPathfinder,0.957451
+test_04939_img.jpg,Smart1,0.957399
+test_01371_img.jpg,VenusExpress,0.957392
+test_04258_img.jpg,LisaPathfinder,0.957386
+test_04884_img.jpg,VenusExpress,0.957363
+test_04499_img.jpg,VenusExpress,0.957335
+test_01305_img.jpg,Cheops,0.957333
+test_01896_img.jpg,XMM Newton,0.957319
+test_04362_img.jpg,Proba3,0.957318
+test_01668_img.jpg,LisaPathfinder,0.957295
+test_02196_img.jpg,Smart1,0.957293
+test_04431_img.jpg,Smart1,0.957291
+test_01637_img.jpg,Cheops,0.957284
+test_03218_img.jpg,Soho,0.957272
+test_04196_img.jpg,Soho,0.957266
+test_00354_img.jpg,VenusExpress,0.957252
+test_00912_img.jpg,Proba3ocs,0.957248
+test_02737_img.jpg,Smart1,0.957241
+test_00002_img.jpg,LisaPathfinder,0.957225
+test_04786_img.jpg,Proba3ocs,0.957219
+test_03875_img.jpg,Proba2,0.957186
+test_04782_img.jpg,Proba3,0.957178
+test_01802_img.jpg,VenusExpress,0.957176
+test_00344_img.jpg,ObservationSat1,0.957173
+test_01319_img.jpg,Smart1,0.957159
+test_00950_img.jpg,Proba3ocs,0.957151
+test_02793_img.jpg,Proba3ocs,0.957134
+test_00506_img.jpg,Smart1,0.957103
+test_01689_img.jpg,VenusExpress,0.957103
+test_00714_img.jpg,Proba3,0.957098
+test_04903_img.jpg,Soho,0.957088
+test_04804_img.jpg,LisaPathfinder,0.957076
+test_04538_img.jpg,VenusExpress,0.957051
+test_02459_img.jpg,VenusExpress,0.957026
+test_01632_img.jpg,Proba3ocs,0.957024
+test_03166_img.jpg,ObservationSat1,0.957016
+test_04618_img.jpg,Proba3ocs,0.957014
+test_04136_img.jpg,Smart1,0.957013
+test_03971_img.jpg,Soho,0.957000
+test_04403_img.jpg,Soho,0.956993
+test_02293_img.jpg,VenusExpress,0.956983
+test_02943_img.jpg,LisaPathfinder,0.956980
+test_04896_img.jpg,Soho,0.956972
+test_03986_img.jpg,Proba3ocs,0.956971
+test_04161_img.jpg,VenusExpress,0.956970
+test_01693_img.jpg,Smart1,0.956960
+test_00568_img.jpg,LisaPathfinder,0.956943
+test_02902_img.jpg,Soho,0.956912
+test_00980_img.jpg,Smart1,0.956909
+test_04779_img.jpg,Smart1,0.956905
+test_02542_img.jpg,Soho,0.956895
+test_01633_img.jpg,LisaPathfinder,0.956895
+test_00248_img.jpg,Soho,0.956873
+test_01966_img.jpg,LisaPathfinder,0.956871
+test_04963_img.jpg,Smart1,0.956871
+test_01505_img.jpg,Proba3,0.956869
+test_03659_img.jpg,VenusExpress,0.956866
+test_00601_img.jpg,Proba3ocs,0.956866
+test_01821_img.jpg,LisaPathfinder,0.956865
+test_00737_img.jpg,VenusExpress,0.956827
+test_03665_img.jpg,LisaPathfinder,0.956819
+test_04425_img.jpg,Cheops,0.956808
+test_03122_img.jpg,LisaPathfinder,0.956800
+test_00353_img.jpg,Soho,0.956796
+test_04839_img.jpg,Proba2,0.956789
+test_00955_img.jpg,Cheops,0.956786
+test_03943_img.jpg,Soho,0.956784
+test_02378_img.jpg,Proba3ocs,0.956782
+test_01781_img.jpg,Soho,0.956768
+test_00300_img.jpg,VenusExpress,0.956746
+test_03118_img.jpg,VenusExpress,0.956735
+test_04679_img.jpg,VenusExpress,0.956719
+test_04501_img.jpg,Proba3ocs,0.956701
+test_02061_img.jpg,Proba3,0.956699
+test_01385_img.jpg,LisaPathfinder,0.956695
+test_00776_img.jpg,XMM Newton,0.956676
+test_04921_img.jpg,Proba2,0.956675
+test_03156_img.jpg,Smart1,0.956635
+test_03068_img.jpg,Proba3,0.956632
+test_02683_img.jpg,Soho,0.956632
+test_04315_img.jpg,Proba3ocs,0.956604
+test_01201_img.jpg,XMM Newton,0.956592
+test_01809_img.jpg,LisaPathfinder,0.956554
+test_00864_img.jpg,Proba3ocs,0.956537
+test_04154_img.jpg,Cheops,0.956535
+test_02048_img.jpg,Proba3,0.956521
+test_02895_img.jpg,VenusExpress,0.956520
+test_00210_img.jpg,VenusExpress,0.956513
+test_00330_img.jpg,XMM Newton,0.956508
+test_03682_img.jpg,VenusExpress,0.956491
+test_03555_img.jpg,Proba3ocs,0.956482
+test_04959_img.jpg,Proba3,0.956474
+test_04960_img.jpg,Soho,0.956473
+test_04641_img.jpg,VenusExpress,0.956454
+test_01029_img.jpg,VenusExpress,0.956453
+test_02014_img.jpg,LisaPathfinder,0.956446
+test_02355_img.jpg,VenusExpress,0.956434
+test_00984_img.jpg,Proba3ocs,0.956414
+test_04644_img.jpg,Soho,0.956402
+test_03071_img.jpg,Proba3ocs,0.956357
+test_04962_img.jpg,Soho,0.956348
+test_04117_img.jpg,VenusExpress,0.956334
+test_03700_img.jpg,VenusExpress,0.956330
+test_02944_img.jpg,Smart1,0.956316
+test_03629_img.jpg,Soho,0.956302
+test_00236_img.jpg,LisaPathfinder,0.956294
+test_01979_img.jpg,Cheops,0.956291
+test_04532_img.jpg,Soho,0.956286
+test_03469_img.jpg,Cheops,0.956273
+test_03447_img.jpg,Soho,0.956262
+test_00905_img.jpg,Soho,0.956259
+test_01786_img.jpg,VenusExpress,0.956254
+test_03158_img.jpg,Soho,0.956250
+test_01672_img.jpg,ObservationSat1,0.956246
+test_02423_img.jpg,Cheops,0.956238
+test_01850_img.jpg,Soho,0.956219
+test_00915_img.jpg,LisaPathfinder,0.956209
+test_04087_img.jpg,Cheops,0.956126
+test_00061_img.jpg,Smart1,0.956070
+test_00902_img.jpg,Proba3ocs,0.956056
+test_03890_img.jpg,Soho,0.956050
+test_01767_img.jpg,VenusExpress,0.956035
+test_04290_img.jpg,XMM Newton,0.956014
+test_01882_img.jpg,VenusExpress,0.956012
+test_02949_img.jpg,Cheops,0.956003
+test_00929_img.jpg,Soho,0.955995
+test_01851_img.jpg,Proba3ocs,0.955952
+test_03154_img.jpg,Soho,0.955947
+test_03203_img.jpg,Proba3ocs,0.955943
+test_04244_img.jpg,VenusExpress,0.955911
+test_03136_img.jpg,VenusExpress,0.955895
+test_00881_img.jpg,VenusExpress,0.955878
+test_00424_img.jpg,Cheops,0.955846
+test_03639_img.jpg,Proba3ocs,0.955830
+test_02363_img.jpg,Proba3ocs,0.955825
+test_03248_img.jpg,Proba3ocs,0.955814
+test_01834_img.jpg,VenusExpress,0.955814
+test_03782_img.jpg,Proba3ocs,0.955806
+test_00170_img.jpg,Soho,0.955800
+test_01921_img.jpg,Proba3ocs,0.955800
+test_03365_img.jpg,VenusExpress,0.955780
+test_00429_img.jpg,Soho,0.955757
+test_02795_img.jpg,VenusExpress,0.955736
+test_02623_img.jpg,Proba3ocs,0.955729
+test_01423_img.jpg,VenusExpress,0.955716
+test_02635_img.jpg,LisaPathfinder,0.955711
+test_02436_img.jpg,Soho,0.955689
+test_03783_img.jpg,Soho,0.955679
+test_02702_img.jpg,XMM Newton,0.955650
+test_01154_img.jpg,Proba3ocs,0.955619
+test_03825_img.jpg,Proba3,0.955606
+test_01822_img.jpg,Soho,0.955605
+test_01032_img.jpg,ObservationSat1,0.955597
+test_01328_img.jpg,VenusExpress,0.955588
+test_03250_img.jpg,LisaPathfinder,0.955529
+test_00383_img.jpg,LisaPathfinder,0.955518
+test_01969_img.jpg,LisaPathfinder,0.955496
+test_00450_img.jpg,Proba3ocs,0.955491
+test_04822_img.jpg,Soho,0.955486
+test_03972_img.jpg,Smart1,0.955474
+test_02008_img.jpg,Soho,0.955467
+test_04298_img.jpg,Soho,0.955454
+test_01584_img.jpg,Proba3ocs,0.955437
+test_04585_img.jpg,Proba3,0.955427
+test_01796_img.jpg,Soho,0.955317
+test_03485_img.jpg,Proba3ocs,0.955304
+test_03478_img.jpg,Smart1,0.955280
+test_02909_img.jpg,Soho,0.955271
+test_01835_img.jpg,Soho,0.955220
+test_03573_img.jpg,Soho,0.955193
+test_02434_img.jpg,Smart1,0.955182
+test_02079_img.jpg,Soho,0.955171
+test_03369_img.jpg,Soho,0.955166
+test_00913_img.jpg,VenusExpress,0.955151
+test_04578_img.jpg,Smart1,0.955147
+test_02547_img.jpg,Proba3ocs,0.955115
+test_01540_img.jpg,VenusExpress,0.955093
+test_04004_img.jpg,Soho,0.955083
+test_01376_img.jpg,VenusExpress,0.955068
+test_01258_img.jpg,VenusExpress,0.955067
+test_00886_img.jpg,LisaPathfinder,0.955050
+test_03858_img.jpg,Smart1,0.955048
+test_00893_img.jpg,Proba2,0.955042
+test_00121_img.jpg,Proba3ocs,0.955035
+test_01605_img.jpg,Proba3ocs,0.955008
+test_03099_img.jpg,XMM Newton,0.955006
+test_00083_img.jpg,LisaPathfinder,0.954997
+test_00672_img.jpg,Proba3,0.954953
+test_01785_img.jpg,Cheops,0.954931
+test_02875_img.jpg,Proba3,0.954928
+test_04394_img.jpg,Proba3ocs,0.954924
+test_02376_img.jpg,LisaPathfinder,0.954923
+test_02784_img.jpg,Smart1,0.954919
+test_03058_img.jpg,LisaPathfinder,0.954858
+test_02621_img.jpg,Cheops,0.954840
+test_00449_img.jpg,VenusExpress,0.954807
+test_00847_img.jpg,Smart1,0.954804
+test_02349_img.jpg,VenusExpress,0.954767
+test_03919_img.jpg,LisaPathfinder,0.954764
+test_00942_img.jpg,Soho,0.954757
+test_04418_img.jpg,VenusExpress,0.954755
+test_03482_img.jpg,LisaPathfinder,0.954751
+test_00350_img.jpg,Soho,0.954744
+test_04515_img.jpg,LisaPathfinder,0.954707
+test_00757_img.jpg,VenusExpress,0.954698
+test_02811_img.jpg,ObservationSat1,0.954680
+test_02592_img.jpg,ObservationSat1,0.954677
+test_03933_img.jpg,Smart1,0.954677
+test_04257_img.jpg,VenusExpress,0.954673
+test_01198_img.jpg,VenusExpress,0.954646
+test_02699_img.jpg,Soho,0.954643
+test_03062_img.jpg,Cheops,0.954631
+test_00360_img.jpg,Smart1,0.954629
+test_02095_img.jpg,Proba3ocs,0.954611
+test_01465_img.jpg,Proba3ocs,0.954608
+test_00202_img.jpg,Smart1,0.954590
+test_01590_img.jpg,Smart1,0.954581
+test_03929_img.jpg,Smart1,0.954578
+test_02007_img.jpg,VenusExpress,0.954568
+test_02232_img.jpg,Soho,0.954565
+test_03465_img.jpg,Proba3ocs,0.954560
+test_02170_img.jpg,VenusExpress,0.954555
+test_04289_img.jpg,VenusExpress,0.954513
+test_03366_img.jpg,Soho,0.954498
+test_01955_img.jpg,Proba2,0.954483
+test_02023_img.jpg,LisaPathfinder,0.954477
+test_00021_img.jpg,Soho,0.954437
+test_04541_img.jpg,Proba3ocs,0.954435
+test_01345_img.jpg,Soho,0.954430
+test_00277_img.jpg,Smart1,0.954428
+test_00516_img.jpg,Cheops,0.954423
+test_03681_img.jpg,Soho,0.954386
+test_01644_img.jpg,Proba3ocs,0.954381
+test_01778_img.jpg,LisaPathfinder,0.954372
+test_03653_img.jpg,Smart1,0.954341
+test_02854_img.jpg,VenusExpress,0.954332
+test_01973_img.jpg,Proba3ocs,0.954310
+test_00562_img.jpg,ObservationSat1,0.954305
+test_03623_img.jpg,Proba2,0.954299
+test_01854_img.jpg,VenusExpress,0.954278
+test_01793_img.jpg,Smart1,0.954258
+test_03807_img.jpg,Soho,0.954215
+test_04545_img.jpg,VenusExpress,0.954213
+test_03949_img.jpg,VenusExpress,0.954199
+test_01629_img.jpg,LisaPathfinder,0.954186
+test_04990_img.jpg,LisaPathfinder,0.954173
+test_01451_img.jpg,Proba3ocs,0.954164
+test_01527_img.jpg,Proba2,0.954159
+test_02974_img.jpg,Proba3ocs,0.954159
+test_02018_img.jpg,Proba3ocs,0.954154
+test_03791_img.jpg,Proba3ocs,0.954149
+test_02837_img.jpg,Proba2,0.954145
+test_00179_img.jpg,LisaPathfinder,0.954143
+test_02917_img.jpg,Soho,0.954141
+test_02173_img.jpg,Soho,0.954139
+test_04096_img.jpg,VenusExpress,0.954130
+test_02098_img.jpg,Soho,0.954100
+test_01715_img.jpg,Proba3,0.954099
+test_02695_img.jpg,LisaPathfinder,0.954098
+test_04710_img.jpg,Soho,0.954085
+test_03413_img.jpg,XMM Newton,0.954069
+test_01011_img.jpg,Cheops,0.954003
+test_02460_img.jpg,Soho,0.953986
+test_00420_img.jpg,Soho,0.953951
+test_01861_img.jpg,LisaPathfinder,0.953942
+test_01141_img.jpg,VenusExpress,0.953936
+test_00120_img.jpg,Soho,0.953921
+test_04150_img.jpg,Proba3ocs,0.953903
+test_04338_img.jpg,Soho,0.953902
+test_02562_img.jpg,Proba3ocs,0.953888
+test_03272_img.jpg,Smart1,0.953850
+test_04236_img.jpg,Soho,0.953823
+test_02678_img.jpg,XMM Newton,0.953801
+test_04375_img.jpg,LisaPathfinder,0.953794
+test_02899_img.jpg,Proba3ocs,0.953778
+test_01615_img.jpg,Soho,0.953764
+test_00266_img.jpg,VenusExpress,0.953761
+test_01142_img.jpg,VenusExpress,0.953759
+test_03717_img.jpg,VenusExpress,0.953728
+test_03750_img.jpg,Soho,0.953705
+test_00408_img.jpg,Soho,0.953701
+test_02446_img.jpg,VenusExpress,0.953695
+test_02345_img.jpg,LisaPathfinder,0.953640
+test_02835_img.jpg,Proba3,0.953618
+test_01495_img.jpg,Proba3ocs,0.953614
+test_00470_img.jpg,VenusExpress,0.953589
+test_02514_img.jpg,VenusExpress,0.953567
+test_02284_img.jpg,VenusExpress,0.953560
+test_00225_img.jpg,LisaPathfinder,0.953549
+test_01045_img.jpg,VenusExpress,0.953538
+test_04391_img.jpg,Proba3ocs,0.953534
+test_04024_img.jpg,Soho,0.953524
+test_01021_img.jpg,VenusExpress,0.953494
+test_03143_img.jpg,VenusExpress,0.953460
+test_02142_img.jpg,Soho,0.953457
+test_04049_img.jpg,XMM Newton,0.953441
+test_02984_img.jpg,Soho,0.953402
+test_02765_img.jpg,Soho,0.953392
+test_02488_img.jpg,Proba2,0.953367
+test_03467_img.jpg,Smart1,0.953361
+test_01257_img.jpg,Smart1,0.953343
+test_00335_img.jpg,VenusExpress,0.953322
+test_02976_img.jpg,LisaPathfinder,0.953282
+test_01061_img.jpg,Smart1,0.953236
+test_01162_img.jpg,VenusExpress,0.953209
+test_03542_img.jpg,Proba3ocs,0.953204
+test_03669_img.jpg,Smart1,0.953155
+test_04335_img.jpg,Smart1,0.953155
+test_04915_img.jpg,Smart1,0.953148
+test_04220_img.jpg,Proba3ocs,0.953144
+test_00666_img.jpg,Soho,0.953143
+test_03023_img.jpg,VenusExpress,0.953142
+test_03806_img.jpg,Soho,0.953109
+test_00868_img.jpg,Cheops,0.953096
+test_01095_img.jpg,VenusExpress,0.953080
+test_04446_img.jpg,Soho,0.953032
+test_01239_img.jpg,Proba3ocs,0.953028
+test_01842_img.jpg,VenusExpress,0.952982
+test_03518_img.jpg,LisaPathfinder,0.952948
+test_01744_img.jpg,XMM Newton,0.952945
+test_01736_img.jpg,Proba3,0.952930
+test_00799_img.jpg,XMM Newton,0.952928
+test_01370_img.jpg,VenusExpress,0.952926
+test_02103_img.jpg,Proba3,0.952926
+test_01658_img.jpg,VenusExpress,0.952924
+test_02686_img.jpg,Soho,0.952917
+test_04478_img.jpg,Proba3ocs,0.952891
+test_04308_img.jpg,Soho,0.952870
+test_04383_img.jpg,Smart1,0.952864
+test_00433_img.jpg,LisaPathfinder,0.952822
+test_02119_img.jpg,VenusExpress,0.952794
+test_03315_img.jpg,XMM Newton,0.952788
+test_00263_img.jpg,XMM Newton,0.952769
+test_00755_img.jpg,Soho,0.952762
+test_00185_img.jpg,Proba3ocs,0.952759
+test_01006_img.jpg,Soho,0.952739
+test_00631_img.jpg,Soho,0.952723
+test_01463_img.jpg,Soho,0.952711
+test_02013_img.jpg,Soho,0.952690
+test_02093_img.jpg,VenusExpress,0.952681
+test_00060_img.jpg,VenusExpress,0.952666
+test_02425_img.jpg,Proba3ocs,0.952642
+test_00934_img.jpg,VenusExpress,0.952639
+test_01431_img.jpg,VenusExpress,0.952595
+test_04829_img.jpg,Smart1,0.952587
+test_02788_img.jpg,ObservationSat1,0.952578
+test_00717_img.jpg,Soho,0.952557
+test_04721_img.jpg,Smart1,0.952539
+test_02020_img.jpg,Proba3ocs,0.952528
+test_04645_img.jpg,Soho,0.952524
+test_02822_img.jpg,LisaPathfinder,0.952508
+test_00472_img.jpg,LisaPathfinder,0.952499
+test_04823_img.jpg,Soho,0.952495
+test_01412_img.jpg,Soho,0.952482
+test_04121_img.jpg,Soho,0.952479
+test_01413_img.jpg,LisaPathfinder,0.952471
+test_02869_img.jpg,VenusExpress,0.952424
+test_04684_img.jpg,Soho,0.952413
+test_00603_img.jpg,VenusExpress,0.952362
+test_00239_img.jpg,Cheops,0.952333
+test_03165_img.jpg,Soho,0.952260
+test_03121_img.jpg,VenusExpress,0.952190
+test_04463_img.jpg,Smart1,0.952169
+test_03306_img.jpg,Smart1,0.952153
+test_00055_img.jpg,XMM Newton,0.952148
+test_04574_img.jpg,Proba3ocs,0.952143
+test_02487_img.jpg,Soho,0.952117
+test_02890_img.jpg,Proba3,0.952109
+test_01718_img.jpg,VenusExpress,0.952077
+test_00548_img.jpg,Soho,0.952069
+test_01728_img.jpg,Soho,0.952035
+test_00157_img.jpg,Proba3,0.952016
+test_00087_img.jpg,Soho,0.951999
+test_04151_img.jpg,VenusExpress,0.951987
+test_02761_img.jpg,Proba3ocs,0.951974
+test_04142_img.jpg,ObservationSat1,0.951940
+test_00783_img.jpg,Soho,0.951900
+test_04562_img.jpg,XMM Newton,0.951892
+test_04692_img.jpg,Smart1,0.951878
+test_03051_img.jpg,Proba3ocs,0.951834
+test_02060_img.jpg,VenusExpress,0.951823
+test_01068_img.jpg,Soho,0.951795
+test_02901_img.jpg,Soho,0.951751
+test_00658_img.jpg,Soho,0.951740
+test_03113_img.jpg,Proba3ocs,0.951708
+test_03145_img.jpg,Smart1,0.951662
+test_00892_img.jpg,LisaPathfinder,0.951658
+test_03384_img.jpg,Soho,0.951649
+test_02034_img.jpg,Soho,0.951646
+test_01040_img.jpg,Proba3,0.951641
+test_01696_img.jpg,Smart1,0.951629
+test_02931_img.jpg,LisaPathfinder,0.951557
+test_02337_img.jpg,Smart1,0.951524
+test_04504_img.jpg,Soho,0.951498
+test_02504_img.jpg,Smart1,0.951494
+test_04408_img.jpg,VenusExpress,0.951493
+test_03004_img.jpg,Smart1,0.951485
+test_01033_img.jpg,Proba3,0.951481
+test_02097_img.jpg,VenusExpress,0.951407
+test_04232_img.jpg,Proba3ocs,0.951348
+test_03106_img.jpg,Proba3ocs,0.951283
+test_04814_img.jpg,Proba3ocs,0.951263
+test_04042_img.jpg,Soho,0.951162
+test_00045_img.jpg,LisaPathfinder,0.951159
+test_04805_img.jpg,Soho,0.951132
+test_01049_img.jpg,VenusExpress,0.951132
+test_01322_img.jpg,Soho,0.951125
+test_00522_img.jpg,Soho,0.951112
+test_03032_img.jpg,Proba3,0.951098
+test_00858_img.jpg,Soho,0.951059
+test_03816_img.jpg,Soho,0.951017
+test_04993_img.jpg,Smart1,0.951015
+test_00085_img.jpg,Soho,0.950992
+test_02505_img.jpg,VenusExpress,0.950985
+test_01127_img.jpg,Soho,0.950983
+test_04754_img.jpg,Soho,0.950949
+test_04888_img.jpg,Proba3ocs,0.950942
+test_04840_img.jpg,Smart1,0.950909
+test_03557_img.jpg,XMM Newton,0.950876
+test_03693_img.jpg,LisaPathfinder,0.950848
+test_04812_img.jpg,Soho,0.950844
+test_04355_img.jpg,Smart1,0.950838
+test_00093_img.jpg,Soho,0.950833
+test_03456_img.jpg,Smart1,0.950809
+test_04454_img.jpg,Smart1,0.950795
+test_02920_img.jpg,Soho,0.950774
+test_00734_img.jpg,Soho,0.950745
+test_00909_img.jpg,Soho,0.950738
+test_04320_img.jpg,Soho,0.950723
+test_00866_img.jpg,LisaPathfinder,0.950718
+test_03545_img.jpg,Soho,0.950717
+test_01493_img.jpg,Proba3,0.950682
+test_04619_img.jpg,XMM Newton,0.950674
+test_04178_img.jpg,VenusExpress,0.950644
+test_00461_img.jpg,Soho,0.950629
+test_00334_img.jpg,Smart1,0.950625
+test_04588_img.jpg,VenusExpress,0.950601
+test_04376_img.jpg,VenusExpress,0.950572
+test_04238_img.jpg,Proba3,0.950563
+test_00265_img.jpg,Soho,0.950531
+test_03463_img.jpg,Smart1,0.950469
+test_00523_img.jpg,VenusExpress,0.950460
+test_02217_img.jpg,Soho,0.950447
+test_03953_img.jpg,Proba3ocs,0.950446
+test_01118_img.jpg,VenusExpress,0.950431
+test_03572_img.jpg,XMM Newton,0.950428
+test_03094_img.jpg,Proba3ocs,0.950420
+test_03526_img.jpg,VenusExpress,0.950419
+test_01580_img.jpg,VenusExpress,0.950408
+test_00547_img.jpg,Soho,0.950392
+test_04490_img.jpg,Soho,0.950390
+test_00218_img.jpg,VenusExpress,0.950382
+test_02926_img.jpg,VenusExpress,0.950353
+test_02990_img.jpg,Soho,0.950345
+test_02836_img.jpg,Proba3,0.950324
+test_02867_img.jpg,XMM Newton,0.950293
+test_02719_img.jpg,Soho,0.950185
+test_02839_img.jpg,Soho,0.950181
+test_01655_img.jpg,Proba3ocs,0.950173
+test_00982_img.jpg,LisaPathfinder,0.950157
+test_02431_img.jpg,Proba3ocs,0.950133
+test_03712_img.jpg,Smart1,0.950127
+test_02527_img.jpg,Soho,0.950120
+test_03777_img.jpg,Smart1,0.950033
+test_00604_img.jpg,Proba3ocs,0.949957
+test_00676_img.jpg,VenusExpress,0.949929
+test_01310_img.jpg,Smart1,0.949892
+test_02916_img.jpg,VenusExpress,0.949876
+test_01383_img.jpg,Soho,0.949822
+test_01585_img.jpg,VenusExpress,0.949791
+test_01125_img.jpg,Soho,0.949714
+test_04847_img.jpg,Soho,0.949707
+test_03725_img.jpg,XMM Newton,0.949706
+test_02778_img.jpg,Proba3ocs,0.949704
+test_01946_img.jpg,XMM Newton,0.949690
+test_04712_img.jpg,Soho,0.949687
+test_01898_img.jpg,Soho,0.949662
+test_03736_img.jpg,Proba2,0.949607
+test_02814_img.jpg,Soho,0.949553
+test_01892_img.jpg,Soho,0.949517
+test_00503_img.jpg,Smart1,0.949501
+test_00176_img.jpg,VenusExpress,0.949490
+test_03886_img.jpg,Soho,0.949474
+test_00904_img.jpg,Soho,0.949467
+test_02616_img.jpg,Soho,0.949442
+test_00947_img.jpg,LisaPathfinder,0.949440
+test_03525_img.jpg,Proba3,0.949431
+test_02452_img.jpg,Smart1,0.949405
+test_00888_img.jpg,Smart1,0.949404
+test_02089_img.jpg,Soho,0.949383
+test_04623_img.jpg,Smart1,0.949359
+test_01551_img.jpg,Smart1,0.949322
+test_03079_img.jpg,Soho,0.949321
+test_00759_img.jpg,Soho,0.949310
+test_00413_img.jpg,Proba3ocs,0.949298
+test_03789_img.jpg,Proba2,0.949291
+test_00377_img.jpg,Proba2,0.949286
+test_01122_img.jpg,Soho,0.949248
+test_00178_img.jpg,Smart1,0.949195
+test_04900_img.jpg,VenusExpress,0.949182
+test_01532_img.jpg,VenusExpress,0.949125
+test_02112_img.jpg,VenusExpress,0.949115
+test_02870_img.jpg,LisaPathfinder,0.949076
+test_00359_img.jpg,Smart1,0.949049
+test_03715_img.jpg,Soho,0.948966
+test_03727_img.jpg,VenusExpress,0.948951
+test_03201_img.jpg,Soho,0.948822
+test_01952_img.jpg,VenusExpress,0.948740
+test_04653_img.jpg,Soho,0.948659
+test_00401_img.jpg,Smart1,0.948624
+test_02241_img.jpg,Proba3ocs,0.948574
+test_01119_img.jpg,Soho,0.948559
+test_03043_img.jpg,Soho,0.948522
+test_03847_img.jpg,Smart1,0.948498
+test_01327_img.jpg,VenusExpress,0.948479
+test_01653_img.jpg,Cheops,0.948479
+test_00271_img.jpg,Soho,0.948449
+test_00144_img.jpg,Smart1,0.948425
+test_03568_img.jpg,Smart1,0.948388
+test_02320_img.jpg,Soho,0.948388
+test_02444_img.jpg,Proba2,0.948310
+test_04182_img.jpg,Proba3ocs,0.948219
+test_03434_img.jpg,Soho,0.948189
+test_01687_img.jpg,Soho,0.948184
+test_02129_img.jpg,LisaPathfinder,0.948168
+test_00981_img.jpg,XMM Newton,0.948078
+test_03022_img.jpg,XMM Newton,0.948051
+test_01019_img.jpg,Proba3ocs,0.948019
+test_04845_img.jpg,Soho,0.947799
+test_00688_img.jpg,ObservationSat1,0.947754
+test_02161_img.jpg,Soho,0.947749
+test_04527_img.jpg,VenusExpress,0.947735
+test_00823_img.jpg,VenusExpress,0.947733
+test_03984_img.jpg,Smart1,0.947600
+test_01756_img.jpg,Smart1,0.947584
+test_01843_img.jpg,Smart1,0.947549
+test_03080_img.jpg,XMM Newton,0.947526
+test_02556_img.jpg,Smart1,0.947502
+test_04415_img.jpg,Proba2,0.947480
+test_00267_img.jpg,Smart1,0.947379
+test_00471_img.jpg,VenusExpress,0.947362
+test_03164_img.jpg,VenusExpress,0.947327
+test_01104_img.jpg,VenusExpress,0.947288
+test_04170_img.jpg,VenusExpress,0.947284
+test_03398_img.jpg,VenusExpress,0.947269
+test_03105_img.jpg,Smart1,0.947245
+test_04133_img.jpg,Soho,0.947228
+test_01312_img.jpg,Smart1,0.947227
+test_04287_img.jpg,XMM Newton,0.947089
+test_04153_img.jpg,XMM Newton,0.947040
+test_00546_img.jpg,VenusExpress,0.946846
+test_02638_img.jpg,Smart1,0.946828
+test_04780_img.jpg,Soho,0.946811
+test_04017_img.jpg,Soho,0.946726
+test_02566_img.jpg,VenusExpress,0.946720
+test_01939_img.jpg,VenusExpress,0.946707
+test_03511_img.jpg,XMM Newton,0.946631
+test_03914_img.jpg,Soho,0.946568
+test_02692_img.jpg,Proba3ocs,0.946529
+test_01161_img.jpg,Smart1,0.946452
+test_02068_img.jpg,Smart1,0.946434
+test_04417_img.jpg,XMM Newton,0.946317
+test_01209_img.jpg,Soho,0.946216
+test_01292_img.jpg,VenusExpress,0.946198
+test_01126_img.jpg,VenusExpress,0.946171
+test_00767_img.jpg,VenusExpress,0.946153
+test_00560_img.jpg,Soho,0.946144
+test_01137_img.jpg,Soho,0.946130
+test_01894_img.jpg,Smart1,0.946114
+test_03560_img.jpg,VenusExpress,0.945977
+test_03211_img.jpg,Soho,0.945908
+test_03401_img.jpg,LisaPathfinder,0.945897
+test_01301_img.jpg,Smart1,0.945885
+test_01576_img.jpg,Soho,0.945842
+test_00528_img.jpg,LisaPathfinder,0.945800
+test_02412_img.jpg,Smart1,0.945791
+test_02999_img.jpg,VenusExpress,0.945751
+test_03837_img.jpg,XMM Newton,0.945709
+test_02298_img.jpg,Smart1,0.945693
+test_04402_img.jpg,Proba3ocs,0.945636
+test_01255_img.jpg,Soho,0.945595
+test_04210_img.jpg,Proba3ocs,0.945576
+test_01393_img.jpg,Soho,0.945531
+test_04746_img.jpg,Smart1,0.945485
+test_00065_img.jpg,Soho,0.945430
+test_04019_img.jpg,XMM Newton,0.945424
+test_02074_img.jpg,Soho,0.945378
+test_03982_img.jpg,Soho,0.945369
+test_00431_img.jpg,Soho,0.945350
+test_03609_img.jpg,Smart1,0.945304
+test_01876_img.jpg,Soho,0.945199
+test_02549_img.jpg,Smart1,0.945193
+test_04359_img.jpg,Soho,0.945167
+test_04646_img.jpg,Smart1,0.945167
+test_02852_img.jpg,LisaPathfinder,0.945135
+test_00910_img.jpg,Smart1,0.945115
+test_04691_img.jpg,Smart1,0.945038
+test_01185_img.jpg,Soho,0.945020
+test_04690_img.jpg,Proba2,0.944976
+test_04605_img.jpg,Smart1,0.944958
+test_03649_img.jpg,Soho,0.944757
+test_00405_img.jpg,LisaPathfinder,0.944701
+test_03322_img.jpg,Cheops,0.944697
+test_04241_img.jpg,Soho,0.944696
+test_01711_img.jpg,Soho,0.944677
+test_01895_img.jpg,Smart1,0.944620
+test_00166_img.jpg,Soho,0.944580
+test_02210_img.jpg,Soho,0.944574
+test_00169_img.jpg,Proba3ocs,0.944567
+test_03395_img.jpg,Soho,0.944467
+test_01377_img.jpg,VenusExpress,0.944441
+test_02159_img.jpg,Soho,0.944387
+test_01522_img.jpg,Smart1,0.944363
+test_04384_img.jpg,VenusExpress,0.944310
+test_00778_img.jpg,VenusExpress,0.944303
+test_01065_img.jpg,Smart1,0.944282
+test_01885_img.jpg,Soho,0.944133
+test_00738_img.jpg,Soho,0.944071
+test_02140_img.jpg,VenusExpress,0.944055
+test_04923_img.jpg,VenusExpress,0.943986
+test_00198_img.jpg,VenusExpress,0.943963
+test_00510_img.jpg,Smart1,0.943948
+test_03935_img.jpg,VenusExpress,0.943794
+test_02747_img.jpg,Soho,0.943717
+test_01064_img.jpg,VenusExpress,0.943592
+test_02824_img.jpg,Smart1,0.943571
+test_00254_img.jpg,Soho,0.943539
+test_03027_img.jpg,Soho,0.943486
+test_04084_img.jpg,Smart1,0.943433
+test_04129_img.jpg,Soho,0.943141
+test_01630_img.jpg,XMM Newton,0.943108
+test_02168_img.jpg,VenusExpress,0.943026
+test_00136_img.jpg,Smart1,0.942972
+test_04982_img.jpg,Soho,0.942884
+test_01745_img.jpg,VenusExpress,0.942419
+test_01368_img.jpg,VenusExpress,0.942408
+test_00175_img.jpg,Smart1,0.942262
+test_00463_img.jpg,Proba3ocs,0.942254
+test_04387_img.jpg,Soho,0.942182
+test_04695_img.jpg,Soho,0.942152
+test_04917_img.jpg,Soho,0.942123
+test_02914_img.jpg,Soho,0.942092
+test_02157_img.jpg,Smart1,0.942052
+test_02478_img.jpg,Soho,0.942051
+test_03611_img.jpg,Smart1,0.942021
+test_03634_img.jpg,Smart1,0.941867
+test_04081_img.jpg,ObservationSat1,0.941743
+test_00857_img.jpg,Smart1,0.941700
+test_00862_img.jpg,Smart1,0.941667
+test_01444_img.jpg,VenusExpress,0.941655
+test_01151_img.jpg,VenusExpress,0.941639
+test_02597_img.jpg,Smart1,0.941574
+test_00509_img.jpg,Smart1,0.941518
+test_02526_img.jpg,Smart1,0.941473
+test_01001_img.jpg,VenusExpress,0.941437
+test_01905_img.jpg,Smart1,0.941419
+test_01081_img.jpg,Smart1,0.941405
+test_01379_img.jpg,Soho,0.941404
+test_03393_img.jpg,Proba3ocs,0.941363
+test_03245_img.jpg,Smart1,0.941304
+test_00574_img.jpg,VenusExpress,0.941207
+test_02288_img.jpg,Smart1,0.941149
+test_02255_img.jpg,VenusExpress,0.941101
+test_03205_img.jpg,Soho,0.941027
+test_03641_img.jpg,Soho,0.941006
+test_00226_img.jpg,Soho,0.940997
+test_01441_img.jpg,Smart1,0.940883
+test_03838_img.jpg,Proba3ocs,0.940833
+test_03206_img.jpg,Smart1,0.940828
+test_01430_img.jpg,Proba3ocs,0.940806
+test_00206_img.jpg,VenusExpress,0.940756
+test_04661_img.jpg,Smart1,0.940526
+test_03951_img.jpg,Smart1,0.940418
+test_03849_img.jpg,VenusExpress,0.940392
+test_00836_img.jpg,Soho,0.940318
+test_02654_img.jpg,VenusExpress,0.940295
+test_04065_img.jpg,VenusExpress,0.940272
+test_02489_img.jpg,Soho,0.940229
+test_04856_img.jpg,Smart1,0.940201
+test_02982_img.jpg,Soho,0.940142
+test_02604_img.jpg,Proba3ocs,0.940131
+test_04594_img.jpg,Smart1,0.940105
+test_01631_img.jpg,Soho,0.940012
+test_03991_img.jpg,Proba3ocs,0.939971
+test_00221_img.jpg,Smart1,0.939956
+test_04753_img.jpg,Smart1,0.939891
+test_00727_img.jpg,Smart1,0.939865
+test_02759_img.jpg,Cheops,0.939828
+test_02184_img.jpg,VenusExpress,0.939767
+test_00605_img.jpg,Smart1,0.939486
+test_03070_img.jpg,Soho,0.939466
+test_04737_img.jpg,Smart1,0.939377
+test_04228_img.jpg,Smart1,0.939280
+test_01183_img.jpg,VenusExpress,0.939254
+test_04702_img.jpg,Smart1,0.939127
+test_04219_img.jpg,Smart1,0.939031
+test_00629_img.jpg,Smart1,0.938990
+test_04612_img.jpg,Smart1,0.938964
+test_00106_img.jpg,Smart1,0.938927
+test_02991_img.jpg,Smart1,0.938918
+test_04297_img.jpg,VenusExpress,0.938779
+test_03010_img.jpg,XMM Newton,0.938750
+test_01817_img.jpg,Smart1,0.938747
+test_01059_img.jpg,Smart1,0.938731
+test_00997_img.jpg,Cheops,0.938707
+test_00636_img.jpg,Smart1,0.938521
+test_03423_img.jpg,Soho,0.938514
+test_01232_img.jpg,VenusExpress,0.938481
+test_03923_img.jpg,Proba3,0.938316
+test_01043_img.jpg,Smart1,0.938302
+test_00992_img.jpg,Smart1,0.938248
+test_00924_img.jpg,Soho,0.938185
+test_00126_img.jpg,VenusExpress,0.937956
+test_04731_img.jpg,Smart1,0.937936
+test_03853_img.jpg,Smart1,0.937630
+test_03898_img.jpg,VenusExpress,0.937582
+test_04885_img.jpg,Proba3ocs,0.937470
+test_04091_img.jpg,Smart1,0.937374
+test_03587_img.jpg,Soho,0.937338
+test_03454_img.jpg,Proba3ocs,0.937214
+test_03869_img.jpg,Soho,0.937211
+test_01303_img.jpg,LisaPathfinder,0.937184
+test_04487_img.jpg,LisaPathfinder,0.937104
+test_04437_img.jpg,VenusExpress,0.937065
+test_01230_img.jpg,VenusExpress,0.937053
+test_04833_img.jpg,Smart1,0.936908
+test_00586_img.jpg,Soho,0.936700
+test_01250_img.jpg,VenusExpress,0.936466
+test_04534_img.jpg,VenusExpress,0.936320
+test_02755_img.jpg,Smart1,0.936299
+test_02750_img.jpg,Soho,0.936276
+test_00462_img.jpg,XMM Newton,0.936045
+test_00680_img.jpg,Soho,0.936013
+test_03037_img.jpg,Soho,0.935952
+test_03382_img.jpg,XMM Newton,0.935810
+test_02120_img.jpg,Smart1,0.935795
+test_02144_img.jpg,VenusExpress,0.935696
+test_03334_img.jpg,Smart1,0.935445
+test_03367_img.jpg,Smart1,0.934878
+test_00440_img.jpg,Proba3,0.934857
+test_00763_img.jpg,Smart1,0.934732
+test_00468_img.jpg,VenusExpress,0.934566
+test_03979_img.jpg,Smart1,0.934504
+test_02457_img.jpg,VenusExpress,0.934474
+test_04304_img.jpg,Soho,0.934427
+test_01083_img.jpg,Smart1,0.934290
+test_02462_img.jpg,Smart1,0.934239
+test_01340_img.jpg,Soho,0.933583
+test_02036_img.jpg,Soho,0.933538
+test_03713_img.jpg,Smart1,0.933491
+test_04262_img.jpg,ObservationSat1,0.933358
+test_03089_img.jpg,Smart1,0.933180
+test_02563_img.jpg,Soho,0.932779
+test_00324_img.jpg,Soho,0.932738
+test_03865_img.jpg,Smart1,0.932611
+test_01466_img.jpg,Smart1,0.932494
+test_03091_img.jpg,Smart1,0.932302
+test_04098_img.jpg,VenusExpress,0.932078
+test_00987_img.jpg,Smart1,0.932049
+test_01738_img.jpg,XMM Newton,0.931755
+test_03253_img.jpg,Smart1,0.931644
+test_00339_img.jpg,Soho,0.931638
+test_00101_img.jpg,Smart1,0.931630
+test_03990_img.jpg,Smart1,0.931352
+test_04047_img.jpg,Smart1,0.931301
+test_02406_img.jpg,Soho,0.931017
+test_02477_img.jpg,Smart1,0.930869
+test_01286_img.jpg,Soho,0.930753
+test_02712_img.jpg,Smart1,0.930675
+test_02792_img.jpg,Soho,0.930559
+test_00404_img.jpg,LisaPathfinder,0.930187
+test_04931_img.jpg,Soho,0.930042
+test_01999_img.jpg,VenusExpress,0.929755
+test_04067_img.jpg,Soho,0.929608
+test_04185_img.jpg,Soho,0.929532
+test_00459_img.jpg,Smart1,0.929520
+test_02304_img.jpg,Smart1,0.929095
+test_00511_img.jpg,Soho,0.928967
+test_02629_img.jpg,Smart1,0.928948
+test_02368_img.jpg,LisaPathfinder,0.928722
+test_03129_img.jpg,Smart1,0.928479
+test_00777_img.jpg,Soho,0.928098
+test_01650_img.jpg,Soho,0.927716
+test_01078_img.jpg,Smart1,0.927645
+test_03359_img.jpg,Smart1,0.927405
+test_03673_img.jpg,VenusExpress,0.927341
+test_03009_img.jpg,Soho,0.927249
+test_02201_img.jpg,Smart1,0.927204
+test_00111_img.jpg,Smart1,0.927157
+test_04557_img.jpg,Smart1,0.927089
+test_02357_img.jpg,Smart1,0.926555
+test_01722_img.jpg,Cheops,0.926484
+test_02091_img.jpg,Smart1,0.926382
+test_04392_img.jpg,Smart1,0.925951
+test_04583_img.jpg,Smart1,0.925337
+test_00189_img.jpg,Smart1,0.925324
+test_02687_img.jpg,VenusExpress,0.924711
+test_01598_img.jpg,Smart1,0.924682
+test_01489_img.jpg,Smart1,0.924599
+test_03411_img.jpg,Soho,0.924460
+test_04458_img.jpg,Smart1,0.924214
+test_04455_img.jpg,Smart1,0.924015
+test_04777_img.jpg,Smart1,0.924002
+test_04673_img.jpg,VenusExpress,0.923974
+test_03050_img.jpg,Smart1,0.923412
+test_03633_img.jpg,Smart1,0.923374
+test_02817_img.jpg,Smart1,0.922570
+test_01234_img.jpg,Soho,0.922480
+test_00422_img.jpg,Smart1,0.921957
+test_02550_img.jpg,Smart1,0.921795
+test_01519_img.jpg,Smart1,0.921788
+test_04500_img.jpg,Smart1,0.921643
+test_03339_img.jpg,Smart1,0.921552
+test_01072_img.jpg,Smart1,0.921241
+test_04785_img.jpg,XMM Newton,0.921029
+test_00643_img.jpg,Smart1,0.920960
+test_03648_img.jpg,VenusExpress,0.920669
+test_00007_img.jpg,Smart1,0.920178
+test_04399_img.jpg,Smart1,0.920108
+test_01359_img.jpg,VenusExpress,0.919762
+test_03709_img.jpg,Smart1,0.919755
+test_00299_img.jpg,Smart1,0.919618
+test_00235_img.jpg,Soho,0.919459
+test_04303_img.jpg,VenusExpress,0.918870
+test_04465_img.jpg,Smart1,0.918855
+test_00707_img.jpg,Smart1,0.918333
+test_01173_img.jpg,Smart1,0.918043
+test_01025_img.jpg,Smart1,0.917399
+test_00044_img.jpg,Smart1,0.916927
+test_01229_img.jpg,VenusExpress,0.916663
+test_01556_img.jpg,Smart1,0.916210
+test_01295_img.jpg,Smart1,0.915711
+test_00627_img.jpg,Smart1,0.915236
+test_02211_img.jpg,Smart1,0.914772
+test_03699_img.jpg,Proba3,0.914767
+test_03063_img.jpg,Smart1,0.913608
+test_04146_img.jpg,Smart1,0.913428
+test_02454_img.jpg,Smart1,0.913232
+test_01238_img.jpg,Smart1,0.912294
+test_02283_img.jpg,Smart1,0.911827
+test_00752_img.jpg,Smart1,0.911514
+test_03841_img.jpg,Smart1,0.911129
+test_04542_img.jpg,Smart1,0.911074
+test_00244_img.jpg,Smart1,0.910982
+test_04137_img.jpg,Smart1,0.910475
+test_03798_img.jpg,Smart1,0.910303
+test_00039_img.jpg,Smart1,0.909896
+test_01086_img.jpg,Smart1,0.909674
+test_03273_img.jpg,XMM Newton,0.909616
+test_02676_img.jpg,Smart1,0.908839
+test_02967_img.jpg,Smart1,0.907984
+test_01440_img.jpg,Smart1,0.907661
+test_02367_img.jpg,Smart1,0.907594
+test_02671_img.jpg,Smart1,0.907305
+test_00015_img.jpg,Soho,0.906880
+test_04587_img.jpg,Smart1,0.905853
+test_02001_img.jpg,Smart1,0.905375
+test_01246_img.jpg,Smart1,0.904693
+test_04423_img.jpg,Smart1,0.903603
+test_04659_img.jpg,Smart1,0.903282
+test_02728_img.jpg,Soho,0.902876
+test_00754_img.jpg,Smart1,0.902539
+test_01649_img.jpg,Proba3ocs,0.902046
+test_02307_img.jpg,Smart1,0.901782
+test_04164_img.jpg,VenusExpress,0.901588
+test_02586_img.jpg,Smart1,0.899883
+test_01577_img.jpg,Smart1,0.899315
+test_04564_img.jpg,VenusExpress,0.898629
+test_02260_img.jpg,VenusExpress,0.898500
+test_04925_img.jpg,Smart1,0.897904
+test_03179_img.jpg,Smart1,0.897861
+test_04769_img.jpg,Soho,0.896231
+test_01459_img.jpg,Smart1,0.894612
+test_02640_img.jpg,Smart1,0.894484
+test_00389_img.jpg,Proba3ocs,0.894264
+test_03645_img.jpg,Smart1,0.893907
+test_01022_img.jpg,Smart1,0.893120
+test_03547_img.jpg,Smart1,0.889029
+test_01790_img.jpg,Smart1,0.874621
+test_04818_img.jpg,Soho,0.869823
+test_03940_img.jpg,VenusExpress,0.869481
+test_00109_img.jpg,Smart1,0.867439
+test_03024_img.jpg,XMM Newton,0.857503
+test_02029_img.jpg,XMM Newton,0.849797
+test_03646_img.jpg,Smart1,0.788348
+test_03749_img.jpg,XMM Newton,0.750916
+test_00381_img.jpg,Smart1,0.747483
+test_01108_img.jpg,Smart1,0.730787
+test_03302_img.jpg,XMM Newton,0.723590
+test_04516_img.jpg,Smart1,0.709972
+test_01491_img.jpg,VenusExpress,0.658244
+test_02389_img.jpg,Proba3,0.640974
+test_03843_img.jpg,Smart1,0.443686

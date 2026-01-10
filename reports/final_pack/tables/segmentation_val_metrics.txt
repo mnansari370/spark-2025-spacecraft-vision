@@ -1,0 +1,18 @@
+Segmentation VAL metrics
+GT dir:   /home/users/nmo/spark_project/data/spark-2024-train-val/mask
+Pred dir: /home/users/nmo/spark_project/inference_results/segmentation/val_predicted_masks
+
+Matched pairs total: 8941
+Pairs used (same shape): 8941
+Pairs skipped (shape mismatch): 0
+
+Confusion matrix (rows=GT, cols=Pred) [pixel counts]:
+[[8673634332  196027752   80484197]
+ [  15217190     694813    1356290]
+ [   3113675     179121     775986]]
+
+IoU per class:
+bg: 0.967125
+body: 0.003255
+panels: 0.009033
+mIoU: 0.326471

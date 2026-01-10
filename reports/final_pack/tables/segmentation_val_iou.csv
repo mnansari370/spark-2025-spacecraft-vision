@@ -1,0 +1,5 @@
+class,iou
+bg,0.967125
+body,0.003255
+panels,0.009033
+mIoU,0.326471
