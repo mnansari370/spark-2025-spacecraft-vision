@@ -1,97 +1,71 @@
-############################################################
-# SPARK Project (.gitignore)
-# - Keep repository lightweight (no datasets/checkpoints/wandb)
-# - Track code + READMEs + job scripts
-# - Track only clean SLURM logs (optional, controlled)
-# - Track only final submission artifacts you explicitly want
-############################################################
+############################
+# SPARK PROJECT — .gitignore
+############################
 
-############################
-# CRITICAL: DO NOT TRACK (large / local-only)
-############################
+# --------------------------
+# 1) Large local-only folders
+# --------------------------
 data/
 checkpoints/
 wandb/
-logs/
 inference_results/
+logs/
 
-############################
-# OPTIONAL: allow SLURM logs only (if you want examples tracked)
-# (Uncomment the block below if you actually want to track slurm out/err)
-############################
-# !logs/
-# !logs/**/
-# !logs/**/slurm/
-# !logs/**/slurm/*.out
-# !logs/**/slurm/*.err
+# Keep directory placeholders (optional)
+!data/.gitkeep
+!checkpoints/.gitkeep
+!wandb/.gitkeep
+!inference_results/.gitkeep
+!logs/.gitkeep
 
-############################
-# Inference outputs: keep only final artifacts if needed
-# (Uncomment what you want to keep tracked)
-############################
-# !inference_results/**/submission*.zip
-# !inference_results/**/detection.csv
-# !inference_results/**/detection_test_predictions.json
-# !inference_results/**/segmentation/final/submission_segmentation.zip
+# --------------------------
+# 2) Logs: keep ONLY SLURM out/err
+# --------------------------
+# (logs/ is ignored above, so we re-allow just slurm logs)
+!logs/**/slurm/
+!logs/**/slurm/*.out
+!logs/**/slurm/*.err
 
-############################
-# Reports: keep code, ignore generated outputs
-############################
-reports/latest/
-reports/outputs/
-reports/figures/
-reports/tables/
+# --------------------------
+# 3) Reports: keep code + README, keep latest/ folder structure only
+# --------------------------
+# Track reports code and docs
+!reports/
+!reports/README.md
+!reports/scripts/**
 
-############################
-# Python
-############################
-**/__pycache__/
+# Keep reports/latest folder structure in git (with .gitkeep)
+!reports/latest/
+!reports/latest/.gitkeep
+!reports/latest/figures/.gitkeep
+!reports/latest/tables/.gitkeep
+
+# But ignore actual generated files inside latest by default
+reports/latest/figures/*
+reports/latest/tables/*
+!reports/latest/figures/.gitkeep
+!reports/latest/tables/.gitkeep
+
+# --------------------------
+# 4) Python cache / builds
+# --------------------------
+__pycache__/
 *.py[cod]
 *.so
+*.egg-info/
+build/
+dist/
 
-############################
-# Model weights / large binaries
-############################
-*.pth
-*.pt
-*.ckpt
-
-############################
-# Archives / large files
-############################
-*.zip
-*.npz
-*.tar
-*.tar.gz
-*.tgz
-
-############################
-# Jupyter
-############################
+# --------------------------
+# 5) Jupyter
+# --------------------------
 .ipynb_checkpoints/
 *.ipynb~
 
-############################
-# Environments
-############################
-venv/
-.env/
-.venv/
-conda-env/
-env/
-
-############################
-# Editors / OS
-############################
+# --------------------------
+# 6) Editors / OS junk
+# --------------------------
 .vscode/
 .DS_Store
 *~
-
-############################
-# Temp / cache
-############################
-.cache/
-*.log
-*.tmp
-tmp*/
-*_tmp*/
+*.swp
