@@ -1,49 +1,79 @@
-############################
-# CRITICAL: DO NOT TRACK
-############################
+############################################################
+# SPARK Project (.gitignore)
+# - Keep repository lightweight (no datasets/checkpoints/wandb)
+# - Track code + READMEs + job scripts
+# - Track only clean SLURM logs (optional, controlled)
+# - Track only final submission artifacts you explicitly want
+############################################################
 
-# Datasets (large, not shareable)
+############################
+# CRITICAL: DO NOT TRACK (large / local-only)
+############################
 data/
-
-# Training outputs
 checkpoints/
-*.pt
-*.ckpt
-
-# ===== Logs (track only SLURM outputs) =====
-# Ignore everything under logs by default:
-logs/**
-
-# But keep the folder structure:
-!logs/
-!logs/**/
-!logs/**/slurm/
-!logs/**/slurm/*.out
-!logs/**/slurm/*.err
-
-
 wandb/
+logs/
+inference_results/
 
 ############################
-# SUBMISSIONS & ARTIFACTS
+# OPTIONAL: allow SLURM logs only (if you want examples tracked)
+# (Uncomment the block below if you actually want to track slurm out/err)
 ############################
-
-# Generated submission files
-*.zip
-*.npz
-
-# Inference caches / visuals (optional safety)
-inference_results/**/visuals_per_class/
+# !logs/
+# !logs/**/
+# !logs/**/slurm/
+# !logs/**/slurm/*.out
+# !logs/**/slurm/*.err
 
 ############################
-# PYTHON
+# Inference outputs: keep only final artifacts if needed
+# (Uncomment what you want to keep tracked)
 ############################
+# !inference_results/**/submission*.zip
+# !inference_results/**/detection.csv
+# !inference_results/**/detection_test_predictions.json
+# !inference_results/**/segmentation/final/submission_segmentation.zip
 
-__pycache__/
+############################
+# Reports: keep code, ignore generated outputs
+############################
+reports/latest/
+reports/outputs/
+reports/figures/
+reports/tables/
+
+############################
+# Python
+############################
+**/__pycache__/
 *.py[cod]
 *.so
 
-# Virtual environments
+############################
+# Model weights / large binaries
+############################
+*.pth
+*.pt
+*.ckpt
+
+############################
+# Archives / large files
+############################
+*.zip
+*.npz
+*.tar
+*.tar.gz
+*.tgz
+
+############################
+# Jupyter
+############################
+.ipynb_checkpoints/
+*.ipynb~
+
+############################
+# Environments
+############################
 venv/
 .env/
 .venv/
@@ -51,135 +81,17 @@ conda-env/
 env/
 
 ############################
-# JUPYTER
+# Editors / OS
 ############################
-
-.ipynb_checkpoints/
-*.ipynb~
-
-############################
-# HPC / SLURM
-############################
-
-slurm-*.out
-slurm-*.err
-*.err
-
-# Allow SLURM logs even though *.out is ignored globally
-!logs/**/slurm/*.out
-!logs/**/slurm/*.err
-
-############################
-# EDITORS / OS
-############################
-
-# VS Code
 .vscode/
-
-# macOS
 .DS_Store
-
-# Linux
 *~
 
 ############################
-# TEMP / CACHE
+# Temp / cache
 ############################
-
+.cache/
 *.log
 *.tmp
-.cache/
-
-# --- generated / large artifacts ---
-wandb/
-logs/
-checkpoints/
-inference_results/
-data/              # uncomment if you don't want dataset tracked
-
-# python cache
-__pycache__/
-*.pyc
-
-# model weights
-*.pth
-*.pt
-*.ckpt
-
-# archives
-*.zip
-
-# Large artifacts
-wandb/
-checkpoints/
-data/
-logs/
-inference_results/
-docs/ALL_CODE_DUMP.txt
-
-# ---- big local-only ----
-data/
-checkpoints/
-wandb/
-__pycache__/
-*.pyc
-
-# ---- inference outputs (keep only final zips/csv/json you explicitly add) ----
-inference_results/**/*
-!inference_results/**/submission*.zip
-!inference_results/**/detection.csv
-!inference_results/**/detection_test_predictions.json
-
-# ---- logs (keep only a few examples if you want) ----
-logs/**/*
-!logs/**/slurm/*.out
-
-# ---- local scratch ----
-*_tmp*/
 tmp*/
-
-# Local large artifacts (do not commit)
-data/
-inference_results/
-checkpoints/
-wandb/
-logs/
-logs/
-
-# Local heavy artifacts (never commit)
-data/
-inference_results/
-checkpoints/
-wandb/
-logs/
-
-# ===== Generated / local =====
-data/
-checkpoints/
-inference_results/
-logs/
-wandb/
-
-# report outputs (generated)
-reports/figures/
-reports/tables/
-reports/outputs/
-
-# large generated / local-only
-data/
-checkpoints/
-inference_results/
-logs/
-wandb/
-
-# report generated outputs (keep final_pack tracked if you want)
-reports/outputs/
-reports/figures/
-reports/tables/
-
-# python cache
-**/__pycache__/
-*.pyc
-
-# generated report outputs (local only)
-reports/latest/
+*_tmp*/
