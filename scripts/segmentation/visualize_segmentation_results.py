@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
+from __future__ import annotations
+
 import argparse
 from pathlib import Path
 
 import numpy as np
 from PIL import Image
 
+# repo root: scripts/segmentation/ -> scripts/ -> repo
+REPO_ROOT = Path(__file__).resolve().parents[2]
 
-
-# background = black
-# body       = red
-# panels     = blue
+# background = black, body = red, panels = blue
 BG  = (0, 0, 0)
 RED = (255, 0, 0)
 BLU = (0, 0, 255)
@@ -17,18 +18,25 @@ BLU = (0, 0, 255)
 
 def load_mask_from_npz(npz_path: Path) -> np.ndarray:
     """
-    Load a segmentation mask from an .npz file.
+    Supports two formats:
+      1) keys: ['layer'] -> uint8 label image (H,W) with values 0/1/2
+      2) keys: ['data']  -> bool array (H,W,3) where:
+            data[...,0] = body
+            data[...,2] = panels
+    Returns label mask (H,W) uint8.
     """
     z = np.load(npz_path)
 
     if "layer" in z:
         lab = z["layer"].astype(np.uint8)
+        if lab.ndim != 2:
+            raise ValueError(f"Unexpected 'layer' shape: {lab.shape}")
         return lab
 
     if "data" in z:
         data = z["data"].astype(bool)
         if data.ndim != 3 or data.shape[2] < 3:
-            raise ValueError(f"Unexpected 'data' shape in {npz_path.name}: {data.shape}")
+            raise ValueError(f"Unexpected 'data' shape: {data.shape}")
 
         body = data[..., 0]
         panels = data[..., 2]
@@ -43,21 +51,17 @@ def load_mask_from_npz(npz_path: Path) -> np.ndarray:
 
 def label_to_color_image(lab: np.ndarray) -> np.ndarray:
     """
-    Convert label mask (0/1/2) -> RGB image with:
-      bg=black, body=red, panels=blue
-    Panel priority: panels overwrite body if any overlap ever happens.
+    Convert label mask (0/1/2) -> RGB image.
+    Panels overwrite body if overlap occurs.
     """
     h, w = lab.shape
-    out = np.zeros((h, w, 3), dtype=np.uint8)  # starts black
+    out = np.zeros((h, w, 3), dtype=np.uint8)
 
     body = (lab == 1)
     panels = (lab == 2)
 
-    # paint body first
     out[body] = RED
-    # paint panels last (priority)
     out[panels] = BLU
-
     return out
 
 
@@ -65,34 +69,32 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--npz_dir",
-        default="inference_results/segmentation/npz_tmp",
-        help="Folder containing extracted test_XXXXX_layer.npz files",
+        default=str(REPO_ROOT / "inference_results" / "segmentation" / "npz_tmp"),
+        help="Folder containing test_XXXXX_layer.npz files",
     )
     ap.add_argument(
         "--out_dir",
-        default="inference_results/segmentation/visuals_per_class",
-        help="Where to write visualization PNGs (flat folder, no subfolders)",
+        default=str(REPO_ROOT / "inference_results" / "segmentation" / "visuals"),
+        help="Where to write visualization PNGs",
     )
-    ap.add_argument("--n", type=int, default=40, help="How many images to export (top-N by fg pixels)")
+    ap.add_argument("--n", type=int, default=40, help="Export top-N masks by foreground pixels")
     args = ap.parse_args()
 
-    project_root = Path(__file__).resolve().parents[2]  # .../spark_project
-    npz_dir = (project_root / args.npz_dir).resolve()
-    out_dir = (project_root / args.out_dir).resolve()
+    npz_dir = Path(args.npz_dir).expanduser().resolve()
+    out_dir = Path(args.out_dir).expanduser().resolve()
+    out_dir.mkdir(parents=True, exist_ok=True)
 
     if not npz_dir.exists():
         raise FileNotFoundError(f"npz_dir not found: {npz_dir}")
 
-    out_dir.mkdir(parents=True, exist_ok=True)
-
     npz_files = sorted(npz_dir.glob("test_*_layer.npz"))
     print(f"NPZ files found: {len(npz_files)} in {npz_dir}")
 
-    if len(npz_files) == 0:
-        print("Nothing to visualize (npz_tmp is empty). Did you extract the zip?")
+    if not npz_files:
+        print("Nothing to visualize. (npz_dir is empty)")
         return
 
-    # Score each file by number of foreground pixels (body + panels)
+    # Score by foreground pixels
     scored = []
     for f in npz_files:
         try:
@@ -105,7 +107,7 @@ def main():
     scored.sort(key=lambda x: x[0], reverse=True)
     chosen = scored[: min(args.n, len(scored))]
 
-    print(f"Exporting top {len(chosen)} masks by foreground size -> {out_dir}")
+    print(f"Exporting {len(chosen)} masks -> {out_dir}")
 
     saved = 0
     for fg, f in chosen:
@@ -114,7 +116,6 @@ def main():
             rgb = label_to_color_image(lab)
             img = Image.fromarray(rgb, mode="RGB")
 
-            # Keep naming super clean
             out_name = f"{f.stem.replace('_layer','')}_seg.png"  # test_00000_seg.png
             img.save(out_dir / out_name)
             saved += 1

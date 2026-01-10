@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import sys
 import argparse
 from pathlib import Path
 
@@ -8,12 +9,11 @@ from PIL import Image
 from tqdm import tqdm
 import torch
 
-from models.segmentation.model_factory import build_model, load_state_dict
+# repo root: scripts/segmentation/ -> scripts/ -> repo
+REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT))
 
-
-def get_repo_root() -> Path:
-    # scripts/segmentation/ -> scripts/ -> repo
-    return Path(__file__).resolve().parents[2]
+from models.segmentation.model_factory import build_model, load_state_dict  # noqa: E402
 
 
 def collect_images(images_root: Path, split: str) -> list[Path]:
@@ -24,32 +24,35 @@ def collect_images(images_root: Path, split: str) -> list[Path]:
       images/<Mission>/<split>/image_XXXXX_img.jpg
 
     Test structure:
-      data/spark-2024-segmentation-test/stream-1-test/test_XXXXX_img.jpg
+      stream-1-test/test_XXXXX_img.jpg
+      (or nested folders, still fine)
     """
-    rels: list[Path] = []
-
     if split in ("train", "val"):
+        rels: list[Path] = []
         for p in images_root.rglob("*_img.jpg"):
             rel = p.relative_to(images_root)
             parts = rel.parts
+            # expects .../<Mission>/<split>/<image>
             if len(parts) >= 3 and parts[-2] == split:
                 rels.append(rel)
         return sorted(rels)
 
-    # test: flat directory typically
-    rels = [p.relative_to(images_root) for p in images_root.glob("test_*_img.jpg")]
+    # test split
+    rels = [p.relative_to(images_root) for p in images_root.rglob("test_*_img.jpg")]
     return sorted(rels)
 
 
 @torch.no_grad()
 def main():
-    repo_root = get_repo_root()
-
     ap = argparse.ArgumentParser()
     ap.add_argument("--split", choices=["test", "val", "train"], default="test")
     ap.add_argument("--images_root", default="", help="Root folder of images")
     ap.add_argument("--out_dir", default="", help="Output folder for PNG masks")
-    ap.add_argument("--ckpt", default=str(repo_root / "checkpoints/segmentation/segmentation_model/best.pth"))
+    ap.add_argument(
+        "--ckpt",
+        default=str(REPO_ROOT / "checkpoints" / "segmentation" / "segmentation_model" / "best.pth"),
+        help="Segmentation checkpoint path",
+    )
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--no_tta", action="store_true", help="Disable flip-TTA")
     ap.add_argument("--device", default="", help="cuda or cpu (default auto)")
@@ -57,11 +60,19 @@ def main():
 
     # defaults based on split
     if args.split == "test":
-        images_root = Path(args.images_root) if args.images_root else (repo_root / "data/spark-2024-segmentation-test/stream-1-test")
-        out_dir = Path(args.out_dir) if args.out_dir else (repo_root / "inference_results/segmentation/predicted_masks")
+        images_root = Path(args.images_root) if args.images_root else (
+            REPO_ROOT / "data" / "spark-2024-segmentation-test" / "stream-1-test"
+        )
+        out_dir = Path(args.out_dir) if args.out_dir else (
+            REPO_ROOT / "inference_results" / "segmentation" / "predicted_masks"
+        )
     else:
-        images_root = Path(args.images_root) if args.images_root else (repo_root / "data/spark-2024-train-val/images")
-        out_dir = Path(args.out_dir) if args.out_dir else (repo_root / "inference_results/segmentation/val_predicted_masks")
+        images_root = Path(args.images_root) if args.images_root else (
+            REPO_ROOT / "data" / "spark-2024-train-val" / "images"
+        )
+        out_dir = Path(args.out_dir) if args.out_dir else (
+            REPO_ROOT / "inference_results" / "segmentation" / f"{args.split}_predicted_masks"
+        )
 
     ckpt_path = Path(args.ckpt)
 
@@ -70,10 +81,12 @@ def main():
     if not ckpt_path.exists():
         raise FileNotFoundError(f"Missing checkpoint: {ckpt_path}")
 
-    device = torch.device(args.device) if args.device else torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = torch.device(args.device) if args.device else torch.device(
+        "cuda" if torch.cuda.is_available() else "cpu"
+    )
     use_amp = (device.type == "cuda")
 
-    print("REPO_ROOT:", repo_root)
+    print("REPO_ROOT:", REPO_ROOT)
     print("SPLIT:", args.split)
     print("IMAGES_ROOT:", images_root)
     print("OUT_DIR:", out_dir)
@@ -96,15 +109,13 @@ def main():
 
     for rel in tqdm(rels, desc=f"Seg infer ({args.split})"):
         img_path = images_root / rel
-
-        # output naming
         out_name = rel.name.replace("_img.jpg", "_layer.png")
 
-        # for val/train: preserve mission/<split>/ structure in output
-        if args.split in ("val", "train") and len(rel.parts) >= 3:
+        # train/val: keep mission/split structure
+        if args.split in ("train", "val") and len(rel.parts) >= 3:
             mission = rel.parts[0]
-            split = rel.parts[1]  # val/train
-            out_subdir = out_dir / mission / split
+            split_name = rel.parts[1]
+            out_subdir = out_dir / mission / split_name
             out_subdir.mkdir(parents=True, exist_ok=True)
             out_path = out_subdir / out_name
         else:
