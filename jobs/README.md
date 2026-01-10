@@ -1,8 +1,8 @@
 # jobs/
 
-SLURM job scripts used to run training/inference on ULHPC.
+SLURM scripts for running the pipeline on ULHPC.
 
-- jobs/detection/: training + inference for detection
-- jobs/segmentation/: inference + submission build for segmentation
+- detection/: training + inference for RT-DETRv2
+- segmentation/: inference + building Codabench submission
 
-Report-related jobs (metrics/plots) are under reports/jobs/.
+Report-related SLURM scripts are stored in reports/jobs/.
