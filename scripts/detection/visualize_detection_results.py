@@ -10,14 +10,9 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
 
-
-# ---------------------------------------------------------------------
-# Repo-root resolver (works even if script is launched from elsewhere)
-# ---------------------------------------------------------------------
+# repo root: scripts/detection/ -> scripts/ -> repo
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-
-# The 10 SPARK spacecraft classes
 CLASSES = [
     "Cheops",
     "LisaPathfinder",
@@ -33,13 +28,7 @@ CLASSES = [
 
 
 def parse_image_id(v) -> int:
-    """
-    Parses the image index from:
-      - int (already OK)
-      - strings like "test_00012_img.jpg"
-      - strings like "00012"
-      - strings that contain a 5-digit id somewhere
-    """
+    """Parse numeric id from strings like 'test_00012_img.jpg' or '00012'."""
     if isinstance(v, int):
         return v
 
@@ -61,12 +50,8 @@ def parse_image_id(v) -> int:
 
 def find_image_path(images_dir: Path, image_id: int) -> Path:
     """
-    Find the test image file for a given image_id.
-    Works for either:
-      - flat folder: images/test_00000_img.jpg
-      - nested folders: images/.../test_00000_img.jpg
-
-    We search for any file starting with 'test_00000' (jpg/png/etc).
+    Search recursively for a file starting with 'test_00000' under images_dir.
+    Works with nested folders too.
     """
     prefix = f"test_{image_id:05d}"
     hits = sorted(images_dir.rglob(prefix + "*"))
@@ -76,9 +61,6 @@ def find_image_path(images_dir: Path, image_id: int) -> Path:
 
 
 def load_font(size: int) -> ImageFont.FreeTypeFont:
-    """
-    Try to load a common TrueType font; fallback to default.
-    """
     candidates = [
         "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
         "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
@@ -91,10 +73,6 @@ def load_font(size: int) -> ImageFont.FreeTypeFont:
 
 
 def cxcywh_norm_to_xyxy_px(bbox, W: int, H: int):
-    """
-    bbox: [cx, cy, w, h] normalized (0..1)
-    returns pixel xyxy
-    """
     cx, cy, bw, bh = bbox
     x1 = (cx - bw / 2.0) * W
     y1 = (cy - bh / 2.0) * H
@@ -107,38 +85,25 @@ def clamp(v, lo, hi):
     return max(lo, min(hi, v))
 
 
-def draw_bbox_and_label(
-    img: Image.Image,
-    label: str,
-    score: float,
-    bbox,
-    color=(255, 165, 0),
-    line_w: int = 6,
-):
-    """
-    Draw a bounding box + label on the image.
-    """
+def draw_bbox_and_label(img: Image.Image, label: str, score: float, bbox, line_w: int = 6):
     draw = ImageDraw.Draw(img)
     W, H = img.size
 
     x1, y1, x2, y2 = cxcywh_norm_to_xyxy_px(bbox, W, H)
-    x1, y1, x2, y2 = map(
-        int,
-        [
-            clamp(x1, 0, W - 1),
-            clamp(y1, 0, H - 1),
-            clamp(x2, 0, W - 1),
-            clamp(y2, 0, H - 1),
-        ],
-    )
+    x1, y1, x2, y2 = map(int, [
+        clamp(x1, 0, W - 1),
+        clamp(y1, 0, H - 1),
+        clamp(x2, 0, W - 1),
+        clamp(y2, 0, H - 1),
+    ])
 
-    # bbox rectangle
-    draw.rectangle([x1, y1, x2, y2], outline=color, width=line_w)
+    # bbox rectangle (orange)
+    draw.rectangle([x1, y1, x2, y2], outline=(255, 165, 0), width=line_w)
 
-    # label box
     text = f"{label} {score:.2f}"
     font = load_font(28)
 
+    # text size robustly
     try:
         bx0, by0, bx1, by1 = draw.textbbox((0, 0), text, font=font)
         tw, th = bx1 - bx0, by1 - by0
@@ -148,8 +113,6 @@ def draw_bbox_and_label(
     pad = 6
     tx = x1
     ty = y1 - (th + 2 * pad)
-
-    # if too close to top -> put inside
     if ty < 0:
         ty = y1 + 2
 
@@ -168,17 +131,17 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--pred_json",
-        default=str(REPO_ROOT / "inference_results" / "detection" / "detection_test_predictions.json"),
+        default="inference_results/detection/detection_test_predictions.json",
         help="Path to prediction JSON",
     )
     ap.add_argument(
         "--images_dir",
-        default=str(REPO_ROOT / "data" / "spark-2024-detection-test" / "images"),
+        default="data/spark-2024-detection-test/images",
         help="Folder containing test images",
     )
     ap.add_argument(
         "--out_dir",
-        default=str(REPO_ROOT / "inference_results" / "detection" / "visuals"),
+        default="inference_results/detection/visuals",
         help="Output folder for visualization images",
     )
     ap.add_argument("--n_per_class", type=int, default=10)
@@ -188,9 +151,9 @@ def main():
 
     random.seed(args.seed)
 
-    pred_path = Path(args.pred_json).expanduser().resolve()
-    images_dir = Path(args.images_dir).expanduser().resolve()
-    out_dir = Path(args.out_dir).expanduser().resolve()
+    pred_path = (REPO_ROOT / args.pred_json).expanduser().resolve()
+    images_dir = (REPO_ROOT / args.images_dir).expanduser().resolve()
+    out_dir = (REPO_ROOT / args.out_dir).expanduser().resolve()
     out_dir.mkdir(parents=True, exist_ok=True)
 
     if not pred_path.exists():
@@ -200,7 +163,6 @@ def main():
 
     data = json.loads(pred_path.read_text())
 
-    # collect top-1 per image, grouped by class
     per_class = {c: [] for c in CLASSES}
 
     for item in data:
@@ -222,11 +184,10 @@ def main():
         img_id = parse_image_id(raw_id)
         per_class[cat].append((img_id, score, bbox))
 
-    # save visuals
     for cls in CLASSES:
         candidates = per_class[cls]
         if not candidates:
-            print(f"[WARN] {cls}: no detections above min_score")
+            print(f"[WARN] {cls}: no detections above min_score={args.min_score}")
             continue
 
         random.shuffle(candidates)
@@ -240,15 +201,7 @@ def main():
             try:
                 img_path = find_image_path(images_dir, img_id)
                 img = Image.open(img_path).convert("RGB")
-
-                img = draw_bbox_and_label(
-                    img=img,
-                    label=cls,
-                    score=score,
-                    bbox=bbox,
-                    color=(255, 165, 0),
-                    line_w=6,
-                )
+                img = draw_bbox_and_label(img, cls, score, bbox, line_w=6)
 
                 out_name = f"{cls}__test_{img_id:05d}__{score:.2f}.png"
                 img.save(cls_dir / out_name, quality=95)

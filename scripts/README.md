@@ -1,59 +1,25 @@
-# SPARK 2025 — Spacecraft Vision (Detection + Segmentation)
+# Scripts — Inference, Conversion & Visualization
 
-This repository contains my solution for the SPARK spacecraft vision challenge:
-- **Task 1: Detection** (RT-DETRv2)
-- **Task 2: Segmentation** (DeepLabV3+)
+This folder contains **reusable Python scripts** used across the project for:
+- running inference
+- converting outputs to challenge formats
+- visualizing results for analysis and reporting
 
-Large assets (datasets, checkpoints, inference outputs, logs) are stored on scratch on ULHPC and linked into the repo.
-
----
-
-## Repository structure
-
-- `run/`  
-  Entry-point scripts (the commands you execute).
-
-- `scripts/`  
-  Reusable scripts and utilities (conversion, inference logic, visualization).
-
-- `models/`  
-  Model code:
-  - `models/detection/rtdetrv2/` (third-party RT-DETRv2 code, kept unchanged)
-  - `models/segmentation/` (my segmentation model factory)
-
-- `jobs/`  
-  SLURM job scripts (train / inference / submission building).
-
-- `reports/`  
-  Report generation code (plots, tables, metrics).  
-  Output figures/tables are not required for running the pipeline.
+All scripts are **path-robust**: they automatically resolve the repository root and can be executed from any working directory.
 
 ---
 
-## Data & checkpoints
+## Folder structure
 
-On ULHPC, the following folders are linked to scratch:
-- `data/`
-- `checkpoints/`
-- `inference_results/`
-- `wandb/`
-
-The code assumes these directories exist at repo root.
-
----
-
-## Environments
-
-Detection environment (RT-DETRv2):
-- conda env: `spark_rtdetr`
-
-Segmentation environment (DeepLabV3+):
-- conda env: `spark_seg`
-
----
-
-## Running Detection
-
-### Test inference (creates JSON predictions)
-```bash
-python run/detection_infer.py --device cuda --limit 0 --score_thr 0.30
+```text
+scripts/
+├── detection/
+│   ├── convert_predictions_to_submission.py
+│   ├── convert_spark_to_coco.py
+│   ├── detection_dataset_loader.py
+│   └── visualize_detection_results.py
+│
+├── segmentation/
+│   ├── infer_segmentation.py
+│   ├── convert_png_to_npz_submission.py
+│   └── visualize_segmentation_results.py

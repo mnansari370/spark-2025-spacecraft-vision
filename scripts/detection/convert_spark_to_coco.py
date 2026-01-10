@@ -130,8 +130,3 @@ def main():
         split="val",
         out_json=str(out_dir / "spark_val.json"),
     )
-
-
-if __name__ == "__main__":
-    main()
-

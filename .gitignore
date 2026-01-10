@@ -180,3 +180,6 @@ reports/tables/
 # python cache
 **/__pycache__/
 *.pyc
+
+# generated report outputs (local only)
+reports/latest/

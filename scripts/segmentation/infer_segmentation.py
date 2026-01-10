@@ -18,28 +18,24 @@ from models.segmentation.model_factory import build_model, load_state_dict  # no
 
 def collect_images(images_root: Path, split: str) -> list[Path]:
     """
-    Returns a list of image paths relative to images_root.
+    Returns image paths relative to images_root.
 
     Train/Val structure:
       images/<Mission>/<split>/image_XXXXX_img.jpg
 
     Test structure:
-      stream-1-test/test_XXXXX_img.jpg
-      (or nested folders, still fine)
+      stream-1-test/test_XXXXX_img.jpg (flat or nested)
     """
     if split in ("train", "val"):
         rels: list[Path] = []
         for p in images_root.rglob("*_img.jpg"):
             rel = p.relative_to(images_root)
             parts = rel.parts
-            # expects .../<Mission>/<split>/<image>
             if len(parts) >= 3 and parts[-2] == split:
                 rels.append(rel)
         return sorted(rels)
 
-    # test split
-    rels = [p.relative_to(images_root) for p in images_root.rglob("test_*_img.jpg")]
-    return sorted(rels)
+    return sorted([p.relative_to(images_root) for p in images_root.rglob("test_*_img.jpg")])
 
 
 @torch.no_grad()
@@ -58,7 +54,7 @@ def main():
     ap.add_argument("--device", default="", help="cuda or cpu (default auto)")
     args = ap.parse_args()
 
-    # defaults based on split
+    # defaults by split
     if args.split == "test":
         images_root = Path(args.images_root) if args.images_root else (
             REPO_ROOT / "data" / "spark-2024-segmentation-test" / "stream-1-test"
@@ -111,7 +107,7 @@ def main():
         img_path = images_root / rel
         out_name = rel.name.replace("_img.jpg", "_layer.png")
 
-        # train/val: keep mission/split structure
+        # for train/val, keep mission/split structure
         if args.split in ("train", "val") and len(rel.parts) >= 3:
             mission = rel.parts[0]
             split_name = rel.parts[1]
