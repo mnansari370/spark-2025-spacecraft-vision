@@ -164,3 +164,19 @@ wandb/
 reports/figures/
 reports/tables/
 reports/outputs/
+
+# large generated / local-only
+data/
+checkpoints/
+inference_results/
+logs/
+wandb/
+
+# report generated outputs (keep final_pack tracked if you want)
+reports/outputs/
+reports/figures/
+reports/tables/
+
+# python cache
+**/__pycache__/
+*.pyc
