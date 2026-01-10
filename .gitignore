@@ -2,103 +2,74 @@
 # SPARK PROJECT (.gitignore)
 ############################
 
-# --------------------------
-# CRITICAL: never track (large / local / ULHPC-linked)
-# --------------------------
+# ============================================================
+# Large / local-only (ULHPC-linked or too big to push)
+# ============================================================
 data/
 checkpoints/
 wandb/
+inference_results/
 
-# logs: ignore everything except SLURM stdout/stderr
-logs/**
-!logs/
-!logs/**/
-!logs/**/slurm/
-!logs/**/slurm/*.out
-!logs/**/slurm/*.err
+# ============================================================
+# Logs (ignore all logs)
+# ============================================================
+logs/
 
-# --------------------------
-# Inference outputs
-#   - ignore everything by default
-#   - keep only final artifacts you want on GitHub
-# --------------------------
-inference_results/**
-
-# keep final submissions + key outputs
-!inference_results/**/submission*.zip
-!inference_results/**/submission*.npz
-!inference_results/**/detection.csv
-!inference_results/**/detection_test_predictions.json
-
-# optional: keep visuals if you want (comment-in when needed)
-# !inference_results/**/visuals/**
-# !inference_results/**/visuals_per_class/**
-
-# --------------------------
+# ============================================================
 # Reports
-#   - always keep code under reports/scripts/
-#   - track reports/latest folder structure (via .gitkeep)
-#   - ignore generated figures/tables by default
-# --------------------------
+#   - ignore everything under reports/ by default
+#   - but ALWAYS track reports/latest/**
+# ============================================================
+reports/**
 
-# keep folder structure visible on GitHub
+!reports/
 !reports/latest/
-!reports/latest/.gitkeep
-!reports/latest/figures/
-!reports/latest/figures/.gitkeep
-!reports/latest/tables/
-!reports/latest/tables/.gitkeep
+!reports/latest/**
 
-# ignore generated content under reports/latest (toggle if you want to track outputs)
-reports/latest/figures/**
-reports/latest/tables/**
+# (optional) if you want to keep only these specific report dirs ignored:
+# reports/outputs/
+# reports/figures/
+# reports/tables/
 
-# If you want to track the generated outputs too, comment the two lines above.
-
-# other generated report folders (if any)
-reports/outputs/
-reports/figures/
-reports/tables/
-
-# --------------------------
+# ============================================================
 # Python / cache
-# --------------------------
+# ============================================================
 **/__pycache__/
 *.py[cod]
 *.so
 
-# --------------------------
+# ============================================================
 # Environments
-# --------------------------
+# ============================================================
 venv/
 .venv/
 .env/
 conda-env/
 env/
 
-# --------------------------
+# ============================================================
 # Jupyter
-# --------------------------
+# ============================================================
 .ipynb_checkpoints/
 *.ipynb~
 
-# --------------------------
+# ============================================================
 # OS / editors
-# --------------------------
+# ============================================================
 .vscode/
 .DS_Store
 *~
 
-# --------------------------
-# Temp
-# --------------------------
+# ============================================================
+# Temp / caches
+# ============================================================
 *.log
 *.tmp
 .cache/
 *_tmp*/
 tmp*/
 
-# --------------------------
+# ============================================================
 # Optional local dumps
-# --------------------------
+# ============================================================
 docs/ALL_CODE_DUMP.txt
