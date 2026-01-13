@@ -18,9 +18,7 @@ conda activate spark_seg
 
 echo "Start: $(date) on $(hostname)"
 
-# Choose ONE approach:
-
-# (A) Build single NPZ submission (your current working method):
+# (A) Build single NPZ submission :
 python -u reports/make_segmentation_submission_bool_npz.py \
   --pred_dir inference_results/segmentation/predicted_masks \
   --out_npz inference_results/segmentation/segmentation_submission_BOOL.npz \

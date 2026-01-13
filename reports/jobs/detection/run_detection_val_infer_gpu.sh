@@ -26,7 +26,6 @@ python -u run/detection_infer_val.py \
   --coco_gt data/annotations/spark_val.json \
   --out_json inference_results/detection/val_predictions.json \
   --limit 0 \
-  --score_thr 0.0 \
   --device cuda
 
 echo "End: $(date)"

@@ -1,15 +1,6 @@
 # Run Scripts
 
-This folder contains **entry-point scripts** used to execute the main stages of the project pipeline.
-
-These scripts define **what is run** (test inference, validation inference, submission preparation),  
-while the **core logic** lives in:
-- `scripts/` (inference, conversion, visualization utilities)
-- `models/` (model definitions and configuration)
-
-All scripts are designed to be executed **from the repository root**.
-
----
+This folder contains scripts that contains the parameters used to execute the main stages of the project pipeline.
 
 ## Detection
 
@@ -34,7 +25,7 @@ All scripts are designed to be executed **from the repository root**.
 
 ---
 
-All scripts are designed to be executed **from the repository root**:
+All scripts are designed to be executed **from the repository root** using the slurm script:
 
 ```bash
 python run/<script_name>.py

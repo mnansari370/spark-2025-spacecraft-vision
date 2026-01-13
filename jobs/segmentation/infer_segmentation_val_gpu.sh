@@ -27,7 +27,8 @@ cd /mnt/aiongpfs/users/nmo/spark_project
 rm -rf inference_results/segmentation/val_predicted_masks
 mkdir -p inference_results/segmentation/val_predicted_masks
 
-python -u run/segmentation_infer_val.py \
+python -u scripts/segmentation/infer_segmentation.py \
+  -- split val \
   --images_root data/spark-2024-train-val/images \
   --out_dir inference_results/segmentation/val_predicted_masks \
   --ckpt checkpoints/segmentation/segmentation_model/best.pth \

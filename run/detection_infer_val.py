@@ -32,7 +32,6 @@ def main():
     ap.add_argument("--tmp_dir", default="inference_results/detection/_tmp_val_images", help="Temporary folder to stage val images")
     ap.add_argument("--out_json", default="inference_results/detection/val_predictions.json", help="Output predictions JSON")
     ap.add_argument("--limit", type=int, default=0, help="0 = all images, else only first N from COCO")
-    ap.add_argument("--score_thr", type=float, default=0.0, help="Score threshold passed to detection_infer.py")
     ap.add_argument("--device", default="cuda", help="cuda or cpu")
     args = ap.parse_args()
 
@@ -90,7 +89,6 @@ def main():
         "--images_dir", str(tmp_root),
         "--out_json", str(out_json),
         "--limit", str(args.limit),
-        "--score_thr", str(args.score_thr),
         "--device", str(args.device),
     ]
 

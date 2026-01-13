@@ -25,7 +25,7 @@ def main():
     ap.add_argument("--images_dir", default="", help="Folder containing .jpg images (can have subfolders)")
     ap.add_argument("--out_json", default="", help="Output json path")
     ap.add_argument("--limit", type=int, default=0)
-    ap.add_argument("--score_thr", type=float, default=0.01)
+    # ap.add_argument("--score_thr", type=float, default=0.01)
     ap.add_argument("--device", default="", help="cuda or cpu (default auto)")
     args = ap.parse_args()
 
@@ -124,8 +124,6 @@ def main():
         dets = []
         for s, lab, box in zip(scores, labels, boxes):
             s_val = float(s.item())
-            if s_val < args.score_thr:
-                continue
             lab = int(lab.item())
             cx, cy, w, h = [float(x) for x in box.tolist()]
             dets.append({"category": classes[lab], "score": s_val, "bbox": [cx, cy, w, h]})

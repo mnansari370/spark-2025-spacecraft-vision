@@ -27,9 +27,9 @@ test -f checkpoints/detection/detection_model/best.pth
 test -d data/spark-2024-detection-test/images
 
 LIMIT=20000
-SCORE_THR=0.30
+#SCORE_THR=0.30
 
-python -u run/detection_infer.py --limit "$LIMIT" --score_thr "$SCORE_THR" --device cuda
+python -u run/detection_infer.py --limit "$LIMIT" --device cuda
 
 # Optional (if submission needs CSV):
 # python -u scripts/detection/convert_predictions_to_submission.py

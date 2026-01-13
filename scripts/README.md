@@ -1,11 +1,6 @@
-# Scripts — Inference, Conversion & Visualization
+# Scripts 
 
-This folder contains **reusable Python scripts** used across the project for:
-- running inference
-- converting outputs to challenge formats
-- visualizing results for analysis and reporting
-
-All scripts are **path-robust**: they automatically resolve the repository root and can be executed from any working directory.
+Contains all the scripts for training the models
 
 ---
 
