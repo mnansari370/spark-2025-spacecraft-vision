@@ -1,0 +1,11 @@
+,Cheops,LisaPathfinder,ObservationSat1,Proba2,Proba3,Proba3ocs,Smart1,Soho,VenusExpress,XMM Newton
+Cheops,2000,0,0,0,0,0,0,0,0,0
+LisaPathfinder,0,2000,0,0,0,0,0,0,0,0
+ObservationSat1,0,0,2000,0,0,0,0,0,0,0
+Proba2,0,0,0,2000,0,0,0,0,0,0
+Proba3,0,0,0,0,2000,0,0,0,0,0
+Proba3ocs,0,0,0,0,0,2000,0,0,0,0
+Smart1,0,0,0,0,0,0,2000,0,0,0
+Soho,0,0,0,0,0,0,0,2000,0,0
+VenusExpress,0,0,0,0,1,0,0,0,1999,0
+XMM Newton,0,0,0,0,0,0,0,0,1,1999
