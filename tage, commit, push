@@ -1,0 +1,917 @@
+[1mdiff --git a/README.md b/README.md[m
+[1mindex 9f15d45..1287f9b 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -1,158 +1,162 @@[m
+[31m-# SPARK 2024 – Spacecraft Detection & Segmentation[m
+[32m+[m[32m# SPARK 2024: Spacecraft Detection and Segmentation[m
+ [m
+[31m-> Course project for **Computer Vision and Image Analysis (CVIA)** at the **University of Luxembourg**, built around the [SPARK 2024 challenge](https://cvisp.uni.lu/spark/).  [m
+[31m-> Trained and evaluated on the **ULHPC cluster** (SLURM), with submissions evaluated on **Codabench**.[m
+[32m+[m[32mThis repository holds our course project for **Computer Vision and Image Analysis (CVIA)** at the University of Luxembourg. It was built around the SPARK 2024 challenge, which asks two questions about images of spacecraft rendered in simulated orbital conditions: *which spacecraft is in the image and where is it*, and *which pixels belong to the spacecraft body and its solar panels*.[m
+ [m
+[31m----[m
+[32m+[m[32mWe answer the first with an object detector (RT-DETRv2) and the second with a semantic segmentation network (DeepLabV3+). Everything was trained on the university HPC cluster (ULHPC) using SLURM, and both tasks were submitted to the Codabench leaderboard.[m
+[32m+[m
+[32m+[m[32m## Team[m
+[32m+[m
+[32m+[m[32mGroup **Delta25**.[m
+[32m+[m
+[32m+[m[32m| Member | Student ID |[m
+[32m+[m[32m|--------|:----------:|[m
+[32m+[m[32m| Mo Nafees | 0242805924 |[m
+[32m+[m[32m| Nabeel Ahsan | 0240764054 |[m
+[32m+[m[32m| Arooba Arshad | 023063191F |[m
+[32m+[m
+[32m+[m[32m## Course and Supervision[m
+[32m+[m
+[32m+[m[32m| | |[m
+[32m+[m[32m|--|--|[m
+[32m+[m[32m| Course | Computer Vision and Image Analysis (CVIA), Fall 2025 |[m
+[32m+[m[32m| Programme | Master in Information and Computer Sciences (MICS) |[m
+[32m+[m[32m| Institution | University of Luxembourg, SnT (Interdisciplinary Centre for Security, Reliability and Trust) |[m
+[32m+[m[32m| Research group | Computer Vision, Imaging and Machine Intelligence (CVI2) |[m
+[32m+[m[32m| Course instructor | Prof. Djamila Aouada |[m
+[32m+[m[32m| Lecturers and project mentors | Anis Kacem, Abdelrahman Shabayek, Dimitris Mallis, Arunkumar Rathinam |[m
+[32m+[m
+[32m+[m[32mThe challenge itself was organised by the CVI2 group. The dataset is generated on top of the Unity3D game engine and models an Earth background, a target spacecraft, a chaser spacecraft, and a camera.[m
+[32m+[m
+[32m+[m[32m## The Two Tasks[m
+[32m+[m
+[32m+[m[32m**Detection.** Classify and localise each spacecraft with a bounding box. There are 10 mission classes: Cheops, LisaPathfinder, ObservationSat1, Proba2, Proba3, Proba3ocs, Smart1, Soho, VenusExpress, and XMM Newton.[m
+[32m+[m
+[32m+[m[32m**Segmentation.** Assign every pixel to one of three classes. We use the encoding `0 = background`, `1 = spacecraft body`, `2 = solar panels`. Each image contains one or two objects to segment, regardless of which spacecraft it is.[m
+[32m+[m
+[32m+[m[32mBoth tasks share the same workflow: prepare the data, train the model, run inference, and format the output for Codabench.[m
+ [m
+ ## Results[m
+ [m
+[31m-| Task | Model | Codabench Score | Val AP@50 | Val AP@50:95 |[m
+[31m-|------|-------|:--------------:|:---------:|:------------:|[m
+[31m-| **Detection** | RT-DETRv2 (ResNet-50vd) | **0.9865** | **0.997** | **0.969** |[m
+[31m-| **Segmentation** | DeepLabV3+ (ResNet-50) | **0.88** | — | — |[m
+[32m+[m[32mNumbers below come from our report and presentation. Detection is measured with COCO style metrics on the validation split; the final scores are the Codabench leaderboard values.[m
+[32m+[m
+[32m+[m[32m| Task | Model | Codabench score | Val AP@0.50 | Val mAP@[0.50:0.95] |[m
+[32m+[m[32m|------|-------|:---------------:|:-----------:|:-------------------:|[m
+[32m+[m[32m| Detection | RT-DETRv2 (ResNet-50vd) | **0.9865** | 0.997 | 0.969 |[m
+[32m+[m[32m| Segmentation | DeepLabV3+ (ResNet-50) | **0.8711** | see notes | see notes |[m
+ [m
+[31m----[m
+[32m+[m[32mDetection is strong and stable across every class. Segmentation captures the spacecraft outline well but struggles on the thin solar panels, which is expected given the severe pixel imbalance. More detail is in the sections further down.[m
+ [m
+ ## Visual Examples[m
+ [m
+[31m-Detection predictions (bounding box + class label):[m
+[32m+[m[32mDetection predictions (bounding box plus class label):[m
+ [m
+ | Proba2 | Smart1 | VenusExpress |[m
+ |--------|--------|--------------|[m
+ | ![](assets/README_images/detection_proba2.png) | ![](assets/README_images/detection_smart1.png) | ![](assets/README_images/detection_venusexpress.png) |[m
+ [m
+[31m-Segmentation predictions (red = spacecraft body, blue = solar panels):[m
+[32m+[m[32mSegmentation predictions (red is the spacecraft body, blue is the solar panels):[m
+ [m
+ | Example 1 | Example 2 |[m
+ |-----------|-----------|[m
+ | ![](assets/README_images/segmentation_example_1.png) | ![](assets/README_images/segmentation_example_2.png) |[m
+ [m
+[31m----[m
+[31m-[m
+[31m-## Overview[m
+[32m+[m[32m## Methodology and Architecture[m
+ [m
+[31m-The **SPARK** (Spacecraft PARts and Kinematics) dataset contains images of spacecraft across multiple missions, captured in simulated orbital conditions.  [m
+[31m-This project tackles two computer vision tasks in a single unified pipeline:[m
+[32m+[m[32m### Detection: RT-DETRv2[m
+ [m
+[31m-- **Detection** – Classify and localise each spacecraft with a bounding box.  [m
+[31m-  10 classes: *Cheops, LisaPathfinder, ObservationSat1, Proba2, Proba3, Proba3ocs, Smart1, Soho, VenusExpress, XMM Newton*.[m
+[31m-[m
+[31m-- **Segmentation** – Pixel-wise labelling into three classes:  [m
+[31m-  `0 = background`, `1 = spacecraft body`, `2 = solar panels`.[m
+[31m-[m
+[31m-Both pipelines follow the same workflow: **data preparation → training → inference → submission formatting**.[m
+[31m-[m
+[31m----[m
+[31m-[m
+[31m-## Architecture[m
+[31m-[m
+[31m-### Detection — RT-DETRv2[m
+[31m-[m
+[31m-RT-DETRv2 (Real-Time Detection Transformer v2) is an end-to-end transformer detector that eliminates NMS and achieves state-of-the-art accuracy at real-time speeds.[m
+[32m+[m[32mRT-DETRv2 is an end to end transformer detector that outputs a fixed set of object queries, each with a class probability and a bounding box in `(cx, cy, w, h)` normalised form. It does not need non maximum suppression. Our configuration stays close to the original implementation so that runs are reproducible and easy to control from YAML.[m
+ [m
+ | Component | Choice |[m
+ |-----------|--------|[m
+[31m-| Backbone | PResNet-50 (variant D), ImageNet pretrained |[m
+[32m+[m[32m| Backbone | PResNet-50 variant D, ImageNet pretrained |[m
+ | Encoder | HybridEncoder (hidden dim 256, GELU, 1 encoder layer) |[m
+ | Decoder | RTDETRTransformerv2 (6 layers, 300 queries, 3 feature levels) |[m
+[31m-| Loss | VariFocal + GIoU + L1 (weights 1 : 2 : 5) |[m
+[31m-| Optimizer | AdamW — backbone LR 1e-5, others 1e-4, weight decay 1e-4 |[m
+[31m-| LR schedule | MultiStepLR (decay ×0.1 at epochs 28, 36) |[m
+[31m-| Input size | 640 × 640 |[m
+[31m-| Training | 40 epochs, AMP, EMA, batch size 8 |[m
+[31m-| Augmentation | PhotometricDistort, ZoomOut, IoUCrop, HFlip, MultiScale (480–640 px) — first 30 epochs; plain resize only after |[m
+[32m+[m[32m| Loss | VariFocal, GIoU and L1 with weights 1 : 2 : 5 |[m
+[32m+[m[32m| Optimizer | AdamW, backbone LR 1e-5, other parameters LR 1e-4, weight decay 1e-4 |[m
+[32m+[m[32m| LR schedule | MultiStepLR, decay by 0.1 at epochs 28 and 36 |[m
+[32m+[m[32m| Input size | 640 by 640 |[m
+[32m+[m[32m| Training | 40 epochs, mixed precision (AMP), batch size 8 |[m
+[32m+[m[32m| Augmentation | PhotometricDistort, ZoomOut, IoUCrop, horizontal flip, multi scale resize 480 to 640 px for the first 30 epochs, then plain resize only |[m
+ [m
+[31m-Annotations are converted from SPARK CSV format to **COCO JSON** before training (`scripts/detection/convert_spark_to_coco.py`).  [m
+[31m-Experiment tracking via **W&B** and **TensorBoard**.[m
+[32m+[m[32mAnnotations are converted from the SPARK CSV format into COCO JSON before training (`scripts/detection/convert_spark_to_coco.py`). Separate learning rates are used for the backbone and the detection head because they converge differently. The checkpoint with the best validation AP is kept for inference. Training was tracked with Weights and Biases.[m
+ [m
+[31m-### Segmentation — DeepLabV3+[m
+[32m+[m[32mAt inference we keep detections above a confidence threshold of 0.30. This threshold was chosen from a sweep on the validation set (see the analysis section).[m
+[32m+[m
+[32m+[m[32m### Segmentation: DeepLabV3+[m
+[32m+[m
+[32m+[m[32mDeepLabV3+ predicts a class distribution for every pixel and produces the final mask by taking the argmax over classes. The backbone is ResNet-50, and the Atrous Spatial Pyramid Pooling (ASPP) module gathers context at several scales using dilated convolutions, which helps separate the body from the panels.[m
+ [m
+ | Component | Choice |[m
+ |-----------|--------|[m
+[31m-| Architecture | DeepLabV3+ |[m
+[31m-| Encoder | ResNet-50 (via `segmentation_models_pytorch`) |[m
+[32m+[m[32m| Architecture | DeepLabV3+ (via `segmentation_models_pytorch`) |[m
+[32m+[m[32m| Backbone | ResNet-50 |[m
+ | Classes | 3 (background, body, panels) |[m
+[32m+[m[32m| Loss | multi class pixel wise cross entropy |[m
+[32m+[m[32m| Optimizer | AdamW |[m
+ | Training | 100 epochs, batch size 8, GPU |[m
+[31m-| TTA | Horizontal flip TTA at inference (averages logits of original + flipped image) |[m
+[31m-| Output | Per-image PNG label masks → converted to `.npz` → zipped for Codabench |[m
+[32m+[m[32m| Test time augmentation | horizontal flip, averaging the logits of the original and flipped image |[m
+[32m+[m[32m| Output | per image PNG masks, then converted to `.npz` and zipped for Codabench |[m
+[32m+[m
+[32m+[m[32mThe ground truth RGB masks are converted to integer label masks (0, 1, 2) before training. The same encoding is used everywhere: training, inference, and evaluation.[m
+[32m+[m
+[32m+[m[32m## Dataset[m
+[32m+[m
+[32m+[m[32mTen spacecraft categories, 10,000 images each. The splits reported in our project are:[m
+[32m+[m
+[32m+[m[32m| Task | Train | Validation | Test |[m
+[32m+[m[32m|------|:-----:|:----------:|:----:|[m
+[32m+[m[32m| Detection | 60,000 | 20,000 | 20,000 |[m
+[32m+[m[32m| Segmentation | 60,000 | 20,000 | 4,000 |[m
+ [m
+[31m----[m
+[32m+[m[32mThe test images are unlabelled and are only used for the Codabench submission.[m
+ [m
+[31m-## Dataset Structure[m
+[32m+[m[32mExpected directory layout:[m
+ [m
+ ```[m
+ data/[m
+ ├── spark-2024-train-val/[m
+ │   ├── images/[m
+ │   │   └── <ClassName>/<split>/<image_XXXXX_img.jpg>[m
+[31m-│   ├── mask/                          # segmentation ground truth[m
+[31m-│   ├── train.csv                      # detection labels[m
+[32m+[m[32m│   ├── mask/                     # segmentation ground truth[m
+[32m+[m[32m│   ├── train.csv                 # detection labels[m
+ │   └── val.csv[m
+ ├── spark-2024-detection-test/[m
+[31m-│   └── images/                        # ~20 000 unlabelled test images[m
+[32m+[m[32m│   └── images/[m
+ ├── spark-2024-segmentation-test/[m
+[31m-│   └── stream-1-test/                 # unlabelled test images[m
+[31m-└── annotations/                       # COCO JSON (auto-generated)[m
+[32m+[m[32m│   └── stream-1-test/[m
+[32m+[m[32m└── annotations/                  # COCO JSON, generated by our script[m
+     ├── spark_train.json[m
+     └── spark_val.json[m
+ ```[m
+ [m
+[31m----[m
+[31m-[m
+[31m-## Project Structure[m
+[32m+[m[32m## Repository Structure[m
+ [m
+ ```[m
+ spark_project/[m
+ ├── assets/                # Images used in this README[m
+ ├── checkpoints/           # Saved model weights (not tracked in git)[m
+[31m-│   ├── detection/detection_model/best.pth[m
+[31m-│   └── segmentation/segmentation_model/best.pth[m
+ ├── data/                  # Dataset root (not tracked in git)[m
+ ├── inference_results/     # Model outputs (not tracked in git)[m
+ ├── jobs/                  # SLURM job scripts[m
+ │   ├── detection/[m
+[31m-│   │   ├── train_detection_rtdetrv2_gpu.sh[m
+[31m-│   │   └── infer_detection_test_gpu.sh[m
+ │   └── segmentation/[m
+[31m-│       ├── infer_segmentation_train.sh[m
+[31m-│       ├── infer_segmentation_val_gpu.sh[m
+[31m-│       ├── infer_segmentation_test_gpu.sh[m
+[31m-│       └── build_segmentation_submission_cpu.sh[m
+ ├── models/[m
+[31m-│   ├── detection/rtdetrv2/            # Full RT-DETRv2 codebase[m
+[31m-│   │   ├── configs/                   # YAML training configs[m
+[31m-│   │   ├── src/                       # Model, solver, backbone, criterion[m
+[31m-│   │   └── tools/train.py[m
+[32m+[m[32m│   ├── detection/rtdetrv2/        # RT-DETRv2 codebase and YAML configs[m
+ │   └── segmentation/[m
+[31m-│       └── model_factory.py           # DeepLabV3+ build + checkpoint loader[m
+[31m-├── reports/                           # Evaluation scripts and generated figures[m
+[31m-│   ├── scripts/                       # Metric computation + plotting[m
+[31m-│   └── latest/                        # Output figures and tables[m
+[31m-├── run/                               # Parameter-passing wrappers for job scripts[m
+[31m-│   ├── detection_infer.py[m
+[31m-│   ├── detection_infer_val.py[m
+[31m-│   └── segmentation_make_submission.py[m
+[32m+[m[32m│       └── model_factory.py       # DeepLabV3+ build and checkpoint loader[m
+[32m+[m[32m├── reports/               # Evaluation scripts and generated figures/tables[m
+[32m+[m[32m├── run/                   # Wrappers that pass parameters to the pipeline stages[m
+ ├── scripts/[m
+[31m-│   ├── detection/[m
+[31m-│   │   ├── convert_spark_to_coco.py       # CSV → COCO JSON[m
+[31m-│   │   ├── detection_dataset_loader.py    # PyTorch Dataset[m
+[31m-│   │   ├── convert_predictions_to_submission.py  # JSON → CSV submission[m
+[31m-│   │   └── visualize_detection_results.py[m
+[31m-│   └── segmentation/[m
+[31m-│       ├── infer_segmentation.py          # Main inference script[m
+[31m-│       ├── convert_png_to_npz_submission.py  # PNG → NPZ → ZIP[m
+[31m-│       └── visualize_segmentation_results.py[m
+[31m-└── wandb/                             # W&B run logs (not tracked in git)[m
+[32m+[m[32m│   ├── detection/         # CSV to COCO, dataset loader, submission, visualisation[m
+[32m+[m[32m│   └── segmentation/      # inference, PNG to NPZ submission, visualisation[m
+[32m+[m[32m└── wandb/                 # Weights and Biases run logs (not tracked in git)[m
+ ```[m
+ [m
+[31m----[m
+[31m-[m
+ ## Setup[m
+ [m
+[31m-Two separate conda environments are used (detection and segmentation have conflicting dependencies).[m
+[32m+[m[32mDetection and segmentation have conflicting dependencies, so we use two conda environments.[m
+ [m
+[31m-### Detection environment[m
+[32m+[m[32mDetection environment:[m
+ [m
+ ```bash[m
+ conda create -n spark_rtdetr python=3.10 -y[m
+[36m@@ -160,9 +164,7 @@[m [mconda activate spark_rtdetr[m
+ pip install -r models/detection/rtdetrv2/requirements.txt[m
+ ```[m
+ [m
+[31m-Requirements include: `torch>=2.0.1`, `torchvision>=0.15.2`, `faster-coco-eval`, `pycocotools`, `tensorboard`, `scipy`, `onnx`, `onnxruntime-gpu`.[m
+[31m-[m
+[31m-### Segmentation environment[m
+[32m+[m[32mSegmentation environment:[m
+ [m
+ ```bash[m
+ conda create -n spark_seg python=3.10 -y[m
+[36m@@ -170,29 +172,27 @@[m [mconda activate spark_seg[m
+ pip install torch torchvision segmentation-models-pytorch numpy pillow tqdm[m
+ ```[m
+ [m
+[31m----[m
+[31m-[m
+ ## Reproducing the Pipeline[m
+ [m
+[31m-All jobs are submitted to ULHPC via SLURM. To run locally, replace `sbatch` with `bash`, or run the Python scripts directly.[m
+[32m+[m[32mAll jobs are submitted to ULHPC with SLURM. To run locally, replace `sbatch` with `bash` or call the Python scripts directly.[m
+ [m
+[31m-### 1. Prepare detection annotations (run once)[m
+[32m+[m[32m**1. Prepare detection annotations (run once)**[m
+ [m
+ ```bash[m
+ conda activate spark_rtdetr[m
+ python scripts/detection/convert_spark_to_coco.py[m
+[31m-# Outputs: data/annotations/spark_train.json, spark_val.json[m
+[32m+[m[32m# writes data/annotations/spark_train.json and spark_val.json[m
+ ```[m
+ [m
+[31m-### 2. Train detection model[m
+[32m+[m[32m**2. Train the detection model**[m
+ [m
+ ```bash[m
+ sbatch jobs/detection/train_detection_rtdetrv2_gpu.sh[m
+[31m-# Saves: checkpoints/detection/detection_model/best.pth[m
+[31m-# Resources: 1 GPU, 24 GB RAM, up to 48 h[m
+[32m+[m[32m# saves checkpoints/detection/detection_model/best.pth[m
+ ```[m
+ [m
+[31m-To train manually:[m
+[32m+[m[32mManual equivalent:[m
+[32m+[m
+ ```bash[m
+ conda activate spark_rtdetr[m
+ export PYTHONPATH="$PWD/models/detection/rtdetrv2:$PYTHONPATH"[m
+[36m@@ -202,104 +202,101 @@[m [mpython -u models/detection/rtdetrv2/tools/train.py \[m
+   --output-dir checkpoints/detection/detection_model[m
+ ```[m
+ [m
+[31m-### 3. Train segmentation model[m
+[32m+[m[32m**3. Train the segmentation model**[m
+ [m
+ ```bash[m
+ sbatch jobs/segmentation/infer_segmentation_train.sh[m
+[31m-# Saves: checkpoints/segmentation/segmentation_model/best.pth[m
+[31m-# Resources: 1 GPU, 24 GB RAM, up to 48 h[m
+[32m+[m[32m# saves checkpoints/segmentation/segmentation_model/best.pth[m
+ ```[m
+ [m
+[31m-### 4. Run detection inference (test set)[m
+[32m+[m[32m**4. Detection inference and submission**[m
+ [m
+ ```bash[m
+ sbatch jobs/detection/infer_detection_test_gpu.sh[m
+[31m-# Outputs: inference_results/detection/detection_test_predictions.json[m
+[31m-```[m
+[32m+[m[32m# writes inference_results/detection/detection_test_predictions.json[m
+ [m
+[31m-Then convert to Codabench CSV:[m
+[31m-```bash[m
+ conda activate spark_rtdetr[m
+ python scripts/detection/convert_predictions_to_submission.py[m
+[31m-# Outputs: inference_results/detection/detection.csv[m
+[32m+[m[32m# writes inference_results/detection/detection.csv[m
+ ```[m
+ [m
+[31m-### 5. Run segmentation inference (test set)[m
+[32m+[m[32m**5. Segmentation inference and submission**[m
+ [m
+ ```bash[m
+ sbatch jobs/segmentation/infer_segmentation_test_gpu.sh[m
+[31m-# Outputs: inference_results/segmentation/predicted_masks/*.png[m
+[31m-```[m
+[32m+[m[32m# writes inference_results/segmentation/predicted_masks/*.png[m
+ [m
+[31m-Then build the submission ZIP:[m
+[31m-```bash[m
+ sbatch jobs/segmentation/build_segmentation_submission_cpu.sh[m
+[31m-# Outputs: inference_results/segmentation/final/submission_segmentation.zip[m
+[32m+[m[32m# writes inference_results/segmentation/final/submission_segmentation.zip[m
+ ```[m
+ [m
+[31m----[m
+[31m-[m
+ ## Detailed Results[m
+ [m
+[31m-### Detection — Validation COCO Metrics[m
+[32m+[m[32m### Detection, validation COCO metrics[m
+ [m
+[31m-```[m
+[31m-AP  @[ IoU=0.50:0.95 | all ]  = 0.969[m
+[31m-AP  @[ IoU=0.50      | all ]  = 0.997[m
+[31m-AP  @[ IoU=0.75      | all ]  = 0.994[m
+[31m-AR  @[ IoU=0.50:0.95 | all ]  = 0.978[m
+[31m-```[m
+[32m+[m[32m| Metric | Value |[m
+[32m+[m[32m|--------|:-----:|[m
+[32m+[m[32m| AP@0.50 | 0.997 |[m
+[32m+[m[32m| AP@0.75 | 0.994 |[m
+[32m+[m[32m| mAP@[0.50:0.95] | 0.969 |[m
+[32m+[m[32m| AR@100 | 0.978 |[m
+[32m+[m
+[32m+[m[32mPerformance on large objects is excellent (AP 0.970). Medium objects are harder (AP 0.736), which reflects the scale variation in the dataset. Metrics for small objects were not available because the dataset has almost no small instances.[m
+ [m
+[31m-### Detection — Per-Class AP@[0.50:0.95] (Validation)[m
+[32m+[m[32m### Detection, per class AP@[0.50:0.95] (validation)[m
+ [m
+ | Class | AP |[m
+[31m-|-------|----|[m
+[31m-| Proba2 | 0.986 |[m
+[31m-| Cheops | 0.984 |[m
+[31m-| ObservationSat1 | 0.981 |[m
+[31m-| LisaPathfinder | 0.981 |[m
+[31m-| Proba3 | 0.980 |[m
+[31m-| XMM Newton | 0.974 |[m
+[31m-| Proba3ocs | 0.962 |[m
+[31m-| VenusExpress | 0.956 |[m
+[31m-| Soho | 0.953 |[m
+[31m-| Smart1 | 0.936 |[m
+[31m-| **Mean** | **0.969** |[m
+[31m-[m
+[31m-### Segmentation — Validation IoU[m
+[32m+[m[32m|-------|:--:|[m
+[32m+[m[32m| Proba2 | 0.9861 |[m
+[32m+[m[32m| Cheops | 0.9838 |[m
+[32m+[m[32m| ObservationSat1 | 0.9813 |[m
+[32m+[m[32m| LisaPathfinder | 0.9810 |[m
+[32m+[m[32m| Proba3 | 0.9801 |[m
+[32m+[m[32m| XMM Newton | 0.9743 |[m
+[32m+[m[32m| Proba3ocs | 0.9619 |[m
+[32m+[m[32m| VenusExpress | 0.9559 |[m
+[32m+[m[32m| Soho | 0.9529 |[m
+[32m+[m[32m| Smart1 | 0.9360 |[m
+[32m+[m
+[32m+[m[32mEvery class scores above 0.93. Smart1 is the weakest, mostly because of intra class variation and visual similarity to other spacecraft. No class collapses, which shows balanced generalisation.[m
+[32m+[m
+[32m+[m[32m### Detection, confidence threshold analysis[m
+[32m+[m
+[32m+[m[32mThe detection count stays stable for thresholds from 0.05 to 0.40 and only drops slightly above 0.40, which tells us the confidence scores are well calibrated. At the chosen operating point of 0.30, the model produces about 5,002 detections over 5,000 images, matching the dataset expectation of roughly one detection per image. The mean confidence of the kept detections is about 0.97.[m
+[32m+[m
+[32m+[m[32m### Segmentation, pixel imbalance (validation)[m
+[32m+[m
+[32m+[m[32m| Class | Pixels (millions) | Percentage |[m
+[32m+[m[32m|-------|:-----------------:|:----------:|[m
+[32m+[m[32m| Background | 1996.24 | 95.21% |[m
+[32m+[m[32m| Body | 75.90 | 3.62% |[m
+[32m+[m[32m| Panels | 25.01 | 1.19% |[m
+[32m+[m[32m| Total | 2097.15 | 100.00% |[m
+[32m+[m
+[32m+[m[32mThe background dominates the image. The solar panels are only about 1.2% of all pixels, so even a small number of misclassified pixels moves their IoU a lot.[m
+[32m+[m
+[32m+[m[32m### Segmentation, validation IoU[m
+ [m
+ | Class | IoU |[m
+[31m-|-------|-----|[m
+[32m+[m[32m|-------|:---:|[m
+ | Background | 0.967 |[m
+ | Body | 0.003 |[m
+ | Panels | 0.009 |[m
+[31m-| **mIoU** | **0.326** |[m
+[31m-[m
+[31m-> Note: The Codabench segmentation score (0.88) differs from the local validation mIoU because Codabench evaluates on the held-out test split using its own metric definition (focused on foreground classes only).  [m
+[31m-> The class imbalance is severe: background = 96% of all pixels, body = 3.6%, panels = 1.2%.[m
+[32m+[m[32m| mIoU | 0.326 |[m
+ [m
+[31m----[m
+[32m+[m[32mThe foreground IoU is low, which is consistent with pixel perfect segmentation being very hard on thin, rare structures. This is why we also looked at the predictions visually. The overlays show that the spacecraft silhouette and main body are captured well, with the panels remaining the hardest region.[m
+ [m
+[31m-## Tech Stack[m
+[32m+[m[32mThe Codabench score of 0.8711 is higher than the local mIoU because the leaderboard evaluates the held out test split with its own metric that focuses on the foreground classes. The main lesson for us was that for thin, rare classes the numbers alone can be misleading, so quantitative scores should be read together with qualitative inspection.[m
+ [m
+[31m-| Area | Tools |[m
+[31m-|------|-------|[m
+[31m-| Deep learning | PyTorch, torchvision |[m
+[31m-| Detection model | RT-DETRv2 (custom YAML config) |[m
+[31m-| Segmentation model | `segmentation_models_pytorch` (DeepLabV3+) |[m
+[31m-| Annotation format | COCO JSON |[m
+[31m-| Experiment tracking | Weights & Biases, TensorBoard |[m
+[31m-| Infrastructure | ULHPC HPC cluster, SLURM |[m
+[31m-| Data processing | NumPy, Pandas, Pillow |[m
+[31m-| Evaluation | pycocotools, faster-coco-eval |[m
+[32m+[m[32m## Infrastructure[m
+ [m
+[31m----[m
+[32m+[m[32mTraining and inference ran on the ULHPC cluster (Nvidia V100 GPUs) managed by SLURM. The pipeline is PyTorch based, with separate environments for detection and segmentation. Runs were tracked with Weights and Biases.[m
+ [m
+ ## Acknowledgements[m
+ [m
+[31m-- RT-DETRv2 implementation by [lyuwenyu](https://github.com/lyuwenyu/RT-DETR) — adapted with a custom SPARK training configuration.[m
+[31m-- DeepLabV3+ via the [`segmentation_models_pytorch`](https://github.com/qubvel/segmentation_models.pytorch) library.[m
+[31m-- SPARK 2024 challenge organised by the [Computer Vision and Image Processing group](https://cvisp.uni.lu/) at the University of Luxembourg.[m
+[32m+[m[32m* RT-DETRv2 implementation by [lyuwenyu](https://github.com/lyuwenyu/RT-DETR), adapted with our own SPARK training configuration.[m
+[32m+[m[32m* DeepLabV3+ through the [`segmentation_models_pytorch`](https://github.com/qubvel/segmentation_models.pytorch) library.[m
+[32m+[m[32m* SPARK 2024 challenge organised by the CVI2 group at the University of Luxembourg.[m
+ [m
+ ```bibtex[m
+ @misc{lv2024rtdetrv2improvedbaselinebagoffreebies,[m
+[36m@@ -309,6 +306,6 @@[m [mAR  @[ IoU=0.50:0.95 | all ]  = 0.978[m
+   eprint  = {2407.17140},[m
+   archivePrefix = {arXiv},[m
+   primaryClass  = {cs.CV},[m
+[31m-  url     = {https://arxiv.org/abs/2407.17140},[m
+[32m+[m[32m  url     = {https://arxiv.org/abs/2407.17140}[m
+ }[m
+ ```[m
+[1mdiff --git a/jobs/README.md b/jobs/README.md[m
+[1mindex 3b8d12a..aaf6aba 100644[m
+[1m--- a/jobs/README.md[m
+[1m+++ b/jobs/README.md[m
+[36m@@ -1,44 +1,39 @@[m
+ # SLURM Job Scripts[m
+ [m
+[31m-This directory contains **SLURM job scripts** used to submit and run jobs on the **HPC**.[m
+[31m-[m
+[32m+[m[32mThis directory holds the SLURM job scripts we use to run training and inference on the ULHPC cluster.[m
+ [m
+ ## Directory Structure[m
+ [m
+[31m-```text[m
+[32m+[m[32m```[m
+ jobs/[m
+ ├── detection/[m
+[31m-│   ├── train_detection_*.sh[m
+[31m-│   └── infer_detection_*.sh[m
+[31m-│   [m
+[31m-│[m
+[31m-├── segmentation/[m
+[31m-│   ├── infer_segmentation_*.sh[m
+[31m-│   └── build_segmentation_submission.sh[m
+[31m-│[m
+[31m-└── README.md[m
+[32m+[m[32m│   ├── train_detection_rtdetrv2_gpu.sh[m
+[32m+[m[32m│   └── infer_detection_test_gpu.sh[m
+[32m+[m[32m└── segmentation/[m
+[32m+[m[32m    ├── infer_segmentation_train.sh[m
+[32m+[m[32m    ├── infer_segmentation_val_gpu.sh[m
+[32m+[m[32m    ├── infer_segmentation_test_gpu.sh[m
+[32m+[m[32m    └── build_segmentation_submission_cpu.sh[m
+ ```[m
+ [m
+[31m-[m
+[31m-[m
+ ## Detection[m
+ [m
+[31m-- `train_detection_rtdetv2_gpu.sh`[m
+[31m-Used for training the model[m
+[32m+[m[32m`train_detection_rtdetrv2_gpu.sh`[m
+[32m+[m[32mTrains the RT-DETRv2 detector and saves the best checkpoint.[m
+ [m
+[31m-- `infer_detection_test_gpu.sh`[m
+[31m-Used for running the model on the test dataset[m
+[32m+[m[32m`infer_detection_test_gpu.sh`[m
+[32m+[m[32mRuns the trained detector on the test set.[m
+ [m
+ ## Segmentation[m
+ [m
+[31m-- `train_segmentation_gpu.sh`  [m
+[31m-  Trains the DeepLabV3+ segmentation model on the training dataset and saves the best checkpoint[m
+[32m+[m[32m`infer_segmentation_train.sh`[m
+[32m+[m[32mTrains the DeepLabV3+ segmentation model and saves the best checkpoint. (The name is kept for historical reasons; this is the training job.)[m
+ [m
+[31m-- `infer_segmentation_val_gpu.sh`  [m
+[31m-  Runs inference on the validation dataset to generate predicted segmentation masks for evaluation[m
+[32m+[m[32m`infer_segmentation_val_gpu.sh`[m
+[32m+[m[32mRuns inference on the validation set to produce masks for evaluation.[m
+ [m
+[31m-- `infer_segmentation_test_gpu.sh`  [m
+[31m-  Runs inference on the test dataset to generate predicted segmentation masks for submission[m
+[32m+[m[32m`infer_segmentation_test_gpu.sh`[m
+[32m+[m[32mRuns inference on the test set to produce masks for the submission.[m
+ [m
+[31m-- `build_segmentation_submission_cpu.sh`  [m
+[31m-  Converts the predicted masks from PNG format to the required .npz submission format[m
+\ No newline at end of file[m
+[32m+[m[32m`build_segmentation_submission_cpu.sh`[m
+[32m+[m[32mConverts the predicted PNG masks into the `.npz` format required by Codabench.[m
+[1mdiff --git a/models/README.md b/models/README.md[m
+[1mindex 3e3de99..771ca5e 100644[m
+[1m--- a/models/README.md[m
+[1m+++ b/models/README.md[m
+[36m@@ -1,15 +1,13 @@[m
+ # Models[m
+ [m
+[31m-This directory contains all model files used for the SPARK spacecraft vision project, for both **detection** and **segmentation** tasks.[m
+[32m+[m[32mThis directory holds the model code for both tasks of the project, detection and segmentation.[m
+ [m
+[31m-[m
+[31m-## Overview[m
+[31m-[m
+[31m-```text[m
+[32m+[m[32m```[m
+ models/[m
+ ├── detection/[m
+[31m-│   └── rtdetrv2/          # RT-DETRv2 model[m
+[31m-│[m
+[32m+[m[32m│   └── rtdetrv2/          # RT-DETRv2 detector[m
+ └── segmentation/[m
+[31m-    ├── model_factory.py  # DeepLabv3 model[m
+[31m-   [m
+[32m+[m[32m    └── model_factory.py   # DeepLabV3+ build and checkpoint loader[m
+[32m+[m[32m```[m
+[32m+[m
+[32m+[m[32mSee the README inside each sub-folder for details.[m
+[1mdiff --git a/models/detection/README.md b/models/detection/README.md[m
+[1mindex b23de2b..777b0ac 100644[m
+[1m--- a/models/detection/README.md[m
+[1m+++ b/models/detection/README.md[m
+[36m@@ -1,34 +1,23 @@[m
+[31m-# Detection Models[m
+[32m+[m[32m# Detection Model[m
+ [m
+[31m-This directory contains all code and configuration related to **spacecraft detection** for the SPARK challenge.[m
+[32m+[m[32mThis directory holds all the code and configuration for spacecraft detection.[m
+ [m
+[31m-The detection task is formulated as **multi-class object detection**, where each image may contain one spacecraft belonging to one of the official SPARK classes.[m
+[32m+[m[32mThe task is multi class object detection: each image may contain one spacecraft belonging to one of the ten SPARK classes, and the model predicts its bounding box and class.[m
+ [m
+[31m----[m
+[32m+[m[32m## RT-DETRv2[m
+ [m
+[31m-## Detection Framework[m
+[32m+[m[32mRT-DETRv2 (Real-Time Detection Transformer v2) is a transformer based detector that combines convolutional feature extraction with global self attention. Given an image, it outputs a fixed number of object queries, each with a class probability and a bounding box.[m
+ [m
+[31m-### RT-DETRv2[m
+[31m-[m
+[31m-- **Architecture**: RT-DETRv2 (Real-Time DEtection TRansformer v2)[m
+[31m-- **Task**: Spacecraft detection (bounding boxes + class labels)[m
+[31m-- **Framework type**: Transformer-based object detector[m
+[31m-- **Primary use**: High-accuracy inference on the SPARK dataset[m
+[31m-[m
+[31m-The RT-DETRv2 implementation used in this project is kept **as close as possible to the original codebase**, to ensure:[m
+[31m-- reproducibility[m
+[31m-- stability[m
+[31m-- ease of configuration using YAML files[m
+[31m-[m
+[31m----[m
+[32m+[m[32mWe keep the implementation as close as possible to the original codebase so that runs stay reproducible and stable, and so that experiments can be controlled from YAML files.[m
+ [m
+ ## Directory Structure[m
+ [m
+[31m-```text[m
+[32m+[m[32m```[m
+ models/detection/[m
+ └── rtdetrv2/[m
+[31m-    ├── configs/          # YAML configuration files[m
+[31m-    ├── src/              # Core RT-DETRv2 implementation[m
+[31m-    ├── tools/            # Training / evaluation utilities[m
+[31m-    ├── deploy/           # Export / deployment utilities[m
+[31m-    └── README.md         # Original RT-DETRv2 documentation[m
+[32m+[m[32m    ├── configs/           # YAML configuration files[m
+[32m+[m[32m    ├── src/               # Core RT-DETRv2 implementation[m
+[32m+[m[32m    ├── tools/             # Training and evaluation utilities[m
+[32m+[m[32m    ├── requirements.txt   # Python dependencies[m
+[32m+[m[32m    └── README.md          # Original RT-DETRv2 documentation[m
+[32m+[m[32m```[m
+[1mdiff --git a/models/segmentation/README.md b/models/segmentation/README.md[m
+[1mindex e562523..f1827c8 100644[m
+[1m--- a/models/segmentation/README.md[m
+[1m+++ b/models/segmentation/README.md[m
+[36m@@ -1,34 +1,19 @@[m
+[31m-# Segmentation Models[m
+[32m+[m[32m# Segmentation Model[m
+ [m
+[31m-This directory contains all code related to **spacecraft part segmentation** for the SPARK challenge.[m
+[32m+[m[32mThis directory holds the code for spacecraft part segmentation.[m
+ [m
+[31m-The segmentation task focuses on **pixel-wise classification** of spacecraft images into:[m
+[31m-- background[m
+[31m-- spacecraft body[m
+[31m-- solar panels[m
+[32m+[m[32mThe task is pixel wise classification of each image into three classes: background, spacecraft body, and solar panels.[m
+ [m
+[31m----[m
+[32m+[m[32m## DeepLabV3+[m
+ [m
+[31m-## Segmentation Framework[m
+[32m+[m[32mThe model is DeepLabV3+ with a ResNet-50 backbone, built through the `segmentation_models_pytorch` library. It predicts a class distribution for every pixel and produces the final mask by taking the argmax over classes.[m
+ [m
+[31m-### DeepLabV3+ (Baseline)[m
+[31m-[m
+[31m-- **Architecture**: DeepLabV3+[m
+[31m-- **Backbone**: ResNet-50[m
+[31m-- **Framework**: PyTorch[m
+[31m-- **Task**: Semantic segmentation (3 classes)[m
+[31m-- **Primary use**: Accurate segmentation of spacecraft body and solar panels[m
+[31m-[m
+[31m-The implementation is intentionally kept **simple and explicit**, prioritising:[m
+[31m-- stability[m
+[31m-- reproducibility[m
+[31m-- ease of inference on ULHPC[m
+[31m-[m
+[31m----[m
+[32m+[m[32mWe keep the implementation simple and explicit, which makes it stable, reproducible, and easy to run on the HPC cluster.[m
+ [m
+ ## Directory Structure[m
+ [m
+[31m-```text[m
+[32m+[m[32m```[m
+ models/segmentation/[m
+[31m-├── model_factory.py     # Model construction and checkpoint loading[m
+[31m-└── README.md            # This file[m
+[32m+[m[32m├── model_factory.py   # Model construction and checkpoint loading[m
+[32m+[m[32m└── README.md          # This file[m
+[32m+[m[32m```[m
+[1mdiff --git a/reports/README.md b/reports/README.md[m
+[1mindex 98d359c..8fe3422 100644[m
+[1m--- a/reports/README.md[m
+[1m+++ b/reports/README.md[m
+[36m@@ -1,17 +1,14 @@[m
+ # Reports[m
+ [m
+[31m-This folder contains all the scripts to generate all the plots and visualisation for the metrics calculated for the model[m
+[32m+[m[32mThis folder holds the scripts that compute the metrics and generate the plots and tables used in our report and presentation. Nothing here is needed to run training or inference.[m
+ [m
+[31m-The code in this directory is **not required to run training or inference**.  [m
+[31m-[m
+[31m-[m
+[31m-## Folder Structure[m
+[31m-[m
+[31m-```text[m
+[32m+[m[32m```[m
+ reports/[m
+[31m-├── jobs/           # Slurm script Jobs submitted to the HPC[m
+[31m-├── latest/         # Generated figures (plots, images, tables)[m
+[31m-│   ├── figures[m
+[31m-│   └── tables[m
+[31m-└── scripts/        # Scripts for plotting the visualisations[m
+[31m-[m
+[32m+[m[32m├── jobs/       # SLURM scripts for the reporting jobs[m
+[32m+[m[32m├── latest/     # Generated output[m
+[32m+[m[32m│   ├── figures/[m
+[32m+[m[32m│   └── tables/[m
+[32m+[m[32m└── scripts/    # Metric computation and plotting[m
+[32m+[m[32m```[m
+[32m+[m
+[32m+[m[32mThe figures and tables under `latest/` are the actual generated results (COCO detection metrics, per class AP, segmentation IoU per class, and the pixel count statistics).[m
+[1mdiff --git a/run/README.md b/run/README.md[m
+[1mindex 59977eb..f66f92d 100644[m
+[1m--- a/run/README.md[m
+[1m+++ b/run/README.md[m
+[36m@@ -1,32 +1,24 @@[m
+ # Run Scripts[m
+ [m
+[31m-This folder contains scripts that contains the parameters used to execute the main stages of the project pipeline.[m
+[32m+[m[32mThese scripts hold the parameters used to execute the main stages of the pipeline. They are meant to be called from the repository root, usually through the SLURM job scripts in `jobs/`.[m
+ [m
+ ## Detection[m
+ [m
+[31m-- `detection_infer.py`  [m
+[31m-  Runs **RT-DETRv2 detection inference on the test set** and generates prediction JSON files.[m
+[32m+[m[32m`detection_infer.py`[m
+[32m+[m[32mRuns RT-DETRv2 inference on the test set and writes the prediction JSON.[m
+ [m
+[31m-- `detection_infer_val.py`  [m
+[31m-  Runs **detection inference on the validation set** using COCO annotations (used for validation and analysis).[m
+[31m-[m
+[31m----[m
+[32m+[m[32m`detection_infer_val.py`[m
+[32m+[m[32mRuns detection inference on the validation set using the COCO annotations. Used for validation and analysis.[m
+ [m
+ ## Segmentation[m
+ [m
+[31m-- `segmentation_infer.py`  [m
+[31m-  Runs **DeepLabV3+ segmentation inference on the test set**, producing PNG mask predictions.[m
+[31m-[m
+[31m-- `segmentation_infer_val.py`  [m
+[31m-  Runs **segmentation inference on the validation set**, preserving the mission / split directory structure.[m
+[32m+[m[32m`segmentation_make_submission.py`[m
+[32m+[m[32mConverts the predicted segmentation masks into the final Codabench format (`.npz` then `.zip`).[m
+ [m
+[31m-- `segmentation_make_submission.py`  [m
+[31m-  Converts predicted segmentation masks into the **final Codabench submission format** (`.npz` → `.zip`).[m
+[32m+[m[32m## Usage[m
+ [m
+[31m----[m
+[31m-[m
+[31m-All scripts are designed to be executed **from the repository root** using the slurm script:[m
+[32m+[m[32mRun any of these from the repository root, for example:[m
+ [m
+ ```bash[m
+[31m-python run/<script_name>.py[m
+[31m-[m
+[32m+[m[32mpython run/detection_infer.py[m
+[32m+[m[32m```[m
+[1mdiff --git a/scripts/README.md b/scripts/README.md[m
+[1mindex e0e74d5..f81acf5 100644[m
+[1m--- a/scripts/README.md[m
+[1m+++ b/scripts/README.md[m
+[36m@@ -1,20 +1,18 @@[m
+[31m-# Scripts [m
+[32m+[m[32m# Scripts[m
+ [m
+[31m-Contains all the scripts for training the models[m
+[32m+[m[32mUtility scripts for data preparation, inference, submission formatting, and visualisation. The model code itself lives under `models/`.[m
+ [m
+[31m----[m
+[31m-[m
+[31m-## Folder structure[m
+[31m-[m
+[31m-```text[m
+[32m+[m[32m```[m
+ scripts/[m
+ ├── detection/[m
+[31m-│   ├── convert_predictions_to_submission.py[m
+[31m-│   ├── convert_spark_to_coco.py[m
+[31m-│   ├── detection_dataset_loader.py[m
+[32m+[m[32m│   ├── convert_spark_to_coco.py            # CSV to COCO JSON[m
+[32m+[m[32m│   ├── detection_dataset_loader.py         # PyTorch dataset[m
+[32m+[m[32m│   ├── convert_predictions_to_submission.py # JSON to CSV submission[m
+ │   └── visualize_detection_results.py[m
+[31m-│[m
+[31m-├── segmentation/[m
+[31m-│   ├── infer_segmentation.py[m
+[31m-│   ├── convert_png_to_npz_submission.py[m
+[31m-│   └── visualize_segmentation_results.py[m
+[32m+[m[32m└── segmentation/[m
+[32m+[m[32m    ├── infer_segmentation.py               # inference[m
+[32m+[m[32m    ├── convert_png_to_npz_submission.py    # PNG to NPZ to ZIP[m
+[32m+[m[32m    └── visualize_segmentation_results.py[m
+[32m+[m[32m```[m
+[32m+[m
+[32m+[m[32mSee the README in each sub-folder for more detail.[m
+[1mdiff --git a/scripts/detection/README.md b/scripts/detection/README.md[m
+[1mindex efee7bd..a65d807 100644[m
+[1m--- a/scripts/detection/README.md[m
+[1m+++ b/scripts/detection/README.md[m
+[36m@@ -1,37 +1,26 @@[m
+ # Detection Scripts[m
+ [m
+[31m-This directory contains all **detection-related scripts** used for data preparation,[m
+[31m-inference, visualization, and submission formatting for the SPARK detection task.[m
+[32m+[m[32mThese scripts handle data preparation, inference, submission formatting, and visualisation for the detection task. The detector itself (RT-DETRv2) lives in `models/detection/rtdetrv2/`.[m
+ [m
+[31m-The detection model itself (RT-DETRv2) lives in:[m
+[31m-`models/detection/rtdetrv2/`.[m
+[32m+[m[32mThey are written to be explicit, reproducible, easy to inspect, and compatible with the ULHPC environment.[m
+ [m
+[31m----[m
+[32m+[m[32m## Scripts[m
+ [m
+[31m-## Purpose of this folder[m
+[32m+[m[32m`convert_spark_to_coco.py`[m
+[32m+[m[32mConverts the SPARK CSV annotations (`train.csv`, `val.csv`) into COCO format JSON.[m
+ [m
+[31m-The scripts here are responsible for:[m
+[31m-- converting dataset annotations[m
+[31m-- running detection inference[m
+[31m-- preparing Codabench submissions[m
+[31m-- visualizing detection predictions[m
+[31m-[m
+[31m-They are written to be:[m
+[31m-- explicit[m
+[31m-- reproducible[m
+[31m-- compatible with ULHPC environments[m
+[31m-- easy to inspect and debug[m
+[31m-[m
+[31m----[m
+[32m+[m[32mOutputs:[m
+ [m
+[31m-## Scripts Overview[m
+[32m+[m[32m```[m
+[32m+[m[32mdata/annotations/spark_train.json[m
+[32m+[m[32mdata/annotations/spark_val.json[m
+[32m+[m[32m```[m
+ [m
+[31m-### Dataset & annotation utilities[m
+[32m+[m[32m`detection_dataset_loader.py`[m
+[32m+[m[32mPyTorch dataset used to load images and their COCO annotations.[m
+ [m
+[31m-- **`convert_spark_to_coco.py`**  [m
+[31m-  Converts SPARK CSV annotations (`train.csv`, `val.csv`) into COCO-format JSON files.[m
+[32m+[m[32m`convert_predictions_to_submission.py`[m
+[32m+[m[32mTurns the prediction JSON into the CSV format expected by Codabench. Detections are kept above a confidence threshold of 0.30.[m
+ [m
+[31m-Outputs:[m
+[31m-```text[m
+[31m-data/annotations/spark_train.json[m
+[31m-data/annotations/spark_val.json[m
+[32m+[m[32m`visualize_detection_results.py`[m
+[32m+[m[32mDraws the predicted bounding boxes and class labels on the images for inspection and reporting.[m
+[1mdiff --git a/scripts/segmentation/README.md b/scripts/segmentation/README.md[m
+[1mindex affa909..2682eac 100644[m
+[1m--- a/scripts/segmentation/README.md[m
+[1m+++ b/scripts/segmentation/README.md[m
+[36m@@ -1,45 +1,29 @@[m
+ # Segmentation Scripts[m
+ [m
+[31m-This directory contains all **segmentation-related scripts** used for inference,[m
+[31m-visualization, and submission preparation for the SPARK spacecraft segmentation task.[m
+[32m+[m[32mThese scripts handle inference, submission preparation, and visualisation for the segmentation task. They do not define the model; that lives in `models/segmentation/model_factory.py`.[m
+ [m
+[31m-These scripts **do not define the model itself**.[m
+[31m-They use the segmentation model defined in:[m
+[31m-`models/segmentation/model_factory.py`.[m
+[32m+[m[32mThey are written to run from the repository root, work on CPU or GPU, and stay robust to different directory layouts.[m
+ [m
+[31m----[m
+[32m+[m[32m## Scripts[m
+ [m
+[31m-## Purpose of this folder[m
+[32m+[m[32m`infer_segmentation.py`[m
+[32m+[m[32mRuns segmentation inference for the `test`, `val`, or `train` split.[m
+ [m
+[31m-The scripts here handle:[m
+[31m-- running segmentation inference (test / validation)[m
+[31m-- converting predicted masks into Codabench format[m
+[31m-- visualizing segmentation outputs for inspection and reporting[m
+[32m+[m[32mFeatures:[m
+ [m
+[31m-They are written to be:[m
+[31m-- reproducible[m
+[31m-- runnable from the repository root[m
+[31m-- compatible with CPU and GPU execution[m
+[31m-- robust to different directory layouts[m
+[31m-[m
+[31m----[m
+[31m-[m
+[31m-## Scripts Overview[m
+[31m-[m
+[31m-### Inference[m
+[31m-[m
+[31m-- **`infer_segmentation.py`**  [m
+[31m-  Runs segmentation inference for:[m
+[31m-  - `test`[m
+[31m-  - `val`[m
+[31m-  - `train` (optional)[m
+[31m-[m
+[31m-  Features:[m
+[31m-  - optional flip TTA[m
+[31m-  - CPU / GPU support[m
+[31m-  - preserves mission/split directory structure for val/train[m
+[31m-  - writes PNG masks to `inference_results/segmentation/`[m
+[32m+[m[32m* optional horizontal flip test time augmentation[m
+[32m+[m[32m* CPU or GPU support[m
+[32m+[m[32m* preserves the mission and split directory structure for val and train[m
+[32m+[m[32m* writes PNG masks to `inference_results/segmentation/`[m
+ [m
+ Example:[m
+[32m+[m
+ ```bash[m
+ python scripts/segmentation/infer_segmentation.py --split test --device cuda[m
+[32m+[m[32m```[m
+[32m+[m
+[32m+[m[32m`convert_png_to_npz_submission.py`[m
+[32m+[m[32mConverts the predicted PNG masks into the `.npz` format and zips them for Codabench.[m
+[32m+[m
+[32m+[m[32m`visualize_segmentation_results.py`[m
+[32m+[m[32mOverlays the predicted masks on the images for inspection and reporting.[m

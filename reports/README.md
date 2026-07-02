@@ -1,17 +1,14 @@
 # Reports
 
-This folder contains all the scripts to generate all the plots and visualisation for the metrics calculated for the model
+This folder holds the scripts that compute the metrics and generate the plots and tables used in our report and presentation. Nothing here is needed to run training or inference.
 
-The code in this directory is **not required to run training or inference**.  
-
-
-## Folder Structure
-
-```text
+```
 reports/
-├── jobs/           # Slurm script Jobs submitted to the HPC
-├── latest/         # Generated figures (plots, images, tables)
-│   ├── figures
-│   └── tables
-└── scripts/        # Scripts for plotting the visualisations
+├── jobs/       # SLURM scripts for the reporting jobs
+├── latest/     # Generated output
+│   ├── figures/
+│   └── tables/
+└── scripts/    # Metric computation and plotting
+```
 
+The figures and tables under `latest/` are the actual generated results (COCO detection metrics, per class AP, segmentation IoU per class, and the pixel count statistics).

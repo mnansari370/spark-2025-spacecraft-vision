@@ -1,34 +1,19 @@
-# Segmentation Models
+# Segmentation Model
 
-This directory contains all code related to **spacecraft part segmentation** for the SPARK challenge.
+This directory holds the code for spacecraft part segmentation.
 
-The segmentation task focuses on **pixel-wise classification** of spacecraft images into:
-- background
-- spacecraft body
-- solar panels
+The task is pixel wise classification of each image into three classes: background, spacecraft body, and solar panels.
 
----
+## DeepLabV3+
 
-## Segmentation Framework
+The model is DeepLabV3+ with a ResNet-50 backbone, built through the `segmentation_models_pytorch` library. It predicts a class distribution for every pixel and produces the final mask by taking the argmax over classes.
 
-### DeepLabV3+ (Baseline)
-
-- **Architecture**: DeepLabV3+
-- **Backbone**: ResNet-50
-- **Framework**: PyTorch
-- **Task**: Semantic segmentation (3 classes)
-- **Primary use**: Accurate segmentation of spacecraft body and solar panels
-
-The implementation is intentionally kept **simple and explicit**, prioritising:
-- stability
-- reproducibility
-- ease of inference on ULHPC
-
----
+We keep the implementation simple and explicit, which makes it stable, reproducible, and easy to run on the HPC cluster.
 
 ## Directory Structure
 
-```text
+```
 models/segmentation/
-├── model_factory.py     # Model construction and checkpoint loading
-└── README.md            # This file
+├── model_factory.py   # Model construction and checkpoint loading
+└── README.md          # This file
+```

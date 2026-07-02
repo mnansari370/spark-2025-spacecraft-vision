@@ -1,34 +1,23 @@
-# Detection Models
+# Detection Model
 
-This directory contains all code and configuration related to **spacecraft detection** for the SPARK challenge.
+This directory holds all the code and configuration for spacecraft detection.
 
-The detection task is formulated as **multi-class object detection**, where each image may contain one spacecraft belonging to one of the official SPARK classes.
+The task is multi class object detection: each image may contain one spacecraft belonging to one of the ten SPARK classes, and the model predicts its bounding box and class.
 
----
+## RT-DETRv2
 
-## Detection Framework
+RT-DETRv2 (Real-Time Detection Transformer v2) is a transformer based detector that combines convolutional feature extraction with global self attention. Given an image, it outputs a fixed number of object queries, each with a class probability and a bounding box.
 
-### RT-DETRv2
-
-- **Architecture**: RT-DETRv2 (Real-Time DEtection TRansformer v2)
-- **Task**: Spacecraft detection (bounding boxes + class labels)
-- **Framework type**: Transformer-based object detector
-- **Primary use**: High-accuracy inference on the SPARK dataset
-
-The RT-DETRv2 implementation used in this project is kept **as close as possible to the original codebase**, to ensure:
-- reproducibility
-- stability
-- ease of configuration using YAML files
-
----
+We keep the implementation as close as possible to the original codebase so that runs stay reproducible and stable, and so that experiments can be controlled from YAML files.
 
 ## Directory Structure
 
-```text
+```
 models/detection/
 └── rtdetrv2/
-    ├── configs/          # YAML configuration files
-    ├── src/              # Core RT-DETRv2 implementation
-    ├── tools/            # Training / evaluation utilities
-    ├── deploy/           # Export / deployment utilities
-    └── README.md         # Original RT-DETRv2 documentation
+    ├── configs/           # YAML configuration files
+    ├── src/               # Core RT-DETRv2 implementation
+    ├── tools/             # Training and evaluation utilities
+    ├── requirements.txt   # Python dependencies
+    └── README.md          # Original RT-DETRv2 documentation
+```

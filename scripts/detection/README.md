@@ -1,37 +1,26 @@
 # Detection Scripts
 
-This directory contains all **detection-related scripts** used for data preparation,
-inference, visualization, and submission formatting for the SPARK detection task.
+These scripts handle data preparation, inference, submission formatting, and visualisation for the detection task. The detector itself (RT-DETRv2) lives in `models/detection/rtdetrv2/`.
 
-The detection model itself (RT-DETRv2) lives in:
-`models/detection/rtdetrv2/`.
+They are written to be explicit, reproducible, easy to inspect, and compatible with the ULHPC environment.
 
----
+## Scripts
 
-## Purpose of this folder
-
-The scripts here are responsible for:
-- converting dataset annotations
-- running detection inference
-- preparing Codabench submissions
-- visualizing detection predictions
-
-They are written to be:
-- explicit
-- reproducible
-- compatible with ULHPC environments
-- easy to inspect and debug
-
----
-
-## Scripts Overview
-
-### Dataset & annotation utilities
-
-- **`convert_spark_to_coco.py`**  
-  Converts SPARK CSV annotations (`train.csv`, `val.csv`) into COCO-format JSON files.
+`convert_spark_to_coco.py`
+Converts the SPARK CSV annotations (`train.csv`, `val.csv`) into COCO format JSON.
 
 Outputs:
-```text
+
+```
 data/annotations/spark_train.json
 data/annotations/spark_val.json
+```
+
+`detection_dataset_loader.py`
+PyTorch dataset used to load images and their COCO annotations.
+
+`convert_predictions_to_submission.py`
+Turns the prediction JSON into the CSV format expected by Codabench. Detections are kept above a confidence threshold of 0.30.
+
+`visualize_detection_results.py`
+Draws the predicted bounding boxes and class labels on the images for inspection and reporting.

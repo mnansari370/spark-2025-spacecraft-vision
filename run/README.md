@@ -1,32 +1,24 @@
 # Run Scripts
 
-This folder contains scripts that contains the parameters used to execute the main stages of the project pipeline.
+These scripts hold the parameters used to execute the main stages of the pipeline. They are meant to be called from the repository root, usually through the SLURM job scripts in `jobs/`.
 
 ## Detection
 
-- `detection_infer.py`  
-  Runs **RT-DETRv2 detection inference on the test set** and generates prediction JSON files.
+`detection_infer.py`
+Runs RT-DETRv2 inference on the test set and writes the prediction JSON.
 
-- `detection_infer_val.py`  
-  Runs **detection inference on the validation set** using COCO annotations (used for validation and analysis).
-
----
+`detection_infer_val.py`
+Runs detection inference on the validation set using the COCO annotations. Used for validation and analysis.
 
 ## Segmentation
 
-- `segmentation_infer.py`  
-  Runs **DeepLabV3+ segmentation inference on the test set**, producing PNG mask predictions.
+`segmentation_make_submission.py`
+Converts the predicted segmentation masks into the final Codabench format (`.npz` then `.zip`).
 
-- `segmentation_infer_val.py`  
-  Runs **segmentation inference on the validation set**, preserving the mission / split directory structure.
+## Usage
 
-- `segmentation_make_submission.py`  
-  Converts predicted segmentation masks into the **final Codabench submission format** (`.npz` → `.zip`).
-
----
-
-All scripts are designed to be executed **from the repository root** using the slurm script:
+Run any of these from the repository root, for example:
 
 ```bash
-python run/<script_name>.py
-
+python run/detection_infer.py
+```

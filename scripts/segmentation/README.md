@@ -1,45 +1,29 @@
 # Segmentation Scripts
 
-This directory contains all **segmentation-related scripts** used for inference,
-visualization, and submission preparation for the SPARK spacecraft segmentation task.
+These scripts handle inference, submission preparation, and visualisation for the segmentation task. They do not define the model; that lives in `models/segmentation/model_factory.py`.
 
-These scripts **do not define the model itself**.
-They use the segmentation model defined in:
-`models/segmentation/model_factory.py`.
+They are written to run from the repository root, work on CPU or GPU, and stay robust to different directory layouts.
 
----
+## Scripts
 
-## Purpose of this folder
+`infer_segmentation.py`
+Runs segmentation inference for the `test`, `val`, or `train` split.
 
-The scripts here handle:
-- running segmentation inference (test / validation)
-- converting predicted masks into Codabench format
-- visualizing segmentation outputs for inspection and reporting
+Features:
 
-They are written to be:
-- reproducible
-- runnable from the repository root
-- compatible with CPU and GPU execution
-- robust to different directory layouts
-
----
-
-## Scripts Overview
-
-### Inference
-
-- **`infer_segmentation.py`**  
-  Runs segmentation inference for:
-  - `test`
-  - `val`
-  - `train` (optional)
-
-  Features:
-  - optional flip TTA
-  - CPU / GPU support
-  - preserves mission/split directory structure for val/train
-  - writes PNG masks to `inference_results/segmentation/`
+* optional horizontal flip test time augmentation
+* CPU or GPU support
+* preserves the mission and split directory structure for val and train
+* writes PNG masks to `inference_results/segmentation/`
 
 Example:
+
 ```bash
 python scripts/segmentation/infer_segmentation.py --split test --device cuda
+```
+
+`convert_png_to_npz_submission.py`
+Converts the predicted PNG masks into the `.npz` format and zips them for Codabench.
+
+`visualize_segmentation_results.py`
+Overlays the predicted masks on the images for inspection and reporting.
